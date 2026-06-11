@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PAINEL DE SPRINT - ENGENHARIA DE DADOS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+:root{
+  --bg:#080c14; --bg-2:#0d121d; --card:#141b29; --card-hover:#1a2233;
+  --text:#e8edf5; --text-2:#c0c9d6; --muted:#7d8a9c;
+  --border:#1f2a3d; --border-strong:#2a3852;
+  --green:#34d399; --red:#f87171; --blue:#60a5fa; --purple:#c084fc;
+  --yellow:#fbbf24; --cyan:#22d3ee; --orange:#fb923c; --pink:#f472b6;
+  --shadow-1:0 1px 2px rgba(0,0,0,.3);
+  --shadow-2:0 4px 12px rgba(0,0,0,.4),0 1px 3px rgba(0,0,0,.2);
+  --radius:14px; --radius-sm:9px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{color-scheme:dark;}
+body{
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  background:var(--bg);
+  background-image:
+    radial-gradient(ellipse 800px 400px at 10% -10%, rgba(96,165,250,.06), transparent 50%),
+    radial-gradient(ellipse 600px 400px at 90% 10%, rgba(192,132,252,.05), transparent 50%);
+  color:var(--text); padding:24px; min-height:100vh; line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+::-webkit-scrollbar{width:10px;height:10px;}
+::-webkit-scrollbar-track{background:var(--bg-2);}
+::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:5px;}
+.wrap{max-width:1280px;margin:0 auto;}
+.header{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:12px;
+  margin-bottom:22px;padding-bottom:18px;border-bottom:1px solid var(--border);}
+.header h1{font-size:1.55rem;font-weight:800;letter-spacing:-.02em;
+  background:linear-gradient(135deg,var(--text) 0%,var(--blue) 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.header .sub{font-size:.85rem;color:var(--muted);margin-top:3px;}
+.header-meta{font-size:.76rem;color:var(--muted);font-weight:500;background:var(--card);
+  border:1px solid var(--border);padding:7px 12px;border-radius:var(--radius-sm);font-family:'JetBrains Mono',monospace;}
+.header-right{display:flex;flex-direction:column;align-items:flex-end;gap:8px;}
+.squad-filter-wrap{display:flex;align-items:center;gap:8px;}
+.sf-label{font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;font-weight:600;}
+.sf-select{background:var(--card);border:1px solid var(--border-strong);color:var(--text);
+  padding:8px 14px;font-family:inherit;font-size:.84rem;font-weight:500;
+  border-radius:var(--radius-sm);cursor:pointer;min-width:280px;}
+.sf-select:hover,.sf-select:focus{border-color:var(--blue);outline:none;}
+.sf-select:focus-visible{box-shadow:0 0 0 2px rgba(96,165,250,.18);}
+.filter-pill{display:inline-flex;align-items:center;gap:6px;font-size:.74rem;color:var(--blue);
+  background:rgba(96,165,250,.1);border:1px solid rgba(96,165,250,.3);padding:4px 10px;
+  border-radius:6px;font-weight:600;}
+.filter-note{font-size:.72rem;color:var(--muted);font-style:italic;margin-top:4px;}
+
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px;}
+@media(max-width:920px){.grid-2{grid-template-columns:1fr;}}
+
+.sprint-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+  padding:22px;box-shadow:var(--shadow-1);position:relative;overflow:hidden;}
+.sprint-card.active{box-shadow:0 0 0 1px rgba(96,165,250,.25) inset,var(--shadow-1);}
+.sc-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px;}
+.tag{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;
+  padding:4px 9px;border-radius:6px;}
+.tag.ativa{background:rgba(96,165,250,.15);color:var(--blue);}
+.tag.fechada{background:rgba(125,138,156,.15);color:var(--muted);}
+.sc-name{font-size:1.35rem;font-weight:700;letter-spacing:-.01em;}
+.sc-dates{font-size:.78rem;color:var(--muted);font-family:'JetBrains Mono',monospace;margin-top:2px;}
+.health{display:inline-flex;align-items:center;gap:7px;font-size:.8rem;font-weight:600;
+  padding:6px 11px;border-radius:8px;}
+.dot{width:9px;height:9px;border-radius:50%;}
+.health.verde{background:rgba(52,211,153,.12);color:var(--green);} .health.verde .dot{background:var(--green);box-shadow:0 0 8px var(--green);}
+.health.amarelo{background:rgba(251,191,36,.12);color:var(--yellow);} .health.amarelo .dot{background:var(--yellow);box-shadow:0 0 8px var(--yellow);}
+.health.vermelho{background:rgba(248,113,113,.12);color:var(--red);} .health.vermelho .dot{background:var(--red);box-shadow:0 0 8px var(--red);}
+
+.gauge-row{display:flex;align-items:center;gap:20px;margin:18px 0;}
+.gauge{position:relative;width:130px;height:130px;flex-shrink:0;}
+.gauge canvas{width:130px;height:130px;}
+.gauge .center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.gauge .center .pct{font-size:1.7rem;font-weight:800;letter-spacing:-.02em;}
+.gauge .center .lbl{font-size:.62rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;}
+.gauge-side{flex:1;}
+.bar-line{margin-bottom:11px;}
+.bar-line .bl-top{display:flex;justify-content:space-between;font-size:.78rem;margin-bottom:4px;}
+.bar-line .bl-top .k{color:var(--text-2);} .bar-line .bl-top .v{font-weight:700;font-family:'JetBrains Mono',monospace;}
+.track{height:7px;background:var(--bg-2);border-radius:4px;overflow:hidden;}
+.fill{height:100%;border-radius:4px;}
+
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin:16px 0 4px;}
+.kpi{background:var(--bg-2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:11px 12px;}
+.kpi .v{font-size:1.35rem;font-weight:700;letter-spacing:-.02em;line-height:1.1;font-family:'JetBrains Mono',monospace;}
+.kpi .l{font-size:.66rem;color:var(--muted);text-transform:uppercase;letter-spacing:.03em;margin-top:3px;}
+.kpi .v.green{color:var(--green);} .kpi .v.blue{color:var(--blue);} .kpi .v.red{color:var(--red);} .kpi .v.orange{color:var(--orange);} .kpi .v.purple{color:var(--purple);}
+.inc-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+@media(max-width:860px){.inc-grid{grid-template-columns:1fr;}}
+.inc-col{background:var(--bg-2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;}
+.inc-col-h{display:flex;align-items:center;gap:9px;margin-bottom:12px;}
+.inc-col-name{font-size:1.05rem;font-weight:700;}
+.inc-time{display:flex;align-items:center;gap:10px;margin-top:10px;padding:11px 14px;
+  background:linear-gradient(135deg,rgba(192,132,252,.10),rgba(96,165,250,.06));
+  border:1px solid rgba(192,132,252,.25);border-radius:var(--radius-sm);}
+.inc-time .it-ic{font-size:1.1rem;}
+.inc-time .it-l{font-size:.8rem;color:var(--text-2);flex:1;}
+.inc-time .it-v{font-size:1.15rem;font-weight:700;color:var(--purple);font-family:'JetBrains Mono',monospace;}
+.lt-duo{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:6px 0 8px;}
+.lt-box{display:flex;flex-direction:column;gap:3px;padding:13px;border-radius:var(--radius-sm);border:1px solid var(--border);}
+.lt-box.lead{background:linear-gradient(135deg,rgba(34,211,238,.10),rgba(96,165,250,.05));border-color:rgba(34,211,238,.25);}
+.lt-box.cycle{background:linear-gradient(135deg,rgba(52,211,153,.10),rgba(96,165,250,.05));border-color:rgba(52,211,153,.25);}
+.lt-cap{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);}
+.lt-box.lead .lt-v{color:var(--cyan);} .lt-box.cycle .lt-v{color:var(--green);}
+.lt-v{font-size:1.55rem;font-weight:800;font-family:'JetBrains Mono',monospace;letter-spacing:-.02em;line-height:1.1;}
+.lt-sub{font-size:.68rem;color:var(--muted);}
+.lt-foot{font-size:.74rem;color:var(--muted);margin-top:2px;}
+
+.section-title{font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;
+  font-weight:600;margin:16px 0 9px;}
+.stack{display:flex;height:24px;border-radius:6px;overflow:hidden;border:1px solid var(--border);}
+.stack span{height:100%;}
+.legend{display:flex;flex-wrap:wrap;gap:10px;margin-top:9px;}
+.legend .item{display:flex;align-items:center;gap:6px;font-size:.74rem;color:var(--text-2);}
+.legend .sw{width:10px;height:10px;border-radius:3px;}
+
+.panel{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+  padding:22px;box-shadow:var(--shadow-1);margin-bottom:18px;}
+.panel h2{font-size:1.05rem;font-weight:700;margin-bottom:4px;text-transform:uppercase;letter-spacing:.02em;}
+.panel .desc{font-size:.82rem;color:var(--muted);margin-bottom:16px;}
+.chart-box{height:280px;}
+
+.insight{display:flex;gap:14px;background:linear-gradient(135deg,rgba(251,146,60,.08),rgba(248,113,113,.06));
+  border:1px solid rgba(251,146,60,.2);border-radius:var(--radius);padding:18px 20px;margin-bottom:18px;}
+.insight .ic{font-size:1.4rem;}
+.insight .tx h3{font-size:.95rem;font-weight:700;margin-bottom:4px;color:var(--orange);text-transform:uppercase;letter-spacing:.02em;}
+.insight .tx p{font-size:.85rem;color:var(--text-2);}
+/* tabela de cards */
+.tbl-tools{display:flex;flex-direction:column;gap:8px;margin-bottom:14px;}
+.chip-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;}
+.flbl{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);min-width:52px;}
+.chip{font-size:.74rem;font-weight:600;padding:5px 11px;border-radius:20px;cursor:pointer;
+  border:1px solid var(--border);background:var(--bg-2);color:var(--text-2);transition:all .15s;user-select:none;}
+.chip:hover{border-color:var(--border-strong);}
+.chip.on{background:rgba(96,165,250,.15);border-color:var(--blue);color:var(--blue);}
+.tbl-wrap{overflow-x:auto;}
+table.cards{width:100%;border-collapse:collapse;font-size:.84rem;}
+table.cards th{text-align:left;font-size:.7rem;text-transform:uppercase;letter-spacing:.04em;
+  color:var(--muted);font-weight:600;padding:9px 12px;border-bottom:1px solid var(--border-strong);
+  cursor:pointer;white-space:nowrap;}
+table.cards th:hover{color:var(--text-2);}
+table.cards td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:middle;}
+table.cards tr:hover td{background:var(--bg-2);}
+table.cards .key{font-family:'JetBrains Mono',monospace;font-weight:600;color:var(--blue);
+  text-decoration:none;white-space:nowrap;}
+table.cards .key:hover{text-decoration:underline;}
+table.cards tr.row-estruturante td{background:rgba(251,191,36,.05);}
+table.cards tr.row-estruturante:hover td{background:rgba(251,191,36,.10);}
+table.cards .summ{color:var(--text-2);max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.badge{display:inline-block;font-size:.72rem;font-weight:600;padding:3px 9px;border-radius:6px;white-space:nowrap;}
+.tpill{font-size:.72rem;font-weight:600;padding:3px 9px;border-radius:6px;white-space:nowrap;
+  background:var(--bg-2);border:1px solid var(--border);color:var(--text-2);}
+.cat-badge{display:inline-block;font-size:.7rem;font-weight:700;font-family:'JetBrains Mono',monospace;
+  padding:2px 8px;border-radius:6px;border:1px solid;letter-spacing:.02em;}
+.sprint-cell{font-family:'JetBrains Mono',monospace;font-weight:600;white-space:nowrap;}
+.avatar{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;
+  border-radius:50%;font-size:.7rem;font-weight:700;font-family:'Inter',sans-serif;
+  background:rgba(96,165,250,.18);color:var(--blue);border:1px solid rgba(96,165,250,.35);cursor:default;}
+.avatar.none{background:var(--bg-2);color:var(--muted);border-color:var(--border);}
+.cmt-dot{display:inline-flex;align-items:center;justify-content:center;min-width:32px;height:24px;padding:0 8px;
+  border-radius:12px;font-size:.72rem;font-weight:600;font-family:'JetBrains Mono',monospace;cursor:default;}
+.cmt-dot.recent{background:rgba(52,211,153,.18);color:var(--green);border:1px solid rgba(52,211,153,.4);font-size:.85rem;}
+.cmt-dot.old{background:var(--bg-2);color:var(--muted);border:1px solid var(--border);}
+.cmt-dot.none{background:transparent;color:var(--muted);}
+.dur{font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.84rem;}
+.dur.done{color:var(--green);}
+.dur.open{color:var(--orange);}
+.sp-tag{display:inline-block;font-size:.7rem;font-weight:600;padding:3px 8px;border-radius:6px;
+  font-family:'JetBrains Mono',monospace;margin-right:4px;white-space:nowrap;}
+.sp-tag.ativa{background:rgba(96,165,250,.18);color:var(--blue);border:1px solid rgba(96,165,250,.35);}
+.sp-tag.fechada{background:var(--bg-2);color:var(--text-2);border:1px solid var(--border);}
+.sp-extra{display:inline-block;font-size:.7rem;font-weight:700;font-family:'JetBrains Mono',monospace;
+  margin-left:6px;padding:2px 7px;border-radius:6px;background:rgba(251,146,60,.18);color:var(--orange);
+  border:1px solid rgba(251,146,60,.35);cursor:default;}
+.parent-link{display:inline-block;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  vertical-align:middle;font-family:'Inter',sans-serif;font-weight:600;font-size:.82rem;}
+.sprint-cell.nova{color:var(--blue);}
+.sprint-cell.aging{color:var(--orange);}
+.sprint-cell.crit{color:var(--red);}
+.footer{text-align:center;font-size:.74rem;color:var(--muted);margin-top:8px;padding-top:16px;border-top:1px solid var(--border);}
+.error{background:rgba(248,113,113,.1);border:1px solid var(--red);color:var(--red);
+  padding:16px;border-radius:var(--radius);font-size:.85rem;}
+.error code{background:var(--bg-2);padding:2px 6px;border-radius:4px;font-family:'JetBrains Mono',monospace;color:var(--text);}
+.tabs{display:flex;gap:4px;margin-bottom:18px;border-bottom:1px solid var(--border);}
+.mini-tabs{display:flex;gap:6px;margin:14px 0 12px;border-bottom:1px solid var(--border);}
+.mt{background:transparent;color:var(--muted);border:none;border-bottom:2px solid transparent;
+  padding:7px 12px;font-family:inherit;font-size:.78rem;font-weight:600;cursor:pointer;
+  letter-spacing:.01em;transition:all .15s;border-radius:6px 6px 0 0;text-transform:uppercase;}
+.mt:hover{color:var(--text-2);background:var(--bg-2);}
+.mt.on{color:var(--blue);border-bottom-color:var(--blue);background:var(--bg-2);}
+.mt-panel{display:none;}
+.mt-panel.on{display:block;}
+.empty-scope{padding:24px;text-align:center;color:var(--muted);font-size:.85rem;font-style:italic;}
+.theme-list{margin-top:14px;display:flex;flex-direction:column;gap:9px;}
+.theme-row{display:grid;grid-template-columns:160px 1fr 36px;align-items:center;gap:10px;font-size:.82rem;}
+.theme-name{color:var(--text-2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.theme-bar{height:10px;background:var(--bg-2);border-radius:5px;overflow:hidden;border:1px solid var(--border);}
+.theme-fill{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--cyan));border-radius:5px;}
+.theme-val{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--text);text-align:right;}
+.kpis-bl{grid-template-columns:repeat(7,1fr);}
+@media(max-width:1100px){.kpis-bl{grid-template-columns:repeat(4,1fr);}}
+@media(max-width:680px){.kpis-bl{grid-template-columns:repeat(2,1fr);}}
+.bl-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;margin-top:18px;}
+@media(max-width:1100px){.bl-grid{grid-template-columns:1fr;}}
+.bl-chart{background:var(--bg-2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px;}
+.bl-chart-title{font-size:.74rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-bottom:9px;}
+.team-table .team-name{display:flex;align-items:center;gap:10px;font-weight:500;color:var(--text);}
+.team-table .hr-cell{font-family:'JetBrains Mono',monospace;font-size:.82rem;text-align:right;padding:9px 14px;}
+.team-table .team-total{font-family:'JetBrains Mono',monospace;font-weight:700;text-align:right;color:var(--text);}
+.team-table tfoot tr td{border-top:1px solid var(--border-strong);background:var(--bg-2);}
+.team-table th:not(:first-child){text-align:right;}
+.tab{background:transparent;color:var(--text-2);border:none;border-bottom:2px solid transparent;
+  padding:10px 18px;font-family:inherit;font-size:.92rem;font-weight:600;cursor:pointer;
+  letter-spacing:-.005em;transition:all .15s;border-radius:8px 8px 0 0;}
+.tab:hover{color:var(--text);background:var(--card);}
+.tab.on{color:var(--blue);border-bottom-color:var(--blue);background:var(--card);}
+.tab-panel{display:none;}
+.tab-panel.on{display:block;animation:fadeIn .2s ease;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(4px);}to{opacity:1;transform:none;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="header">
+    <div>
+      <h1>PAINEL DE SPRINT - ENGENHARIA DE DADOS</h1>
+      <div class="sub" id="sub">[Dados] Engenharia de Dados &middot; board DENA Desenvolvimento</div>
+    </div>
+    <div class="header-right">
+      <div class="squad-filter-wrap">
+        <label for="squadFilter" class="sf-label">Squad</label>
+        <select id="squadFilter" class="sf-select">
+          <option value="">Todas as squads</option>
+          <option value="ENG">ENG - Engenharia de Dados</option>
+          <option value="SPN">SPN - Squad Performance do Negócio</option>
+          <option value="SCG">SCG - Squad Captação &amp; Gente</option>
+          <option value="SJA">SJA - Squad Jornada do Aluno</option>
+        </select>
+      </div>
+      <div class="header-meta" id="meta">carregando...</div>
+    </div>
+  </div>
+  <div id="app"></div>
+  <div class="footer" id="footer"></div>
+</div>
+<script>
+const FMT = {
+  date(s){ if(!s) return "—"; const d=new Date(s); return d.toLocaleDateString('pt-BR',{day:'2-digit',month:'short'}); },
+  dt(s){ if(!s) return "—"; const d=new Date(s); return d.toLocaleString('pt-BR',{day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit'}); }
+};
+const STATUS_COLORS = {
+  "Aceito":"#34d399","Em produção":"#10b981","Concluído":"#22d3ee","Cancelado":"#7d8a9c",
+  "Em Andamento":"#fbbf24","Refinamento":"#fb923c","Bloqueado":"#f87171","Backlog":"#475569"
+};
+function colorFor(st){ return STATUS_COLORS[st] || "#60a5fa"; }
+
+function fmtDur(sec){
+  if(sec===null||sec===undefined) return "—";
+  const days=sec/86400;
+  if(days>=1){ const d=Math.floor(days); const h=Math.round((days-d)*24); return h?`${d}d ${h}h`:`${d}d`; }
+  const hours=sec/3600; const h=Math.floor(hours); const m=Math.round((hours-h)*60);
+  return h?`${h}h ${m}m`:`${m}m`;
+}
+function themeBreakdown(list){
+  const counts = {};
+  (list||[]).forEach(r=>{
+    const name = (r.parent && r.parent.summary) || '(sem tema)';
+    counts[name] = (counts[name]||0) + 1;
+  });
+  return Object.entries(counts).sort((a,b)=>b[1]-a[1]);
+}
+
+function themeCard(meta, isActive, list){
+  const tag = isActive ? `<span class="tag ativa">Sprint Ativa</span>` : `<span class="tag fechada">Última Encerrada</span>`;
+  const data = themeBreakdown(list);
+  if(!data.length){
+    return `<div class="sprint-card ${isActive?'active':''}">
+      <div class="sc-top">
+        <div>${tag}<div class="sc-name" style="margin-top:8px">${meta.name}</div>
+          <div class="sc-dates">Volume de incidentes por tema</div></div>
+      </div>
+      <div class="empty-scope">Nenhum incidente nesta sprint.</div>
+    </div>`;
+  }
+  const maxV = data[0][1];
+  const total = data.reduce((s,[,n])=>s+n,0);
+  const bars = data.map(([name,n])=>`
+    <div class="theme-row">
+      <span class="theme-name" title="${name.replace(/"/g,'&quot;')}">${name}</span>
+      <span class="theme-bar"><span class="theme-fill" style="width:${(n/maxV*100).toFixed(1)}%"></span></span>
+      <span class="theme-val">${n}</span>
+    </div>`).join('');
+  return `<div class="sprint-card ${isActive?'active':''}">
+    <div class="sc-top">
+      <div>${tag}<div class="sc-name" style="margin-top:8px">${meta.name}</div>
+        <div class="sc-dates">Volume por tema · ${data.length} temas · ${total} incidentes</div></div>
+    </div>
+    <div class="theme-list">${bars}</div>
+  </div>`;
+}
+
+function incidentsListPanel(inc, activeName, closedName){
+  // unifica as duas listas: cada card aparece uma única vez, com a etiqueta
+  // da "última" sprint relevante:
+  //  - se o card foi aceito na sprint encerrada, fica com a etiqueta da encerrada
+  //  - caso contrário (aberto ou aceito na ativa), fica com a etiqueta da ativa
+  const tag = (name, kind)=>`<span class="sp-tag ${kind}">${name}</span>`;
+  const closedByKey = new Map();
+  (inc.last_closed.list||[]).forEach(r=>closedByKey.set(r.key, r));
+  const activeByKey = new Map();
+  (inc.active.list||[]).forEach(r=>activeByKey.set(r.key, r));
+
+  const out = [];
+  // primeiro, cards aceitos na encerrada (mantemos a versão da encerrada)
+  closedByKey.forEach((r,key)=>{
+    if(r.is_resolved){
+      out.push({...r, _sprint:tag(closedName,'fechada')});
+    }
+  });
+  // depois, cards na ativa (usamos a versão da ativa, sobrescrevendo se já estava na encerrada como aberto)
+  activeByKey.forEach((r,key)=>{
+    out.push({...r, _sprint:tag(activeName,'ativa')});
+  });
+  // por fim, cards da encerrada que NÃO foram aceitos lá nem estão na ativa
+  closedByKey.forEach((r,key)=>{
+    if(!r.is_resolved && !activeByKey.has(key)){
+      out.push({...r, _sprint:tag(closedName,'fechada')});
+    }
+  });
+
+  // ordena: em aberto primeiro, depois pelo tempo desc
+  out.sort((a,b)=>{
+    if(a.is_resolved !== b.is_resolved) return a.is_resolved?1:-1;
+    return (b.duration_hours||0)-(a.duration_hours||0);
+  });
+
+  const fmtRow = (r)=>{
+    let dur="—";
+    if(r.duration_hours!==null && r.duration_hours!==undefined){
+      const h = r.duration_hours;
+      const txt = h>=1 ? `${h.toFixed(1)}h` : `${(h*60).toFixed(0)}m`;
+      dur = r.is_resolved
+        ? `<span class="dur done">${txt}</span>`
+        : `<span class="dur open" title="Em aberto">${txt} aberto</span>`;
+    }
+    const asg = r.assignee
+      ? `<span class="avatar" title="${r.assignee.replace(/"/g,'&quot;')}">${initials(r.assignee)}</span>`
+      : `<span class="avatar none" title="Sem responsável">—</span>`;
+    return `<tr>
+      <td><a class="key" href="https://cogna.atlassian.net/browse/${r.key}" target="_blank">${r.key}</a></td>
+      <td class="summ" title="${r.summary.replace(/"/g,'&quot;')}">${r.summary}</td>
+      <td>${statusBadge(r.status)}</td>
+      <td>${parentCell(r.parent)}</td>
+      <td>${createdCell(r.created)}</td>
+      <td>${dur}</td>
+      <td>${r._sprint}${r.sprint_count>1?`<span class="sp-extra" title="Passou por ${r.sprint_count} sprints">+${r.sprint_count-1}</span>`:''}</td>
+      <td>${asg}</td>
+    </tr>`;
+  };
+  if(!out.length) return `<div class="panel"><h2>Lista de incidentes — sem registros</h2></div>`;
+  return `<div class="panel">
+    <h2>Lista de incidentes · ${out.length} cards</h2>
+    <div class="desc">Cards aparecem uma única vez, na sprint mais recente onde foram aceitos ou onde ainda estão ativos</div>
+    <div class="tbl-wrap"><table class="cards">
+      <thead><tr><th>Card</th><th>Resumo</th><th>Status</th><th>Tema</th><th>Aberto em</th><th>Tempo</th><th>Sprint</th><th>Resp.</th></tr></thead>
+      <tbody>${out.map(fmtRow).join("")}</tbody>
+    </table></div></div>`;
+}
+
+function leadCycleCard(meta, isActive, d){
+  const tag = isActive ? `<span class="tag ativa">Sprint Ativa</span>` : `<span class="tag fechada">Última Encerrada</span>`;
+  const counts = d.lead.count===d.cycle.count
+    ? `${d.lead.count} cards concluídos`
+    : `${d.lead.count} cards concluídos · cycle em ${d.cycle.count}`;
+  return `
+  <div class="sprint-card ${isActive?'active':''}">
+    <div class="sc-top">
+      <div>${tag}<div class="sc-name" style="margin-top:8px">${meta.name}</div>
+        <div class="sc-dates">Lead time & Cycle time</div></div>
+    </div>
+    <div class="lt-duo">
+      <div class="lt-box lead"><span class="lt-cap">Lead time</span>
+        <span class="lt-v">${fmtDur(d.lead.median_seconds)}</span>
+        <span class="lt-sub">mediana · média ${fmtDur(d.lead.avg_seconds)}</span></div>
+      <div class="lt-box cycle"><span class="lt-cap">Cycle time</span>
+        <span class="lt-v">${fmtDur(d.cycle.median_seconds)}</span>
+        <span class="lt-sub">mediana · média ${fmtDur(d.cycle.avg_seconds)}</span></div>
+    </div>
+    <div class="lt-foot">${counts}</div>
+  </div>`;
+}
+
+function leadTimePanel(lt, activeName, closedName){
+  const col=(title,tag,d)=>`<div class="inc-col">
+    <div class="inc-col-h">${tag}<span class="inc-col-name">${title}</span></div>
+    <div class="lt-duo">
+      <div class="lt-box lead"><span class="lt-cap">Lead time</span>
+        <span class="lt-v">${fmtDur(d.lead.median_seconds)}</span>
+        <span class="lt-sub">mediana · média ${fmtDur(d.lead.avg_seconds)}</span></div>
+      <div class="lt-box cycle"><span class="lt-cap">Cycle time</span>
+        <span class="lt-v">${fmtDur(d.cycle.median_seconds)}</span>
+        <span class="lt-sub">mediana · média ${fmtDur(d.cycle.avg_seconds)}</span></div>
+    </div>
+    <div class="lt-foot">${d.lead.count} cards concluídos${d.cycle.count<d.lead.count?` · cycle em ${d.cycle.count}`:''}</div>
+  </div>`;
+  return `<div class="panel">
+    <h2>⏳ Lead time &amp; Cycle time — comparativo por sprint</h2>
+    <div class="desc"><b>Lead</b> = criação → conclusão (espera total) &middot; <b>Cycle</b> = início do trabalho → conclusão (tempo efetivo) &middot; mediana é mais representativa</div>
+    <div class="inc-grid">
+      ${col(activeName,'<span class="tag ativa">Ativa</span>',lt.active)}
+      ${col(closedName,'<span class="tag fechada">Encerrada</span>',lt.last_closed)}
+    </div></div>`;
+}
+
+function gauge(pct, color){
+  return `<div class="gauge"><canvas data-pct="${pct}" data-color="${color}"></canvas>
+    <div class="center"><div class="pct">${pct}%</div><div class="lbl">Aceito</div></div></div>`;
+}
+function barLine(k, v, pct, color){
+  return `<div class="bar-line"><div class="bl-top"><span class="k">${k}</span><span class="v">${v}</span></div>
+    <div class="track"><div class="fill" style="width:${Math.min(100,pct)}%;background:${color}"></div></div></div>`;
+}
+function statusStack(dist){
+  const total = Object.values(dist).reduce((a,b)=>a+b,0) || 1;
+  const order = ["Aceito","Em produção","Concluído","Cancelado","Em Andamento","Refinamento","Bloqueado","Backlog"];
+  const keys = Object.keys(dist).sort((a,b)=>(order.indexOf(a)+99*(order.indexOf(a)<0))-(order.indexOf(b)+99*(order.indexOf(b)<0)));
+  let bars="", leg="";
+  keys.forEach(st=>{
+    const w = dist[st]/total*100;
+    bars += `<span style="width:${w}%;background:${colorFor(st)}" title="${st}: ${dist[st]}"></span>`;
+    leg += `<div class="item"><span class="sw" style="background:${colorFor(st)}"></span>${st} (${dist[st]})</div>`;
+  });
+  return `<div class="stack">${bars}</div><div class="legend">${leg}</div>`;
+}
+
+function sprintBody(scope, gaugeColor){
+  return `<div class="gauge-row">
+      ${gauge(scope.accepted_pct, gaugeColor)}
+      <div class="gauge-side">
+        ${barLine("Dev-done (Concluído+)", scope.devdone_pct+"%", scope.devdone_pct, "#22d3ee")}
+        ${barLine("Pontos aceitos", scope.points_accepted+" / "+scope.points_committed+" pts", scope.points_accepted_pct, "#60a5fa")}
+        ${barLine("Aceito (entregue)", scope.accepted_pct+"%", scope.accepted_pct, "#34d399")}
+      </div>
+    </div>
+    <div class="kpis">
+      <div class="kpi"><div class="v">${scope.issues_committed}</div><div class="l">Comprometido</div></div>
+      <div class="kpi"><div class="v green">${scope.issues_accepted}</div><div class="l">Aceito</div></div>
+      <div class="kpi"><div class="v blue">${scope.issues_devdone}</div><div class="l">Dev-done</div></div>
+      <div class="kpi"><div class="v red">${scope.issues_not_completed}</div><div class="l">Não concl.</div></div>
+    </div>`;
+}
+
+function sprintCard(node, isActive){
+  const m=node.meta, s=node.summary, h=node.health;
+  const tag = isActive ? `<span class="tag ativa">Sprint Ativa</span>` : `<span class="tag fechada">Última Encerrada</span>`;
+  const healthTxt = {verde:"No trilho",amarelo:"Atenção",vermelho:"Em risco"}[h.status];
+  const elapsed = isActive ? ` &middot; ${h.elapsed_pct}% do tempo decorrido` : "";
+  const goal = m.goal ? `<div style="font-size:.8rem;color:var(--text-2);margin-top:8px;font-style:italic">🎯 ${m.goal}</div>` : "";
+  const gaugeColor = h.status==='verde'?'#34d399':(h.status==='amarelo'?'#fbbf24':'#f87171');
+  return `
+  <div class="sprint-card ${isActive?'active':''}">
+    <div class="sc-top">
+      <div>${tag}<div class="sc-name" style="margin-top:8px">${m.name}</div>
+        <div class="sc-dates">${FMT.date(m.start)} → ${FMT.date(m.end)}${elapsed}</div></div>
+      <div class="health ${h.status}"><span class="dot"></span>${healthTxt}</div>
+    </div>
+    ${goal}
+    ${sprintBody(s, gaugeColor)}
+    <div class="kpis" style="grid-template-columns:repeat(3,1fr)">
+      ${node.scope
+        ? `<div class="kpi"><div class="v orange">${node.scope.carryover}</div><div class="l">Transbordados</div></div>
+           <div class="kpi"><div class="v blue">${node.scope.new_in_sprint}</div><div class="l">Novos na sprint</div></div>
+           <div class="kpi"><div class="v">${(s.blocked||[]).length}</div><div class="l">Bloqueados</div></div>`
+        : `<div class="kpi"><div class="v orange">${s.issues_added_during}</div><div class="l">Add na sprint</div></div>
+           <div class="kpi"><div class="v">${s.issues_punted}</div><div class="l">Removidos</div></div>
+           <div class="kpi"><div class="v">${(s.blocked||[]).length}</div><div class="l">Bloqueados</div></div>`
+      }
+    </div>
+    <div class="section-title">Distribuição por status</div>
+    ${statusStack(s.status_dist)}
+  </div>`;
+}
+
+function newOnlyCard(node, isActive){
+  const m = node.meta, h = node.health, n = node.new_only;
+  const tag = isActive ? `<span class="tag ativa">Sprint Ativa</span>` : `<span class="tag fechada">Última Encerrada</span>`;
+  const gaugeColor = h.status==='verde'?'#34d399':(h.status==='amarelo'?'#fbbf24':'#f87171');
+  const body = (n && n.issues_committed)
+    ? sprintBody(n, gaugeColor)
+    : `<div class="empty-scope">Nenhum card novo nesta sprint.</div>`;
+  return `
+  <div class="sprint-card ${isActive?'active':''}">
+    <div class="sc-top">
+      <div>${tag}<div class="sc-name" style="margin-top:8px">${m.name}</div>
+        <div class="sc-dates">Apenas cards novos · ${(n||{}).issues_committed||0} cards</div></div>
+    </div>
+    ${body}
+  </div>`;
+}
+
+function drawGauges(){
+  document.querySelectorAll('.gauge canvas').forEach(cv=>{
+    const pct=+cv.dataset.pct, color=cv.dataset.color;
+    new Chart(cv,{type:'doughnut',data:{datasets:[{data:[pct,Math.max(0,100-pct)],
+      backgroundColor:[color,'#1f2a3d'],borderWidth:0}]},
+      options:{cutout:'74%',plugins:{legend:{display:false},tooltip:{enabled:false}},
+        responsive:false,animation:{duration:600}}});
+  });
+}
+
+function drawVelocity(vel){
+  const ctx=document.getElementById('velChart');
+  const labels=vel.map(v=>v.name.replace('SP ',''));
+  new Chart(ctx,{type:'bar',
+    data:{labels,datasets:[
+      {label:'Comprometido (pts)',data:vel.map(v=>v.committed),backgroundColor:'rgba(96,165,250,.25)',
+        borderColor:'#60a5fa',borderWidth:1,borderRadius:4},
+      {label:'Entregue (pts)',data:vel.map(v=>v.completed),backgroundColor:'#34d399',borderRadius:4}
+    ]},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{labels:{color:'#c0c9d6',font:{size:12}}}},
+      scales:{x:{ticks:{color:'#7d8a9c'},grid:{display:false}},
+        y:{ticks:{color:'#7d8a9c'},grid:{color:'#1f2a3d'},beginAtZero:true}}}});
+}
+
+const TYPE_COLORS={"História":"#60a5fa","Incidente":"#f87171","Mudança":"#c084fc","Suporte":"#fbbf24","Bug":"#fb923c"};
+
+let ISSUES=[], TBL_FILTER_STATUS=null, TBL_FILTER_TYPE=null, TBL_SORT={col:"sprint_count",dir:-1};
+
+function spLabel(sp){
+  if(sp===null||sp===undefined) return `<span style="color:var(--muted);font-size:.78rem">Não estimado</span>`;
+  const v = Number.isInteger(sp) ? sp : sp;
+  return `<span class="sprint-cell" style="color:var(--purple)">${v} pts</span>`;
+}
+const CATEGORY_COLORS={"SCG":"#22d3ee","SJA":"#c084fc","SPN":"#34d399","ENG":"#fb923c"};
+function categoryCell(cat){
+  if(!cat) return "";
+  return cat.split(",").map(c=>{
+    const color = CATEGORY_COLORS[c] || "#7d8a9c";
+    return `<span class="cat-badge" style="color:${color};border-color:${color}55;background:${color}22">${c}</span>`;
+  }).join(" ");
+}
+function timeSpentLabel(sec){
+  if(!sec) return `<span style="color:var(--muted);font-size:.78rem">—</span>`;
+  const h = sec/3600;
+  return `<span class="sprint-cell" style="color:var(--cyan)">${h.toFixed(1)}h</span>`;
+}
+function initials(name){
+  if(!name) return "—";
+  const words=name.trim().split(/\s+/).filter(w=>!/^(de|da|do|dos|das|e)$/i.test(w));
+  if(!words.length) return "—";
+  const a=words[0][0]||"";
+  const b=words.length>1 ? (words[words.length-1][0]||"") : "";
+  return (a+b).toUpperCase();
+}
+function assigneeCell(name){
+  if(!name) return `<span class="avatar none" title="Sem responsável">—</span>`;
+  return `<span class="avatar" title="${name.replace(/"/g,'&quot;')}">${initials(name)}</span>`;
+}
+function reporterCell(name){
+  if(!name) return `<span class="avatar none" title="Sem relator">—</span>`;
+  return `<span class="avatar" title="Relator: ${name.replace(/"/g,'&quot;')}" style="background:rgba(192,132,252,.18);color:var(--purple);border-color:rgba(192,132,252,.35)">${initials(name)}</span>`;
+}
+function commentCell(r){
+  if(!r.last_comment_at){
+    return `<span class="cmt-dot none" title="Sem comentários">—</span>`;
+  }
+  const d = new Date(r.last_comment_at);
+  const now = Date.now();
+  const ageH = (now - d.getTime())/3600000;
+  const fmt = d.toLocaleString('pt-BR',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'});
+  const tip = `Último comentário: ${fmt}${r.last_comment_by?` por ${r.last_comment_by}`:''}`.replace(/"/g,'&quot;');
+  if(r.recent_comment_24h){
+    return `<span class="cmt-dot recent" title="${tip}">💬</span>`;
+  }
+  // não recente: pequeno texto com idade aproximada
+  const days = Math.floor(ageH/24);
+  const lbl = days>=1 ? `${days}d` : `${Math.floor(ageH)}h`;
+  return `<span class="cmt-dot old" title="${tip}">${lbl}</span>`;
+}
+function createdCell(iso){
+  if(!iso) return `<span style="color:var(--muted)">—</span>`;
+  const d=new Date(iso);
+  const fmtFull = d.toLocaleString('pt-BR',{day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit'});
+  const fmtShort = d.toLocaleDateString('pt-BR',{day:'2-digit',month:'short'});
+  return `<span class="sprint-cell" style="color:var(--text-2);font-weight:500" title="${fmtFull}">${fmtShort}</span>`;
+}
+function parentCell(p){
+  if(!p || !p.key) return `<span style="color:var(--muted)">—</span>`;
+  const label = (p.summary || p.key).replace(/"/g,'&quot;');
+  const tip = `${p.key}${p.summary?' · '+p.summary:''}`.replace(/"/g,'&quot;');
+  return `<a class="key parent-link" href="https://cogna.atlassian.net/browse/${p.key}" target="_blank" title="${tip}">${label}</a>`;
+}
+function sprintLabel(r){
+  if(r.is_new) return `<span class="sprint-cell nova">Sprint Atual</span>`;
+  const cls = r.sprint_count>=10 ? "crit" : (r.sprint_count>=5 ? "aging" : "");
+  return `<span class="sprint-cell ${cls}">${r.sprint_count} sprints</span>`;
+}
+function statusBadge(st){
+  const c=colorFor(st);
+  return `<span class="badge" style="background:${c}22;color:${c};border:1px solid ${c}55">${st}</span>`;
+}
+function typePill(t){
+  const c=TYPE_COLORS[t]||"#7d8a9c";
+  return `<span class="tpill" style="color:${c};border-color:${c}55">${t}</span>`;
+}
+function renderTable(){
+  let rows = ISSUES.slice();
+  if(TBL_FILTER_STATUS) rows = rows.filter(r=>r.status===TBL_FILTER_STATUS);
+  if(TBL_FILTER_TYPE) rows = rows.filter(r=>r.type===TBL_FILTER_TYPE);
+  const {col,dir}=TBL_SORT;
+  rows.sort((a,b)=>{
+    let x=a[col], y=b[col];
+    if(x===null||x===undefined) x=-1;
+    if(y===null||y===undefined) y=-1;
+    if(typeof x==="string"){x=x.toLowerCase();y=y.toLowerCase();}
+    return x<y?-dir:(x>y?dir:0);
+  });
+  const body=rows.map(r=>{
+    const isEng = (r.category||'').split(',').includes('ENG');
+    return `<tr class="${isEng?'row-estruturante':''}" ${isEng?'title="Squad ENG"':''}>
+    <td><a class="key" href="https://cogna.atlassian.net/browse/${r.key}" target="_blank">${r.key}</a></td>
+    <td class="summ" title="${r.summary.replace(/"/g,'&quot;')}">${r.summary}</td>
+    <td>${typePill(r.type)}</td>
+    <td>${statusBadge(r.status)}</td>
+    <td>${spLabel(r.story_points)}</td>
+    <td>${timeSpentLabel(r.time_spent_seconds)}</td>
+    <td>${sprintLabel(r)}</td>
+    <td>${commentCell(r)}</td>
+    <td>${categoryCell(r.category)}</td>
+    <td>${assigneeCell(r.assignee)}</td>
+  </tr>`;
+  }).join("");
+  document.getElementById('cardsBody').innerHTML=body;
+  document.getElementById('tblCount').textContent=rows.length+" cards";
+}
+function buildChips(){
+  const stCounts={}, tpCounts={};
+  ISSUES.forEach(r=>{ stCounts[r.status]=(stCounts[r.status]||0)+1; tpCounts[r.type]=(tpCounts[r.type]||0)+1; });
+  const stOrder=["Aceito","Em produção","Concluído","Em Andamento","Refinamento","Bloqueado","Backlog","Cancelado"];
+  const sts=Object.keys(stCounts).sort((a,b)=>stOrder.indexOf(a)-stOrder.indexOf(b));
+  const tps=Object.keys(tpCounts).sort((a,b)=>tpCounts[b]-tpCounts[a]);
+  let tpHtml=`<span class="flbl">Tipo:</span>`;
+  tpHtml+=`<span class="chip ${TBL_FILTER_TYPE===null?'on':''}" data-grp="type" data-val="">Todos (${ISSUES.length})</span>`;
+  tps.forEach(t=>{ tpHtml+=`<span class="chip ${TBL_FILTER_TYPE===t?'on':''}" data-grp="type" data-val="${t}">${t} (${tpCounts[t]})</span>`; });
+  let stHtml=`<span class="flbl">Status:</span>`;
+  stHtml+=`<span class="chip ${TBL_FILTER_STATUS===null?'on':''}" data-grp="status" data-val="">Todos (${ISSUES.length})</span>`;
+  sts.forEach(s=>{ stHtml+=`<span class="chip ${TBL_FILTER_STATUS===s?'on':''}" data-grp="status" data-val="${s}">${s} (${stCounts[s]})</span>`; });
+  const tools=document.getElementById('tblTools');
+  tools.innerHTML=`<div class="chip-row">${tpHtml}</div><div class="chip-row">${stHtml}</div>`;
+  tools.querySelectorAll('.chip').forEach(ch=>ch.onclick=()=>{
+    const val=ch.dataset.val||null;
+    if(ch.dataset.grp==="type") TBL_FILTER_TYPE=val; else TBL_FILTER_STATUS=val;
+    buildChips(); renderTable();
+  });
+}
+function wireSort(){
+  document.querySelectorAll('table.cards th[data-col]').forEach(th=>th.onclick=()=>{
+    const col=th.dataset.col;
+    TBL_SORT = TBL_SORT.col===col ? {col,dir:-TBL_SORT.dir} : {col,dir:1};
+    renderTable();
+  });
+}
+function issuesPanel(){
+  return `<div class="panel">
+    <h2>Cards da sprint ativa</h2>
+    <div class="desc">Status, idade (nº de sprints que o card já percorreu) e tipo &middot; <span id="tblCount"></span></div>
+    <div class="tbl-tools" id="tblTools"></div>
+    <div class="tbl-wrap"><table class="cards">
+      <thead><tr>
+        <th data-col="key">Card</th>
+        <th data-col="summary">Resumo</th>
+        <th data-col="type">Tipo</th>
+        <th data-col="status">Status</th>
+        <th data-col="story_points">Story Points</th>
+        <th data-col="time_spent_seconds">Horas</th>
+        <th data-col="sprint_count">Sprints</th>
+        <th data-col="recent_comment_24h">💬 24h</th>
+        <th data-col="category">Squad</th>
+        <th data-col="assignee">Resp.</th>
+      </tr></thead>
+      <tbody id="cardsBody"></tbody>
+    </table></div></div>`;
+}
+
+function incidentsPanel(inc, activeName, closedName){
+  const fmtDur=(sec)=>{
+    if(sec===null||sec===undefined) return "—";
+    const days=sec/86400;
+    if(days>=1){ const d=Math.floor(days); const h=Math.round((days-d)*24); return h?`${d}d ${h}h`:`${d}d`; }
+    const hours=sec/3600; const h=Math.floor(hours); const m=Math.round((hours-h)*60);
+    return h?`${h}h ${m}m`:`${m}m`;
+  };
+  const col=(title,tag,d)=>{
+    const kpis=[
+      {v:d.total, l:"Total", c:""},
+      {v:d.resolved, l:"Resolvidos", c:"green"},
+      {v:d.open, l:"Em aberto", c:"red"},
+      {v:d.resolved_pct+"%", l:"% resolvido", c:"blue"},
+    ];
+    const cards=kpis.map(k=>`<div class="kpi"><div class="v ${k.c}">${k.v}</div><div class="l">${k.l}</div></div>`).join("");
+    return `<div class="inc-col">
+      <div class="inc-col-h">${tag}<span class="inc-col-name">${title}</span></div>
+      <div class="kpis" style="grid-template-columns:repeat(2,1fr)">${cards}</div>
+      <div class="inc-time"><span class="it-ic">⏱</span>
+        <span class="it-l">Tempo médio de resolução</span>
+        <span class="it-v">${fmtDur(d.avg_resolution_seconds)}</span></div>
+    </div>`;
+  };
+  return `<div class="panel">
+    <h2>🚨 Incidentes — comparativo por sprint</h2>
+    <div class="desc">Cards do tipo Incidente &middot; <b>${inc.project_open}</b> incidentes abertos no projeto (todos) &middot; tempo de resolução = criação → conclusão</div>
+    <div class="inc-grid">
+      ${col(activeName, '<span class="tag ativa">Ativa</span>', inc.active)}
+      ${col(closedName, '<span class="tag fechada">Encerrada</span>', inc.last_closed)}
+    </div></div>`;
+}
+
+function insight(a, c){
+  const gapC = c.summary.devdone_pct - c.summary.accepted_pct;
+  return `<div class="insight"><div class="ic">⚠️</div><div class="tx">
+    <h3>Gargalo entre "desenvolvido" e "aceito/produção"</h3>
+    <p>Na ${c.meta.name}, <b>${c.summary.devdone_pct}%</b> dos itens foram concluídos pelo time,
+    mas só <b>${c.summary.accepted_pct}%</b> chegaram à coluna final (Aceito/Em produção) —
+    um gap de <b>${gapC.toFixed(1)} p.p.</b> aguardando aceite/deploy. A sprint ativa
+    (${a.meta.name}) já tem <b>${a.summary.issues_added_during}</b> itens adicionados após o início.</p>
+  </div></div>`;
+}
+
+/* === Filtro de Squad: agregadores no front === */
+let SQUAD = "";  // "" = todas
+let DATA_RAW = null;
+
+function statsArr(arr){
+  if(!arr.length) return {avg_seconds:null, median_seconds:null, count:0};
+  const s=[...arr].sort((a,b)=>a-b); const n=s.length; const mid=Math.floor(n/2);
+  const med = n%2 ? s[mid] : (s[mid-1]+s[mid])/2;
+  const sum = s.reduce((x,y)=>x+y,0);
+  return {avg_seconds:Math.round(sum/n), median_seconds:Math.round(med), count:n};
+}
+function pctRound(a,b){ return b? Math.round(a/b*1000)/10 : 0; }
+
+function filterIssues(all){
+  if(!SQUAD) return all;
+  return all.filter(i=>(i.category||"").split(",").includes(SQUAD));
+}
+function aggSummary(filtered){
+  let total=0, accepted=0, devdone=0;
+  let pts_total=0, pts_accepted=0;
+  const byType={}, status_dist={};
+  for(const i of filtered){
+    total++;
+    if(i.is_accepted) accepted++;
+    if(i.is_devdone) devdone++;
+    const sp = (typeof i.story_points === "number") ? i.story_points : 0;
+    pts_total += sp;
+    if(i.is_accepted) pts_accepted += sp;
+    status_dist[i.status_name] = (status_dist[i.status_name]||0)+1;
+  }
+  return {
+    issues_committed:total, issues_accepted:accepted, issues_devdone:devdone,
+    issues_not_completed: total - devdone,
+    accepted_pct: pctRound(accepted,total), devdone_pct: pctRound(devdone,total),
+    points_committed: Math.round(pts_total*10)/10,
+    points_accepted: Math.round(pts_accepted*10)/10,
+    points_accepted_pct: pctRound(pts_accepted,pts_total),
+    status_dist, blocked: filtered.filter(i=>i.status_name==="Bloqueado"),
+    issues_punted:0, issues_added_during:0,
+  };
+}
+function aggNewOnly(filtered){
+  return aggSummary(filtered.filter(i=>i.is_new_in_sprint));
+}
+function aggScope(filtered){
+  return {
+    carryover: filtered.filter(i=>!i.is_new_in_sprint).length,
+    new_in_sprint: filtered.filter(i=>i.is_new_in_sprint).length,
+  };
+}
+function aggLeadCycle(filtered){
+  const leads = filtered.filter(i=>typeof i.lead_seconds==="number").map(i=>i.lead_seconds);
+  const cycles = filtered.filter(i=>typeof i.cycle_seconds==="number").map(i=>i.cycle_seconds);
+  return {lead: statsArr(leads), cycle: statsArr(cycles)};
+}
+function aggIncidents(list){
+  // recalcula KPIs do quadro comparativo a partir da lista filtrada
+  const lst = SQUAD ? list.filter(i=>(i.category||"").split(",").includes(SQUAD)) : list;
+  const total = lst.length;
+  const resolved = lst.filter(i=>i.is_resolved).length;
+  const accepted = lst.filter(i=>i.is_resolved && i.status==="Aceito").length;
+  const open = total - resolved;
+  const blocked = lst.filter(i=>i.status==="Bloqueado").length;
+  const resolved_durs = lst.filter(i=>i.is_resolved && typeof i.duration_hours==="number")
+    .map(i=>i.duration_hours*3600);
+  const avg = resolved_durs.length ? Math.round(resolved_durs.reduce((a,b)=>a+b,0)/resolved_durs.length) : null;
+  return {total, accepted, resolved, open, blocked,
+    resolved_pct: pctRound(resolved,total), avg_resolution_seconds: avg,
+    list: lst,
+  };
+}
+
+function buildFilteredData(raw){
+  const cloneNode = (node)=>{
+    const all = node.all_issues || [];
+    const filtered = filterIssues(all);
+    const summary = aggSummary(filtered);
+    const new_only = aggNewOnly(filtered);
+    const scope = aggScope(filtered);
+    // saúde recomputada
+    let health;
+    if(node.health.elapsed_pct !== undefined){
+      const elapsed = node.health.elapsed_pct/100;
+      const done = summary.accepted_pct/100;
+      const gap = done - elapsed;
+      const status = gap>=-0.10 ? "verde" : (gap>=-0.25 ? "amarelo" : "vermelho");
+      health = {status, elapsed_pct: node.health.elapsed_pct, done_pct: summary.accepted_pct};
+    } else {
+      const p = summary.accepted_pct;
+      const status = p>=80 ? "verde" : (p>=60 ? "amarelo" : "vermelho");
+      health = {status, done_pct: p};
+    }
+    return {meta:node.meta, all_issues:all, summary, new_only, scope, health,
+      issues:(node.issues||[]).filter(r=>!SQUAD || (r.category||"").split(",").includes(SQUAD))};
+  };
+  return {
+    ...raw,
+    active: cloneNode(raw.active),
+    last_closed: cloneNode(raw.last_closed),
+    incidents: {
+      active: aggIncidents(raw.incidents.active.list),
+      last_closed: aggIncidents(raw.incidents.last_closed.list),
+      project_open: raw.incidents.project_open,
+    },
+    lead_time: {
+      active: aggLeadCycle(filterIssues(raw.active.all_issues || [])),
+      last_closed: aggLeadCycle(filterIssues(raw.last_closed.all_issues || [])),
+    },
+  };
+}
+
+function teamPanel(team){
+  if(!team || !team.people || !team.people.length){
+    return `<div class="panel"><h2>Equipe</h2>
+      <div class="empty-scope">Nenhuma hora lançada no período.</div></div>`;
+  }
+  const months = team.months || [];
+  const monthLabel = (m)=>{
+    const [y,mm]=m.split("-");
+    const meses=["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"];
+    return `${meses[+mm-1]}/${y.slice(2)}`;
+  };
+  const fmtH = (h)=> h>0 ? `${h.toFixed(1)}h` : `<span style="color:var(--muted)">—</span>`;
+  // máximo do mês para barra de heatmap
+  const maxByMonth = {};
+  months.forEach(m=>{
+    maxByMonth[m] = Math.max(0, ...team.people.map(p=>p.monthly[m]||0));
+  });
+  const cellStyle = (m,v)=>{
+    if(!v) return "";
+    const ratio = maxByMonth[m] ? v/maxByMonth[m] : 0;
+    const alpha = 0.05 + ratio*0.30;
+    return `background:rgba(96,165,250,${alpha.toFixed(3)})`;
+  };
+  const rows = team.people.map(p=>{
+    const cells = months.map(m=>{
+      const v = p.monthly[m]||0;
+      return `<td class="hr-cell" style="${cellStyle(m,v)}">${fmtH(v)}</td>`;
+    }).join("");
+    const first = (p.name||"").trim().split(/\s+/)[0] || p.name;
+    return `<tr>
+      <td class="team-name"><span class="avatar" title="${p.name.replace(/"/g,'&quot;')}">${initials(p.name)}</span> <span title="${p.name.replace(/"/g,'&quot;')}">${first}</span></td>
+      ${cells}
+      <td class="team-total">${p.total.toFixed(1)}h</td>
+    </tr>`;
+  }).join("");
+  const totals = months.map(m=>`<td class="team-total">${(team.total_by_month[m]||0).toFixed(1)}h</td>`).join("");
+  const headers = months.map(m=>`<th>${monthLabel(m)}</th>`).join("");
+  return `<div class="panel">
+    <h2>Equipe · horas lançadas por mês</h2>
+    <div class="desc">Últimos ${months.length} meses · ${team.people.length} pessoas · ${team.total_general.toFixed(1)}h totais</div>
+    <div class="tbl-wrap"><table class="cards team-table">
+      <thead><tr><th>Responsável</th>${headers}<th>Total</th></tr></thead>
+      <tbody>${rows}</tbody>
+      <tfoot><tr><td class="team-name"><b>Total</b></td>${totals}<td class="team-total"><b>${team.total_general.toFixed(1)}h</b></td></tr></tfoot>
+    </table></div>
+  </div>`;
+}
+
+function backlogStats(list){
+  const now = Date.now();
+  const total = list.length;
+  if(!total) return null;
+  const ages = list.map(c=>c.days_old).filter(d=>typeof d==="number");
+  const sumAge = ages.reduce((a,b)=>a+b,0);
+  const stale = list.filter(c=>typeof c.days_since_update==="number" && c.days_since_update>=90).length;
+  const new30 = list.filter(c=>typeof c.days_old==="number" && c.days_old<=30).length;
+  const without_assignee = list.filter(c=>!c.assignee).length;
+  const no_estimate = list.filter(c=>c.story_points===null||c.story_points===undefined).length;
+  const oldest = list.reduce((m,c)=>(c.days_old||0)>(m.days_old||0)?c:m, list[0]);
+  return {
+    total, without_assignee, no_estimate, new30, stale,
+    avg_age_days: ages.length ? Math.round(sumAge/ages.length) : 0,
+    oldest_days: oldest.days_old || 0,
+    oldest_key: oldest.key,
+  };
+}
+function backlogBreakdown(list, getKey){
+  const c={};
+  list.forEach(r=>{ const k = getKey(r) || "(sem)"; c[k]=(c[k]||0)+1; });
+  return Object.entries(c).sort((a,b)=>b[1]-a[1]);
+}
+function backlogChart(title, data){
+  if(!data.length) return "";
+  const max = data[0][1];
+  const bars = data.map(([n,v])=>`<div class="theme-row">
+    <span class="theme-name" title="${n.replace(/"/g,'&quot;')}">${n}</span>
+    <span class="theme-bar"><span class="theme-fill" style="width:${(v/max*100).toFixed(1)}%"></span></span>
+    <span class="theme-val">${v}</span></div>`).join("");
+  return `<div class="bl-chart"><div class="bl-chart-title">${title}</div><div class="theme-list">${bars}</div></div>`;
+}
+function backlogPanel(rawList){
+  const list = SQUAD ? rawList.filter(r=>(r.category||"").split(",").includes(SQUAD)) : rawList;
+  const s = backlogStats(list);
+  if(!s){
+    return `<div class="panel"><h2>Backlog</h2>
+      <div class="empty-scope">Nenhum card no backlog${SQUAD?` para a squad ${SQUAD}`:''}.</div></div>`;
+  }
+  const kpis = [
+    {v:s.total, l:"Total no backlog", c:""},
+    {v:s.without_assignee, l:"Sem responsável", c:"orange"},
+    {v:s.no_estimate, l:"Sem estimativa", c:""},
+    {v:s.new30, l:"Criados últ. 30 dias", c:"blue"},
+    {v:s.stale, l:"Sem update há ≥90 dias", c:"red"},
+    {v:`${s.avg_age_days}d`, l:"Idade média", c:""},
+    {v:`${s.oldest_days}d`, l:`Mais antigo (${s.oldest_key})`, c:"red"},
+  ];
+  const cards = kpis.map(k=>`<div class="kpi"><div class="v ${k.c}">${k.v}</div><div class="l">${k.l}</div></div>`).join("");
+  const themeData = backlogBreakdown(list, r=>(r.parent||{}).summary||"(sem tema)").slice(0,8);
+  const statusData = backlogBreakdown(list, r=>r.status);
+  const typeData = backlogBreakdown(list, r=>r.type);
+
+  // tabela
+  const sorted = [...list].sort((a,b)=>(b.days_old||0)-(a.days_old||0));
+  const rows = sorted.map(r=>{
+    const isEng = (r.category||'').split(',').includes('ENG');
+    const asg = r.assignee
+      ? `<span class="avatar" title="${r.assignee.replace(/"/g,'&quot;')}">${initials(r.assignee)}</span>`
+      : `<span class="avatar none" title="Sem responsável">—</span>`;
+    const age = typeof r.days_old==="number" ? `${r.days_old}d` : "—";
+    const ageCls = (r.days_old||0)>=180?"crit":((r.days_old||0)>=90?"aging":"");
+    const upd = typeof r.days_since_update==="number" ? `${r.days_since_update}d` : "—";
+    return `<tr class="${isEng?'row-estruturante':''}">
+      <td><a class="key" href="https://cogna.atlassian.net/browse/${r.key}" target="_blank">${r.key}</a></td>
+      <td class="summ" title="${r.summary.replace(/"/g,'&quot;')}">${r.summary}</td>
+      <td>${typePill(r.type)}</td>
+      <td>${parentCell(r.parent)}</td>
+      <td><span class="sprint-cell ${ageCls}">${age}</span></td>
+      <td><span class="sprint-cell" style="color:var(--muted)">${upd}</span></td>
+      <td>${categoryCell(r.category)}</td>
+      <td>${reporterCell(r.reporter)}</td>
+      <td>${asg}</td>
+    </tr>`;
+  }).join("");
+
+  return `<div class="panel">
+    <h2>Backlog · ${s.total} cards</h2>
+    <div class="desc">Cards do projeto fora de sprint, ainda em aberto (todos os status exceto concluídos)</div>
+    <div class="kpis kpis-bl">${cards}</div>
+    <div class="bl-grid">
+      ${backlogChart("Por status", statusData)}
+      ${backlogChart("Por tipo", typeData)}
+      ${backlogChart("Top 8 temas (épico)", themeData)}
+    </div>
+  </div>
+  <div class="panel">
+    <h2>Lista do backlog</h2>
+    <div class="desc">Ordenado por idade (mais antigos primeiro) · clique no card para abrir no Jira</div>
+    <div class="tbl-wrap"><table class="cards">
+      <thead><tr><th>Card</th><th>Resumo</th><th>Tipo</th><th>Tema</th><th>Idade</th><th>Sem update</th><th>Squad</th><th>Relator</th><th>Resp.</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table></div>
+  </div>`;
+}
+
+function renderApp(){
+  const DATA = SQUAD ? buildFilteredData(DATA_RAW) : DATA_RAW;
+  const app = document.getElementById('app');
+  app.innerHTML=
+    `<div class="tabs" role="tablist">
+       <button class="tab on" role="tab" data-tab="overview">Visão geral</button>
+       <button class="tab" role="tab" data-tab="incidents">Incidentes</button>
+       <button class="tab" role="tab" data-tab="cards">Analítica</button>
+       <button class="tab" role="tab" data-tab="team">Equipe</button>
+       <button class="tab" role="tab" data-tab="backlog">Backlog</button>
+     </div>
+     <div class="tab-panel on" data-panel="overview">${
+       insight(DATA.active, DATA.last_closed)+
+       `<div class="grid-2">${sprintCard(DATA.active,true)}${sprintCard(DATA.last_closed,false)}</div>`+
+       `<div class="grid-2">${newOnlyCard(DATA.active,true)}${newOnlyCard(DATA.last_closed,false)}</div>`+
+       `<div class="grid-2">${leadCycleCard(DATA.active.meta,true,DATA.lead_time.active)}${leadCycleCard(DATA.last_closed.meta,false,DATA.lead_time.last_closed)}</div>`+
+       `<div class="panel"><h2>Tendência de entrega (velocity)${SQUAD?'<span class="filter-pill" style="margin-left:10px">não filtrável</span>':''}</h2>
+         <div class="desc">Pontos comprometidos vs entregues nas últimas ${DATA.velocity.length} sprints encerradas${SQUAD?` <span class="filter-note">(histórico agregado por sprint, não dá pra filtrar por squad)</span>`:''}</div>
+         <div class="chart-box"><canvas id="velChart"></canvas></div></div>`
+     }</div>
+     <div class="tab-panel" data-panel="incidents">${
+       incidentsPanel(DATA.incidents, DATA.active.meta.name, DATA.last_closed.meta.name)+
+       `<div class="grid-2">${themeCard(DATA.active.meta,true,DATA.incidents.active.list)}${themeCard(DATA.last_closed.meta,false,DATA.incidents.last_closed.list)}</div>`+
+       incidentsListPanel(DATA.incidents, DATA.active.meta.name, DATA.last_closed.meta.name)
+     }</div>
+     <div class="tab-panel" data-panel="cards">${issuesPanel()}</div>
+     <div class="tab-panel" data-panel="team">${teamPanel(DATA_RAW.team || {})}</div>
+     <div class="tab-panel" data-panel="backlog">${backlogPanel(DATA_RAW.backlog || [])}</div>`;
+  drawGauges();
+  drawVelocity(DATA.velocity);
+  ISSUES = DATA.active.issues || [];
+  TBL_FILTER_STATUS=null; TBL_FILTER_TYPE=null;
+
+  // navegação por abas
+  const tabs=document.querySelectorAll('.tab');
+  const panels=document.querySelectorAll('.tab-panel');
+  let cardsInit=false;
+  tabs.forEach(t=>t.onclick=()=>{
+    tabs.forEach(x=>x.classList.toggle('on', x===t));
+    panels.forEach(p=>p.classList.toggle('on', p.dataset.panel===t.dataset.tab));
+    if(t.dataset.tab==='cards' && !cardsInit){
+      buildChips(); wireSort(); renderTable();
+      cardsInit=true;
+    }
+  });
+}
+
+async function bootstrap(){
+  const app=document.getElementById('app');
+  try{
+    const resp=await fetch('data/sprint_data.json',{cache:'no-store'});
+    if(!resp.ok) throw new Error('HTTP '+resp.status);
+    DATA_RAW=await resp.json();
+  }catch(e){
+    app.innerHTML=`<div class="error">Não foi possível carregar <code>data/sprint_data.json</code> (${e.message}).<br><br>
+      Abra o painel por um servidor HTTP local (o navegador bloqueia <code>fetch</code> em <code>file://</code>):<br>
+      <code>cd jira_sprint_panel/docs &amp;&amp; python -m http.server 8000</code><br>
+      e acesse <code>http://localhost:8000/painel_sprint_dena.html</code></div>`;
+    return;
+  }
+  document.getElementById('meta').textContent='Atualizado: '+FMT.dt(DATA_RAW.generated_at);
+  document.getElementById('footer').textContent=
+    `Fonte: Jira Sprint Report (board ${DATA_RAW.board_id}) · "Aceito" = última coluna do board (Aceito/Em produção) · "Dev-done" = categoria concluída (inclui Concluído)`;
+
+  // filtro de squad: re-renderiza ao mudar
+  const sf = document.getElementById('squadFilter');
+  sf.value = SQUAD;
+  sf.onchange = ()=>{ SQUAD = sf.value; renderApp(); };
+
+  renderApp();
+}
+bootstrap();
+</script>
+</body>
+</html>

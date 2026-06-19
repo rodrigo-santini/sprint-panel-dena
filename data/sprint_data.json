@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-19T15:44:20.224741+00:00",
+  "generated_at": "2026-06-19T18:16:06.721078+00:00",
   "project": "DENA",
   "board_id": 1094,
   "active": {
@@ -7,35 +7,35 @@
       "id": 23159,
       "name": "SP 26.2.5",
       "state": "active",
-      "start": "2026-06-08T03:30:04.073Z",
-      "end": "2026-06-22T03:30:00.000Z",
+      "start": "2026-06-08T03:30:04.000Z",
+      "end": "2026-06-19T03:30:00.000Z",
       "complete": null,
       "goal": ""
     },
     "summary": {
-      "issues_committed": 71,
-      "issues_accepted": 13,
-      "issues_devdone": 36,
-      "issues_not_completed": 58,
+      "issues_committed": 74,
+      "issues_accepted": 14,
+      "issues_devdone": 39,
+      "issues_not_completed": 60,
       "issues_punted": 0,
       "issues_completed_elsewhere": 0,
-      "issues_added_during": 71,
-      "accepted_pct": 18.3,
-      "devdone_pct": 50.7,
-      "points_committed": 262.0,
+      "issues_added_during": 74,
+      "accepted_pct": 18.9,
+      "devdone_pct": 52.7,
+      "points_committed": 286.0,
       "points_accepted": 28.0,
-      "points_not_completed": 103.0,
-      "points_accepted_pct": 10.7,
+      "points_not_completed": 115.0,
+      "points_accepted_pct": 9.8,
       "by_type": {
-        "História": 50,
+        "História": 53,
         "Incidente": 19,
         "Suporte": 1,
         "Mudança": 1
       },
       "status_dist": {
-        "Aceito": 13,
+        "Aceito": 14,
         "Em Andamento": 15,
-        "Concluído": 23,
+        "Concluído": 25,
         "Backlog": 6,
         "Bloqueado": 14
       },
@@ -52,7 +52,8 @@
         "DENA-1048",
         "DENA-1080",
         "DENA-1089",
-        "DENA-1102"
+        "DENA-1102",
+        "DENA-1106"
       ],
       "blocked": [
         {
@@ -114,24 +115,24 @@
       ]
     },
     "new_only": {
-      "issues_committed": 40,
-      "issues_accepted": 4,
-      "issues_devdone": 17,
+      "issues_committed": 43,
+      "issues_accepted": 5,
+      "issues_devdone": 20,
       "issues_not_completed": 23,
-      "accepted_pct": 10.0,
-      "devdone_pct": 42.5,
-      "points_committed": 65.0,
+      "accepted_pct": 11.6,
+      "devdone_pct": 46.5,
+      "points_committed": 77.0,
       "points_accepted": 3.0,
-      "points_accepted_pct": 4.6
+      "points_accepted_pct": 3.9
     },
     "health": {
       "status": "vermelho",
-      "elapsed_pct": 82.2,
-      "done_pct": 18.3
+      "elapsed_pct": 100.0,
+      "done_pct": 18.9
     },
     "scope": {
       "carryover": 31,
-      "new_in_sprint": 40
+      "new_in_sprint": 43
     },
     "issues": [
       {
@@ -255,9 +256,9 @@
         "is_new": false,
         "story_points": 8.0,
         "assignee": "Tiago Gomes Ferreira",
-        "last_comment_at": "2026-04-06T11:20:31.957-0300",
+        "last_comment_at": "2026-06-19T14:47:54.626-0300",
         "last_comment_by": "Tiago Gomes Ferreira",
-        "recent_comment_24h": false,
+        "recent_comment_24h": true,
         "time_spent_seconds": null,
         "is_estruturante": false,
         "category": "SCG"
@@ -631,6 +632,22 @@
         "category": "SPN"
       },
       {
+        "key": "DENA-1106",
+        "summary": "tb_ofertas_gestor_produtos: erro no nr_ciclo",
+        "type": "Incidente",
+        "status": "Aceito",
+        "sprint_count": 1,
+        "is_new": true,
+        "story_points": null,
+        "assignee": "Flavio Anderson Dos Santos Pires",
+        "last_comment_at": null,
+        "last_comment_by": null,
+        "recent_comment_24h": false,
+        "time_spent_seconds": null,
+        "is_estruturante": false,
+        "category": ""
+      },
+      {
         "key": "DENA-1102",
         "summary": "[INC0787581]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
         "type": "Incidente",
@@ -689,7 +706,7 @@
         "assignee": "Diogenes Coelho de Freitas",
         "last_comment_at": "2026-06-18T13:49:17.673-0300",
         "last_comment_by": "Daniele Santana De Brito",
-        "recent_comment_24h": true,
+        "recent_comment_24h": false,
         "time_spent_seconds": null,
         "is_estruturante": false,
         "category": "SPN"
@@ -935,6 +952,38 @@
         "category": "SCG"
       },
       {
+        "key": "DENA-1103",
+        "summary": "Adicionar a informação de alocação presencial na tabela de KPI",
+        "type": "História",
+        "status": "Concluído",
+        "sprint_count": 1,
+        "is_new": true,
+        "story_points": 3.0,
+        "assignee": "TALITHA DA SILVA FELIX",
+        "last_comment_at": null,
+        "last_comment_by": null,
+        "recent_comment_24h": false,
+        "time_spent_seconds": null,
+        "is_estruturante": false,
+        "category": "ENG"
+      },
+      {
+        "key": "DENA-1101",
+        "summary": "[INGESTAO][Alocacao presencial] File para o LAKE na dp_trusted",
+        "type": "História",
+        "status": "Concluído",
+        "sprint_count": 1,
+        "is_new": true,
+        "story_points": 3.0,
+        "assignee": "TALITHA DA SILVA FELIX",
+        "last_comment_at": "2026-06-16T14:48:22.438-0300",
+        "last_comment_by": "TALITHA DA SILVA FELIX",
+        "recent_comment_24h": false,
+        "time_spent_seconds": null,
+        "is_estruturante": false,
+        "category": "ENG"
+      },
+      {
         "key": "DENA-1100",
         "summary": "[INC0787511]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
         "type": "Incidente",
@@ -1085,7 +1134,7 @@
         "status": "Concluído",
         "sprint_count": 1,
         "is_new": true,
-        "story_points": null,
+        "story_points": 3.0,
         "assignee": "DENNIS VINICIUS DA SILVA ROCHA",
         "last_comment_at": "2026-06-12T08:17:46.689-0300",
         "last_comment_by": "DENNIS VINICIUS DA SILVA ROCHA",
@@ -1159,20 +1208,20 @@
         "category": "ENG"
       },
       {
-        "key": "DENA-1106",
-        "summary": "tb_ofertas_gestor_produtos: erro no nr_ciclo",
-        "type": "Incidente",
+        "key": "DENA-1104",
+        "summary": "Adicionar a informação de alocação EAD na tabela de KPI",
+        "type": "História",
         "status": "Em Andamento",
         "sprint_count": 1,
         "is_new": true,
-        "story_points": null,
-        "assignee": "Flavio Anderson Dos Santos Pires",
+        "story_points": 3.0,
+        "assignee": "TALITHA DA SILVA FELIX",
         "last_comment_at": null,
         "last_comment_by": null,
         "recent_comment_24h": false,
         "time_spent_seconds": null,
         "is_estruturante": false,
-        "category": ""
+        "category": "ENG"
       },
       {
         "key": "DENA-1092",
@@ -1441,6 +1490,18 @@
         "cycle_seconds": null
       },
       {
+        "key": "DENA-1106",
+        "category": "",
+        "is_new_in_sprint": true,
+        "is_accepted": true,
+        "is_devdone": true,
+        "status_name": "Aceito",
+        "sprint_count": 1,
+        "story_points": null,
+        "lead_seconds": 192638.641,
+        "cycle_seconds": 10676.3
+      },
+      {
         "key": "DENA-1102",
         "category": "",
         "is_new_in_sprint": true,
@@ -1669,6 +1730,30 @@
         "cycle_seconds": null
       },
       {
+        "key": "DENA-1103",
+        "category": "ENG",
+        "is_new_in_sprint": true,
+        "is_accepted": false,
+        "is_devdone": true,
+        "status_name": "Concluído",
+        "sprint_count": 1,
+        "story_points": 3.0,
+        "lead_seconds": 255252.382,
+        "cycle_seconds": 1285.181
+      },
+      {
+        "key": "DENA-1101",
+        "category": "ENG",
+        "is_new_in_sprint": true,
+        "is_accepted": false,
+        "is_devdone": true,
+        "status_name": "Concluído",
+        "sprint_count": 1,
+        "story_points": 3.0,
+        "lead_seconds": 258260.094,
+        "cycle_seconds": 6327.287
+      },
+      {
         "key": "DENA-1100",
         "category": "",
         "is_new_in_sprint": true,
@@ -1784,7 +1869,7 @@
         "is_devdone": true,
         "status_name": "Concluído",
         "sprint_count": 1,
-        "story_points": null,
+        "story_points": 3.0,
         "lead_seconds": 314393.693,
         "cycle_seconds": 76522.454
       },
@@ -1957,14 +2042,14 @@
         "cycle_seconds": null
       },
       {
-        "key": "DENA-1106",
-        "category": "",
+        "key": "DENA-1104",
+        "category": "ENG",
         "is_new_in_sprint": true,
         "is_accepted": false,
         "is_devdone": false,
         "status_name": "Em Andamento",
         "sprint_count": 1,
-        "story_points": null,
+        "story_points": 3.0,
         "lead_seconds": null,
         "cycle_seconds": null
       },
@@ -2888,12 +2973,12 @@
   "incidents": {
     "active": {
       "total": 19,
-      "accepted": 5,
-      "resolved": 13,
-      "open": 6,
+      "accepted": 6,
+      "resolved": 14,
+      "open": 5,
       "blocked": 0,
-      "resolved_pct": 68.4,
-      "avg_resolution_seconds": 178695,
+      "resolved_pct": 73.7,
+      "avg_resolution_seconds": 179691,
       "list": [
         {
           "key": "DENA-1042",
@@ -2976,11 +3061,27 @@
           "category": ""
         },
         {
+          "key": "DENA-1106",
+          "summary": "tb_ofertas_gestor_produtos: erro no nr_ciclo",
+          "status": "Aceito",
+          "is_resolved": true,
+          "duration_hours": 53.5,
+          "assignee": "Flavio Anderson Dos Santos Pires",
+          "created": "2026-06-17T08:39:29.467-0300",
+          "sprint_count": 1,
+          "parent": {
+            "key": "DENA-4",
+            "summary": "CAPTAÇÃO ANALITICA",
+            "type": "Epic"
+          },
+          "category": ""
+        },
+        {
           "key": "DENA-1097",
           "summary": "[INC0786669]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 161.4,
+          "duration_hours": 163.9,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-06-12T19:20:15.542-0300",
           "sprint_count": 1,
@@ -3124,7 +3225,7 @@
           "summary": "[INC0783514]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 433.3,
+          "duration_hours": 435.9,
           "assignee": "Glauber Do Carmo Brito",
           "created": "2026-06-01T11:24:02.679-0300",
           "sprint_count": 2,
@@ -3140,7 +3241,7 @@
           "summary": "[INC0785164]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 262.4,
+          "duration_hours": 265.0,
           "assignee": "Antonio Carlos Souza",
           "created": "2026-06-08T14:17:38.794-0300",
           "sprint_count": 1,
@@ -3156,7 +3257,7 @@
           "summary": "[INC0786172]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - PowerCenter",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 193.1,
+          "duration_hours": 195.7,
           "assignee": "Glauber Do Carmo Brito",
           "created": "2026-06-11T11:36:47.848-0300",
           "sprint_count": 1,
@@ -3172,29 +3273,13 @@
           "summary": "[INC0786176]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 192.6,
+          "duration_hours": 195.1,
           "assignee": "Glauber Do Carmo Brito",
           "created": "2026-06-11T12:08:04.329-0300",
           "sprint_count": 1,
           "parent": {
             "key": "DENA-1031",
             "summary": "DMC AWS",
-            "type": "Epic"
-          },
-          "category": ""
-        },
-        {
-          "key": "DENA-1106",
-          "summary": "tb_ofertas_gestor_produtos: erro no nr_ciclo",
-          "status": "Em Andamento",
-          "is_resolved": false,
-          "duration_hours": 52.1,
-          "assignee": "Flavio Anderson Dos Santos Pires",
-          "created": "2026-06-17T08:39:29.467-0300",
-          "sprint_count": 1,
-          "parent": {
-            "key": "DENA-4",
-            "summary": "CAPTAÇÃO ANALITICA",
             "type": "Epic"
           },
           "category": ""
@@ -3355,7 +3440,7 @@
           "summary": "[INC0783514]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 433.3,
+          "duration_hours": 435.9,
           "assignee": "Glauber Do Carmo Brito",
           "created": "2026-06-01T11:24:02.679-0300",
           "sprint_count": 2,
@@ -3368,19 +3453,19 @@
         }
       ]
     },
-    "project_open": 6
+    "project_open": 5
   },
   "lead_time": {
     "active": {
       "lead": {
-        "avg_seconds": 4208894,
-        "median_seconds": 759268,
-        "count": 36
+        "avg_seconds": 3903239,
+        "median_seconds": 596451,
+        "count": 39
       },
       "cycle": {
-        "avg_seconds": 1272653,
-        "median_seconds": 179938,
-        "count": 36
+        "avg_seconds": 1175226,
+        "median_seconds": 129317,
+        "count": 39
       }
     },
     "last_closed": {
@@ -3468,54 +3553,6 @@
       "story_points": null
     },
     {
-      "key": "DENA-1104",
-      "summary": "Adicionar a informação de alocação EAD na tabela de KPI",
-      "type": "História",
-      "status": "Backlog",
-      "priority": "Médio",
-      "created": "2026-06-16T15:45:13.879-0300",
-      "updated": "2026-06-18T10:38:09.468-0300",
-      "days_old": 2,
-      "days_since_update": 1,
-      "assignee": "TALITHA DA SILVA FELIX",
-      "reporter": "Gilson Dos Santos",
-      "parent": null,
-      "category": "ENG",
-      "story_points": null
-    },
-    {
-      "key": "DENA-1103",
-      "summary": "Adicionar a informação de alocação presencial na tabela de KPI",
-      "type": "História",
-      "status": "Backlog",
-      "priority": "Altíssima",
-      "created": "2026-06-16T15:38:25.546-0300",
-      "updated": "2026-06-18T10:38:06.370-0300",
-      "days_old": 2,
-      "days_since_update": 1,
-      "assignee": "TALITHA DA SILVA FELIX",
-      "reporter": "Gilson Dos Santos",
-      "parent": null,
-      "category": "ENG",
-      "story_points": null
-    },
-    {
-      "key": "DENA-1101",
-      "summary": "[INGESTAO][Alocacao presencial] File para o LAKE na dp_trusted",
-      "type": "História",
-      "status": "Backlog",
-      "priority": "Médio",
-      "created": "2026-06-16T14:47:39.788-0300",
-      "updated": "2026-06-16T14:48:24.390-0300",
-      "days_old": 2,
-      "days_since_update": 2,
-      "assignee": "Daniele Santana De Brito",
-      "reporter": "TALITHA DA SILVA FELIX",
-      "parent": null,
-      "category": "",
-      "story_points": null
-    },
-    {
       "key": "DENA-1083",
       "summary": "Classificação das Matrículas pela Nova Modalidade do Marco Regulatório no Alunado - Matricula",
       "type": "História",
@@ -3571,7 +3608,7 @@
       "priority": "Médio",
       "created": "2026-06-09T14:19:58.031-0300",
       "updated": "2026-06-09T15:20:03.781-0300",
-      "days_old": 9,
+      "days_old": 10,
       "days_since_update": 9,
       "assignee": "",
       "reporter": "André Mendonça Pauletti",
@@ -3606,7 +3643,7 @@
       "priority": "Médio",
       "created": "2026-06-08T13:54:06.531-0300",
       "updated": "2026-06-18T11:46:21.723-0300",
-      "days_old": 10,
+      "days_old": 11,
       "days_since_update": 1,
       "assignee": "Giovanna Souza Bancala",
       "reporter": "Gilson Dos Santos",
@@ -3622,7 +3659,7 @@
       "priority": "Médio",
       "created": "2026-06-08T13:45:18.321-0300",
       "updated": "2026-06-17T17:56:09.174-0300",
-      "days_old": 10,
+      "days_old": 11,
       "days_since_update": 1,
       "assignee": "",
       "reporter": "Gilson Dos Santos",
@@ -3653,9 +3690,9 @@
       "status": "Backlog",
       "priority": "Médio",
       "created": "2026-06-05T16:07:06.339-0300",
-      "updated": "2026-06-05T16:19:56.540-0300",
+      "updated": "2026-06-19T15:11:34.023-0300",
       "days_old": 13,
-      "days_since_update": 13,
+      "days_since_update": 0,
       "assignee": "",
       "reporter": "André Mendonça Pauletti",
       "parent": {
@@ -3722,7 +3759,7 @@
       "created": "2026-05-29T16:54:02.334-0300",
       "updated": "2026-06-16T14:40:58.844-0300",
       "days_old": 20,
-      "days_since_update": 2,
+      "days_since_update": 3,
       "assignee": "TALITHA DA SILVA FELIX",
       "reporter": "Daniele Santana De Brito",
       "parent": null,
@@ -3938,7 +3975,7 @@
       "created": "2026-05-08T08:58:43.462-0300",
       "updated": "2026-06-15T15:09:40.395-0300",
       "days_old": 42,
-      "days_since_update": 3,
+      "days_since_update": 4,
       "assignee": "Flavio Anderson Dos Santos Pires",
       "reporter": "Luciano De Oliveira Santos",
       "parent": null,
@@ -4040,7 +4077,7 @@
       "created": "2026-03-31T15:47:38.234-0300",
       "updated": "2026-06-15T15:14:00.886-0300",
       "days_old": 79,
-      "days_since_update": 3,
+      "days_since_update": 4,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "Luciano De Oliveira Santos",
       "parent": null,
@@ -4074,7 +4111,7 @@
       "priority": "Médio",
       "created": "2026-03-16T14:58:55.488-0300",
       "updated": "2026-05-28T18:21:01.656-0300",
-      "days_old": 94,
+      "days_old": 95,
       "days_since_update": 21,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "Karla Ynonye Zucchini",
@@ -4106,7 +4143,7 @@
       "priority": "Médio",
       "created": "2026-03-05T14:20:22.767-0300",
       "updated": "2026-05-28T18:21:07.165-0300",
-      "days_old": 105,
+      "days_old": 106,
       "days_since_update": 21,
       "assignee": "Vanessa Macedo Cavalcanti De Souza",
       "reporter": "Karla Ynonye Zucchini",
@@ -4122,7 +4159,7 @@
       "priority": "Médio",
       "created": "2026-02-25T12:49:15.825-0300",
       "updated": "2026-05-28T18:21:12.435-0300",
-      "days_old": 113,
+      "days_old": 114,
       "days_since_update": 21,
       "assignee": "Vanessa Macedo Cavalcanti De Souza",
       "reporter": "Karla Ynonye Zucchini",
@@ -4190,7 +4227,7 @@
       "created": "2026-02-19T18:04:14.633-0300",
       "updated": "2026-06-15T15:11:23.936-0300",
       "days_old": 119,
-      "days_since_update": 3,
+      "days_since_update": 4,
       "assignee": "",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -4241,7 +4278,7 @@
       "created": "2026-02-19T16:37:00.437-0300",
       "updated": "2026-06-15T15:09:39.874-0300",
       "days_old": 119,
-      "days_since_update": 3,
+      "days_since_update": 4,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -4329,7 +4366,7 @@
       "priority": "Altíssima",
       "created": "2026-01-16T14:00:08.726-0300",
       "updated": "2026-02-19T10:12:54.729-0300",
-      "days_old": 153,
+      "days_old": 154,
       "days_since_update": 120,
       "assignee": "",
       "reporter": "JOSE VALDOBERTO LEAO",
@@ -4383,8 +4420,8 @@
       "priority": "Médio",
       "created": "2025-10-24T14:30:29.832-0300",
       "updated": "2025-10-24T14:30:32.972-0300",
-      "days_old": 237,
-      "days_since_update": 237,
+      "days_old": 238,
+      "days_since_update": 238,
       "assignee": "",
       "reporter": "Carolina Teixeira Dias",
       "parent": null,

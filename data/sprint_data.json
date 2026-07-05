@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05T13:16:12.298341+00:00",
+  "generated_at": "2026-07-05T13:34:01.999326+00:00",
   "project": "DENA",
   "board_id": 1094,
   "active": {
@@ -3500,7 +3500,11 @@
           "assignee": "Rodrigo Santini Guarinon",
           "created": "2026-06-25T11:29:44.617-0300",
           "sprint_count": 1,
-          "parent": null,
+          "parent": {
+            "key": "DENA-5",
+            "summary": "RECEITA",
+            "type": "Epic"
+          },
           "category": "SPN"
         },
         {
@@ -3512,7 +3516,11 @@
           "assignee": "Glauber Do Carmo Brito",
           "created": "2026-06-01T11:24:02.679-0300",
           "sprint_count": 3,
-          "parent": null,
+          "parent": {
+            "key": "DENA-1031",
+            "summary": "DMC AWS",
+            "type": "Epic"
+          },
           "category": "SJA"
         },
         {
@@ -3540,7 +3548,11 @@
           "assignee": "Glauber Do Carmo Brito",
           "created": "2026-06-11T11:36:47.848-0300",
           "sprint_count": 2,
-          "parent": null,
+          "parent": {
+            "key": "DENA-1031",
+            "summary": "DMC AWS",
+            "type": "Epic"
+          },
           "category": "SJA"
         },
         {
@@ -3648,7 +3660,11 @@
           "assignee": "Tiago Gomes Ferreira",
           "created": "2026-07-01T16:25:46.673-0300",
           "sprint_count": 1,
-          "parent": null,
+          "parent": {
+            "key": "DENA-4",
+            "summary": "CAPTAÇÃO ANALITICA",
+            "type": "Epic"
+          },
           "category": "SCG"
         },
         {
@@ -3656,7 +3672,7 @@
           "summary": "[INC0789600]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 262.6,
+          "duration_hours": 262.9,
           "assignee": "Giovanna Souza Bancala",
           "created": "2026-06-24T11:42:52.740-0300",
           "sprint_count": 1,
@@ -3672,7 +3688,7 @@
           "summary": "[INC0789650]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 260.4,
+          "duration_hours": 260.7,
           "assignee": "Antonio Carlos Souza",
           "created": "2026-06-24T13:53:29.969-0300",
           "sprint_count": 1,
@@ -3688,7 +3704,7 @@
           "summary": "[INC0792696]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 120.5,
+          "duration_hours": 120.8,
           "assignee": "Antonio Carlos Souza",
           "created": "2026-06-30T09:45:50.991-0300",
           "sprint_count": 1,
@@ -3704,7 +3720,7 @@
           "summary": "[INC0793031]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 116.2,
+          "duration_hours": 116.5,
           "assignee": "Giovanna Souza Bancala",
           "created": "2026-06-30T14:05:11.791-0300",
           "sprint_count": 1,
@@ -3783,7 +3799,11 @@
           "assignee": "Gabriel de Jesus Fonseca Romero",
           "created": "2026-06-09T16:40:17.991-0300",
           "sprint_count": 1,
-          "parent": null,
+          "parent": {
+            "key": "DENA-1031",
+            "summary": "DMC AWS",
+            "type": "Epic"
+          },
           "category": "SJA"
         },
         {
@@ -3955,7 +3975,11 @@
           "assignee": "Glauber Do Carmo Brito",
           "created": "2026-06-01T11:24:02.679-0300",
           "sprint_count": 3,
-          "parent": null,
+          "parent": {
+            "key": "DENA-1031",
+            "summary": "DMC AWS",
+            "type": "Epic"
+          },
           "category": "SJA"
         },
         {
@@ -3983,7 +4007,11 @@
           "assignee": "Glauber Do Carmo Brito",
           "created": "2026-06-11T11:36:47.848-0300",
           "sprint_count": 2,
-          "parent": null,
+          "parent": {
+            "key": "DENA-1031",
+            "summary": "DMC AWS",
+            "type": "Epic"
+          },
           "category": "SJA"
         },
         {
@@ -4185,7 +4213,7 @@
       "priority": "Médio",
       "created": "2026-06-30T10:20:00.440-0300",
       "updated": "2026-06-30T11:06:28.585-0300",
-      "days_old": 4,
+      "days_old": 5,
       "days_since_update": 4,
       "assignee": "Glauber Do Carmo Brito",
       "reporter": "Rosilaine Papa da Silva",
@@ -4832,7 +4860,7 @@
       "created": "2026-02-19T08:05:03.192-0300",
       "updated": "2026-03-19T10:25:00.087-0300",
       "days_old": 136,
-      "days_since_update": 107,
+      "days_since_update": 108,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -4969,7 +4997,7 @@
       "created": "2025-05-21T10:05:14.696-0300",
       "updated": "2025-05-21T10:20:34.275-0300",
       "days_old": 410,
-      "days_since_update": 409,
+      "days_since_update": 410,
       "assignee": "Diogenes Coelho de Freitas",
       "reporter": "Diogenes Coelho de Freitas",
       "parent": {

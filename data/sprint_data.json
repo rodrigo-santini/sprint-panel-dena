@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05T13:05:08.126467+00:00",
+  "generated_at": "2026-07-05T13:16:12.298341+00:00",
   "project": "DENA",
   "board_id": 1094,
   "active": {
@@ -1268,7 +1268,7 @@
         "recent_comment_24h": false,
         "time_spent_seconds": null,
         "is_estruturante": false,
-        "category": ""
+        "category": "ENG"
       },
       {
         "key": "DENA-1056",
@@ -1284,7 +1284,7 @@
         "recent_comment_24h": false,
         "time_spent_seconds": 345600,
         "is_estruturante": false,
-        "category": ""
+        "category": "SCG"
       },
       {
         "key": "DENA-1158",
@@ -1300,7 +1300,7 @@
         "recent_comment_24h": false,
         "time_spent_seconds": null,
         "is_estruturante": false,
-        "category": ""
+        "category": "SJA"
       },
       {
         "key": "DENA-1156",
@@ -1364,7 +1364,7 @@
         "recent_comment_24h": false,
         "time_spent_seconds": null,
         "is_estruturante": false,
-        "category": ""
+        "category": "ENG"
       },
       {
         "key": "DENA-1145",
@@ -2038,7 +2038,7 @@
       },
       {
         "key": "DENA-1074",
-        "category": "",
+        "category": "ENG",
         "is_new_in_sprint": true,
         "is_accepted": false,
         "is_devdone": true,
@@ -2074,7 +2074,7 @@
       },
       {
         "key": "DENA-1056",
-        "category": "",
+        "category": "SCG",
         "is_new_in_sprint": true,
         "is_accepted": false,
         "is_devdone": true,
@@ -2290,7 +2290,7 @@
       },
       {
         "key": "DENA-1158",
-        "category": "",
+        "category": "SJA",
         "is_new_in_sprint": true,
         "is_accepted": false,
         "is_devdone": false,
@@ -2338,7 +2338,7 @@
       },
       {
         "key": "DENA-1146",
-        "category": "",
+        "category": "ENG",
         "is_new_in_sprint": true,
         "is_accepted": false,
         "is_devdone": false,
@@ -3656,7 +3656,7 @@
           "summary": "[INC0789600]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 262.4,
+          "duration_hours": 262.6,
           "assignee": "Giovanna Souza Bancala",
           "created": "2026-06-24T11:42:52.740-0300",
           "sprint_count": 1,
@@ -3672,7 +3672,7 @@
           "summary": "[INC0789650]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 260.2,
+          "duration_hours": 260.4,
           "assignee": "Antonio Carlos Souza",
           "created": "2026-06-24T13:53:29.969-0300",
           "sprint_count": 1,
@@ -3688,7 +3688,7 @@
           "summary": "[INC0792696]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 120.3,
+          "duration_hours": 120.5,
           "assignee": "Antonio Carlos Souza",
           "created": "2026-06-30T09:45:50.991-0300",
           "sprint_count": 1,
@@ -3704,7 +3704,7 @@
           "summary": "[INC0793031]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 116.0,
+          "duration_hours": 116.2,
           "assignee": "Giovanna Souza Bancala",
           "created": "2026-06-30T14:05:11.791-0300",
           "sprint_count": 1,
@@ -3713,7 +3713,7 @@
             "summary": "ENGAJAMENTO",
             "type": "Epic"
           },
-          "category": ""
+          "category": "SJA"
         }
       ]
     },
@@ -4249,8 +4249,8 @@
       "priority": "Médio",
       "created": "2026-06-21T10:06:01.278-0300",
       "updated": "2026-06-21T10:08:52.874-0300",
-      "days_old": 13,
-      "days_since_update": 13,
+      "days_old": 14,
+      "days_since_update": 14,
       "assignee": "",
       "reporter": "Gilson Dos Santos",
       "parent": null,
@@ -4848,7 +4848,7 @@
       "created": "2026-01-16T14:00:08.726-0300",
       "updated": "2026-02-19T10:12:54.729-0300",
       "days_old": 169,
-      "days_since_update": 135,
+      "days_since_update": 136,
       "assignee": "",
       "reporter": "JOSE VALDOBERTO LEAO",
       "parent": null,
@@ -4968,7 +4968,7 @@
       "priority": "Médio",
       "created": "2025-05-21T10:05:14.696-0300",
       "updated": "2025-05-21T10:20:34.275-0300",
-      "days_old": 409,
+      "days_old": 410,
       "days_since_update": 409,
       "assignee": "Diogenes Coelho de Freitas",
       "reporter": "Diogenes Coelho de Freitas",

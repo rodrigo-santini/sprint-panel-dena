@@ -33,7 +33,7 @@ body{
 ::-webkit-scrollbar{width:10px;height:10px;}
 ::-webkit-scrollbar-track{background:var(--bg-2);}
 ::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:5px;}
-.wrap{max-width:1280px;margin:0 auto;}
+.wrap{max-width:1600px;margin:0 auto;}
 .header{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:12px;
   margin-bottom:22px;padding-bottom:18px;border-bottom:1px solid var(--border);}
 .header h1{font-size:1.55rem;font-weight:800;letter-spacing:-.02em;
@@ -138,31 +138,30 @@ body{
 .chip-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;}
 .flbl{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);min-width:52px;}
 .chip{font-size:.74rem;font-weight:600;padding:5px 11px;border-radius:20px;cursor:pointer;
-  border:1px solid var(--border);background:var(--bg-2);color:var(--text-2);transition:all .15s;user-select:none;}
+  border:1px solid var(--border);background:var(--bg-2);color:var(--text-2);transition:all .15s;user-select:none;
+  max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 .chip:hover{border-color:var(--border-strong);}
 .chip.on{background:rgba(96,165,250,.15);border-color:var(--blue);color:var(--blue);}
 .tbl-wrap{overflow-x:auto;}
-table.cards{width:100%;border-collapse:collapse;font-size:.84rem;}
-table.cards th{text-align:left;font-size:.7rem;text-transform:uppercase;letter-spacing:.04em;
-  color:var(--muted);font-weight:600;padding:9px 12px;border-bottom:1px solid var(--border-strong);
+table.cards{width:100%;border-collapse:collapse;font-size:.82rem;}
+table.cards th{text-align:left;font-size:.68rem;text-transform:uppercase;letter-spacing:.03em;
+  color:var(--muted);font-weight:600;padding:8px 8px;border-bottom:1px solid var(--border-strong);
   cursor:pointer;white-space:nowrap;}
 table.cards th:hover{color:var(--text-2);}
-table.cards td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:middle;}
+table.cards td{padding:7px 8px;border-bottom:1px solid var(--border);vertical-align:middle;}
 table.cards tr:hover td{background:var(--bg-2);}
 table.cards .key{font-family:'JetBrains Mono',monospace;font-weight:600;color:var(--blue);
-  text-decoration:none;white-space:nowrap;}
+  text-decoration:none;white-space:nowrap;font-size:.78rem;}
 table.cards .key:hover{text-decoration:underline;}
-table.cards tr.row-estruturante td{background:rgba(251,191,36,.05);}
-table.cards tr.row-estruturante:hover td{background:rgba(251,191,36,.10);}
-table.cards .summ{color:var(--text-2);max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
-.badge{display:inline-block;font-size:.72rem;font-weight:600;padding:3px 9px;border-radius:6px;white-space:nowrap;}
-.tpill{font-size:.72rem;font-weight:600;padding:3px 9px;border-radius:6px;white-space:nowrap;
+table.cards .summ{color:var(--text-2);max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.badge{display:inline-block;font-size:.7rem;font-weight:600;padding:3px 7px;border-radius:6px;white-space:nowrap;}
+.tpill{font-size:.7rem;font-weight:600;padding:3px 7px;border-radius:6px;white-space:nowrap;
   background:var(--bg-2);border:1px solid var(--border);color:var(--text-2);}
 .cat-badge{display:inline-block;font-size:.7rem;font-weight:700;font-family:'JetBrains Mono',monospace;
   padding:2px 8px;border-radius:6px;border:1px solid;letter-spacing:.02em;}
 .sprint-cell{font-family:'JetBrains Mono',monospace;font-weight:600;white-space:nowrap;}
-.avatar{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;
-  border-radius:50%;font-size:.7rem;font-weight:700;font-family:'Inter',sans-serif;
+.avatar{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;
+  border-radius:50%;font-size:.66rem;font-weight:700;font-family:'Inter',sans-serif;
   background:rgba(96,165,250,.18);color:var(--blue);border:1px solid rgba(96,165,250,.35);cursor:default;}
 .avatar.none{background:var(--bg-2);color:var(--muted);border-color:var(--border);}
 .cmt-dot{display:inline-flex;align-items:center;justify-content:center;min-width:32px;height:24px;padding:0 8px;
@@ -182,6 +181,12 @@ table.cards .summ{color:var(--text-2);max-width:280px;overflow:hidden;text-overf
   border:1px solid rgba(251,146,60,.35);cursor:default;}
 .parent-link{display:inline-block;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
   vertical-align:middle;font-family:'Inter',sans-serif;font-weight:600;font-size:.82rem;}
+/* Tema: barra lateral colorida + texto simples (formato distinto do Status) */
+.theme-tag{display:inline-flex;align-items:stretch;max-width:100%;cursor:default;vertical-align:middle;
+  border-radius:3px;overflow:hidden;line-height:1.2;}
+.theme-bar{width:3px;flex-shrink:0;border-radius:2px 0 0 2px;}
+.theme-txt{color:var(--text-2);font-weight:500;font-size:.78rem;overflow:hidden;text-overflow:ellipsis;
+  white-space:nowrap;font-family:'Inter',sans-serif;padding:1px 0 1px 8px;}
 .sprint-cell.nova{color:var(--blue);}
 .sprint-cell.aging{color:var(--orange);}
 .sprint-cell.crit{color:var(--red);}
@@ -225,6 +230,70 @@ table.cards .summ{color:var(--text-2);max-width:280px;overflow:hidden;text-overf
 .tab-panel{display:none;}
 .tab-panel.on{display:block;animation:fadeIn .2s ease;}
 @keyframes fadeIn{from{opacity:0;transform:translateY(4px);}to{opacity:1;transform:none;}}
+
+/* === Analítica v3 === */
+.an-toolbar{display:grid;grid-template-columns:1fr auto auto;gap:10px;align-items:center;
+  margin-bottom:12px;padding:12px;background:var(--bg-2);border:1px solid var(--border);border-radius:var(--radius-sm);}
+@media(max-width:820px){.an-toolbar{grid-template-columns:1fr;}}
+.an-search{background:var(--card);border:1px solid var(--border-strong);color:var(--text);
+  padding:9px 14px 9px 34px;font-family:inherit;font-size:.85rem;border-radius:var(--radius-sm);width:100%;
+  background-image:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%237d8a9c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:10px center;}
+.an-search:focus{border-color:var(--blue);outline:none;box-shadow:0 0 0 2px rgba(96,165,250,.15);}
+.an-theme-select{background:var(--card);border:1px solid var(--border-strong);color:var(--text);
+  padding:9px 14px;font-family:inherit;font-size:.82rem;border-radius:var(--radius-sm);cursor:pointer;min-width:220px;max-width:300px;}
+.an-theme-select:hover,.an-theme-select:focus{border-color:var(--blue);outline:none;}
+.an-clear{background:transparent;color:var(--muted);border:1px solid var(--border-strong);
+  padding:9px 14px;font-family:inherit;font-size:.78rem;font-weight:600;border-radius:var(--radius-sm);cursor:pointer;
+  white-space:nowrap;}
+.an-clear:hover{color:var(--text);border-color:var(--blue);background:var(--card);}
+.an-clear.on{color:var(--orange);border-color:var(--orange);}
+
+.an-chips{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;align-items:center;margin-bottom:12px;padding:10px 12px;
+  background:var(--bg-2);border:1px solid var(--border);border-radius:var(--radius-sm);}
+.an-chips .flbl{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);
+  min-width:52px;text-align:right;padding-right:4px;}
+.an-chips .chips-inline{display:flex;flex-wrap:wrap;gap:6px;}
+.an-chips .chip{font-size:.72rem;padding:4px 10px;max-width:220px;}
+
+.an-count-bar{display:flex;justify-content:space-between;align-items:center;
+  padding:6px 4px;margin-bottom:8px;font-size:.78rem;}
+.an-count-bar .cnt{color:var(--text-2);font-weight:600;}
+.an-count-bar .cnt b{color:var(--text);font-family:'JetBrains Mono',monospace;}
+.an-count-bar .active-filters{color:var(--muted);}
+.an-count-bar .active-filters span{color:var(--blue);font-weight:600;}
+
+/* tabela otimizada — layout fixo para controlar larguras e forçar truncamento */
+table.cards.v2{table-layout:fixed;width:100%;}
+table.cards.v2 .col-card{width:88px;}
+table.cards.v2 .col-type{width:44px;text-align:center;}
+/* col-summ SEM width -> pega o restante (auto-flex) */
+table.cards.v2 .col-status{width:110px;}
+table.cards.v2 .col-parent{width:150px;}
+table.cards.v2 .col-squad{width:72px;text-align:center;}
+table.cards.v2 .col-asg{width:56px;text-align:center;}
+table.cards.v2 .col-sp{width:68px;text-align:right;}
+table.cards.v2 .col-hrs{width:68px;text-align:right;}
+table.cards.v2 .col-cmt{width:50px;text-align:center;}
+table.cards.v2 .cell-card{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+table.cards.v2 .cell-card .key{font-size:.78rem;display:block;}
+table.cards.v2 .cell-card .sub{font-size:.66rem;color:var(--muted);font-family:'JetBrains Mono',monospace;
+  font-weight:500;margin-top:2px;letter-spacing:.02em;}
+table.cards.v2 .cell-card .sub.aging{color:var(--orange);}
+table.cards.v2 .cell-card .sub.crit{color:var(--red);}
+/* resumo: truncamento correto quando o texto excede a coluna */
+table.cards.v2 .cell-summ{color:var(--text-2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+
+/* ícone de tipo: emoji centralizado */
+.type-icon{display:inline-flex;align-items:center;justify-content:center;font-size:1.05rem;
+  width:26px;height:26px;border-radius:6px;border:1px solid;user-select:none;cursor:default;line-height:1;}
+table.cards.v2 .cell-sp{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--purple);font-size:.82rem;}
+table.cards.v2 .cell-sp.none{color:var(--muted);font-weight:400;font-style:italic;font-size:.7rem;}
+table.cards.v2 .cell-hrs{font-family:'JetBrains Mono',monospace;font-weight:600;color:var(--cyan);font-size:.82rem;}
+table.cards.v2 .cell-hrs.none{color:var(--muted);font-weight:400;font-size:.72rem;}
+
+.an-empty{padding:36px;text-align:center;color:var(--muted);font-size:.9rem;}
+.an-empty .ic{font-size:2rem;display:block;margin-bottom:8px;opacity:.5;}
 </style>
 </head>
 <body>
@@ -533,7 +602,7 @@ function drawVelocity(vel){
 
 const TYPE_COLORS={"História":"#60a5fa","Incidente":"#f87171","Mudança":"#c084fc","Suporte":"#fbbf24","Bug":"#fb923c"};
 
-let ISSUES=[], TBL_FILTER_STATUS=null, TBL_FILTER_TYPE=null, TBL_SORT={col:"sprint_count",dir:-1};
+let ISSUES=[], TBL_FILTER_STATUS=null, TBL_FILTER_TYPE=null, TBL_FILTER_PARENT=null, TBL_FILTER_SQUAD=null, TBL_SEARCH="", TBL_SORT={col:"sprint_count",dir:-1};
 
 function spLabel(sp){
   if(sp===null||sp===undefined) return `<span style="color:var(--muted);font-size:.78rem">Não estimado</span>`;
@@ -593,11 +662,40 @@ function createdCell(iso){
   const fmtShort = d.toLocaleDateString('pt-BR',{day:'2-digit',month:'short'});
   return `<span class="sprint-cell" style="color:var(--text-2);font-weight:500" title="${fmtFull}">${fmtShort}</span>`;
 }
+// Paleta de cores para temas: gera cor consistente por hash do nome
+function themeColor(name){
+  if(!name) return "#7d8a9c";
+  // hash simples e determinístico
+  let h = 0;
+  for(let i=0;i<name.length;i++){ h = (h*31 + name.charCodeAt(i)) & 0xffffffff; }
+  // usa 12 hues bem distribuídos e evita amarelo puro (que fica ruim no fundo escuro)
+  const palette = [
+    "#60a5fa", // blue
+    "#34d399", // green
+    "#c084fc", // purple
+    "#f472b6", // pink
+    "#22d3ee", // cyan
+    "#fb923c", // orange
+    "#a78bfa", // violet
+    "#4ade80", // emerald
+    "#f87171", // red
+    "#fbbf24", // amber
+    "#38bdf8", // sky
+    "#fb7185", // rose
+    "#2dd4bf", // teal
+    "#818cf8", // indigo
+    "#e879f9", // fuchsia
+  ];
+  return palette[Math.abs(h) % palette.length];
+}
 function parentCell(p){
   if(!p || !p.key) return `<span style="color:var(--muted)">—</span>`;
-  const label = (p.summary || p.key).replace(/"/g,'&quot;');
+  const label = (p.summary || p.key);
   const tip = `${p.key}${p.summary?' · '+p.summary:''}`.replace(/"/g,'&quot;');
-  return `<a class="key parent-link" href="https://cogna.atlassian.net/browse/${p.key}" target="_blank" title="${tip}">${label}</a>`;
+  const c = themeColor(label);
+  return `<span class="theme-tag" title="${tip}">
+    <span class="theme-bar" style="background:${c}"></span><span class="theme-txt">${label}</span>
+  </span>`;
 }
 function sprintLabel(r){
   if(r.is_new) return `<span class="sprint-cell nova">Sprint Atual</span>`;
@@ -612,55 +710,182 @@ function typePill(t){
   const c=TYPE_COLORS[t]||"#7d8a9c";
   return `<span class="tpill" style="color:${c};border-color:${c}55">${t}</span>`;
 }
+function applyFilters(rows){
+  let out = rows.slice();
+  if(TBL_FILTER_STATUS) out = out.filter(r=>r.status===TBL_FILTER_STATUS);
+  if(TBL_FILTER_TYPE) out = out.filter(r=>r.type===TBL_FILTER_TYPE);
+  if(TBL_FILTER_PARENT!==null && TBL_FILTER_PARENT!==""){
+    out = out.filter(r=>{
+      const key = (r.parent && r.parent.key) || "__none__";
+      return key===TBL_FILTER_PARENT;
+    });
+  }
+  if(TBL_SEARCH){
+    const q = TBL_SEARCH.toLowerCase();
+    out = out.filter(r=>
+      (r.key||"").toLowerCase().includes(q) ||
+      (r.summary||"").toLowerCase().includes(q) ||
+      (r.assignee||"").toLowerCase().includes(q) ||
+      ((r.parent && r.parent.summary)||"").toLowerCase().includes(q)
+    );
+  }
+  return out;
+}
+
+function spCell(r){
+  if(r.story_points===null || r.story_points===undefined){
+    return `<span class="cell-sp none" title="Sem estimativa">—</span>`;
+  }
+  return `<span class="cell-sp" title="${r.story_points} story points">${r.story_points}</span>`;
+}
+function hrsCell(r){
+  if(!r.time_spent_seconds){
+    return `<span class="cell-hrs none" title="Sem apontamento">—</span>`;
+  }
+  const h = r.time_spent_seconds/3600;
+  return `<span class="cell-hrs" title="${h.toFixed(1)} horas apontadas">${h.toFixed(1)}h</span>`;
+}
+
+function cardCell(r){
+  const sprintCls = r.sprint_count>=10 ? "crit" : (r.sprint_count>=5 ? "aging" : "");
+  const sub = r.is_new
+    ? `<span class="sub" style="color:var(--blue)">✨ nova</span>`
+    : `<span class="sub ${sprintCls}">${r.sprint_count} sprints</span>`;
+  return `<div class="cell-card">
+    <a class="key" href="https://cogna.atlassian.net/browse/${r.key}" target="_blank">${r.key}</a>
+    ${sub}
+  </div>`;
+}
+
+// Emojis por tipo (compactos, semânticos)
+const TYPE_EMOJI = {
+  "História":"📗",
+  "Bug":"🐛",
+  "Incidente":"🚨",
+  "Mudança":"🔄",
+  "Suporte":"🛟",
+  "Sustentação":"🔧",
+};
+function typeIcon(type){
+  const color = TYPE_COLORS[type] || "#7d8a9c";
+  const emoji = TYPE_EMOJI[type] || "❔";
+  return `<span class="type-icon" style="background:${color}18;border-color:${color}55" title="${type||'Tipo desconhecido'}">${emoji}</span>`;
+}
+function summaryCell(r){
+  const tip = r.summary.replace(/"/g,'&quot;');
+  return `<div class="cell-summ" title="${tip}">${r.summary}</div>`;
+}
+
 function renderTable(){
-  let rows = ISSUES.slice();
-  if(TBL_FILTER_STATUS) rows = rows.filter(r=>r.status===TBL_FILTER_STATUS);
-  if(TBL_FILTER_TYPE) rows = rows.filter(r=>r.type===TBL_FILTER_TYPE);
+  const rows = applyFilters(ISSUES);
   const {col,dir}=TBL_SORT;
   rows.sort((a,b)=>{
     let x=a[col], y=b[col];
+    if(col==='parent'){ x=(x&&x.summary)||''; y=(y&&y.summary)||''; }
     if(x===null||x===undefined) x=-1;
     if(y===null||y===undefined) y=-1;
     if(typeof x==="string"){x=x.toLowerCase();y=y.toLowerCase();}
     return x<y?-dir:(x>y?dir:0);
   });
-  const body=rows.map(r=>{
-    const isEng = (r.category||'').split(',').includes('ENG');
-    return `<tr class="${isEng?'row-estruturante':''}" ${isEng?'title="Squad ENG"':''}>
-    <td><a class="key" href="https://cogna.atlassian.net/browse/${r.key}" target="_blank">${r.key}</a></td>
-    <td class="summ" title="${r.summary.replace(/"/g,'&quot;')}">${r.summary}</td>
-    <td>${typePill(r.type)}</td>
-    <td>${statusBadge(r.status)}</td>
-    <td>${spLabel(r.story_points)}</td>
-    <td>${timeSpentLabel(r.time_spent_seconds)}</td>
-    <td>${sprintLabel(r)}</td>
-    <td>${commentCell(r)}</td>
-    <td>${categoryCell(r.category)}</td>
-    <td>${assigneeCell(r.assignee)}</td>
+  const body = rows.length ? rows.map(r=>{
+    return `<tr>
+    <td class="col-card">${cardCell(r)}</td>
+    <td class="col-type">${typeIcon(r.type)}</td>
+    <td>${summaryCell(r)}</td>
+    <td class="col-status">${statusBadge(r.status)}</td>
+    <td class="col-parent">${parentCell(r.parent)}</td>
+    <td class="col-squad">${categoryCell(r.category)}</td>
+    <td class="col-sp">${spCell(r)}</td>
+    <td class="col-hrs">${hrsCell(r)}</td>
+    <td class="col-cmt">${commentCell(r)}</td>
+    <td class="col-asg">${assigneeCell(r.assignee)}</td>
   </tr>`;
-  }).join("");
+  }).join("") : `<tr><td colspan="10"><div class="an-empty">
+    <span class="ic">🔍</span>Nenhum card corresponde aos filtros aplicados.</div></td></tr>`;
   document.getElementById('cardsBody').innerHTML=body;
-  document.getElementById('tblCount').textContent=rows.length+" cards";
+  document.getElementById('tblCount').textContent=rows.length;
+  document.getElementById('tblCountTotal').textContent=ISSUES.length;
+
+  // atualiza indicador de filtros ativos
+  const active = [];
+  if(TBL_SEARCH) active.push(`busca: "${TBL_SEARCH}"`);
+  if(TBL_FILTER_STATUS) active.push(`status: <span>${TBL_FILTER_STATUS}</span>`);
+  if(TBL_FILTER_TYPE) active.push(`tipo: <span>${TBL_FILTER_TYPE}</span>`);
+  if(TBL_FILTER_PARENT) active.push(`tema: <span>ativo</span>`);
+  const af = document.getElementById('anActiveFilters');
+  if(af) af.innerHTML = active.length ? `Filtros: ${active.join(" · ")}` : "";
+  const clr = document.getElementById('anClear');
+  if(clr) clr.classList.toggle('on', active.length>0);
 }
 function buildChips(){
-  const stCounts={}, tpCounts={};
-  ISSUES.forEach(r=>{ stCounts[r.status]=(stCounts[r.status]||0)+1; tpCounts[r.type]=(tpCounts[r.type]||0)+1; });
+  const stCounts={}, tpCounts={}, prCounts={}, prLabel={};
+  ISSUES.forEach(r=>{
+    stCounts[r.status]=(stCounts[r.status]||0)+1;
+    tpCounts[r.type]=(tpCounts[r.type]||0)+1;
+    const pk = (r.parent && r.parent.key) || "__none__";
+    prCounts[pk]=(prCounts[pk]||0)+1;
+    prLabel[pk] = pk==="__none__" ? "(sem tema)" : ((r.parent && r.parent.summary) || pk);
+  });
   const stOrder=["Aceito","Em produção","Concluído","Em Andamento","Refinamento","Bloqueado","Backlog","Cancelado"];
   const sts=Object.keys(stCounts).sort((a,b)=>stOrder.indexOf(a)-stOrder.indexOf(b));
   const tps=Object.keys(tpCounts).sort((a,b)=>tpCounts[b]-tpCounts[a]);
-  let tpHtml=`<span class="flbl">Tipo:</span>`;
-  tpHtml+=`<span class="chip ${TBL_FILTER_TYPE===null?'on':''}" data-grp="type" data-val="">Todos (${ISSUES.length})</span>`;
-  tps.forEach(t=>{ tpHtml+=`<span class="chip ${TBL_FILTER_TYPE===t?'on':''}" data-grp="type" data-val="${t}">${t} (${tpCounts[t]})</span>`; });
-  let stHtml=`<span class="flbl">Status:</span>`;
-  stHtml+=`<span class="chip ${TBL_FILTER_STATUS===null?'on':''}" data-grp="status" data-val="">Todos (${ISSUES.length})</span>`;
-  sts.forEach(s=>{ stHtml+=`<span class="chip ${TBL_FILTER_STATUS===s?'on':''}" data-grp="status" data-val="${s}">${s} (${stCounts[s]})</span>`; });
-  const tools=document.getElementById('tblTools');
-  tools.innerHTML=`<div class="chip-row">${tpHtml}</div><div class="chip-row">${stHtml}</div>`;
-  tools.querySelectorAll('.chip').forEach(ch=>ch.onclick=()=>{
+  const prs=Object.keys(prCounts).sort((a,b)=>prCounts[b]-prCounts[a]);
+
+  const chipFor = (val, currentFilter, grp, count, color)=>{
+    const active = currentFilter===val;
+    const c = color || "#7d8a9c";
+    const style = active ? `background:${c}22;border-color:${c};color:${c}` : `border-left:3px solid ${c}`;
+    return `<span class="chip ${active?'on':''}" data-grp="${grp}" data-val="${val}" style="${style}">${val} (${count})</span>`;
+  };
+  const allChip = (grp, current)=>`<span class="chip ${current===null?'on':''}" data-grp="${grp}" data-val="">Todos</span>`;
+
+  let stChips = allChip('status', TBL_FILTER_STATUS);
+  sts.forEach(s=>{ stChips+=chipFor(s, TBL_FILTER_STATUS, 'status', stCounts[s], colorFor(s)); });
+  let tpChips = allChip('type', TBL_FILTER_TYPE);
+  tps.forEach(t=>{ tpChips+=chipFor(t, TBL_FILTER_TYPE, 'type', tpCounts[t], TYPE_COLORS[t]); });
+
+  const chips=document.getElementById('anChips');
+  chips.innerHTML=
+    `<span class="flbl">Status</span><div class="chips-inline">${stChips}</div>` +
+    `<span class="flbl">Tipo</span><div class="chips-inline">${tpChips}</div>`;
+  chips.querySelectorAll('.chip').forEach(ch=>ch.onclick=()=>{
     const val=ch.dataset.val||null;
-    if(ch.dataset.grp==="type") TBL_FILTER_TYPE=val; else TBL_FILTER_STATUS=val;
+    const grp=ch.dataset.grp;
+    if(grp==="type") TBL_FILTER_TYPE=val;
+    else TBL_FILTER_STATUS=val;
     buildChips(); renderTable();
   });
+
+  // select de temas (ordenado por nome, com "Todos" primeiro)
+  const sel = document.getElementById('anTheme');
+  if(sel){
+    const prsAlpha = prs.slice().sort((a,b)=>(prLabel[a]||"").localeCompare(prLabel[b]||""));
+    const opts = [`<option value="">Todos os temas (${ISSUES.length})</option>`];
+    prsAlpha.forEach(k=>{
+      const lbl=(prLabel[k]||k);
+      const isSel = TBL_FILTER_PARENT===k ? "selected" : "";
+      opts.push(`<option value="${k}" ${isSel}>${lbl} (${prCounts[k]})</option>`);
+    });
+    sel.innerHTML = opts.join("");
+    sel.onchange = ()=>{ TBL_FILTER_PARENT = sel.value || null; renderTable(); };
+  }
+
+  // busca por texto
+  const search = document.getElementById('anSearch');
+  if(search){
+    search.oninput = ()=>{ TBL_SEARCH = search.value.trim(); renderTable(); };
+  }
+
+  // botão limpar
+  const clr = document.getElementById('anClear');
+  if(clr){
+    clr.onclick = ()=>{
+      TBL_FILTER_STATUS=null; TBL_FILTER_TYPE=null; TBL_FILTER_PARENT=null; TBL_SEARCH="";
+      document.getElementById('anSearch').value="";
+      document.getElementById('anTheme').value="";
+      buildChips(); renderTable();
+    };
+  }
 }
 function wireSort(){
   document.querySelectorAll('table.cards th[data-col]').forEach(th=>th.onclick=()=>{
@@ -672,20 +897,31 @@ function wireSort(){
 function issuesPanel(){
   return `<div class="panel">
     <h2>Cards da sprint ativa</h2>
-    <div class="desc">Status, idade (nº de sprints que o card já percorreu) e tipo &middot; <span id="tblCount"></span></div>
-    <div class="tbl-tools" id="tblTools"></div>
-    <div class="tbl-wrap"><table class="cards">
+    <div class="desc">Busque por texto, filtre por dimensões e ordene clicando nos cabeçalhos.</div>
+    <div class="an-toolbar">
+      <input id="anSearch" class="an-search" type="text" placeholder="Buscar por card, resumo ou responsável..." value="${TBL_SEARCH.replace(/"/g,'&quot;')}">
+      <select id="anTheme" class="an-theme-select" title="Filtrar por tema (épico)">
+        <option value="">Todos os temas</option>
+      </select>
+      <button id="anClear" class="an-clear" type="button">Limpar filtros</button>
+    </div>
+    <div class="an-chips" id="anChips"></div>
+    <div class="an-count-bar">
+      <div class="cnt"><b id="tblCount">0</b> de <b id="tblCountTotal">0</b> cards</div>
+      <div class="active-filters" id="anActiveFilters"></div>
+    </div>
+    <div class="tbl-wrap"><table class="cards v2">
       <thead><tr>
-        <th data-col="key">Card</th>
+        <th data-col="key" class="col-card">Card</th>
+        <th data-col="type" class="col-type" title="Tipo do card">Tipo</th>
         <th data-col="summary">Resumo</th>
-        <th data-col="type">Tipo</th>
-        <th data-col="status">Status</th>
-        <th data-col="story_points">Story Points</th>
-        <th data-col="time_spent_seconds">Horas</th>
-        <th data-col="sprint_count">Sprints</th>
-        <th data-col="recent_comment_24h">💬 24h</th>
-        <th data-col="category">Squad</th>
-        <th data-col="assignee">Resp.</th>
+        <th data-col="status" class="col-status">Status</th>
+        <th data-col="parent" class="col-parent">Tema</th>
+        <th data-col="category" class="col-squad">Squad</th>
+        <th data-col="story_points" class="col-sp" title="Story Points">Pts</th>
+        <th data-col="time_spent_seconds" class="col-hrs" title="Horas apontadas">Horas</th>
+        <th data-col="last_comment_at" class="col-cmt">💬</th>
+        <th data-col="assignee" class="col-asg">Resp.</th>
       </tr></thead>
       <tbody id="cardsBody"></tbody>
     </table></div></div>`;
@@ -950,14 +1186,13 @@ function backlogPanel(rawList){
   // tabela
   const sorted = [...list].sort((a,b)=>(b.days_old||0)-(a.days_old||0));
   const rows = sorted.map(r=>{
-    const isEng = (r.category||'').split(',').includes('ENG');
     const asg = r.assignee
       ? `<span class="avatar" title="${r.assignee.replace(/"/g,'&quot;')}">${initials(r.assignee)}</span>`
       : `<span class="avatar none" title="Sem responsável">—</span>`;
     const age = typeof r.days_old==="number" ? `${r.days_old}d` : "—";
     const ageCls = (r.days_old||0)>=180?"crit":((r.days_old||0)>=90?"aging":"");
     const upd = typeof r.days_since_update==="number" ? `${r.days_since_update}d` : "—";
-    return `<tr class="${isEng?'row-estruturante':''}">
+    return `<tr>
       <td><a class="key" href="https://cogna.atlassian.net/browse/${r.key}" target="_blank">${r.key}</a></td>
       <td class="summ" title="${r.summary.replace(/"/g,'&quot;')}">${r.summary}</td>
       <td>${typePill(r.type)}</td>
@@ -990,6 +1225,216 @@ function backlogPanel(rawList){
   </div>`;
 }
 
+function kpiLeadCycleMonthly(monthly){
+  // verifica se há dados de lead/cycle
+  const hasData = monthly.some(m => m.lead_median_seconds || m.cycle_median_seconds);
+  if(!hasData){
+    return `<div class="panel"><h2>⏳ Lead time &amp; Cycle time — evolução mensal</h2>
+      <div class="empty-scope">Dados de lead/cycle time ainda não coletados. Execute o coletor novamente para popular.</div></div>`;
+  }
+
+  function fmtDays(sec){
+    if(!sec) return "—";
+    const d = sec / 86400;
+    return d >= 1 ? `${d.toFixed(1)}d` : `${(sec/3600).toFixed(1)}h`;
+  }
+
+  const headerCols = monthly.map(m=>`<th style="text-align:center">${m.month_label}</th>`).join('');
+  const leadRow = monthly.map(m=>{
+    const sec = m.lead_median_seconds;
+    if(!sec) return `<td style="text-align:center;color:var(--muted)">—</td>`;
+    const days = sec / 86400;
+    const cls = days<=5?'green':(days<=10?'blue':(days<=20?'orange':'red'));
+    return `<td style="text-align:center">
+      <div class="v ${cls}" style="font-size:1.15rem">${fmtDays(sec)}</div>
+    </td>`;
+  }).join('');
+  const cycleRow = monthly.map(m=>{
+    const sec = m.cycle_median_seconds;
+    if(!sec) return `<td style="text-align:center;color:var(--muted)">—</td>`;
+    const days = sec / 86400;
+    const cls = days<=3?'green':(days<=7?'blue':(days<=14?'orange':'red'));
+    return `<td style="text-align:center">
+      <div class="v ${cls}" style="font-size:1.15rem">${fmtDays(sec)}</div>
+    </td>`;
+  }).join('');
+
+  // grafico SVG de linhas para lead/cycle
+  const validLead = monthly.filter(m=>m.lead_median_seconds);
+  const validCycle = monthly.filter(m=>m.cycle_median_seconds);
+  const maxSec = Math.max(
+    ...monthly.map(m=>m.lead_median_seconds||0),
+    ...monthly.map(m=>m.cycle_median_seconds||0), 1
+  );
+  const CHART_W = monthly.length * 80, CHART_H = 140, PAD = 20;
+  const xStep = (CHART_W - PAD*2) / Math.max(monthly.length - 1, 1);
+
+  function polyline(data, key, color){
+    const pts = data.map((m, i)=>{
+      const val = m[key] || 0;
+      const x = PAD + i * xStep;
+      const y = PAD + (1 - val/maxSec) * (CHART_H - PAD*2);
+      return `${x},${y}`;
+    }).join(' ');
+    const dots = data.map((m, i)=>{
+      const val = m[key] || 0;
+      if(!val) return '';
+      const x = PAD + i * xStep;
+      const y = PAD + (1 - val/maxSec) * (CHART_H - PAD*2);
+      return `<circle cx="${x}" cy="${y}" r="4" fill="${color}" opacity="0.9">
+        <title>${m.month_label}: ${fmtDays(val)}</title></circle>`;
+    }).join('');
+    return `<polyline points="${pts}" fill="none" stroke="${color}" stroke-width="2.5" stroke-linejoin="round" opacity="0.8"/>${dots}`;
+  }
+
+  const labels = monthly.map((m,i)=>{
+    const x = PAD + i * xStep;
+    return `<text x="${x}" y="${CHART_H-4}" text-anchor="middle" font-size="9" fill="#7d8a9c" font-family="Inter,sans-serif">${m.month_label}</text>`;
+  }).join('');
+
+  const chart = `<svg viewBox="0 0 ${CHART_W} ${CHART_H}" style="width:100%;max-width:${CHART_W}px;display:block;overflow:visible">
+    <line x1="${PAD}" y1="${CHART_H-PAD}" x2="${CHART_W-PAD}" y2="${CHART_H-PAD}" stroke="#1f2a3d" stroke-width="1"/>
+    ${polyline(monthly, 'lead_median_seconds', '#22d3ee')}
+    ${polyline(monthly, 'cycle_median_seconds', '#34d399')}
+    ${labels}
+  </svg>`;
+
+  return `<div class="panel">
+    <h2>⏳ Lead time &amp; Cycle time — evolução mensal</h2>
+    <div class="desc"><b>Lead</b> = criação → conclusão (espera total) · <b>Cycle</b> = início do trabalho → conclusão (tempo efetivo) · mediana ponderada das sprints do mês</div>
+    <div style="margin:20px 0 10px">
+      <div style="overflow-x:auto;padding-bottom:6px">${chart}</div>
+      <div style="display:flex;gap:18px;margin-top:10px;font-size:.75rem">
+        <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#22d3ee;opacity:.9"></span>Lead time (mediana)</span>
+        <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#34d399;opacity:.9"></span>Cycle time (mediana)</span>
+      </div>
+    </div>
+    <div class="tbl-wrap"><table class="cards" style="min-width:600px">
+      <thead>
+        <tr><th style="min-width:120px">Métrica</th>${headerCols}</tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="font-weight:700;color:var(--cyan)">Lead time</td>
+          ${leadRow}
+        </tr>
+        <tr>
+          <td style="font-weight:700;color:var(--green)">Cycle time</td>
+          ${cycleRow}
+        </tr>
+      </tbody>
+    </table></div>
+    <div style="margin-top:12px;font-size:.74rem;color:var(--muted)">
+      💡 Cores: <span style="color:var(--green)">≤5d</span> / <span style="color:var(--blue)">≤10d</span> / <span style="color:var(--orange)">≤20d</span> / <span style="color:var(--red)">&gt;20d</span> (lead)
+      · <span style="color:var(--green)">≤3d</span> / <span style="color:var(--blue)">≤7d</span> / <span style="color:var(--orange)">≤14d</span> / <span style="color:var(--red)">&gt;14d</span> (cycle)
+    </div>
+  </div>`;
+}
+
+function kpisPanel(monthly, history){
+  // --- KPI 1: Dev-Done mensal ---
+  if(!monthly || !monthly.length){
+    const note = history && history.length === 0
+      ? 'Aguardando coleta de dados históricos. Execute o <code>collect_sprint_data.py</code> para popular este painel.'
+      : 'Sem dados históricos disponíveis.';
+    return `<div class="panel"><h2>KPIs</h2><div class="desc">Indicadores históricos de desempenho</div>
+      <div class="empty-scope">${note}</div></div>`;
+  }
+
+  // tabela mensal
+  const headerCols = monthly.map(m=>`<th style="text-align:center">${m.month_label}</th>`).join('');
+  const ddRow = monthly.map(m=>{
+    const pct = m.devdone_pct;
+    const cls = pct>=70?'green':(pct>=50?'blue':(pct>=30?'orange':'red'));
+    return `<td style="text-align:center">
+      <div class="v ${cls}" style="font-size:1.25rem">${pct}%</div>
+      <div style="font-size:.7rem;color:var(--muted);margin-top:2px">${m.devdone}/${m.committed}</div>
+    </td>`;
+  }).join('');
+  const acRow = monthly.map(m=>{
+    const pct = m.accepted_pct;
+    const cls = pct>=70?'green':(pct>=50?'blue':(pct>=30?'orange':'red'));
+    return `<td style="text-align:center">
+      <div class="v ${cls}" style="font-size:1.25rem">${pct}%</div>
+      <div style="font-size:.7rem;color:var(--muted);margin-top:2px">${m.accepted}/${m.committed}</div>
+    </td>`;
+  }).join('');
+  const spRow = monthly.map(m=>{
+    const names = (m.sprints||[]).join(', ') || '—';
+    return `<td style="text-align:center;font-size:.72rem;color:var(--muted);font-family:'JetBrains Mono',monospace"
+      title="${names}">${(m.sprints||[]).length} sprint${(m.sprints||[]).length!==1?'s':''}</td>`;
+  }).join('');
+
+  // grafico de barras inline (SVG)
+  const maxPct = Math.max(...monthly.map(m=>m.devdone_pct), 1);
+  const BAR_W = 36, BAR_GAP = 10, BAR_MAX_H = 120, CHART_H = 150;
+  const totalW = monthly.length * (BAR_W + BAR_GAP);
+  const bars = monthly.map((m, i)=>{
+    const x = i * (BAR_W + BAR_GAP);
+    const ddH = Math.round(m.devdone_pct / maxPct * BAR_MAX_H);
+    const acH = Math.round(m.accepted_pct / maxPct * BAR_MAX_H);
+    const ddY = CHART_H - 24 - ddH;
+    const acY = CHART_H - 24 - acH;
+    const ddColor = m.devdone_pct>=70?'#22d3ee':(m.devdone_pct>=50?'#60a5fa':(m.devdone_pct>=30?'#fb923c':'#f87171'));
+    return `
+      <rect x="${x+BAR_W/4}" y="${ddY}" width="${BAR_W/2}" height="${ddH}"
+        rx="3" fill="${ddColor}" opacity="0.9">
+        <title>${m.month_label} Dev-Done: ${m.devdone_pct}% (${m.devdone}/${m.committed})</title>
+      </rect>
+      <rect x="${x+BAR_W/4}" y="${acY}" width="${BAR_W/2}" height="${acH}"
+        rx="3" fill="#34d399" opacity="0.35">
+        <title>${m.month_label} Aceito: ${m.accepted_pct}% (${m.accepted}/${m.committed})</title>
+      </rect>
+      <text x="${x+BAR_W/2}" y="${CHART_H-8}" text-anchor="middle"
+        font-size="9" fill="#7d8a9c" font-family="Inter,sans-serif">${m.month_label}</text>`;
+  }).join('');
+  const chart = `<svg viewBox="0 0 ${totalW} ${CHART_H}" style="width:100%;max-width:${totalW*1.5}px;display:block;overflow:visible">
+    ${bars}
+    <line x1="0" y1="${CHART_H-24}" x2="${totalW}" y2="${CHART_H-24}" stroke="#1f2a3d" stroke-width="1"/>
+  </svg>`;
+
+  return `<div class="panel">
+    <h2>KPIs · Desempenho histórico por mês</h2>
+    <div class="desc">Sprints encerradas agrupadas pelo mês de conclusão · Dev-done = Concluído + Aceito</div>
+    <div style="margin:20px 0 10px">
+      <div style="font-size:.74rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-bottom:12px">Dev-Done (%) por mês</div>
+      <div style="overflow-x:auto;padding-bottom:6px">${chart}</div>
+      <div style="display:flex;gap:18px;margin-top:10px;font-size:.75rem">
+        <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#22d3ee;opacity:.9"></span>Dev-Done %</span>
+        <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#34d399;opacity:.4"></span>Aceito %</span>
+      </div>
+    </div>
+  </div>
+  <div class="panel">
+    <h2>Tabela mensal — Dev-Done (Concluído+)</h2>
+    <div class="desc">Cada coluna representa um mês. Dev-done = issues na categoria "done" (Concluído + Aceito) ÷ comprometido. Aceito = última coluna do board ÷ comprometido.</div>
+    <div class="tbl-wrap"><table class="cards" style="min-width:600px">
+      <thead>
+        <tr><th style="min-width:120px">Métrica</th>${headerCols}</tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="font-weight:700;color:var(--cyan)">Dev-Done %</td>
+          ${ddRow}
+        </tr>
+        <tr>
+          <td style="font-weight:700;color:var(--green)">Aceito %</td>
+          ${acRow}
+        </tr>
+        <tr>
+          <td style="font-weight:600;color:var(--muted)">Sprints</td>
+          ${spRow}
+        </tr>
+      </tbody>
+    </table></div>
+    <div style="margin-top:12px;font-size:.74rem;color:var(--muted)">
+      💡 <b>Dev-Done</b> inclui cards nos status <em>Concluído</em> e <em>Aceito</em> (categoria "done").
+      <b>Aceito</b> são apenas os que chegaram à última coluna do board (entregue ao PO).
+    </div>
+  </div>
+  ${kpiLeadCycleMonthly(monthly)}`;
+}
+
 function renderApp(){
   const DATA = SQUAD ? buildFilteredData(DATA_RAW) : DATA_RAW;
   const app = document.getElementById('app');
@@ -1000,6 +1445,7 @@ function renderApp(){
        <button class="tab" role="tab" data-tab="cards">Analítica</button>
        <button class="tab" role="tab" data-tab="team">Equipe</button>
        <button class="tab" role="tab" data-tab="backlog">Backlog</button>
+       <button class="tab" role="tab" data-tab="kpis">KPIs</button>
      </div>
      <div class="tab-panel on" data-panel="overview">${
        insight(DATA.active, DATA.last_closed)+
@@ -1017,11 +1463,12 @@ function renderApp(){
      }</div>
      <div class="tab-panel" data-panel="cards">${issuesPanel()}</div>
      <div class="tab-panel" data-panel="team">${teamPanel(DATA_RAW.team || {})}</div>
-     <div class="tab-panel" data-panel="backlog">${backlogPanel(DATA_RAW.backlog || [])}</div>`;
+     <div class="tab-panel" data-panel="backlog">${backlogPanel(DATA_RAW.backlog || [])}</div>
+     <div class="tab-panel" data-panel="kpis">${kpisPanel(DATA_RAW.kpi_monthly || [], DATA_RAW.kpi_history || [])}</div>`;
   drawGauges();
   drawVelocity(DATA.velocity);
   ISSUES = DATA.active.issues || [];
-  TBL_FILTER_STATUS=null; TBL_FILTER_TYPE=null;
+  TBL_FILTER_STATUS=null; TBL_FILTER_TYPE=null; TBL_FILTER_PARENT=null; TBL_SEARCH="";
 
   // navegação por abas
   const tabs=document.querySelectorAll('.tab');

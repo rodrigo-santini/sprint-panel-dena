@@ -491,7 +491,7 @@ function leadTimePanel(lt, activeName, closedName){
 
 function gauge(pct, color){
   return `<div class="gauge"><canvas data-pct="${pct}" data-color="${color}"></canvas>
-    <div class="center"><div class="pct">${pct}%</div><div class="lbl">Aceito</div></div></div>`;
+    <div class="center"><div class="pct">${pct}%</div><div class="lbl">Dev-Done</div></div></div>`;
 }
 function barLine(k, v, pct, color){
   return `<div class="bar-line"><div class="bl-top"><span class="k">${k}</span><span class="v">${v}</span></div>
@@ -512,7 +512,7 @@ function statusStack(dist){
 
 function sprintBody(scope, gaugeColor){
   return `<div class="gauge-row">
-      ${gauge(scope.accepted_pct, gaugeColor)}
+      ${gauge(scope.devdone_pct, gaugeColor)}
       <div class="gauge-side">
         ${barLine("Dev-done (Concluído+)", scope.devdone_pct+"%", scope.devdone_pct, "#22d3ee")}
         ${barLine("Pontos aceitos", scope.points_accepted+" / "+scope.points_committed+" pts", scope.points_accepted_pct, "#60a5fa")}
@@ -1054,12 +1054,12 @@ function buildFilteredData(raw){
     let health;
     if(node.health.elapsed_pct !== undefined){
       const elapsed = node.health.elapsed_pct/100;
-      const done = summary.accepted_pct/100;
+      const done = summary.devdone_pct/100;
       const gap = done - elapsed;
       const status = gap>=-0.10 ? "verde" : (gap>=-0.25 ? "amarelo" : "vermelho");
-      health = {status, elapsed_pct: node.health.elapsed_pct, done_pct: summary.accepted_pct};
+      health = {status, elapsed_pct: node.health.elapsed_pct, done_pct: summary.devdone_pct};
     } else {
-      const p = summary.accepted_pct;
+      const p = summary.devdone_pct;
       const status = p>=80 ? "verde" : (p>=60 ? "amarelo" : "vermelho");
       health = {status, done_pct: p};
     }
@@ -1222,6 +1222,98 @@ function backlogPanel(rawList){
       <thead><tr><th>Card</th><th>Resumo</th><th>Tipo</th><th>Tema</th><th>Idade</th><th>Sem update</th><th>Squad</th><th>Relator</th><th>Resp.</th></tr></thead>
       <tbody>${rows}</tbody>
     </table></div>
+  </div>`;
+}
+
+function kpiNewOnlyMonthly(monthly){
+  // verifica se há dados de new_only
+  const hasData = monthly.some(m => m.new_committed > 0);
+  if(!hasData){
+    return `<div class="panel"><h2>📥 Dev-Done — somente cards novos por mês</h2>
+      <div class="empty-scope">Dados de "somente novos" ainda não coletados. Execute o coletor novamente para popular.</div></div>`;
+  }
+
+  const headerCols = monthly.map(m=>`<th style="text-align:center">${m.month_label}</th>`).join('');
+  const ddRow = monthly.map(m=>{
+    const pct = m.new_devdone_pct || 0;
+    const cls = pct>=70?'green':(pct>=50?'blue':(pct>=30?'orange':'red'));
+    return `<td style="text-align:center">
+      <div class="v ${cls}" style="font-size:1.25rem">${pct}%</div>
+      <div style="font-size:.7rem;color:var(--muted);margin-top:2px">${m.new_devdone||0}/${m.new_committed||0}</div>
+    </td>`;
+  }).join('');
+  const acRow = monthly.map(m=>{
+    const pct = m.new_accepted_pct || 0;
+    const cls = pct>=70?'green':(pct>=50?'blue':(pct>=30?'orange':'red'));
+    return `<td style="text-align:center">
+      <div class="v ${cls}" style="font-size:1.25rem">${pct}%</div>
+      <div style="font-size:.7rem;color:var(--muted);margin-top:2px">${m.new_accepted||0}/${m.new_committed||0}</div>
+    </td>`;
+  }).join('');
+
+  // gráfico SVG de barras (mesmo estilo do geral, mas com traço diferenciado)
+  const maxPct = Math.max(...monthly.map(m=>m.new_devdone_pct||0), 1);
+  const BAR_W = 36, BAR_GAP = 10, BAR_MAX_H = 120, CHART_H = 150;
+  const totalW = monthly.length * (BAR_W + BAR_GAP);
+  const bars = monthly.map((m, i)=>{
+    const x = i * (BAR_W + BAR_GAP);
+    const ddPct = m.new_devdone_pct || 0;
+    const acPct = m.new_accepted_pct || 0;
+    const ddH = Math.round(ddPct / maxPct * BAR_MAX_H);
+    const acH = Math.round(acPct / maxPct * BAR_MAX_H);
+    const ddY = CHART_H - 24 - ddH;
+    const acY = CHART_H - 24 - acH;
+    const ddColor = ddPct>=70?'#c084fc':(ddPct>=50?'#a78bfa':(ddPct>=30?'#fb923c':'#f87171'));
+    return `
+      <rect x="${x+BAR_W/4}" y="${ddY}" width="${BAR_W/2}" height="${ddH}"
+        rx="3" fill="${ddColor}" opacity="0.9">
+        <title>${m.month_label} Novos Dev-Done: ${ddPct}% (${m.new_devdone||0}/${m.new_committed||0})</title>
+      </rect>
+      <rect x="${x+BAR_W/4}" y="${acY}" width="${BAR_W/2}" height="${acH}"
+        rx="3" fill="#34d399" opacity="0.35">
+        <title>${m.month_label} Novos Aceito: ${acPct}% (${m.new_accepted||0}/${m.new_committed||0})</title>
+      </rect>
+      <text x="${x+BAR_W/2}" y="${CHART_H-8}" text-anchor="middle"
+        font-size="9" fill="#7d8a9c" font-family="Inter,sans-serif">${m.month_label}</text>`;
+  }).join('');
+  const chart = `<svg viewBox="0 0 ${totalW} ${CHART_H}" style="width:100%;max-width:${totalW*1.5}px;display:block;overflow:visible">
+    ${bars}
+    <line x1="0" y1="${CHART_H-24}" x2="${totalW}" y2="${CHART_H-24}" stroke="#1f2a3d" stroke-width="1"/>
+  </svg>`;
+
+  return `<div class="panel">
+    <h2>📥 Dev-Done — somente cards novos por mês</h2>
+    <div class="desc">Considera apenas cards que entraram pela primeira vez na sprint (sem transbordo de sprints anteriores)</div>
+    <div style="margin:20px 0 10px">
+      <div style="font-size:.74rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-bottom:12px">Novos — Dev-Done (%) por mês</div>
+      <div style="overflow-x:auto;padding-bottom:6px">${chart}</div>
+      <div style="display:flex;gap:18px;margin-top:10px;font-size:.75rem">
+        <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#c084fc;opacity:.9"></span>Dev-Done % (novos)</span>
+        <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#34d399;opacity:.4"></span>Aceito % (novos)</span>
+      </div>
+    </div>
+  </div>
+  <div class="panel">
+    <h2>Tabela mensal — Dev-Done somente novos</h2>
+    <div class="desc">Cards novos = entraram pela primeira vez na sprint (sem herança de sprints passadas). Reflete a capacidade real de entrega do que foi planejado.</div>
+    <div class="tbl-wrap"><table class="cards" style="min-width:600px">
+      <thead>
+        <tr><th style="min-width:120px">Métrica</th>${headerCols}</tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="font-weight:700;color:var(--purple)">Dev-Done % (novos)</td>
+          ${ddRow}
+        </tr>
+        <tr>
+          <td style="font-weight:700;color:var(--green)">Aceito % (novos)</td>
+          ${acRow}
+        </tr>
+      </tbody>
+    </table></div>
+    <div style="margin-top:12px;font-size:.74rem;color:var(--muted)">
+      💡 Essa visão elimina o ruído de cards que <em>transbordam</em> de sprints anteriores, mostrando a efetividade real do que foi adicionado em cada ciclo.
+    </div>
   </div>`;
 }
 
@@ -1432,7 +1524,8 @@ function kpisPanel(monthly, history){
       <b>Aceito</b> são apenas os que chegaram à última coluna do board (entregue ao PO).
     </div>
   </div>
-  ${kpiLeadCycleMonthly(monthly)}`;
+  ${kpiLeadCycleMonthly(monthly)}
+  ${kpiNewOnlyMonthly(monthly)}`;
 }
 
 function renderApp(){

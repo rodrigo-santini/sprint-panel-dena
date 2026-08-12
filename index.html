@@ -561,7 +561,23 @@ function sprintCard(node, isActive){
 function newOnlyCard(node, isActive){
   const m = node.meta, h = node.health, n = node.new_only;
   const tag = isActive ? `<span class="tag ativa">Sprint Ativa</span>` : `<span class="tag fechada">Última Encerrada</span>`;
-  const gaugeColor = h.status==='verde'?'#34d399':(h.status==='amarelo'?'#fbbf24':'#f87171');
+  // semáforo específico dos cards novos baseado em devdone_pct
+  let newHealth;
+  if(n && n.issues_committed){
+    if(isActive && h.elapsed_pct !== undefined){
+      const elapsed = h.elapsed_pct / 100;
+      const done = (n.devdone_pct||0) / 100;
+      const gap = done - elapsed;
+      newHealth = gap >= -0.10 ? "verde" : (gap >= -0.25 ? "amarelo" : "vermelho");
+    } else {
+      const p = n.devdone_pct || 0;
+      newHealth = p >= 80 ? "verde" : (p >= 60 ? "amarelo" : "vermelho");
+    }
+  } else {
+    newHealth = "verde";
+  }
+  const healthTxt = {verde:"No trilho",amarelo:"Atenção",vermelho:"Em risco"}[newHealth];
+  const gaugeColor = newHealth==='verde'?'#34d399':(newHealth==='amarelo'?'#fbbf24':'#f87171');
   const body = (n && n.issues_committed)
     ? sprintBody(n, gaugeColor)
     : `<div class="empty-scope">Nenhum card novo nesta sprint.</div>`;
@@ -570,6 +586,7 @@ function newOnlyCard(node, isActive){
     <div class="sc-top">
       <div>${tag}<div class="sc-name" style="margin-top:8px">${m.name}</div>
         <div class="sc-dates">Apenas cards novos · ${(n||{}).issues_committed||0} cards</div></div>
+      <div class="health ${newHealth}"><span class="dot"></span>${healthTxt}</div>
     </div>
     ${body}
   </div>`;
@@ -1225,6 +1242,65 @@ function backlogPanel(rawList){
   </div>`;
 }
 
+function sprintDetailRows(monthly){
+  // Descobre o número máximo de sprints em um mês para saber quantas linhas extras
+  const maxSprints = Math.max(...monthly.map(m=>(m.sprint_details||[]).length), 0);
+  if(maxSprints <= 1) return ''; // se todos meses têm 1 sprint, não precisa quebrar
+  let rows = '';
+  for(let i = 0; i < maxSprints; i++){
+    const cells = monthly.map(m=>{
+      const d = (m.sprint_details||[])[i];
+      if(!d) return `<td style="text-align:center;color:var(--muted);font-size:.7rem">—</td>`;
+      const pct = d.devdone_pct;
+      const cls = pct>=70?'green':(pct>=50?'blue':(pct>=30?'orange':'red'));
+      return `<td style="text-align:center">
+        <div style="font-size:.72rem;font-weight:700;font-family:'JetBrains Mono',monospace;color:var(--${cls})">${pct}%</div>
+        <div style="font-size:.64rem;color:var(--muted)">${d.devdone}/${d.committed}</div>
+      </td>`;
+    }).join('');
+    const lbl = i===0 ? 'Sprint 1' : `Sprint ${i+1}`;
+    rows += `<tr style="border-top:${i===0?'1px solid var(--border-strong)':'none'}">
+      <td style="font-size:.7rem;color:var(--muted);font-style:italic;padding-left:16px">${lbl}</td>${cells}</tr>`;
+  }
+  // linha com nomes das sprints
+  const nameRow = monthly.map(m=>{
+    const names = (m.sprint_details||[]).map(d=>d.name).join('<br>');
+    return `<td style="text-align:center;font-size:.66rem;color:var(--muted);font-family:'JetBrains Mono',monospace;line-height:1.5">${names||'—'}</td>`;
+  }).join('');
+  rows += `<tr><td style="font-size:.7rem;color:var(--muted);font-style:italic;padding-left:16px">Nome</td>${nameRow}</tr>`;
+  return rows;
+}
+
+function sprintDetailRowsNewOnly(monthly){
+  const maxSprints = Math.max(...monthly.map(m=>(m.sprint_details||[]).length), 0);
+  if(maxSprints <= 1) return '';
+  let rows = '';
+  for(let i = 0; i < maxSprints; i++){
+    const cells = monthly.map(m=>{
+      const d = (m.sprint_details||[])[i];
+      if(!d) return `<td style="text-align:center;color:var(--muted);font-size:.7rem">—</td>`;
+      const pct = d.new_devdone_pct || 0;
+      const committed = d.new_committed || 0;
+      const devdone = d.new_devdone || 0;
+      if(!committed) return `<td style="text-align:center;color:var(--muted);font-size:.7rem">—</td>`;
+      const cls = pct>=70?'green':(pct>=50?'blue':(pct>=30?'orange':'red'));
+      return `<td style="text-align:center">
+        <div style="font-size:.72rem;font-weight:700;font-family:'JetBrains Mono',monospace;color:var(--${cls})">${pct}%</div>
+        <div style="font-size:.64rem;color:var(--muted)">${devdone}/${committed}</div>
+      </td>`;
+    }).join('');
+    const lbl = i===0 ? 'Sprint 1' : `Sprint ${i+1}`;
+    rows += `<tr style="border-top:${i===0?'1px solid var(--border-strong)':'none'}">
+      <td style="font-size:.7rem;color:var(--muted);font-style:italic;padding-left:16px">${lbl}</td>${cells}</tr>`;
+  }
+  const nameRow = monthly.map(m=>{
+    const names = (m.sprint_details||[]).map(d=>d.name).join('<br>');
+    return `<td style="text-align:center;font-size:.66rem;color:var(--muted);font-family:'JetBrains Mono',monospace;line-height:1.5">${names||'—'}</td>`;
+  }).join('');
+  rows += `<tr><td style="font-size:.7rem;color:var(--muted);font-style:italic;padding-left:16px">Nome</td>${nameRow}</tr>`;
+  return rows;
+}
+
 function kpiNewOnlyMonthly(monthly){
   // verifica se há dados de new_only
   const hasData = monthly.some(m => m.new_committed > 0);
@@ -1309,6 +1385,7 @@ function kpiNewOnlyMonthly(monthly){
           <td style="font-weight:700;color:var(--green)">Aceito % (novos)</td>
           ${acRow}
         </tr>
+        ${sprintDetailRowsNewOnly(monthly)}
       </tbody>
     </table></div>
     <div style="margin-top:12px;font-size:.74rem;color:var(--muted)">
@@ -1517,6 +1594,7 @@ function kpisPanel(monthly, history){
           <td style="font-weight:600;color:var(--muted)">Sprints</td>
           ${spRow}
         </tr>
+        ${sprintDetailRows(monthly)}
       </tbody>
     </table></div>
     <div style="margin-top:12px;font-size:.74rem;color:var(--muted)">

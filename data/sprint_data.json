@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T19:17:16.207496+00:00",
+  "generated_at": "2026-08-14T19:34:29.362508+00:00",
   "project": "DENA",
   "board_id": 1094,
   "active": {
@@ -14,18 +14,18 @@
     },
     "summary": {
       "issues_committed": 122,
-      "issues_accepted": 41,
-      "issues_devdone": 87,
-      "issues_not_completed": 81,
+      "issues_accepted": 42,
+      "issues_devdone": 88,
+      "issues_not_completed": 80,
       "issues_punted": 0,
       "issues_completed_elsewhere": 0,
       "issues_added_during": 122,
-      "accepted_pct": 33.6,
-      "devdone_pct": 71.3,
+      "accepted_pct": 34.4,
+      "devdone_pct": 72.1,
       "points_committed": 486.0,
-      "points_accepted": 23.0,
-      "points_not_completed": 220.0,
-      "points_accepted_pct": 4.7,
+      "points_accepted": 28.0,
+      "points_not_completed": 215.0,
+      "points_accepted_pct": 5.8,
       "by_type": {
         "História": 79,
         "Mudança": 8,
@@ -35,10 +35,10 @@
         "Sustentação": 1
       },
       "status_dist": {
-        "Aceito": 41,
+        "Aceito": 42,
         "Em Andamento": 13,
         "Concluído": 46,
-        "Backlog": 12,
+        "Backlog": 11,
         "Bloqueado": 8,
         "Refinamento": 2
       },
@@ -55,6 +55,7 @@
         "DENA-1173",
         "DENA-1176",
         "DENA-1183",
+        "DENA-1192",
         "DENA-1197",
         "DENA-1199",
         "DENA-1209",
@@ -133,8 +134,8 @@
     },
     "health": {
       "status": "vermelho",
-      "elapsed_pct": 97.5,
-      "done_pct": 71.3
+      "elapsed_pct": 97.6,
+      "done_pct": 72.1
     },
     "scope": {
       "carryover": 84,
@@ -864,6 +865,25 @@
         "category": "SJA"
       },
       {
+        "key": "DENA-1192",
+        "summary": "Projeto Rewired - Yuri",
+        "type": "História",
+        "status": "Aceito",
+        "sprint_count": 3,
+        "is_new": false,
+        "story_points": 5.0,
+        "assignee": "Yuri Lopes Queiroz",
+        "last_comment_at": null,
+        "last_comment_by": null,
+        "recent_comment_24h": false,
+        "time_spent_seconds": null,
+        "parent": {
+          "key": "DENA-82",
+          "summary": "ESTRUTURANTE"
+        },
+        "category": "ENG"
+      },
+      {
         "key": "DENA-1183",
         "summary": "Estrutura criada de forma errada para KPI Receita adquirida com acrescidas",
         "type": "Bug",
@@ -938,25 +958,6 @@
           "summary": "DMC AWS"
         },
         "category": "SPN"
-      },
-      {
-        "key": "DENA-1192",
-        "summary": "Projeto Rewired - Yuri",
-        "type": "História",
-        "status": "Backlog",
-        "sprint_count": 3,
-        "is_new": false,
-        "story_points": 5.0,
-        "assignee": "Yuri Lopes Queiroz",
-        "last_comment_at": null,
-        "last_comment_by": null,
-        "recent_comment_24h": false,
-        "time_spent_seconds": null,
-        "parent": {
-          "key": "DENA-82",
-          "summary": "ESTRUTURANTE"
-        },
-        "category": ""
       },
       {
         "key": "DENA-1185",
@@ -1330,10 +1331,10 @@
         "recent_comment_24h": false,
         "time_spent_seconds": 43200,
         "parent": {
-          "key": "DENA-82",
-          "summary": "ESTRUTURANTE"
+          "key": "DENA-4",
+          "summary": "CAPTAÇÃO ANALITICA"
         },
-        "category": ""
+        "category": "SCG"
       },
       {
         "key": "DENA-1233",
@@ -2397,7 +2398,7 @@
           "key": "DENA-82",
           "summary": "ESTRUTURANTE"
         },
-        "category": ""
+        "category": "ENG"
       },
       {
         "key": "DENA-1244",
@@ -2472,7 +2473,7 @@
       },
       {
         "key": "DENA-1248",
-        "category": "",
+        "category": "SCG",
         "is_new_in_sprint": false,
         "is_accepted": false,
         "is_devdone": false,
@@ -2903,6 +2904,18 @@
         "cycle_seconds": 2294493.143
       },
       {
+        "key": "DENA-1192",
+        "category": "ENG",
+        "is_new_in_sprint": false,
+        "is_accepted": true,
+        "is_devdone": true,
+        "status_name": "Aceito",
+        "sprint_count": 3,
+        "story_points": 5.0,
+        "lead_seconds": 2780267.907,
+        "cycle_seconds": 2780209.597
+      },
+      {
         "key": "DENA-1183",
         "category": "ENG",
         "is_new_in_sprint": false,
@@ -3115,18 +3128,6 @@
         "status_name": "Backlog",
         "sprint_count": 2,
         "story_points": null,
-        "lead_seconds": null,
-        "cycle_seconds": null
-      },
-      {
-        "key": "DENA-1192",
-        "category": "",
-        "is_new_in_sprint": false,
-        "is_accepted": false,
-        "is_devdone": false,
-        "status_name": "Backlog",
-        "sprint_count": 3,
-        "story_points": 5.0,
         "lead_seconds": null,
         "cycle_seconds": null
       },
@@ -3840,7 +3841,7 @@
       },
       {
         "key": "DENA-1261",
-        "category": "",
+        "category": "ENG",
         "is_new_in_sprint": true,
         "is_accepted": false,
         "is_devdone": false,
@@ -4044,7 +4045,7 @@
     "all_issues": [
       {
         "key": "DENA-1248",
-        "category": "",
+        "category": "SCG",
         "is_new_in_sprint": true,
         "is_accepted": false,
         "is_devdone": false,
@@ -4475,6 +4476,18 @@
         "cycle_seconds": 2294493.143
       },
       {
+        "key": "DENA-1192",
+        "category": "ENG",
+        "is_new_in_sprint": false,
+        "is_accepted": true,
+        "is_devdone": true,
+        "status_name": "Aceito",
+        "sprint_count": 3,
+        "story_points": 5.0,
+        "lead_seconds": 2780267.907,
+        "cycle_seconds": 2780209.597
+      },
+      {
         "key": "DENA-1191",
         "category": "SPN",
         "is_new_in_sprint": false,
@@ -4843,18 +4856,6 @@
         "status_name": "Backlog",
         "sprint_count": 2,
         "story_points": null,
-        "lead_seconds": null,
-        "cycle_seconds": null
-      },
-      {
-        "key": "DENA-1192",
-        "category": "",
-        "is_new_in_sprint": false,
-        "is_accepted": false,
-        "is_devdone": false,
-        "status_name": "Backlog",
-        "sprint_count": 3,
-        "story_points": 5.0,
         "lead_seconds": null,
         "cycle_seconds": null
       },
@@ -5801,7 +5802,7 @@
           "summary": "[INC0807984]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 54.5,
+          "duration_hours": 54.8,
           "assignee": "Ananda Ellen Morais Di Rado",
           "created": "2026-08-12T09:45:23.057-0300",
           "sprint_count": 1,
@@ -5817,7 +5818,7 @@
           "summary": "[INC0808620]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 22.3,
+          "duration_hours": 22.6,
           "assignee": "Giovanna Souza Bancala",
           "created": "2026-08-13T17:57:24.567-0300",
           "sprint_count": 1,
@@ -5833,7 +5834,7 @@
           "summary": "[INC0808640]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 21.2,
+          "duration_hours": 21.5,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-08-13T19:02:30.617-0300",
           "sprint_count": 1,
@@ -6166,26 +6167,26 @@
   "lead_time": {
     "active": {
       "lead": {
-        "avg_seconds": 2636108,
-        "median_seconds": 752886,
-        "count": 87
+        "avg_seconds": 2637746,
+        "median_seconds": 772433,
+        "count": 88
       },
       "cycle": {
-        "avg_seconds": 1107149,
-        "median_seconds": 324342,
-        "count": 87
+        "avg_seconds": 1126161,
+        "median_seconds": 324870,
+        "count": 88
       }
     },
     "last_closed": {
       "lead": {
-        "avg_seconds": 2588988,
-        "median_seconds": 1119463,
-        "count": 99
+        "avg_seconds": 2590900,
+        "median_seconds": 1119535,
+        "count": 100
       },
       "cycle": {
-        "avg_seconds": 1241072,
-        "median_seconds": 332901,
-        "count": 99
+        "avg_seconds": 1256464,
+        "median_seconds": 338622,
+        "count": 100
       }
     }
   },
@@ -6197,7 +6198,7 @@
       "status": "Backlog",
       "priority": "Médio",
       "created": "2026-08-13T19:40:30.601-0300",
-      "updated": "2026-08-14T15:55:07.756-0300",
+      "updated": "2026-08-14T16:19:55.915-0300",
       "days_old": 0,
       "days_since_update": 0,
       "assignee": "",
@@ -6233,7 +6234,7 @@
       "priority": "Médio",
       "created": "2026-08-12T16:25:16.829-0300",
       "updated": "2026-08-13T10:50:09.248-0300",
-      "days_old": 1,
+      "days_old": 2,
       "days_since_update": 1,
       "assignee": "Jean Carlos da Silva Ferreira",
       "reporter": "Carolina Teixeira Dias",
@@ -6306,7 +6307,7 @@
       "priority": "Médio",
       "created": "2026-08-11T16:27:44.365-0300",
       "updated": "2026-08-11T16:30:55.625-0300",
-      "days_old": 2,
+      "days_old": 3,
       "days_since_update": 2,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "Anderson Morais E Castro Fort",
@@ -6665,7 +6666,7 @@
       "created": "2026-06-05T16:09:10.432-0300",
       "updated": "2026-06-05T16:16:38.220-0300",
       "days_old": 70,
-      "days_since_update": 69,
+      "days_since_update": 70,
       "assignee": "",
       "reporter": "André Mendonça Pauletti",
       "parent": null,
@@ -7590,8 +7591,8 @@
       "accepted": 40,
       "devdone_pct": 74.5,
       "accepted_pct": 29.2,
-      "lead_median_seconds": 2143689,
-      "cycle_median_seconds": 1344096,
+      "lead_median_seconds": 2229805,
+      "cycle_median_seconds": 1429099,
       "new_committed": 39,
       "new_devdone": 38,
       "new_accepted": 38,
@@ -7634,8 +7635,8 @@
       "accepted": 55,
       "devdone_pct": 76.6,
       "accepted_pct": 44.4,
-      "lead_median_seconds": 1326349,
-      "cycle_median_seconds": 574526,
+      "lead_median_seconds": 1384114,
+      "cycle_median_seconds": 595210,
       "new_committed": 49,
       "new_devdone": 49,
       "new_accepted": 46,
@@ -7678,8 +7679,8 @@
       "accepted": 57,
       "devdone_pct": 70.9,
       "accepted_pct": 48.7,
-      "lead_median_seconds": 1380928,
-      "cycle_median_seconds": 498537,
+      "lead_median_seconds": 1419508,
+      "cycle_median_seconds": 629066,
       "new_committed": 55,
       "new_devdone": 53,
       "new_accepted": 53,
@@ -7722,8 +7723,8 @@
       "accepted": 44,
       "devdone_pct": 70.6,
       "accepted_pct": 34.9,
-      "lead_median_seconds": 1952142,
-      "cycle_median_seconds": 1198920,
+      "lead_median_seconds": 2173821,
+      "cycle_median_seconds": 1283239,
       "new_committed": 65,
       "new_devdone": 61,
       "new_accepted": 52,
@@ -7766,8 +7767,8 @@
       "accepted": 47,
       "devdone_pct": 64.8,
       "accepted_pct": 25.8,
-      "lead_median_seconds": 1390421,
-      "cycle_median_seconds": 845951,
+      "lead_median_seconds": 1400106,
+      "cycle_median_seconds": 849077,
       "new_committed": 61,
       "new_devdone": 59,
       "new_accepted": 47,
@@ -7871,14 +7872,14 @@
       },
       "lead_time": {
         "lead": {
-          "avg_seconds": 3061697,
-          "median_seconds": 1478494,
-          "count": 88
+          "avg_seconds": 3269337,
+          "median_seconds": 1486197,
+          "count": 89
         },
         "cycle": {
-          "avg_seconds": 1575650,
-          "median_seconds": 699470,
-          "count": 88
+          "avg_seconds": 1734596,
+          "median_seconds": 704853,
+          "count": 89
         }
       }
     },
@@ -7908,14 +7909,14 @@
       },
       "lead_time": {
         "lead": {
-          "avg_seconds": 3081165,
-          "median_seconds": 1284251,
-          "count": 73
+          "avg_seconds": 3330631,
+          "median_seconds": 1296565,
+          "count": 74
         },
         "cycle": {
-          "avg_seconds": 1579826,
-          "median_seconds": 1022530,
-          "count": 73
+          "avg_seconds": 1770935,
+          "median_seconds": 1022535,
+          "count": 74
         }
       }
     },
@@ -7945,14 +7946,14 @@
       },
       "lead_time": {
         "lead": {
-          "avg_seconds": 3568347,
-          "median_seconds": 1232886,
-          "count": 65
+          "avg_seconds": 3840670,
+          "median_seconds": 1233000,
+          "count": 66
         },
         "cycle": {
-          "avg_seconds": 1915545,
-          "median_seconds": 821937,
-          "count": 65
+          "avg_seconds": 2124732,
+          "median_seconds": 887827,
+          "count": 66
         }
       }
     },
@@ -7982,14 +7983,14 @@
       },
       "lead_time": {
         "lead": {
-          "avg_seconds": 5496244,
-          "median_seconds": 2991068,
-          "count": 45
+          "avg_seconds": 5845059,
+          "median_seconds": 3523695,
+          "count": 46
         },
         "cycle": {
-          "avg_seconds": 3030115,
-          "median_seconds": 1743452,
-          "count": 45
+          "avg_seconds": 3306022,
+          "median_seconds": 1850570,
+          "count": 46
         }
       }
     },
@@ -8019,14 +8020,14 @@
       },
       "lead_time": {
         "lead": {
-          "avg_seconds": 3533302,
-          "median_seconds": 784539,
-          "count": 62
+          "avg_seconds": 3819150,
+          "median_seconds": 820027,
+          "count": 63
         },
         "cycle": {
-          "avg_seconds": 1821672,
-          "median_seconds": 315049,
-          "count": 62
+          "avg_seconds": 2042309,
+          "median_seconds": 334808,
+          "count": 63
         }
       }
     },
@@ -8056,14 +8057,14 @@
       },
       "lead_time": {
         "lead": {
-          "avg_seconds": 5288358,
-          "median_seconds": 2167655,
-          "count": 47
+          "avg_seconds": 5626970,
+          "median_seconds": 2206326,
+          "count": 48
         },
         "cycle": {
-          "avg_seconds": 3351426,
-          "median_seconds": 740585,
-          "count": 47
+          "avg_seconds": 3609143,
+          "median_seconds": 1015279,
+          "count": 48
         }
       }
     },
@@ -8093,14 +8094,14 @@
       },
       "lead_time": {
         "lead": {
-          "avg_seconds": 4662079,
-          "median_seconds": 1762285,
-          "count": 54
+          "avg_seconds": 4968981,
+          "median_seconds": 1880257,
+          "count": 55
         },
         "cycle": {
-          "avg_seconds": 2945638,
-          "median_seconds": 731703,
-          "count": 54
+          "avg_seconds": 3177933,
+          "median_seconds": 776017,
+          "count": 55
         }
       }
     },
@@ -8130,14 +8131,14 @@
       },
       "lead_time": {
         "lead": {
-          "avg_seconds": 3337607,
-          "median_seconds": 958528,
-          "count": 64
+          "avg_seconds": 3617670,
+          "median_seconds": 964301,
+          "count": 65
         },
         "cycle": {
-          "avg_seconds": 2402928,
-          "median_seconds": 441907,
-          "count": 64
+          "avg_seconds": 2607835,
+          "median_seconds": 442219,
+          "count": 65
         }
       }
     },
@@ -8167,14 +8168,14 @@
       },
       "lead_time": {
         "lead": {
-          "avg_seconds": 4390973,
-          "median_seconds": 1500702,
-          "count": 41
+          "avg_seconds": 4799324,
+          "median_seconds": 1658668,
+          "count": 42
         },
         "cycle": {
-          "avg_seconds": 3354237,
-          "median_seconds": 692525,
-          "count": 41
+          "avg_seconds": 3648704,
+          "median_seconds": 737853,
+          "count": 42
         }
       }
     },
@@ -8204,14 +8205,14 @@
       },
       "lead_time": {
         "lead": {
-          "avg_seconds": 4332532,
-          "median_seconds": 1477778,
-          "count": 44
+          "avg_seconds": 4714958,
+          "median_seconds": 1500702,
+          "count": 45
         },
         "cycle": {
-          "avg_seconds": 3555281,
-          "median_seconds": 732152,
-          "count": 44
+          "avg_seconds": 3825649,
+          "median_seconds": 771778,
+          "count": 45
         }
       }
     },
@@ -8241,14 +8242,14 @@
       },
       "lead_time": {
         "lead": {
-          "avg_seconds": 5880128,
-          "median_seconds": 3438167,
-          "count": 43
+          "avg_seconds": 6236073,
+          "median_seconds": 3520655,
+          "count": 44
         },
         "cycle": {
-          "avg_seconds": 4581692,
-          "median_seconds": 2591536,
-          "count": 43
+          "avg_seconds": 4834877,
+          "median_seconds": 2761184,
+          "count": 44
         }
       }
     }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T17:09:02.312958+00:00",
+  "generated_at": "2026-08-17T17:25:40.026812+00:00",
   "project": "DENA",
   "board_id": 1094,
   "active": {
@@ -14,18 +14,18 @@
     },
     "summary": {
       "issues_committed": 84,
-      "issues_accepted": 0,
-      "issues_devdone": 47,
-      "issues_not_completed": 84,
+      "issues_accepted": 1,
+      "issues_devdone": 48,
+      "issues_not_completed": 83,
       "issues_punted": 0,
       "issues_completed_elsewhere": 0,
       "issues_added_during": 83,
-      "accepted_pct": 0.0,
-      "devdone_pct": 56.0,
+      "accepted_pct": 1.2,
+      "devdone_pct": 57.1,
       "points_committed": 432.0,
-      "points_accepted": 0.0,
-      "points_not_completed": 220.0,
-      "points_accepted_pct": 0.0,
+      "points_accepted": 3.0,
+      "points_not_completed": 217.0,
+      "points_accepted_pct": 0.7,
       "by_type": {
         "História": 67,
         "Suporte": 1,
@@ -35,13 +35,16 @@
         "Incidente": 3
       },
       "status_dist": {
-        "Em Andamento": 12,
+        "Aceito": 1,
+        "Em Andamento": 11,
         "Concluído": 47,
-        "Bloqueado": 8,
-        "Backlog": 15,
+        "Bloqueado": 9,
+        "Backlog": 14,
         "Refinamento": 2
       },
-      "accepted_keys": [],
+      "accepted_keys": [
+        "DENA-1082"
+      ],
       "blocked": [
         {
           "key": "DENA-741",
@@ -74,6 +77,10 @@
         {
           "key": "DENA-1340",
           "summary": "Ajuste da Identificação de Disciplinas TCC/Estágio na Grade EAD"
+        },
+        {
+          "key": "DENA-1352",
+          "summary": "[INC0807984]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS"
         }
       ]
     },
@@ -91,7 +98,7 @@
     "health": {
       "status": "verde",
       "elapsed_pct": 4.8,
-      "done_pct": 56.0
+      "done_pct": 57.1
     },
     "scope": {
       "carryover": 79,
@@ -463,11 +470,11 @@
         "key": "DENA-1082",
         "summary": "Classificação das Matrículas pela Nova Modalidade do Marco Regulatório no Alunado - PMA",
         "type": "História",
-        "status": "Backlog",
+        "status": "Aceito",
         "sprint_count": 5,
         "is_new": false,
         "story_points": 3.0,
-        "assignee": "Antônio Carlos dos Santos",
+        "assignee": "Vanessa Macedo Cavalcanti De Souza",
         "last_comment_at": null,
         "last_comment_by": null,
         "recent_comment_24h": false,
@@ -1277,6 +1284,25 @@
         "category": "ENG"
       },
       {
+        "key": "DENA-1352",
+        "summary": "[INC0807984]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
+        "type": "Incidente",
+        "status": "Bloqueado",
+        "sprint_count": 2,
+        "is_new": false,
+        "story_points": null,
+        "assignee": "Ananda Ellen Morais Di Rado",
+        "last_comment_at": "2026-08-17T14:04:48.266-0300",
+        "last_comment_by": "Ananda Ellen Morais Di Rado",
+        "recent_comment_24h": true,
+        "time_spent_seconds": 21600,
+        "parent": {
+          "key": "DENA-747",
+          "summary": "GENTE & CULTURA"
+        },
+        "category": "SCG"
+      },
+      {
         "key": "DENA-1340",
         "summary": "Ajuste da Identificação de Disciplinas TCC/Estágio na Grade EAD",
         "type": "História",
@@ -1465,25 +1491,6 @@
           "summary": "ENGAJAMENTO"
         },
         "category": "SJA"
-      },
-      {
-        "key": "DENA-1352",
-        "summary": "[INC0807984]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
-        "type": "Incidente",
-        "status": "Em Andamento",
-        "sprint_count": 2,
-        "is_new": false,
-        "story_points": null,
-        "assignee": "Ananda Ellen Morais Di Rado",
-        "last_comment_at": "2026-08-13T08:54:29.316-0300",
-        "last_comment_by": "Ananda Ellen Morais Di Rado",
-        "recent_comment_24h": false,
-        "time_spent_seconds": 21600,
-        "parent": {
-          "key": "DENA-747",
-          "summary": "GENTE & CULTURA"
-        },
-        "category": "SCG"
       },
       {
         "key": "DENA-1349",
@@ -1697,6 +1704,18 @@
     ],
     "all_issues": [
       {
+        "key": "DENA-1352",
+        "category": "SCG",
+        "is_new_in_sprint": false,
+        "is_accepted": false,
+        "is_devdone": false,
+        "status_name": "Bloqueado",
+        "sprint_count": 2,
+        "story_points": null,
+        "lead_seconds": null,
+        "cycle_seconds": null
+      },
+      {
         "key": "DENA-1340",
         "category": "SJA",
         "is_new_in_sprint": false,
@@ -1791,6 +1810,18 @@
         "story_points": 1.0,
         "lead_seconds": null,
         "cycle_seconds": null
+      },
+      {
+        "key": "DENA-1082",
+        "category": "SJA",
+        "is_new_in_sprint": false,
+        "is_accepted": true,
+        "is_devdone": true,
+        "status_name": "Aceito",
+        "sprint_count": 5,
+        "story_points": 3.0,
+        "lead_seconds": 5857549.864,
+        "cycle_seconds": 54.691
       },
       {
         "key": "DENA-1362",
@@ -1921,18 +1952,6 @@
         "status_name": "Backlog",
         "sprint_count": 3,
         "story_points": null,
-        "lead_seconds": null,
-        "cycle_seconds": null
-      },
-      {
-        "key": "DENA-1082",
-        "category": "SJA",
-        "is_new_in_sprint": false,
-        "is_accepted": false,
-        "is_devdone": false,
-        "status_name": "Backlog",
-        "sprint_count": 5,
-        "story_points": 3.0,
         "lead_seconds": null,
         "cycle_seconds": null
       },
@@ -2585,18 +2604,6 @@
         "cycle_seconds": null
       },
       {
-        "key": "DENA-1352",
-        "category": "SCG",
-        "is_new_in_sprint": false,
-        "is_accepted": false,
-        "is_devdone": false,
-        "status_name": "Em Andamento",
-        "sprint_count": 2,
-        "story_points": null,
-        "lead_seconds": null,
-        "cycle_seconds": null
-      },
-      {
         "key": "DENA-1349",
         "category": "SPN",
         "is_new_in_sprint": false,
@@ -2846,6 +2853,18 @@
       "new_in_sprint": 38
     },
     "all_issues": [
+      {
+        "key": "DENA-1352",
+        "category": "SCG",
+        "is_new_in_sprint": true,
+        "is_accepted": false,
+        "is_devdone": false,
+        "status_name": "Bloqueado",
+        "sprint_count": 2,
+        "story_points": null,
+        "lead_seconds": null,
+        "cycle_seconds": null
+      },
       {
         "key": "DENA-1340",
         "category": "SJA",
@@ -3399,6 +3418,18 @@
         "cycle_seconds": 1217920.384
       },
       {
+        "key": "DENA-1082",
+        "category": "SJA",
+        "is_new_in_sprint": false,
+        "is_accepted": true,
+        "is_devdone": true,
+        "status_name": "Aceito",
+        "sprint_count": 5,
+        "story_points": 3.0,
+        "lead_seconds": 5857549.864,
+        "cycle_seconds": 54.691
+      },
+      {
         "key": "DENA-1038",
         "category": "ENG",
         "is_new_in_sprint": false,
@@ -3527,18 +3558,6 @@
         "status_name": "Backlog",
         "sprint_count": 3,
         "story_points": null,
-        "lead_seconds": null,
-        "cycle_seconds": null
-      },
-      {
-        "key": "DENA-1082",
-        "category": "SJA",
-        "is_new_in_sprint": false,
-        "is_accepted": false,
-        "is_devdone": false,
-        "status_name": "Backlog",
-        "sprint_count": 5,
-        "story_points": 3.0,
         "lead_seconds": null,
         "cycle_seconds": null
       },
@@ -4191,18 +4210,6 @@
         "cycle_seconds": null
       },
       {
-        "key": "DENA-1352",
-        "category": "SCG",
-        "is_new_in_sprint": true,
-        "is_accepted": false,
-        "is_devdone": false,
-        "status_name": "Em Andamento",
-        "sprint_count": 2,
-        "story_points": null,
-        "lead_seconds": null,
-        "cycle_seconds": null
-      },
-      {
         "key": "DENA-1349",
         "category": "SPN",
         "is_new_in_sprint": true,
@@ -4356,7 +4363,7 @@
       "accepted": 0,
       "resolved": 0,
       "open": 3,
-      "blocked": 0,
+      "blocked": 1,
       "resolved_pct": 0.0,
       "avg_resolution_seconds": null,
       "list": [
@@ -4365,7 +4372,7 @@
           "summary": "[INC0807984]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Bloqueado",
           "is_resolved": false,
-          "duration_hours": 124.4,
+          "duration_hours": 124.7,
           "assignee": "Ananda Ellen Morais Di Rado",
           "created": "2026-08-12T09:45:23.057-0300",
           "sprint_count": 2,
@@ -4381,7 +4388,7 @@
           "summary": "[INC0808620]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 92.2,
+          "duration_hours": 92.5,
           "assignee": "Giovanna Souza Bancala",
           "created": "2026-08-13T17:57:24.567-0300",
           "sprint_count": 2,
@@ -4397,7 +4404,7 @@
           "summary": "[INC0808640]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 91.1,
+          "duration_hours": 91.4,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-08-13T19:02:30.617-0300",
           "sprint_count": 2,
@@ -4424,7 +4431,7 @@
           "summary": "[INC0807984]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Bloqueado",
           "is_resolved": false,
-          "duration_hours": 124.4,
+          "duration_hours": 124.7,
           "assignee": "Ananda Ellen Morais Di Rado",
           "created": "2026-08-12T09:45:23.057-0300",
           "sprint_count": 2,
@@ -4728,7 +4735,7 @@
           "summary": "[INC0808620]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 92.2,
+          "duration_hours": 92.5,
           "assignee": "Giovanna Souza Bancala",
           "created": "2026-08-13T17:57:24.567-0300",
           "sprint_count": 2,
@@ -4744,7 +4751,7 @@
           "summary": "[INC0808640]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 91.1,
+          "duration_hours": 91.4,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-08-13T19:02:30.617-0300",
           "sprint_count": 2,
@@ -4762,26 +4769,26 @@
   "lead_time": {
     "active": {
       "lead": {
-        "avg_seconds": 3062712,
-        "median_seconds": 1119463,
-        "count": 47
+        "avg_seconds": 3120938,
+        "median_seconds": 1119535,
+        "count": 48
       },
       "cycle": {
-        "avg_seconds": 1002193,
-        "median_seconds": 516557,
-        "count": 47
+        "avg_seconds": 981316,
+        "median_seconds": 461157,
+        "count": 48
       }
     },
     "last_closed": {
       "lead": {
-        "avg_seconds": 2829318,
-        "median_seconds": 870250,
-        "count": 90
+        "avg_seconds": 2862595,
+        "median_seconds": 948520,
+        "count": 91
       },
       "cycle": {
-        "avg_seconds": 1282861,
-        "median_seconds": 329149,
-        "count": 90
+        "avg_seconds": 1268764,
+        "median_seconds": 325398,
+        "count": 91
       }
     }
   },
@@ -6280,8 +6287,8 @@
           "devdone_pct": 66.3,
           "accepted_pct": 18.1,
           "new_committed": 32,
-          "new_devdone": 31,
-          "new_devdone_pct": 96.9
+          "new_devdone": 32,
+          "new_devdone_pct": 100.0
         }
       ],
       "committed": 182,
@@ -6289,13 +6296,13 @@
       "accepted": 47,
       "devdone_pct": 64.8,
       "accepted_pct": 25.8,
-      "lead_median_seconds": 1400106,
-      "cycle_median_seconds": 849077,
+      "lead_median_seconds": 1415356,
+      "cycle_median_seconds": 846315,
       "new_committed": 61,
-      "new_devdone": 59,
-      "new_accepted": 47,
-      "new_devdone_pct": 96.7,
-      "new_accepted_pct": 77.0
+      "new_devdone": 60,
+      "new_accepted": 48,
+      "new_devdone_pct": 98.4,
+      "new_accepted_pct": 78.7
     },
     {
       "month": "2026-08",
@@ -6333,8 +6340,8 @@
       "accepted": 77,
       "devdone_pct": 73.8,
       "accepted_pct": 32.1,
-      "lead_median_seconds": 1001453,
-      "cycle_median_seconds": 334135,
+      "lead_median_seconds": 1038057,
+      "cycle_median_seconds": 327085,
       "new_committed": 89,
       "new_devdone": 67,
       "new_accepted": 44,
@@ -6369,14 +6376,14 @@
       },
       "lead_time": {
         "lead": {
-          "avg_seconds": 2829318,
-          "median_seconds": 870250,
-          "count": 90
+          "avg_seconds": 2862595,
+          "median_seconds": 948520,
+          "count": 91
         },
         "cycle": {
-          "avg_seconds": 1282861,
-          "median_seconds": 329149,
-          "count": 90
+          "avg_seconds": 1268764,
+          "median_seconds": 325398,
+          "count": 91
         }
       }
     },
@@ -6406,13 +6413,13 @@
       },
       "lead_time": {
         "lead": {
-          "avg_seconds": 2615896,
+          "avg_seconds": 2413213,
           "median_seconds": 1119535,
           "count": 100
         },
         "cycle": {
-          "avg_seconds": 1381102,
-          "median_seconds": 338622,
+          "avg_seconds": 1314551,
+          "median_seconds": 328621,
           "count": 100
         }
       }
@@ -6443,14 +6450,14 @@
       },
       "lead_time": {
         "lead": {
-          "avg_seconds": 3269337,
-          "median_seconds": 1486197,
-          "count": 89
+          "avg_seconds": 3298095,
+          "median_seconds": 1504087,
+          "count": 90
         },
         "cycle": {
-          "avg_seconds": 1734596,
-          "median_seconds": 704853,
-          "count": 89
+          "avg_seconds": 1715323,
+          "median_seconds": 699470,
+          "count": 90
         }
       }
     },
@@ -6473,21 +6480,21 @@
       },
       "new_only": {
         "issues_committed": 32,
-        "issues_devdone": 31,
-        "issues_accepted": 24,
-        "devdone_pct": 96.9,
-        "accepted_pct": 75.0
+        "issues_devdone": 32,
+        "issues_accepted": 25,
+        "devdone_pct": 100.0,
+        "accepted_pct": 78.1
       },
       "lead_time": {
         "lead": {
-          "avg_seconds": 3330631,
-          "median_seconds": 1296565,
-          "count": 74
+          "avg_seconds": 3364324,
+          "median_seconds": 1308879,
+          "count": 75
         },
         "cycle": {
-          "avg_seconds": 1770935,
-          "median_seconds": 1022535,
-          "count": 74
+          "avg_seconds": 1747323,
+          "median_seconds": 1022530,
+          "count": 75
         }
       }
     },

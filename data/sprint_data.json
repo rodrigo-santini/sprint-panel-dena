@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T12:37:02.145799+00:00",
+  "generated_at": "2026-08-21T12:39:43.167703+00:00",
   "project": "DENA",
   "board_id": 1094,
   "active": {
@@ -5483,7 +5483,7 @@
       "created": "2026-07-07T11:10:03.067-0300",
       "updated": "2026-07-14T09:30:32.889-0300",
       "days_old": 44,
-      "days_since_update": 37,
+      "days_since_update": 38,
       "assignee": "",
       "reporter": "André Mendonça Pauletti",
       "parent": null,

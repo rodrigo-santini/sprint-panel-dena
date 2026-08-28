@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T14:58:38.246477+00:00",
+  "generated_at": "2026-08-28T15:01:38.309778+00:00",
   "project": "DENA",
   "board_id": 1094,
   "active": {
@@ -5187,7 +5187,7 @@
           "summary": "[INC0810866]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - PowerCenter",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 165.2,
+          "duration_hours": 165.3,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-08-21T14:45:02.333-0300",
           "sprint_count": 1,
@@ -6634,7 +6634,7 @@
       "priority": "Médio",
       "created": "2026-02-19T12:00:22.427-0300",
       "updated": "2026-07-30T11:25:59.617-0300",
-      "days_old": 189,
+      "days_old": 190,
       "days_since_update": 29,
       "assignee": "Rodrigo Santini Guarinon",
       "reporter": "Karla Ynonye Zucchini",
@@ -6650,7 +6650,7 @@
       "priority": "Médio",
       "created": "2026-02-19T11:59:42.308-0300",
       "updated": "2026-08-11T10:43:10.622-0300",
-      "days_old": 189,
+      "days_old": 190,
       "days_since_update": 17,
       "assignee": "Rodrigo Santini Guarinon",
       "reporter": "Karla Ynonye Zucchini",
@@ -7055,6 +7055,765 @@
     },
     "total_general": 2923.8
   },
-  "kpi_monthly": [],
-  "kpi_history": []
+  "kpi_monthly": [
+    {
+      "month": "2026-03",
+      "month_label": "Mar/26",
+      "sprints": [
+        "SP 26.1.5",
+        "SP 26.1.4",
+        "SP 26.1.3"
+      ],
+      "sprint_details": [
+        {
+          "name": "SP 26.1.5",
+          "committed": 45,
+          "devdone": 33,
+          "accepted": 4,
+          "devdone_pct": 73.3,
+          "accepted_pct": 8.9,
+          "new_committed": 12,
+          "new_devdone": 12,
+          "new_devdone_pct": 100.0
+        },
+        {
+          "name": "SP 26.1.4",
+          "committed": 48,
+          "devdone": 35,
+          "accepted": 15,
+          "devdone_pct": 72.9,
+          "accepted_pct": 31.2,
+          "new_committed": 23,
+          "new_devdone": 22,
+          "new_devdone_pct": 95.7
+        },
+        {
+          "name": "SP 26.1.3",
+          "committed": 44,
+          "devdone": 34,
+          "accepted": 21,
+          "devdone_pct": 77.3,
+          "accepted_pct": 47.7,
+          "new_committed": 4,
+          "new_devdone": 4,
+          "new_devdone_pct": 100.0
+        }
+      ],
+      "committed": 137,
+      "devdone": 102,
+      "accepted": 40,
+      "devdone_pct": 74.5,
+      "accepted_pct": 29.2,
+      "lead_median_seconds": 2229805,
+      "cycle_median_seconds": null,
+      "new_committed": 39,
+      "new_devdone": 38,
+      "new_accepted": 38,
+      "new_devdone_pct": 97.4,
+      "new_accepted_pct": 97.4
+    },
+    {
+      "month": "2026-04",
+      "month_label": "Abr/26",
+      "sprints": [
+        "SP 26.2.1",
+        "SP 26.1.6"
+      ],
+      "sprint_details": [
+        {
+          "name": "SP 26.2.1",
+          "committed": 57,
+          "devdone": 40,
+          "accepted": 23,
+          "devdone_pct": 70.2,
+          "accepted_pct": 40.4,
+          "new_committed": 22,
+          "new_devdone": 22,
+          "new_devdone_pct": 100.0
+        },
+        {
+          "name": "SP 26.1.6",
+          "committed": 67,
+          "devdone": 55,
+          "accepted": 32,
+          "devdone_pct": 82.1,
+          "accepted_pct": 47.8,
+          "new_committed": 27,
+          "new_devdone": 27,
+          "new_devdone_pct": 100.0
+        }
+      ],
+      "committed": 124,
+      "devdone": 95,
+      "accepted": 55,
+      "devdone_pct": 76.6,
+      "accepted_pct": 44.4,
+      "lead_median_seconds": 1384114,
+      "cycle_median_seconds": null,
+      "new_committed": 49,
+      "new_devdone": 49,
+      "new_accepted": 46,
+      "new_devdone_pct": 100.0,
+      "new_accepted_pct": 93.9
+    },
+    {
+      "month": "2026-05",
+      "month_label": "Mai/26",
+      "sprints": [
+        "SP 26.2.3",
+        "SP 26.2.2"
+      ],
+      "sprint_details": [
+        {
+          "name": "SP 26.2.3",
+          "committed": 67,
+          "devdone": 51,
+          "accepted": 41,
+          "devdone_pct": 76.1,
+          "accepted_pct": 61.2,
+          "new_committed": 38,
+          "new_devdone": 36,
+          "new_devdone_pct": 94.7
+        },
+        {
+          "name": "SP 26.2.2",
+          "committed": 50,
+          "devdone": 32,
+          "accepted": 16,
+          "devdone_pct": 64.0,
+          "accepted_pct": 32.0,
+          "new_committed": 17,
+          "new_devdone": 17,
+          "new_devdone_pct": 100.0
+        }
+      ],
+      "committed": 117,
+      "devdone": 83,
+      "accepted": 57,
+      "devdone_pct": 70.9,
+      "accepted_pct": 48.7,
+      "lead_median_seconds": 1419508,
+      "cycle_median_seconds": null,
+      "new_committed": 55,
+      "new_devdone": 53,
+      "new_accepted": 53,
+      "new_devdone_pct": 96.4,
+      "new_accepted_pct": 96.4
+    },
+    {
+      "month": "2026-06",
+      "month_label": "Jun/26",
+      "sprints": [
+        "SP 26.2.5",
+        "SP 26.2.4"
+      ],
+      "sprint_details": [
+        {
+          "name": "SP 26.2.5",
+          "committed": 74,
+          "devdone": 53,
+          "accepted": 23,
+          "devdone_pct": 71.6,
+          "accepted_pct": 31.1,
+          "new_committed": 43,
+          "new_devdone": 41,
+          "new_devdone_pct": 95.3
+        },
+        {
+          "name": "SP 26.2.4",
+          "committed": 52,
+          "devdone": 36,
+          "accepted": 21,
+          "devdone_pct": 69.2,
+          "accepted_pct": 40.4,
+          "new_committed": 22,
+          "new_devdone": 20,
+          "new_devdone_pct": 90.9
+        }
+      ],
+      "committed": 126,
+      "devdone": 89,
+      "accepted": 44,
+      "devdone_pct": 70.6,
+      "accepted_pct": 34.9,
+      "lead_median_seconds": 2173821,
+      "cycle_median_seconds": null,
+      "new_committed": 65,
+      "new_devdone": 61,
+      "new_accepted": 52,
+      "new_devdone_pct": 93.8,
+      "new_accepted_pct": 80.0
+    },
+    {
+      "month": "2026-07",
+      "month_label": "Jul/26",
+      "sprints": [
+        "SP 26.3.1",
+        "SP 26.2.6"
+      ],
+      "sprint_details": [
+        {
+          "name": "SP 26.3.1",
+          "committed": 99,
+          "devdone": 63,
+          "accepted": 32,
+          "devdone_pct": 63.6,
+          "accepted_pct": 32.3,
+          "new_committed": 29,
+          "new_devdone": 29,
+          "new_devdone_pct": 100.0
+        },
+        {
+          "name": "SP 26.2.6",
+          "committed": 83,
+          "devdone": 55,
+          "accepted": 15,
+          "devdone_pct": 66.3,
+          "accepted_pct": 18.1,
+          "new_committed": 32,
+          "new_devdone": 32,
+          "new_devdone_pct": 100.0
+        }
+      ],
+      "committed": 182,
+      "devdone": 118,
+      "accepted": 47,
+      "devdone_pct": 64.8,
+      "accepted_pct": 25.8,
+      "lead_median_seconds": 1425698,
+      "cycle_median_seconds": null,
+      "new_committed": 61,
+      "new_devdone": 61,
+      "new_accepted": 50,
+      "new_devdone_pct": 100.0,
+      "new_accepted_pct": 82.0
+    },
+    {
+      "month": "2026-08",
+      "month_label": "Ago/26",
+      "sprints": [
+        "SP 26.3.3",
+        "SP 26.3.2"
+      ],
+      "sprint_details": [
+        {
+          "name": "SP 26.3.3",
+          "committed": 122,
+          "devdone": 90,
+          "accepted": 43,
+          "devdone_pct": 73.8,
+          "accepted_pct": 35.2,
+          "new_committed": 38,
+          "new_devdone": 31,
+          "new_devdone_pct": 81.6
+        },
+        {
+          "name": "SP 26.3.2",
+          "committed": 118,
+          "devdone": 87,
+          "accepted": 34,
+          "devdone_pct": 73.7,
+          "accepted_pct": 28.8,
+          "new_committed": 51,
+          "new_devdone": 46,
+          "new_devdone_pct": 90.2
+        }
+      ],
+      "committed": 240,
+      "devdone": 177,
+      "accepted": 77,
+      "devdone_pct": 73.8,
+      "accepted_pct": 32.1,
+      "lead_median_seconds": 1034080,
+      "cycle_median_seconds": null,
+      "new_committed": 89,
+      "new_devdone": 77,
+      "new_accepted": 53,
+      "new_devdone_pct": 86.5,
+      "new_accepted_pct": 59.6
+    }
+  ],
+  "kpi_history": [
+    {
+      "meta": {
+        "id": 26918,
+        "name": "SP 26.3.3",
+        "state": "closed",
+        "start": "2026-08-03T03:00:45.000Z",
+        "end": "2026-08-15T02:30:00.000Z",
+        "complete": "2026-08-17T15:09:40.005Z",
+        "goal": ""
+      },
+      "summary": {
+        "issues_committed": 122,
+        "issues_devdone": 90,
+        "issues_accepted": 43,
+        "devdone_pct": 73.8,
+        "accepted_pct": 35.2
+      },
+      "new_only": {
+        "issues_committed": 38,
+        "issues_devdone": 31,
+        "issues_accepted": 22,
+        "devdone_pct": 81.6,
+        "accepted_pct": 57.9
+      },
+      "lead_time": {
+        "lead": {
+          "avg_seconds": 2330961,
+          "median_seconds": 948624,
+          "count": 100
+        },
+        "cycle": {
+          "avg_seconds": null,
+          "median_seconds": null,
+          "count": 0
+        }
+      }
+    },
+    {
+      "meta": {
+        "id": 26574,
+        "name": "SP 26.3.2",
+        "state": "closed",
+        "start": "2026-07-20T14:28:57.295Z",
+        "end": "2026-07-31T03:00:00.000Z",
+        "complete": "2026-08-03T14:04:18.866Z",
+        "goal": ""
+      },
+      "summary": {
+        "issues_committed": 118,
+        "issues_devdone": 87,
+        "issues_accepted": 34,
+        "devdone_pct": 73.7,
+        "accepted_pct": 28.8
+      },
+      "new_only": {
+        "issues_committed": 51,
+        "issues_devdone": 46,
+        "issues_accepted": 31,
+        "devdone_pct": 90.2,
+        "accepted_pct": 60.8
+      },
+      "lead_time": {
+        "lead": {
+          "avg_seconds": 2019889,
+          "median_seconds": 1119535,
+          "count": 100
+        },
+        "cycle": {
+          "avg_seconds": null,
+          "median_seconds": null,
+          "count": 0
+        }
+      }
+    },
+    {
+      "meta": {
+        "id": 25951,
+        "name": "SP 26.3.1",
+        "state": "closed",
+        "start": "2026-07-06T13:41:00.000Z",
+        "end": "2026-07-17T03:00:00.000Z",
+        "complete": "2026-07-20T14:28:38.379Z",
+        "goal": ""
+      },
+      "summary": {
+        "issues_committed": 99,
+        "issues_devdone": 63,
+        "issues_accepted": 32,
+        "devdone_pct": 63.6,
+        "accepted_pct": 32.3
+      },
+      "new_only": {
+        "issues_committed": 29,
+        "issues_devdone": 29,
+        "issues_accepted": 24,
+        "devdone_pct": 100.0,
+        "accepted_pct": 82.8
+      },
+      "lead_time": {
+        "lead": {
+          "avg_seconds": 3316702,
+          "median_seconds": 1521977,
+          "count": 91
+        },
+        "cycle": {
+          "avg_seconds": null,
+          "median_seconds": null,
+          "count": 0
+        }
+      }
+    },
+    {
+      "meta": {
+        "id": 24513,
+        "name": "SP 26.2.6",
+        "state": "closed",
+        "start": "2026-06-22T12:28:56.402Z",
+        "end": "2026-07-03T03:00:00.000Z",
+        "complete": "2026-07-05T13:41:11.297Z",
+        "goal": ""
+      },
+      "summary": {
+        "issues_committed": 83,
+        "issues_devdone": 55,
+        "issues_accepted": 15,
+        "devdone_pct": 66.3,
+        "accepted_pct": 18.1
+      },
+      "new_only": {
+        "issues_committed": 32,
+        "issues_devdone": 32,
+        "issues_accepted": 26,
+        "devdone_pct": 100.0,
+        "accepted_pct": 81.2
+      },
+      "lead_time": {
+        "lead": {
+          "avg_seconds": 3375793,
+          "median_seconds": 1308879,
+          "count": 75
+        },
+        "cycle": {
+          "avg_seconds": null,
+          "median_seconds": null,
+          "count": 0
+        }
+      }
+    },
+    {
+      "meta": {
+        "id": 23159,
+        "name": "SP 26.2.5",
+        "state": "closed",
+        "start": "2026-06-08T03:30:04.000Z",
+        "end": "2026-06-19T03:30:00.000Z",
+        "complete": "2026-06-23T12:28:36.970Z",
+        "goal": ""
+      },
+      "summary": {
+        "issues_committed": 74,
+        "issues_devdone": 53,
+        "issues_accepted": 23,
+        "devdone_pct": 71.6,
+        "accepted_pct": 31.1
+      },
+      "new_only": {
+        "issues_committed": 43,
+        "issues_devdone": 41,
+        "issues_accepted": 35,
+        "devdone_pct": 95.3,
+        "accepted_pct": 81.4
+      },
+      "lead_time": {
+        "lead": {
+          "avg_seconds": 3853703,
+          "median_seconds": 1233000,
+          "count": 66
+        },
+        "cycle": {
+          "avg_seconds": null,
+          "median_seconds": null,
+          "count": 0
+        }
+      }
+    },
+    {
+      "meta": {
+        "id": 23081,
+        "name": "SP 26.2.4",
+        "state": "closed",
+        "start": "2026-05-25T13:12:51.425Z",
+        "end": "2026-06-06T02:30:00.000Z",
+        "complete": "2026-06-08T14:53:10.353Z",
+        "goal": ""
+      },
+      "summary": {
+        "issues_committed": 52,
+        "issues_devdone": 36,
+        "issues_accepted": 21,
+        "devdone_pct": 69.2,
+        "accepted_pct": 40.4
+      },
+      "new_only": {
+        "issues_committed": 22,
+        "issues_devdone": 20,
+        "issues_accepted": 17,
+        "devdone_pct": 90.9,
+        "accepted_pct": 77.3
+      },
+      "lead_time": {
+        "lead": {
+          "avg_seconds": 5863758,
+          "median_seconds": 3523695,
+          "count": 46
+        },
+        "cycle": {
+          "avg_seconds": null,
+          "median_seconds": null,
+          "count": 0
+        }
+      }
+    },
+    {
+      "meta": {
+        "id": 22488,
+        "name": "SP 26.2.3",
+        "state": "closed",
+        "start": "2026-05-11T03:30:43.649Z",
+        "end": "2026-05-23T02:30:00.000Z",
+        "complete": "2026-05-25T13:11:51.748Z",
+        "goal": ""
+      },
+      "summary": {
+        "issues_committed": 67,
+        "issues_devdone": 51,
+        "issues_accepted": 41,
+        "devdone_pct": 76.1,
+        "accepted_pct": 61.2
+      },
+      "new_only": {
+        "issues_committed": 38,
+        "issues_devdone": 36,
+        "issues_accepted": 36,
+        "devdone_pct": 94.7,
+        "accepted_pct": 94.7
+      },
+      "lead_time": {
+        "lead": {
+          "avg_seconds": 3819150,
+          "median_seconds": 820027,
+          "count": 63
+        },
+        "cycle": {
+          "avg_seconds": null,
+          "median_seconds": null,
+          "count": 0
+        }
+      }
+    },
+    {
+      "meta": {
+        "id": 21974,
+        "name": "SP 26.2.2",
+        "state": "closed",
+        "start": "2026-04-27T13:22:56.692Z",
+        "end": "2026-05-08T03:00:00.000Z",
+        "complete": "2026-05-11T14:56:41.317Z",
+        "goal": ""
+      },
+      "summary": {
+        "issues_committed": 50,
+        "issues_devdone": 32,
+        "issues_accepted": 16,
+        "devdone_pct": 64.0,
+        "accepted_pct": 32.0
+      },
+      "new_only": {
+        "issues_committed": 17,
+        "issues_devdone": 17,
+        "issues_accepted": 17,
+        "devdone_pct": 100.0,
+        "accepted_pct": 100.0
+      },
+      "lead_time": {
+        "lead": {
+          "avg_seconds": 5644890,
+          "median_seconds": 2206326,
+          "count": 48
+        },
+        "cycle": {
+          "avg_seconds": null,
+          "median_seconds": null,
+          "count": 0
+        }
+      }
+    },
+    {
+      "meta": {
+        "id": 21268,
+        "name": "SP 26.2.1",
+        "state": "closed",
+        "start": "2026-04-13T03:00:40.000Z",
+        "end": "2026-04-24T03:00:00.000Z",
+        "complete": "2026-04-27T13:19:21.323Z",
+        "goal": ""
+      },
+      "summary": {
+        "issues_committed": 57,
+        "issues_devdone": 40,
+        "issues_accepted": 23,
+        "devdone_pct": 70.2,
+        "accepted_pct": 40.4
+      },
+      "new_only": {
+        "issues_committed": 22,
+        "issues_devdone": 22,
+        "issues_accepted": 20,
+        "devdone_pct": 100.0,
+        "accepted_pct": 90.9
+      },
+      "lead_time": {
+        "lead": {
+          "avg_seconds": 4984621,
+          "median_seconds": 1880257,
+          "count": 55
+        },
+        "cycle": {
+          "avg_seconds": null,
+          "median_seconds": null,
+          "count": 0
+        }
+      }
+    },
+    {
+      "meta": {
+        "id": 20217,
+        "name": "SP 26.1.6",
+        "state": "closed",
+        "start": "2026-03-30T16:56:01.568Z",
+        "end": "2026-04-10T03:00:00.000Z",
+        "complete": "2026-04-13T13:22:05.503Z",
+        "goal": ""
+      },
+      "summary": {
+        "issues_committed": 67,
+        "issues_devdone": 55,
+        "issues_accepted": 32,
+        "devdone_pct": 82.1,
+        "accepted_pct": 47.8
+      },
+      "new_only": {
+        "issues_committed": 27,
+        "issues_devdone": 27,
+        "issues_accepted": 26,
+        "devdone_pct": 100.0,
+        "accepted_pct": 96.3
+      },
+      "lead_time": {
+        "lead": {
+          "avg_seconds": 3630903,
+          "median_seconds": 964301,
+          "count": 65
+        },
+        "cycle": {
+          "avg_seconds": null,
+          "median_seconds": null,
+          "count": 0
+        }
+      }
+    },
+    {
+      "meta": {
+        "id": 19240,
+        "name": "SP 26.1.5",
+        "state": "closed",
+        "start": "2026-03-16T11:00:42.555Z",
+        "end": "2026-03-27T23:00:00.000Z",
+        "complete": "2026-03-30T16:55:35.125Z",
+        "goal": ""
+      },
+      "summary": {
+        "issues_committed": 45,
+        "issues_devdone": 33,
+        "issues_accepted": 4,
+        "devdone_pct": 73.3,
+        "accepted_pct": 8.9
+      },
+      "new_only": {
+        "issues_committed": 12,
+        "issues_devdone": 12,
+        "issues_accepted": 12,
+        "devdone_pct": 100.0,
+        "accepted_pct": 100.0
+      },
+      "lead_time": {
+        "lead": {
+          "avg_seconds": 4799324,
+          "median_seconds": 1658668,
+          "count": 42
+        },
+        "cycle": {
+          "avg_seconds": null,
+          "median_seconds": null,
+          "count": 0
+        }
+      }
+    },
+    {
+      "meta": {
+        "id": 18569,
+        "name": "SP 26.1.4",
+        "state": "closed",
+        "start": "2026-03-02T11:00:24.250Z",
+        "end": "2026-03-16T11:00:00.000Z",
+        "complete": "2026-03-16T14:07:45.510Z",
+        "goal": ""
+      },
+      "summary": {
+        "issues_committed": 48,
+        "issues_devdone": 35,
+        "issues_accepted": 15,
+        "devdone_pct": 72.9,
+        "accepted_pct": 31.2
+      },
+      "new_only": {
+        "issues_committed": 23,
+        "issues_devdone": 22,
+        "issues_accepted": 22,
+        "devdone_pct": 95.7,
+        "accepted_pct": 95.7
+      },
+      "lead_time": {
+        "lead": {
+          "avg_seconds": 4714958,
+          "median_seconds": 1500702,
+          "count": 45
+        },
+        "cycle": {
+          "avg_seconds": null,
+          "median_seconds": null,
+          "count": 0
+        }
+      }
+    },
+    {
+      "meta": {
+        "id": 17962,
+        "name": "SP 26.1.3",
+        "state": "closed",
+        "start": "2026-02-18T19:37:43.754Z",
+        "end": "2026-02-27T21:00:00.000Z",
+        "complete": "2026-03-02T14:55:10.422Z",
+        "goal": ""
+      },
+      "summary": {
+        "issues_committed": 44,
+        "issues_devdone": 34,
+        "issues_accepted": 21,
+        "devdone_pct": 77.3,
+        "accepted_pct": 47.7
+      },
+      "new_only": {
+        "issues_committed": 4,
+        "issues_devdone": 4,
+        "issues_accepted": 4,
+        "devdone_pct": 100.0,
+        "accepted_pct": 100.0
+      },
+      "lead_time": {
+        "lead": {
+          "avg_seconds": 6236073,
+          "median_seconds": 3520655,
+          "count": 44
+        },
+        "cycle": {
+          "avg_seconds": null,
+          "median_seconds": null,
+          "count": 0
+        }
+      }
+    }
+  ]
 }

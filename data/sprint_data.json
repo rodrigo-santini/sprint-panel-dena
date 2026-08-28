@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T19:24:22.840347+00:00",
+  "generated_at": "2026-08-28T19:43:11.335875+00:00",
   "project": "DENA",
   "board_id": 1094,
   "active": {
@@ -97,7 +97,7 @@
     },
     "health": {
       "status": "vermelho",
-      "elapsed_pct": 97.5,
+      "elapsed_pct": 97.6,
       "done_pct": 70.8
     },
     "scope": {
@@ -1813,7 +1813,7 @@
           "key": "DENA-2",
           "summary": "ALUNADO"
         },
-        "category": "SPN"
+        "category": "SJA"
       },
       {
         "key": "DENA-1404",
@@ -2435,7 +2435,7 @@
       },
       {
         "key": "DENA-1407",
-        "category": "SPN",
+        "category": "SJA",
         "is_new_in_sprint": true,
         "is_accepted": false,
         "is_devdone": false,
@@ -5230,7 +5230,7 @@
           "summary": "[INC0810866]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - PowerCenter",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 169.7,
+          "duration_hours": 170.0,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-08-21T14:45:02.333-0300",
           "sprint_count": 1,
@@ -5246,7 +5246,7 @@
           "summary": "[INC0811887]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - PowerCenter",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 69.6,
+          "duration_hours": 69.9,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-08-25T18:46:57.083-0300",
           "sprint_count": 1,
@@ -5262,7 +5262,7 @@
           "summary": "[INC0811675]Tenho um Erro/Problema com o Sistema - Olimpo - Enturmacao",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 29.7,
+          "duration_hours": 30.0,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-08-27T10:42:46.741-0300",
           "sprint_count": 1,
@@ -5271,14 +5271,14 @@
             "summary": "ALUNADO",
             "type": "Epic"
           },
-          "category": "SPN"
+          "category": "SJA"
         },
         {
           "key": "DENA-1409",
           "summary": "[INC0812606]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - PowerCenter",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 23.4,
+          "duration_hours": 23.7,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-08-27T16:59:43.909-0300",
           "sprint_count": 1,
@@ -5892,8 +5892,8 @@
       "priority": "Médio",
       "created": "2026-08-11T16:27:44.365-0300",
       "updated": "2026-08-11T16:30:55.625-0300",
-      "days_old": 16,
-      "days_since_update": 16,
+      "days_old": 17,
+      "days_since_update": 17,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "Anderson Morais E Castro Fort",
       "parent": null,
@@ -6603,7 +6603,7 @@
       "priority": "Médio",
       "created": "2026-02-19T16:37:00.437-0300",
       "updated": "2026-06-15T15:09:39.874-0300",
-      "days_old": 189,
+      "days_old": 190,
       "days_since_update": 74,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "Karla Ynonye Zucchini",

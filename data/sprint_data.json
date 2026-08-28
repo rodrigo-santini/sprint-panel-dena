@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T15:19:11.635285+00:00",
+  "generated_at": "2026-08-28T17:05:01.096992+00:00",
   "project": "DENA",
   "board_id": 1094,
   "active": {
@@ -36,11 +36,11 @@
       },
       "status_dist": {
         "Aceito": 21,
-        "Em Andamento": 11,
+        "Em Andamento": 12,
         "Concluído": 53,
         "Bloqueado": 4,
         "Backlog": 13,
-        "Refinamento": 3
+        "Refinamento": 2
       },
       "accepted_keys": [
         "DENA-1082",
@@ -97,7 +97,7 @@
     },
     "health": {
       "status": "vermelho",
-      "elapsed_pct": 96.1,
+      "elapsed_pct": 96.7,
       "done_pct": 70.5
     },
     "scope": {
@@ -2022,6 +2022,25 @@
         "category": "SJA"
       },
       {
+        "key": "DENA-1401",
+        "summary": "Inclusão de chaves de conexão (curso, disciplina, seller/escola) nas gold tables de satisfação",
+        "type": "História",
+        "status": "Em Andamento",
+        "sprint_count": 1,
+        "is_new": true,
+        "story_points": null,
+        "assignee": "Marlon Koiti Melo Dias",
+        "last_comment_at": null,
+        "last_comment_by": null,
+        "recent_comment_24h": false,
+        "time_spent_seconds": null,
+        "parent": {
+          "key": "DENA-1334",
+          "summary": "VOOMP"
+        },
+        "category": "SPN"
+      },
+      {
         "key": "DENA-1354",
         "summary": "Relatório Minhas vendas Tempo real - DynamoDB",
         "type": "História",
@@ -2077,22 +2096,6 @@
           "summary": "MACROPROCESSO"
         },
         "category": "ENG"
-      },
-      {
-        "key": "DENA-1401",
-        "summary": "Inclusão de chaves de conexão (curso, disciplina, seller/escola) nas gold tables de satisfação",
-        "type": "História",
-        "status": "Refinamento",
-        "sprint_count": 1,
-        "is_new": true,
-        "story_points": null,
-        "assignee": "Marlon Koiti Melo Dias",
-        "last_comment_at": null,
-        "last_comment_by": null,
-        "recent_comment_24h": false,
-        "time_spent_seconds": null,
-        "parent": null,
-        "category": ""
       }
     ],
     "all_issues": [
@@ -2548,18 +2551,6 @@
         "is_devdone": false,
         "status_name": "Backlog",
         "sprint_count": 8,
-        "story_points": null,
-        "lead_seconds": null,
-        "cycle_seconds": null
-      },
-      {
-        "key": "DENA-1401",
-        "category": "",
-        "is_new_in_sprint": true,
-        "is_accepted": false,
-        "is_devdone": false,
-        "status_name": "Refinamento",
-        "sprint_count": 1,
         "story_points": null,
         "lead_seconds": null,
         "cycle_seconds": null
@@ -3223,6 +3214,18 @@
         "story_points": 3.0,
         "lead_seconds": 19042124.999,
         "cycle_seconds": 3258047.626
+      },
+      {
+        "key": "DENA-1401",
+        "category": "SPN",
+        "is_new_in_sprint": true,
+        "is_accepted": false,
+        "is_devdone": false,
+        "status_name": "Em Andamento",
+        "sprint_count": 1,
+        "story_points": null,
+        "lead_seconds": null,
+        "cycle_seconds": null
       },
       {
         "key": "DENA-1354",
@@ -5193,7 +5196,7 @@
           "summary": "[INC0810866]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - PowerCenter",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 165.6,
+          "duration_hours": 167.3,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-08-21T14:45:02.333-0300",
           "sprint_count": 1,
@@ -5209,7 +5212,7 @@
           "summary": "[INC0811887]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - PowerCenter",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 65.5,
+          "duration_hours": 67.3,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-08-25T18:46:57.083-0300",
           "sprint_count": 1,
@@ -5225,7 +5228,7 @@
           "summary": "[INC0811675]Tenho um Erro/Problema com o Sistema - Olimpo - Enturmacao",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 25.6,
+          "duration_hours": 27.4,
           "assignee": "",
           "created": "2026-08-27T10:42:46.741-0300",
           "sprint_count": 1,
@@ -5237,7 +5240,7 @@
           "summary": "[INC0812606]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - PowerCenter",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 19.3,
+          "duration_hours": 21.1,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-08-27T16:59:43.909-0300",
           "sprint_count": 1,
@@ -5731,7 +5734,7 @@
       "created": "2026-08-26T16:11:50.580-0300",
       "updated": "2026-08-27T12:20:25.291-0300",
       "days_old": 1,
-      "days_since_update": 0,
+      "days_since_update": 1,
       "assignee": "Giovanna Souza Bancala",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -5750,7 +5753,7 @@
       "created": "2026-08-26T16:08:44.267-0300",
       "updated": "2026-08-27T12:20:12.507-0300",
       "days_old": 1,
-      "days_since_update": 0,
+      "days_since_update": 1,
       "assignee": "Giovanna Souza Bancala",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -5817,7 +5820,7 @@
       "created": "2026-08-25T11:41:46.706-0300",
       "updated": "2026-08-25T12:19:55.403-0300",
       "days_old": 3,
-      "days_since_update": 2,
+      "days_since_update": 3,
       "assignee": "Vanessa Macedo Cavalcanti De Souza",
       "reporter": "Anderson Morais E Castro Fort",
       "parent": {
@@ -5935,7 +5938,7 @@
       "created": "2026-07-30T18:31:37.367-0300",
       "updated": "2026-08-19T13:20:11.882-0300",
       "days_old": 28,
-      "days_since_update": 8,
+      "days_since_update": 9,
       "assignee": "Vanessa Macedo Cavalcanti De Souza",
       "reporter": "Rosilaine Papa da Silva",
       "parent": {
@@ -5954,7 +5957,7 @@
       "created": "2026-07-30T15:23:12.734-0300",
       "updated": "2026-08-19T13:20:12.923-0300",
       "days_old": 28,
-      "days_since_update": 8,
+      "days_since_update": 9,
       "assignee": "Vanessa Macedo Cavalcanti De Souza",
       "reporter": "Rosilaine Papa da Silva",
       "parent": {
@@ -5973,7 +5976,7 @@
       "created": "2026-07-30T11:57:38.545-0300",
       "updated": "2026-08-19T13:20:14.483-0300",
       "days_old": 29,
-      "days_since_update": 8,
+      "days_since_update": 9,
       "assignee": "Larissa Oliveira De Melo",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -5992,7 +5995,7 @@
       "created": "2026-07-30T11:53:07.583-0300",
       "updated": "2026-08-19T13:20:15.213-0300",
       "days_old": 29,
-      "days_since_update": 8,
+      "days_since_update": 9,
       "assignee": "Larissa Oliveira De Melo",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -6042,7 +6045,7 @@
       "priority": "Médio",
       "created": "2026-07-17T13:47:42.435-0300",
       "updated": "2026-07-17T15:20:31.933-0300",
-      "days_old": 41,
+      "days_old": 42,
       "days_since_update": 41,
       "assignee": "Tiago Gomes Ferreira",
       "reporter": "André Mendonça Pauletti",
@@ -6062,7 +6065,7 @@
       "created": "2026-07-14T10:18:29.867-0300",
       "updated": "2026-07-30T13:44:43.669-0300",
       "days_old": 45,
-      "days_since_update": 28,
+      "days_since_update": 29,
       "assignee": "Diogenes Coelho de Freitas",
       "reporter": "André Mendonça Pauletti",
       "parent": null,
@@ -6093,8 +6096,8 @@
       "priority": "Médio",
       "created": "2026-07-07T13:37:55.652-0300",
       "updated": "2026-07-07T13:38:02.715-0300",
-      "days_old": 51,
-      "days_since_update": 51,
+      "days_old": 52,
+      "days_since_update": 52,
       "assignee": "",
       "reporter": "Jira Integração",
       "parent": null,
@@ -6549,7 +6552,7 @@
       "priority": "Médio",
       "created": "2026-02-25T12:49:15.825-0300",
       "updated": "2026-08-13T16:56:31.337-0300",
-      "days_old": 183,
+      "days_old": 184,
       "days_since_update": 14,
       "assignee": "Karla Ynonye Zucchini",
       "reporter": "Karla Ynonye Zucchini",
@@ -6696,7 +6699,7 @@
       "priority": "Altíssima",
       "created": "2026-01-16T14:00:08.726-0300",
       "updated": "2026-02-19T10:12:54.729-0300",
-      "days_old": 223,
+      "days_old": 224,
       "days_since_update": 190,
       "assignee": "",
       "reporter": "JOSE VALDOBERTO LEAO",

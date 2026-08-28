@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T17:05:01.096992+00:00",
+  "generated_at": "2026-08-28T19:24:22.840347+00:00",
   "project": "DENA",
   "board_id": 1094,
   "active": {
@@ -13,21 +13,21 @@
       "goal": ""
     },
     "summary": {
-      "issues_committed": 105,
+      "issues_committed": 106,
       "issues_accepted": 21,
-      "issues_devdone": 74,
-      "issues_not_completed": 84,
+      "issues_devdone": 75,
+      "issues_not_completed": 85,
       "issues_punted": 0,
       "issues_completed_elsewhere": 0,
-      "issues_added_during": 104,
-      "accepted_pct": 20.0,
-      "devdone_pct": 70.5,
+      "issues_added_during": 105,
+      "accepted_pct": 19.8,
+      "devdone_pct": 70.8,
       "points_committed": 432.0,
       "points_accepted": 24.0,
       "points_not_completed": 196.0,
       "points_accepted_pct": 5.6,
       "by_type": {
-        "História": 72,
+        "História": 73,
         "Mudança": 7,
         "Incidente": 19,
         "Suporte": 1,
@@ -37,7 +37,7 @@
       "status_dist": {
         "Aceito": 21,
         "Em Andamento": 12,
-        "Concluído": 53,
+        "Concluído": 54,
         "Bloqueado": 4,
         "Backlog": 13,
         "Refinamento": 2
@@ -85,24 +85,24 @@
       ]
     },
     "new_only": {
-      "issues_committed": 26,
+      "issues_committed": 27,
       "issues_accepted": 9,
-      "issues_devdone": 15,
+      "issues_devdone": 16,
       "issues_not_completed": 11,
-      "accepted_pct": 34.6,
-      "devdone_pct": 57.7,
+      "accepted_pct": 33.3,
+      "devdone_pct": 59.3,
       "points_committed": 8.0,
       "points_accepted": 0.0,
       "points_accepted_pct": 0.0
     },
     "health": {
       "status": "vermelho",
-      "elapsed_pct": 96.7,
-      "done_pct": 70.5
+      "elapsed_pct": 97.5,
+      "done_pct": 70.8
     },
     "scope": {
       "carryover": 79,
-      "new_in_sprint": 26
+      "new_in_sprint": 27
     },
     "issues": [
       {
@@ -1791,8 +1791,8 @@
         "recent_comment_24h": false,
         "time_spent_seconds": null,
         "parent": {
-          "key": "DENA-2",
-          "summary": "ALUNADO"
+          "key": "DENA-1220",
+          "summary": "AESABI"
         },
         "category": "SJA"
       },
@@ -1804,13 +1804,16 @@
         "sprint_count": 1,
         "is_new": true,
         "story_points": null,
-        "assignee": "",
+        "assignee": "Vanessa Macedo Cavalcanti De Souza",
         "last_comment_at": null,
         "last_comment_by": null,
         "recent_comment_24h": false,
         "time_spent_seconds": null,
-        "parent": null,
-        "category": ""
+        "parent": {
+          "key": "DENA-2",
+          "summary": "ALUNADO"
+        },
+        "category": "SPN"
       },
       {
         "key": "DENA-1404",
@@ -1826,8 +1829,8 @@
         "recent_comment_24h": false,
         "time_spent_seconds": null,
         "parent": {
-          "key": "DENA-2",
-          "summary": "ALUNADO"
+          "key": "DENA-1220",
+          "summary": "AESABI"
         },
         "category": "SJA"
       },
@@ -2001,6 +2004,25 @@
           "summary": "CAPTAÇÃO ANALITICA"
         },
         "category": "SCG"
+      },
+      {
+        "key": "DENA-1256",
+        "summary": "Criação da flag de presencialidade pela Nova Modalidade do Marco Regulatório no DMC - AesaBi",
+        "type": "História",
+        "status": "Concluído",
+        "sprint_count": 1,
+        "is_new": true,
+        "story_points": null,
+        "assignee": "Vanessa Macedo Cavalcanti De Souza",
+        "last_comment_at": null,
+        "last_comment_by": null,
+        "recent_comment_24h": false,
+        "time_spent_seconds": 14400,
+        "parent": {
+          "key": "DENA-1220",
+          "summary": "AESABI"
+        },
+        "category": "SJA"
       },
       {
         "key": "DENA-1255",
@@ -2413,7 +2435,7 @@
       },
       {
         "key": "DENA-1407",
-        "category": "",
+        "category": "SPN",
         "is_new_in_sprint": true,
         "is_accepted": false,
         "is_devdone": false,
@@ -2734,6 +2756,18 @@
         "story_points": null,
         "lead_seconds": 1038683.591,
         "cycle_seconds": 516557.219
+      },
+      {
+        "key": "DENA-1256",
+        "category": "SJA",
+        "is_new_in_sprint": true,
+        "is_accepted": false,
+        "is_devdone": true,
+        "status_name": "Concluído",
+        "sprint_count": 1,
+        "story_points": null,
+        "lead_seconds": 2507009.528,
+        "cycle_seconds": 5212.495
       },
       {
         "key": "DENA-1255",
@@ -5196,7 +5230,7 @@
           "summary": "[INC0810866]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - PowerCenter",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 167.3,
+          "duration_hours": 169.7,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-08-21T14:45:02.333-0300",
           "sprint_count": 1,
@@ -5212,13 +5246,13 @@
           "summary": "[INC0811887]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - PowerCenter",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 67.3,
+          "duration_hours": 69.6,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-08-25T18:46:57.083-0300",
           "sprint_count": 1,
           "parent": {
-            "key": "DENA-2",
-            "summary": "ALUNADO",
+            "key": "DENA-1220",
+            "summary": "AESABI",
             "type": "Epic"
           },
           "category": "SJA"
@@ -5228,25 +5262,29 @@
           "summary": "[INC0811675]Tenho um Erro/Problema com o Sistema - Olimpo - Enturmacao",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 27.4,
-          "assignee": "",
+          "duration_hours": 29.7,
+          "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-08-27T10:42:46.741-0300",
           "sprint_count": 1,
-          "parent": null,
-          "category": ""
+          "parent": {
+            "key": "DENA-2",
+            "summary": "ALUNADO",
+            "type": "Epic"
+          },
+          "category": "SPN"
         },
         {
           "key": "DENA-1409",
           "summary": "[INC0812606]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - PowerCenter",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 21.1,
+          "duration_hours": 23.4,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-08-27T16:59:43.909-0300",
           "sprint_count": 1,
           "parent": {
-            "key": "DENA-2",
-            "summary": "ALUNADO",
+            "key": "DENA-1220",
+            "summary": "AESABI",
             "type": "Epic"
           },
           "category": "SJA"
@@ -5669,14 +5707,14 @@
   "lead_time": {
     "active": {
       "lead": {
-        "avg_seconds": 2356277,
-        "median_seconds": 961903,
-        "count": 74
+        "avg_seconds": 2358287,
+        "median_seconds": 975287,
+        "count": 75
       },
       "cycle": {
-        "avg_seconds": 846038,
-        "median_seconds": 353859,
-        "count": 74
+        "avg_seconds": 834827,
+        "median_seconds": 344343,
+        "count": 75
       }
     },
     "last_closed": {
@@ -5693,6 +5731,22 @@
     }
   },
   "backlog": [
+    {
+      "key": "DENA-1411",
+      "summary": "Tabelas target dm_campanhas_voomp vazias no Redshift PRD (aluno, aluno_evadido, ex_aluno)",
+      "type": "Bug",
+      "status": "Backlog",
+      "priority": "Médio",
+      "created": "2026-08-28T15:59:58.274-0300",
+      "updated": "2026-08-28T16:00:01.154-0300",
+      "days_old": 0,
+      "days_since_update": 0,
+      "assignee": "Vanessa Macedo Cavalcanti De Souza",
+      "reporter": "Rosilaine Papa da Silva",
+      "parent": null,
+      "category": "",
+      "story_points": null
+    },
     {
       "key": "DENA-1410",
       "summary": "Bug 1 - Validar alunos owner prof que não estão na bas",
@@ -5717,8 +5771,8 @@
       "priority": "Médio",
       "created": "2026-08-27T15:30:50.414-0300",
       "updated": "2026-08-27T15:30:54.136-0300",
-      "days_old": 0,
-      "days_since_update": 0,
+      "days_old": 1,
+      "days_since_update": 1,
       "assignee": "DENNIS VINICIUS DA SILVA ROCHA",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -5733,7 +5787,7 @@
       "priority": "Médio",
       "created": "2026-08-26T16:11:50.580-0300",
       "updated": "2026-08-27T12:20:25.291-0300",
-      "days_old": 1,
+      "days_old": 2,
       "days_since_update": 1,
       "assignee": "Giovanna Souza Bancala",
       "reporter": "Sandro Pereira Dos Santos",
@@ -5752,7 +5806,7 @@
       "priority": "Médio",
       "created": "2026-08-26T16:08:44.267-0300",
       "updated": "2026-08-27T12:20:12.507-0300",
-      "days_old": 1,
+      "days_old": 2,
       "days_since_update": 1,
       "assignee": "Giovanna Souza Bancala",
       "reporter": "Sandro Pereira Dos Santos",
@@ -5760,22 +5814,6 @@
         "key": "DENA-3",
         "summary": "ENGAJAMENTO"
       },
-      "category": "",
-      "story_points": null
-    },
-    {
-      "key": "DENA-1403",
-      "summary": "Reprocessamento de tabelas RVV - Call Center",
-      "type": "História",
-      "status": "Backlog",
-      "priority": "Médio",
-      "created": "2026-08-25T16:46:02.526-0300",
-      "updated": "2026-08-25T16:57:34.258-0300",
-      "days_old": 2,
-      "days_since_update": 2,
-      "assignee": "",
-      "reporter": "Daniele Santana De Brito",
-      "parent": null,
       "category": "",
       "story_points": null
     },
@@ -5802,9 +5840,9 @@
       "status": "Backlog",
       "priority": "Médio",
       "created": "2026-08-25T14:14:26.901-0300",
-      "updated": "2026-08-25T14:16:00.026-0300",
-      "days_old": 2,
-      "days_since_update": 2,
+      "updated": "2026-08-28T15:34:24.527-0300",
+      "days_old": 3,
+      "days_since_update": 0,
       "assignee": "Ruy Moraes Leite",
       "reporter": "Daniele Santana De Brito",
       "parent": null,
@@ -5828,57 +5866,6 @@
         "summary": "ESTRUTURANTE"
       },
       "category": "SJA",
-      "story_points": null
-    },
-    {
-      "key": "DENA-1392",
-      "summary": "Extensão e Migração - Relatório Treinamento - UniCo",
-      "type": "História",
-      "status": "Backlog",
-      "priority": "Médio",
-      "created": "2026-08-24T10:20:48.410-0300",
-      "updated": "2026-08-25T10:49:24.454-0300",
-      "days_old": 4,
-      "days_since_update": 3,
-      "assignee": "Ananda Ellen Morais Di Rado",
-      "reporter": "Daniele Santana De Brito",
-      "parent": null,
-      "category": "",
-      "story_points": null
-    },
-    {
-      "key": "DENA-1391",
-      "summary": "De/Para de aluno RVV",
-      "type": "História",
-      "status": "Backlog",
-      "priority": "Alta",
-      "created": "2026-08-21T17:57:30.366-0300",
-      "updated": "2026-08-24T09:46:25.950-0300",
-      "days_old": 6,
-      "days_since_update": 4,
-      "assignee": "",
-      "reporter": "Daniele Santana De Brito",
-      "parent": null,
-      "category": "",
-      "story_points": null
-    },
-    {
-      "key": "DENA-1360",
-      "summary": "Marcação análise curricular para tipos de ingresso \"Enem\" e \"Vestibular\" - Captar | Graduação",
-      "type": "História",
-      "status": "Backlog",
-      "priority": "Médio",
-      "created": "2026-08-13T19:40:30.601-0300",
-      "updated": "2026-08-14T16:19:55.915-0300",
-      "days_old": 14,
-      "days_since_update": 13,
-      "assignee": "",
-      "reporter": "André Mendonça Pauletti",
-      "parent": {
-        "key": "DENA-4",
-        "summary": "CAPTAÇÃO ANALITICA"
-      },
-      "category": "",
       "story_points": null
     },
     {
@@ -5949,25 +5936,6 @@
       "story_points": null
     },
     {
-      "key": "DENA-1256",
-      "summary": "Criação da flag de presencialidade pela Nova Modalidade do Marco Regulatório no DMC - AesaBi",
-      "type": "História",
-      "status": "Backlog",
-      "priority": "Médio",
-      "created": "2026-07-30T15:23:12.734-0300",
-      "updated": "2026-08-19T13:20:12.923-0300",
-      "days_old": 28,
-      "days_since_update": 9,
-      "assignee": "Vanessa Macedo Cavalcanti De Souza",
-      "reporter": "Rosilaine Papa da Silva",
-      "parent": {
-        "key": "DENA-1220",
-        "summary": "AESABI"
-      },
-      "category": "SJA",
-      "story_points": null
-    },
-    {
       "key": "DENA-1254",
       "summary": "BUG 3 — fl_evv e dt_evasao com 22 registros a menos que a origem",
       "type": "Bug",
@@ -6013,8 +5981,8 @@
       "priority": "Médio",
       "created": "2026-07-27T15:25:53.340-0300",
       "updated": "2026-07-28T15:58:08.967-0300",
-      "days_old": 31,
-      "days_since_update": 30,
+      "days_old": 32,
+      "days_since_update": 31,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "André Mendonça Pauletti",
       "parent": null,
@@ -6046,7 +6014,7 @@
       "created": "2026-07-17T13:47:42.435-0300",
       "updated": "2026-07-17T15:20:31.933-0300",
       "days_old": 42,
-      "days_since_update": 41,
+      "days_since_update": 42,
       "assignee": "Tiago Gomes Ferreira",
       "reporter": "André Mendonça Pauletti",
       "parent": {
@@ -6147,7 +6115,7 @@
       "priority": "Médio",
       "created": "2026-07-02T14:21:42.327-0300",
       "updated": "2026-07-03T18:39:55.175-0300",
-      "days_old": 56,
+      "days_old": 57,
       "days_since_update": 55,
       "assignee": "Ananda Ellen Morais Di Rado",
       "reporter": "Karla Ynonye Zucchini",
@@ -6195,8 +6163,8 @@
       "priority": "Médio",
       "created": "2026-06-05T16:09:10.432-0300",
       "updated": "2026-06-05T16:16:38.220-0300",
-      "days_old": 83,
-      "days_since_update": 83,
+      "days_old": 84,
+      "days_since_update": 84,
       "assignee": "",
       "reporter": "André Mendonça Pauletti",
       "parent": null,
@@ -6244,7 +6212,7 @@
       "created": "2026-05-20T19:37:46.510-0300",
       "updated": "2026-06-12T15:26:39.525-0300",
       "days_old": 99,
-      "days_since_update": 76,
+      "days_since_update": 77,
       "assignee": "",
       "reporter": "Gilson Dos Santos",
       "parent": null,
@@ -6488,8 +6456,8 @@
       "priority": "Médio",
       "created": "2026-03-31T15:47:38.234-0300",
       "updated": "2026-06-15T15:14:00.886-0300",
-      "days_old": 149,
-      "days_since_update": 73,
+      "days_old": 150,
+      "days_since_update": 74,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "Luciano De Oliveira Santos",
       "parent": null,
@@ -6504,7 +6472,7 @@
       "priority": "Médio",
       "created": "2026-03-16T14:58:55.488-0300",
       "updated": "2026-05-28T18:21:01.656-0300",
-      "days_old": 164,
+      "days_old": 165,
       "days_since_update": 91,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "Karla Ynonye Zucchini",
@@ -6536,7 +6504,7 @@
       "priority": "Médio",
       "created": "2026-03-05T14:20:22.767-0300",
       "updated": "2026-08-13T16:56:36.265-0300",
-      "days_old": 175,
+      "days_old": 176,
       "days_since_update": 14,
       "assignee": "Karla Ynonye Zucchini",
       "reporter": "Karla Ynonye Zucchini",
@@ -6569,7 +6537,7 @@
       "created": "2026-02-19T18:09:23.604-0300",
       "updated": "2026-06-15T15:22:58.949-0300",
       "days_old": 189,
-      "days_since_update": 73,
+      "days_since_update": 74,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -6585,7 +6553,7 @@
       "created": "2026-02-19T18:07:26.096-0300",
       "updated": "2026-06-15T15:24:36.491-0300",
       "days_old": 189,
-      "days_since_update": 73,
+      "days_since_update": 74,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -6620,7 +6588,7 @@
       "created": "2026-02-19T17:57:42.645-0300",
       "updated": "2026-06-15T15:19:55.731-0300",
       "days_old": 189,
-      "days_since_update": 73,
+      "days_since_update": 74,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -6636,7 +6604,7 @@
       "created": "2026-02-19T16:37:00.437-0300",
       "updated": "2026-06-15T15:09:39.874-0300",
       "days_old": 189,
-      "days_since_update": 73,
+      "days_since_update": 74,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -6753,8 +6721,8 @@
       "priority": "Médio",
       "created": "2025-10-24T14:30:29.832-0300",
       "updated": "2025-10-24T14:30:32.972-0300",
-      "days_old": 307,
-      "days_since_update": 307,
+      "days_old": 308,
+      "days_since_update": 308,
       "assignee": "",
       "reporter": "Carolina Teixeira Dias",
       "parent": null,
@@ -6949,9 +6917,9 @@
           "2026-05": 10.5,
           "2026-06": 15.2,
           "2026-07": 34.5,
-          "2026-08": 44.0
+          "2026-08": 48.0
         },
-        "total": 139.2
+        "total": 143.2
       },
       {
         "name": "Ananda Ellen Morais Di Rado",
@@ -7068,9 +7036,9 @@
       "2026-05": 218.5,
       "2026-06": 531.3,
       "2026-07": 1174.6,
-      "2026-08": 688.4
+      "2026-08": 692.4
     },
-    "total_general": 2923.8
+    "total_general": 2927.8
   },
   "kpi_monthly": [
     {

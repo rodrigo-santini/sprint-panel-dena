@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T14:20:21.692690+00:00",
+  "generated_at": "2026-08-31T14:47:17.961408+00:00",
   "project": "DENA",
   "board_id": 1094,
   "active": {
@@ -13,21 +13,21 @@
       "goal": ""
     },
     "summary": {
-      "issues_committed": 83,
+      "issues_committed": 84,
       "issues_accepted": 0,
       "issues_devdone": 48,
-      "issues_not_completed": 83,
+      "issues_not_completed": 84,
       "issues_punted": 0,
       "issues_completed_elsewhere": 0,
-      "issues_added_during": 0,
+      "issues_added_during": 1,
       "accepted_pct": 0.0,
-      "devdone_pct": 57.8,
+      "devdone_pct": 57.1,
       "points_committed": 196.0,
       "points_accepted": 0.0,
       "points_not_completed": 196.0,
       "points_accepted_pct": 0.0,
       "by_type": {
-        "História": 67,
+        "História": 68,
         "Suporte": 1,
         "Bug": 5,
         "Mudança": 5,
@@ -38,7 +38,7 @@
         "Em Andamento": 12,
         "Concluído": 48,
         "Bloqueado": 4,
-        "Backlog": 17,
+        "Backlog": 18,
         "Refinamento": 2
       },
       "accepted_keys": [],
@@ -62,10 +62,10 @@
       ]
     },
     "new_only": {
-      "issues_committed": 6,
+      "issues_committed": 7,
       "issues_accepted": 0,
       "issues_devdone": 0,
-      "issues_not_completed": 6,
+      "issues_not_completed": 7,
       "accepted_pct": 0.0,
       "devdone_pct": 0.0,
       "points_committed": 3.0,
@@ -74,12 +74,12 @@
     },
     "health": {
       "status": "verde",
-      "elapsed_pct": 0.0,
-      "done_pct": 57.8
+      "elapsed_pct": 0.2,
+      "done_pct": 57.1
     },
     "scope": {
       "carryover": 77,
-      "new_in_sprint": 6
+      "new_in_sprint": 7
     },
     "issues": [
       {
@@ -1546,6 +1546,22 @@
         "category": "ENG"
       },
       {
+        "key": "DENA-1408",
+        "summary": "Ajustes / melhorias no Produto de Estagio obrigatorio",
+        "type": "História",
+        "status": "Backlog",
+        "sprint_count": 1,
+        "is_new": true,
+        "story_points": null,
+        "assignee": "DENNIS VINICIUS DA SILVA ROCHA",
+        "last_comment_at": null,
+        "last_comment_by": null,
+        "recent_comment_24h": false,
+        "time_spent_seconds": null,
+        "parent": null,
+        "category": ""
+      },
+      {
         "key": "DENA-1403",
         "summary": "Reprocessamento de tabelas RVV - Call Center",
         "type": "História",
@@ -1717,6 +1733,18 @@
         "is_devdone": false,
         "status_name": "Backlog",
         "sprint_count": 2,
+        "story_points": null,
+        "lead_seconds": null,
+        "cycle_seconds": null
+      },
+      {
+        "key": "DENA-1408",
+        "category": "",
+        "is_new_in_sprint": true,
+        "is_accepted": false,
+        "is_devdone": false,
+        "status_name": "Backlog",
+        "sprint_count": 1,
         "story_points": null,
         "lead_seconds": null,
         "cycle_seconds": null
@@ -4096,7 +4124,7 @@
           "summary": "[INC0810866]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - PowerCenter",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 236.6,
+          "duration_hours": 237.0,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-08-21T14:45:02.333-0300",
           "sprint_count": 2,
@@ -4112,7 +4140,7 @@
           "summary": "[INC0811887]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - PowerCenter",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 136.6,
+          "duration_hours": 137.0,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-08-25T18:46:57.083-0300",
           "sprint_count": 2,
@@ -4128,7 +4156,7 @@
           "summary": "[INC0812606]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - PowerCenter",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 90.3,
+          "duration_hours": 90.8,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-08-27T16:59:43.909-0300",
           "sprint_count": 2,
@@ -4411,7 +4439,7 @@
           "summary": "[INC0810866]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - PowerCenter",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 236.6,
+          "duration_hours": 237.0,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-08-21T14:45:02.333-0300",
           "sprint_count": 2,
@@ -4427,7 +4455,7 @@
           "summary": "[INC0811887]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - PowerCenter",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 136.6,
+          "duration_hours": 137.0,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-08-25T18:46:57.083-0300",
           "sprint_count": 2,
@@ -4443,7 +4471,7 @@
           "summary": "[INC0812606]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - PowerCenter",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 90.3,
+          "duration_hours": 90.8,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-08-27T16:59:43.909-0300",
           "sprint_count": 2,
@@ -4534,22 +4562,6 @@
       "story_points": null
     },
     {
-      "key": "DENA-1408",
-      "summary": "Ajustes / melhorias no Produto de Estagio obrigatorio",
-      "type": "História",
-      "status": "Backlog",
-      "priority": "Médio",
-      "created": "2026-08-27T15:30:50.414-0300",
-      "updated": "2026-08-31T09:47:30.610-0300",
-      "days_old": 3,
-      "days_since_update": 0,
-      "assignee": "DENNIS VINICIUS DA SILVA ROCHA",
-      "reporter": "Karla Ynonye Zucchini",
-      "parent": null,
-      "category": "",
-      "story_points": null
-    },
-    {
       "key": "DENA-1406",
       "summary": "Engajamento fase III – Inclusão de novos campos",
       "type": "História",
@@ -4595,7 +4607,7 @@
       "priority": "Médio",
       "created": "2026-08-25T11:41:46.706-0300",
       "updated": "2026-08-25T12:19:55.403-0300",
-      "days_old": 5,
+      "days_old": 6,
       "days_since_update": 5,
       "assignee": "Vanessa Macedo Cavalcanti De Souza",
       "reporter": "Anderson Morais E Castro Fort",
@@ -5339,7 +5351,7 @@
       "created": "2026-02-19T12:00:22.427-0300",
       "updated": "2026-07-30T11:25:59.617-0300",
       "days_old": 192,
-      "days_since_update": 31,
+      "days_since_update": 32,
       "assignee": "Rodrigo Santini Guarinon",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -5472,7 +5484,7 @@
       "priority": "Médio",
       "created": "2025-07-11T11:37:19.698-0300",
       "updated": "2026-05-28T18:21:36.617-0300",
-      "days_old": 415,
+      "days_old": 416,
       "days_since_update": 94,
       "assignee": "",
       "reporter": "Rodrigo Santini Guarinon",
@@ -5511,7 +5523,7 @@
       "created": "2025-04-28T09:34:31.442-0300",
       "updated": "2025-05-13T11:39:01.715-0300",
       "days_old": 490,
-      "days_since_update": 474,
+      "days_since_update": 475,
       "assignee": "",
       "reporter": "Anderson Morais E Castro Fort",
       "parent": {
@@ -5809,7 +5821,7 @@
       "devdone_pct": 74.5,
       "accepted_pct": 29.2,
       "lead_median_seconds": 2229805,
-      "cycle_median_seconds": null,
+      "cycle_median_seconds": 1429099,
       "new_committed": 39,
       "new_devdone": 38,
       "new_accepted": 38,
@@ -5853,7 +5865,7 @@
       "devdone_pct": 76.6,
       "accepted_pct": 44.4,
       "lead_median_seconds": 1384114,
-      "cycle_median_seconds": null,
+      "cycle_median_seconds": 595210,
       "new_committed": 49,
       "new_devdone": 49,
       "new_accepted": 46,
@@ -5897,7 +5909,7 @@
       "devdone_pct": 70.9,
       "accepted_pct": 48.7,
       "lead_median_seconds": 1419508,
-      "cycle_median_seconds": null,
+      "cycle_median_seconds": 629066,
       "new_committed": 55,
       "new_devdone": 53,
       "new_accepted": 53,
@@ -5941,7 +5953,7 @@
       "devdone_pct": 70.6,
       "accepted_pct": 34.9,
       "lead_median_seconds": 2173821,
-      "cycle_median_seconds": null,
+      "cycle_median_seconds": 1283239,
       "new_committed": 65,
       "new_devdone": 61,
       "new_accepted": 52,
@@ -5985,7 +5997,7 @@
       "devdone_pct": 64.8,
       "accepted_pct": 25.8,
       "lead_median_seconds": 1425698,
-      "cycle_median_seconds": null,
+      "cycle_median_seconds": 848382,
       "new_committed": 61,
       "new_devdone": 61,
       "new_accepted": 50,
@@ -6041,7 +6053,7 @@
       "devdone_pct": 73.4,
       "accepted_pct": 30.6,
       "lead_median_seconds": 1017736,
-      "cycle_median_seconds": null,
+      "cycle_median_seconds": 342103,
       "new_committed": 116,
       "new_devdone": 95,
       "new_accepted": 70,
@@ -6081,9 +6093,9 @@
           "count": 77
         },
         "cycle": {
-          "avg_seconds": null,
-          "median_seconds": null,
-          "count": 0
+          "avg_seconds": 855832,
+          "median_seconds": 344343,
+          "count": 77
         }
       }
     },
@@ -6118,9 +6130,9 @@
           "count": 100
         },
         "cycle": {
-          "avg_seconds": null,
-          "median_seconds": null,
-          "count": 0
+          "avg_seconds": 1208496,
+          "median_seconds": 353859,
+          "count": 100
         }
       }
     },
@@ -6155,9 +6167,9 @@
           "count": 100
         },
         "cycle": {
-          "avg_seconds": null,
-          "median_seconds": null,
-          "count": 0
+          "avg_seconds": 974063,
+          "median_seconds": 328621,
+          "count": 100
         }
       }
     },
@@ -6192,9 +6204,9 @@
           "count": 91
         },
         "cycle": {
-          "avg_seconds": null,
-          "median_seconds": null,
-          "count": 0
+          "avg_seconds": 1746516,
+          "median_seconds": 704853,
+          "count": 91
         }
       }
     },
@@ -6229,9 +6241,9 @@
           "count": 75
         },
         "cycle": {
-          "avg_seconds": null,
-          "median_seconds": null,
-          "count": 0
+          "avg_seconds": 1758792,
+          "median_seconds": 1022530,
+          "count": 75
         }
       }
     },
@@ -6266,9 +6278,9 @@
           "count": 66
         },
         "cycle": {
-          "avg_seconds": null,
-          "median_seconds": null,
-          "count": 0
+          "avg_seconds": 2137765,
+          "median_seconds": 887827,
+          "count": 66
         }
       }
     },
@@ -6303,9 +6315,9 @@
           "count": 46
         },
         "cycle": {
-          "avg_seconds": null,
-          "median_seconds": null,
-          "count": 0
+          "avg_seconds": 3324722,
+          "median_seconds": 1850570,
+          "count": 46
         }
       }
     },
@@ -6340,9 +6352,9 @@
           "count": 63
         },
         "cycle": {
-          "avg_seconds": null,
-          "median_seconds": null,
-          "count": 0
+          "avg_seconds": 2042309,
+          "median_seconds": 334808,
+          "count": 63
         }
       }
     },
@@ -6377,9 +6389,9 @@
           "count": 48
         },
         "cycle": {
-          "avg_seconds": null,
-          "median_seconds": null,
-          "count": 0
+          "avg_seconds": 3627063,
+          "median_seconds": 1015279,
+          "count": 48
         }
       }
     },
@@ -6414,9 +6426,9 @@
           "count": 55
         },
         "cycle": {
-          "avg_seconds": null,
-          "median_seconds": null,
-          "count": 0
+          "avg_seconds": 3193572,
+          "median_seconds": 776017,
+          "count": 55
         }
       }
     },
@@ -6451,9 +6463,9 @@
           "count": 65
         },
         "cycle": {
-          "avg_seconds": null,
-          "median_seconds": null,
-          "count": 0
+          "avg_seconds": 2621068,
+          "median_seconds": 442219,
+          "count": 65
         }
       }
     },
@@ -6488,9 +6500,9 @@
           "count": 42
         },
         "cycle": {
-          "avg_seconds": null,
-          "median_seconds": null,
-          "count": 0
+          "avg_seconds": 3648704,
+          "median_seconds": 737853,
+          "count": 42
         }
       }
     },
@@ -6525,9 +6537,9 @@
           "count": 45
         },
         "cycle": {
-          "avg_seconds": null,
-          "median_seconds": null,
-          "count": 0
+          "avg_seconds": 3825649,
+          "median_seconds": 771778,
+          "count": 45
         }
       }
     },
@@ -6562,9 +6574,9 @@
           "count": 44
         },
         "cycle": {
-          "avg_seconds": null,
-          "median_seconds": null,
-          "count": 0
+          "avg_seconds": 4834877,
+          "median_seconds": 2761184,
+          "count": 44
         }
       }
     }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T19:20:53.921307+00:00",
+  "generated_at": "2026-09-11T19:22:11.918051+00:00",
   "project": "DENA",
   "board_id": 1094,
   "active": {
@@ -4894,7 +4894,7 @@
           "summary": "[INC0815156]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - PowerCenter",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 191.7,
+          "duration_hours": 191.8,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-09-03T16:35:59.903-0300",
           "sprint_count": 1,
@@ -4904,22 +4904,6 @@
             "type": "Epic"
           },
           "category": "SJA"
-        },
-        {
-          "key": "DENA-1449",
-          "summary": "[INC0817235]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
-          "status": "Backlog",
-          "is_resolved": false,
-          "duration_hours": 5.8,
-          "assignee": "Vanessa Macedo Cavalcanti De Souza",
-          "created": "2026-09-11T10:32:58.076-0300",
-          "sprint_count": 1,
-          "parent": {
-            "key": "DENA-1220",
-            "summary": "AESABI",
-            "type": "Epic"
-          },
-          "category": ""
         },
         {
           "key": "DENA-1388",
@@ -4952,6 +4936,22 @@
             "type": "Epic"
           },
           "category": "SPN"
+        },
+        {
+          "key": "DENA-1449",
+          "summary": "[INC0817235]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
+          "status": "Em Andamento",
+          "is_resolved": false,
+          "duration_hours": 5.8,
+          "assignee": "Vanessa Macedo Cavalcanti De Souza",
+          "created": "2026-09-11T10:32:58.076-0300",
+          "sprint_count": 1,
+          "parent": {
+            "key": "DENA-1220",
+            "summary": "AESABI",
+            "type": "Epic"
+          },
+          "category": ""
         }
       ]
     },
@@ -5386,7 +5386,7 @@
       "status": "Backlog",
       "priority": "Médio",
       "created": "2026-09-03T10:35:30.110-0300",
-      "updated": "2026-09-11T16:04:49.873-0300",
+      "updated": "2026-09-11T16:20:21.458-0300",
       "days_old": 8,
       "days_since_update": 0,
       "assignee": "Taisa Pereira Martins",

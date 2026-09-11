@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T19:22:11.918051+00:00",
+  "generated_at": "2026-09-11T19:25:37.954982+00:00",
   "project": "DENA",
   "board_id": 1094,
   "active": {
@@ -36,10 +36,10 @@
       },
       "status_dist": {
         "Aceito": 19,
-        "Em Andamento": 11,
+        "Em Andamento": 13,
         "Concluído": 54,
         "Bloqueado": 7,
-        "Backlog": 10,
+        "Backlog": 8,
         "Refinamento": 1
       },
       "accepted_keys": [
@@ -1788,44 +1788,6 @@
         "category": "SJA"
       },
       {
-        "key": "DENA-1449",
-        "summary": "[INC0817235]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
-        "type": "Incidente",
-        "status": "Backlog",
-        "sprint_count": 1,
-        "is_new": true,
-        "story_points": null,
-        "assignee": "Vanessa Macedo Cavalcanti De Souza",
-        "last_comment_at": null,
-        "last_comment_by": null,
-        "recent_comment_24h": false,
-        "time_spent_seconds": null,
-        "parent": {
-          "key": "DENA-1220",
-          "summary": "AESABI"
-        },
-        "category": ""
-      },
-      {
-        "key": "DENA-1426",
-        "summary": "[INC0815156]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - PowerCenter",
-        "type": "Incidente",
-        "status": "Backlog",
-        "sprint_count": 1,
-        "is_new": true,
-        "story_points": null,
-        "assignee": "Vanessa Macedo Cavalcanti De Souza",
-        "last_comment_at": null,
-        "last_comment_by": null,
-        "recent_comment_24h": false,
-        "time_spent_seconds": null,
-        "parent": {
-          "key": "DENA-1220",
-          "summary": "AESABI"
-        },
-        "category": "SJA"
-      },
-      {
         "key": "DENA-1417",
         "summary": "[INC0813848]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
         "type": "Incidente",
@@ -1959,6 +1921,25 @@
         "category": "SCG"
       },
       {
+        "key": "DENA-1449",
+        "summary": "[INC0817235]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
+        "type": "Incidente",
+        "status": "Em Andamento",
+        "sprint_count": 1,
+        "is_new": true,
+        "story_points": null,
+        "assignee": "Vanessa Macedo Cavalcanti De Souza",
+        "last_comment_at": null,
+        "last_comment_by": null,
+        "recent_comment_24h": false,
+        "time_spent_seconds": null,
+        "parent": {
+          "key": "DENA-1220",
+          "summary": "AESABI"
+        },
+        "category": ""
+      },
+      {
         "key": "DENA-1429",
         "summary": "[INC0816194]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
         "type": "Incidente",
@@ -1976,6 +1957,25 @@
           "summary": "RECEITA"
         },
         "category": "SPN"
+      },
+      {
+        "key": "DENA-1426",
+        "summary": "[INC0815156]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - PowerCenter",
+        "type": "Incidente",
+        "status": "Em Andamento",
+        "sprint_count": 1,
+        "is_new": true,
+        "story_points": null,
+        "assignee": "Vanessa Macedo Cavalcanti De Souza",
+        "last_comment_at": null,
+        "last_comment_by": null,
+        "recent_comment_24h": false,
+        "time_spent_seconds": null,
+        "parent": {
+          "key": "DENA-1220",
+          "summary": "AESABI"
+        },
+        "category": "SJA"
       },
       {
         "key": "DENA-1408",
@@ -2366,30 +2366,6 @@
         "story_points": 3.0,
         "lead_seconds": 27938414.311,
         "cycle_seconds": 8381154.371
-      },
-      {
-        "key": "DENA-1449",
-        "category": "",
-        "is_new_in_sprint": true,
-        "is_accepted": false,
-        "is_devdone": false,
-        "status_name": "Backlog",
-        "sprint_count": 1,
-        "story_points": null,
-        "lead_seconds": null,
-        "cycle_seconds": null
-      },
-      {
-        "key": "DENA-1426",
-        "category": "SJA",
-        "is_new_in_sprint": true,
-        "is_accepted": false,
-        "is_devdone": false,
-        "status_name": "Backlog",
-        "sprint_count": 1,
-        "story_points": null,
-        "lead_seconds": null,
-        "cycle_seconds": null
       },
       {
         "key": "DENA-1404",
@@ -3148,8 +3124,32 @@
         "cycle_seconds": 3258047.626
       },
       {
+        "key": "DENA-1449",
+        "category": "",
+        "is_new_in_sprint": true,
+        "is_accepted": false,
+        "is_devdone": false,
+        "status_name": "Em Andamento",
+        "sprint_count": 1,
+        "story_points": null,
+        "lead_seconds": null,
+        "cycle_seconds": null
+      },
+      {
         "key": "DENA-1429",
         "category": "SPN",
+        "is_new_in_sprint": true,
+        "is_accepted": false,
+        "is_devdone": false,
+        "status_name": "Em Andamento",
+        "sprint_count": 1,
+        "story_points": null,
+        "lead_seconds": null,
+        "cycle_seconds": null
+      },
+      {
+        "key": "DENA-1426",
+        "category": "SJA",
         "is_new_in_sprint": true,
         "is_accepted": false,
         "is_devdone": false,
@@ -4718,7 +4718,7 @@
           "summary": "[INC0813848]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Bloqueado",
           "is_resolved": false,
-          "duration_hours": 242.0,
+          "duration_hours": 242.1,
           "assignee": "Anderson Morais E Castro Fort",
           "created": "2026-09-01T14:20:00.244-0300",
           "sprint_count": 1,
@@ -4890,22 +4890,6 @@
           "category": "SJA"
         },
         {
-          "key": "DENA-1426",
-          "summary": "[INC0815156]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - PowerCenter",
-          "status": "Backlog",
-          "is_resolved": false,
-          "duration_hours": 191.8,
-          "assignee": "Vanessa Macedo Cavalcanti De Souza",
-          "created": "2026-09-03T16:35:59.903-0300",
-          "sprint_count": 1,
-          "parent": {
-            "key": "DENA-1220",
-            "summary": "AESABI",
-            "type": "Epic"
-          },
-          "category": "SJA"
-        },
-        {
           "key": "DENA-1388",
           "summary": "[INC0810599]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Concluído",
@@ -4922,11 +4906,27 @@
           "category": "SPN"
         },
         {
+          "key": "DENA-1426",
+          "summary": "[INC0815156]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - PowerCenter",
+          "status": "Em Andamento",
+          "is_resolved": false,
+          "duration_hours": 191.8,
+          "assignee": "Vanessa Macedo Cavalcanti De Souza",
+          "created": "2026-09-03T16:35:59.903-0300",
+          "sprint_count": 1,
+          "parent": {
+            "key": "DENA-1220",
+            "summary": "AESABI",
+            "type": "Epic"
+          },
+          "category": "SJA"
+        },
+        {
           "key": "DENA-1429",
           "summary": "[INC0816194]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 72.2,
+          "duration_hours": 72.3,
           "assignee": "Diogenes Coelho de Freitas",
           "created": "2026-09-08T16:07:13.382-0300",
           "sprint_count": 1,
@@ -4942,7 +4942,7 @@
           "summary": "[INC0817235]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 5.8,
+          "duration_hours": 5.9,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-09-11T10:32:58.076-0300",
           "sprint_count": 1,

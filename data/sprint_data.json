@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T18:47:30.880288+00:00",
+  "generated_at": "2026-09-11T19:08:29.017236+00:00",
   "project": "DENA",
   "board_id": 1094,
   "active": {
@@ -107,7 +107,7 @@
     },
     "health": {
       "status": "vermelho",
-      "elapsed_pct": 97.2,
+      "elapsed_pct": 97.3,
       "done_pct": 71.6
     },
     "scope": {
@@ -1671,7 +1671,7 @@
           "key": "DENA-3",
           "summary": "ENGAJAMENTO"
         },
-        "category": ""
+        "category": "SJA"
       },
       {
         "key": "DENA-1420",
@@ -1728,7 +1728,7 @@
           "key": "DENA-3",
           "summary": "ENGAJAMENTO"
         },
-        "category": ""
+        "category": "SJA"
       },
       {
         "key": "DENA-1411",
@@ -1747,7 +1747,7 @@
           "key": "DENA-1031",
           "summary": "DMC AWS"
         },
-        "category": ""
+        "category": "SJA"
       },
       {
         "key": "DENA-1410",
@@ -1823,7 +1823,7 @@
           "key": "DENA-1220",
           "summary": "AESABI"
         },
-        "category": ""
+        "category": "SJA"
       },
       {
         "key": "DENA-1417",
@@ -1857,7 +1857,10 @@
         "last_comment_by": null,
         "recent_comment_24h": false,
         "time_spent_seconds": 54000,
-        "parent": null,
+        "parent": {
+          "key": "DENA-82",
+          "summary": "ESTRUTURANTE"
+        },
         "category": "ENG"
       },
       {
@@ -1873,7 +1876,10 @@
         "last_comment_by": null,
         "recent_comment_24h": false,
         "time_spent_seconds": 165600,
-        "parent": null,
+        "parent": {
+          "key": "DENA-82",
+          "summary": "ESTRUTURANTE"
+        },
         "category": "ENG"
       },
       {
@@ -2038,7 +2044,10 @@
         "last_comment_by": null,
         "recent_comment_24h": false,
         "time_spent_seconds": 126000,
-        "parent": null,
+        "parent": {
+          "key": "DENA-82",
+          "summary": "ESTRUTURANTE"
+        },
         "category": "ENG"
       }
     ],
@@ -2177,7 +2186,7 @@
       },
       {
         "key": "DENA-1425",
-        "category": "",
+        "category": "SJA",
         "is_new_in_sprint": true,
         "is_accepted": true,
         "is_devdone": true,
@@ -2213,7 +2222,7 @@
       },
       {
         "key": "DENA-1416",
-        "category": "",
+        "category": "SJA",
         "is_new_in_sprint": true,
         "is_accepted": true,
         "is_devdone": true,
@@ -2225,7 +2234,7 @@
       },
       {
         "key": "DENA-1411",
-        "category": "",
+        "category": "SJA",
         "is_new_in_sprint": true,
         "is_accepted": true,
         "is_devdone": true,
@@ -2369,7 +2378,7 @@
       },
       {
         "key": "DENA-1426",
-        "category": "",
+        "category": "SJA",
         "is_new_in_sprint": true,
         "is_accepted": false,
         "is_devdone": false,
@@ -4706,7 +4715,7 @@
           "summary": "[INC0813848]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Bloqueado",
           "is_resolved": false,
-          "duration_hours": 241.5,
+          "duration_hours": 241.8,
           "assignee": "Anderson Morais E Castro Fort",
           "created": "2026-09-01T14:20:00.244-0300",
           "sprint_count": 1,
@@ -4763,7 +4772,7 @@
             "summary": "ENGAJAMENTO",
             "type": "Epic"
           },
-          "category": ""
+          "category": "SJA"
         },
         {
           "key": "DENA-1419",
@@ -4795,7 +4804,7 @@
             "summary": "ENGAJAMENTO",
             "type": "Epic"
           },
-          "category": ""
+          "category": "SJA"
         },
         {
           "key": "DENA-1428",
@@ -4866,7 +4875,7 @@
           "summary": "[INC0811887]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - PowerCenter",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 405.0,
+          "duration_hours": 405.4,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-08-25T18:46:57.083-0300",
           "sprint_count": 2,
@@ -4882,7 +4891,7 @@
           "summary": "[INC0815156]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - PowerCenter",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 191.2,
+          "duration_hours": 191.5,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-09-03T16:35:59.903-0300",
           "sprint_count": 1,
@@ -4891,14 +4900,14 @@
             "summary": "AESABI",
             "type": "Epic"
           },
-          "category": ""
+          "category": "SJA"
         },
         {
           "key": "DENA-1449",
           "summary": "[INC0817235]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 5.2,
+          "duration_hours": 5.6,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-09-11T10:32:58.076-0300",
           "sprint_count": 1,
@@ -4930,11 +4939,15 @@
           "summary": "[INC0816194]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 71.7,
+          "duration_hours": 72.0,
           "assignee": "Diogenes Coelho de Freitas",
           "created": "2026-09-08T16:07:13.382-0300",
           "sprint_count": 1,
-          "parent": null,
+          "parent": {
+            "key": "DENA-5",
+            "summary": "RECEITA",
+            "type": "Epic"
+          },
           "category": ""
         }
       ]
@@ -5225,7 +5238,7 @@
           "summary": "[INC0811887]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - PowerCenter",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 405.0,
+          "duration_hours": 405.4,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-08-25T18:46:57.083-0300",
           "sprint_count": 2,
@@ -5308,7 +5321,7 @@
       "created": "2026-09-10T15:33:44.228-0300",
       "updated": "2026-09-10T15:50:11.174-0300",
       "days_old": 1,
-      "days_since_update": 0,
+      "days_since_update": 1,
       "assignee": "",
       "reporter": "Carolina Teixeira Dias",
       "parent": null,
@@ -5339,7 +5352,7 @@
       "priority": "Médio",
       "created": "2026-09-04T15:56:38.418-0300",
       "updated": "2026-09-04T16:19:50.943-0300",
-      "days_old": 6,
+      "days_old": 7,
       "days_since_update": 6,
       "assignee": "",
       "reporter": "Erika Andressa De Souza Silva",
@@ -5354,13 +5367,16 @@
       "status": "Backlog",
       "priority": "Médio",
       "created": "2026-09-03T10:35:30.110-0300",
-      "updated": "2026-09-10T14:57:41.885-0300",
+      "updated": "2026-09-11T16:04:49.873-0300",
       "days_old": 8,
-      "days_since_update": 1,
+      "days_since_update": 0,
       "assignee": "Taisa Pereira Martins",
       "reporter": "Anderson Morais E Castro Fort",
-      "parent": null,
-      "category": "",
+      "parent": {
+        "key": "DENA-82",
+        "summary": "ESTRUTURANTE"
+      },
+      "category": "ENG",
       "story_points": null
     },
     {
@@ -5534,7 +5550,7 @@
       "created": "2026-07-27T15:25:53.340-0300",
       "updated": "2026-07-28T15:58:08.967-0300",
       "days_old": 46,
-      "days_since_update": 44,
+      "days_since_update": 45,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "André Mendonça Pauletti",
       "parent": null,
@@ -6008,7 +6024,7 @@
       "priority": "Médio",
       "created": "2026-03-31T15:47:38.234-0300",
       "updated": "2026-06-15T15:14:00.886-0300",
-      "days_old": 163,
+      "days_old": 164,
       "days_since_update": 88,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "Luciano De Oliveira Santos",

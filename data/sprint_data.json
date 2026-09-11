@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T19:08:29.017236+00:00",
+  "generated_at": "2026-09-11T19:20:53.921307+00:00",
   "project": "DENA",
   "board_id": 1094,
   "active": {
@@ -107,7 +107,7 @@
     },
     "health": {
       "status": "vermelho",
-      "elapsed_pct": 97.3,
+      "elapsed_pct": 97.4,
       "done_pct": 71.6
     },
     "scope": {
@@ -1971,8 +1971,11 @@
         "last_comment_by": "André Mendonça Pauletti",
         "recent_comment_24h": true,
         "time_spent_seconds": null,
-        "parent": null,
-        "category": ""
+        "parent": {
+          "key": "DENA-5",
+          "summary": "RECEITA"
+        },
+        "category": "SPN"
       },
       {
         "key": "DENA-1408",
@@ -3146,7 +3149,7 @@
       },
       {
         "key": "DENA-1429",
-        "category": "",
+        "category": "SPN",
         "is_new_in_sprint": true,
         "is_accepted": false,
         "is_devdone": false,
@@ -4715,7 +4718,7 @@
           "summary": "[INC0813848]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Bloqueado",
           "is_resolved": false,
-          "duration_hours": 241.8,
+          "duration_hours": 242.0,
           "assignee": "Anderson Morais E Castro Fort",
           "created": "2026-09-01T14:20:00.244-0300",
           "sprint_count": 1,
@@ -4875,7 +4878,7 @@
           "summary": "[INC0811887]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - PowerCenter",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 405.4,
+          "duration_hours": 405.6,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-08-25T18:46:57.083-0300",
           "sprint_count": 2,
@@ -4891,7 +4894,7 @@
           "summary": "[INC0815156]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - PowerCenter",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 191.5,
+          "duration_hours": 191.7,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-09-03T16:35:59.903-0300",
           "sprint_count": 1,
@@ -4907,7 +4910,7 @@
           "summary": "[INC0817235]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 5.6,
+          "duration_hours": 5.8,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-09-11T10:32:58.076-0300",
           "sprint_count": 1,
@@ -4939,7 +4942,7 @@
           "summary": "[INC0816194]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 72.0,
+          "duration_hours": 72.2,
           "assignee": "Diogenes Coelho de Freitas",
           "created": "2026-09-08T16:07:13.382-0300",
           "sprint_count": 1,
@@ -4948,7 +4951,7 @@
             "summary": "RECEITA",
             "type": "Epic"
           },
-          "category": ""
+          "category": "SPN"
         }
       ]
     },
@@ -5238,7 +5241,7 @@
           "summary": "[INC0811887]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - PowerCenter",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 405.4,
+          "duration_hours": 405.6,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-08-25T18:46:57.083-0300",
           "sprint_count": 2,
@@ -5297,6 +5300,22 @@
   },
   "backlog": [
     {
+      "key": "DENA-1452",
+      "summary": "Modelo de Dados para Pesquisa Satisfação (NPS)Aliança 3",
+      "type": "História",
+      "status": "Backlog",
+      "priority": "Médio",
+      "created": "2026-09-11T16:17:55.502-0300",
+      "updated": "2026-09-11T16:19:16.115-0300",
+      "days_old": 0,
+      "days_since_update": 0,
+      "assignee": "",
+      "reporter": "Carolina Teixeira Dias",
+      "parent": null,
+      "category": "",
+      "story_points": null
+    },
+    {
       "key": "DENA-1448",
       "summary": "Produto de Dados — Diplomação de Alunos",
       "type": "História",
@@ -5353,7 +5372,7 @@
       "created": "2026-09-04T15:56:38.418-0300",
       "updated": "2026-09-04T16:19:50.943-0300",
       "days_old": 7,
-      "days_since_update": 6,
+      "days_since_update": 7,
       "assignee": "",
       "reporter": "Erika Andressa De Souza Silva",
       "parent": null,
@@ -5425,7 +5444,7 @@
       "priority": "Médio",
       "created": "2026-08-26T16:11:50.580-0300",
       "updated": "2026-08-27T12:20:25.291-0300",
-      "days_old": 15,
+      "days_old": 16,
       "days_since_update": 15,
       "assignee": "Giovanna Souza Bancala",
       "reporter": "Sandro Pereira Dos Santos",
@@ -5444,7 +5463,7 @@
       "priority": "Médio",
       "created": "2026-08-26T16:08:44.267-0300",
       "updated": "2026-08-27T12:20:12.507-0300",
-      "days_old": 15,
+      "days_old": 16,
       "days_since_update": 15,
       "assignee": "Giovanna Souza Bancala",
       "reporter": "Sandro Pereira Dos Santos",
@@ -5731,8 +5750,8 @@
       "priority": "Médio",
       "created": "2026-06-05T16:09:10.432-0300",
       "updated": "2026-06-05T16:16:38.220-0300",
-      "days_old": 97,
-      "days_since_update": 97,
+      "days_old": 98,
+      "days_since_update": 98,
       "assignee": "",
       "reporter": "André Mendonça Pauletti",
       "parent": null,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T12:10:44.411509+00:00",
+  "generated_at": "2026-09-28T12:27:41.534688+00:00",
   "project": "DENA",
   "board_id": 1094,
   "active": {
@@ -1906,7 +1906,7 @@
           "key": "DENA-5",
           "summary": "RECEITA"
         },
-        "category": ""
+        "category": "SJA"
       },
       {
         "key": "DENA-1498",
@@ -1916,13 +1916,16 @@
         "sprint_count": 1,
         "is_new": true,
         "story_points": null,
-        "assignee": "",
-        "last_comment_at": null,
-        "last_comment_by": null,
-        "recent_comment_24h": false,
+        "assignee": "Anderson Morais E Castro Fort",
+        "last_comment_at": "2026-09-28T09:13:46.136-0300",
+        "last_comment_by": "Rodrigo Santini Guarinon",
+        "recent_comment_24h": true,
         "time_spent_seconds": null,
-        "parent": null,
-        "category": ""
+        "parent": {
+          "key": "DENA-4",
+          "summary": "CAPTAÇÃO ANALITICA"
+        },
+        "category": "SCG"
       },
       {
         "key": "DENA-1493",
@@ -2207,7 +2210,7 @@
           "key": "DENA-1339",
           "summary": "MACROPROCESSO"
         },
-        "category": ""
+        "category": "ENG"
       },
       {
         "key": "DENA-1432",
@@ -2226,7 +2229,7 @@
           "key": "DENA-2",
           "summary": "ALUNADO"
         },
-        "category": ""
+        "category": "SJA"
       },
       {
         "key": "DENA-1406",
@@ -2245,7 +2248,7 @@
           "key": "DENA-3",
           "summary": "ENGAJAMENTO"
         },
-        "category": ""
+        "category": "SJA"
       },
       {
         "key": "DENA-802",
@@ -2498,7 +2501,7 @@
       },
       {
         "key": "DENA-1455",
-        "category": "",
+        "category": "SJA",
         "is_new_in_sprint": true,
         "is_accepted": true,
         "is_devdone": true,
@@ -2690,7 +2693,7 @@
       },
       {
         "key": "DENA-1498",
-        "category": "",
+        "category": "SCG",
         "is_new_in_sprint": true,
         "is_accepted": false,
         "is_devdone": false,
@@ -3482,7 +3485,7 @@
       },
       {
         "key": "DENA-1448",
-        "category": "",
+        "category": "ENG",
         "is_new_in_sprint": true,
         "is_accepted": false,
         "is_devdone": false,
@@ -3494,7 +3497,7 @@
       },
       {
         "key": "DENA-1432",
-        "category": "",
+        "category": "SJA",
         "is_new_in_sprint": true,
         "is_accepted": false,
         "is_devdone": false,
@@ -3506,7 +3509,7 @@
       },
       {
         "key": "DENA-1406",
-        "category": "",
+        "category": "SJA",
         "is_new_in_sprint": true,
         "is_accepted": false,
         "is_devdone": false,
@@ -5020,7 +5023,7 @@
           "summary": "[INC0813848]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Bloqueado",
           "is_resolved": false,
-          "duration_hours": 642.8,
+          "duration_hours": 643.1,
           "assignee": "Anderson Morais E Castro Fort",
           "created": "2026-09-01T14:20:00.244-0300",
           "sprint_count": 2,
@@ -5244,7 +5247,7 @@
           "summary": "[INC0822359]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 96.4,
+          "duration_hours": 96.7,
           "assignee": "Antonio Carlos Souza",
           "created": "2026-09-24T08:44:28.853-0300",
           "sprint_count": 1,
@@ -5260,12 +5263,16 @@
           "summary": "[INC0823017]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 62.0,
-          "assignee": "",
+          "duration_hours": 62.2,
+          "assignee": "Anderson Morais E Castro Fort",
           "created": "2026-09-25T19:13:21.091-0300",
           "sprint_count": 1,
-          "parent": null,
-          "category": ""
+          "parent": {
+            "key": "DENA-4",
+            "summary": "CAPTAÇÃO ANALITICA",
+            "type": "Epic"
+          },
+          "category": "SCG"
         },
         {
           "key": "DENA-1388",
@@ -5288,7 +5295,7 @@
           "summary": "[INC0820392]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 192.4,
+          "duration_hours": 192.7,
           "assignee": "Antonio Carlos Souza",
           "created": "2026-09-20T08:46:31.963-0300",
           "sprint_count": 1,
@@ -5315,7 +5322,7 @@
           "summary": "[INC0813848]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Bloqueado",
           "is_resolved": false,
-          "duration_hours": 642.8,
+          "duration_hours": 643.1,
           "assignee": "Anderson Morais E Castro Fort",
           "created": "2026-09-01T14:20:00.244-0300",
           "sprint_count": 2,
@@ -5761,7 +5768,7 @@
       "priority": "Médio",
       "created": "2026-09-02T09:26:03.719-0300",
       "updated": "2026-09-09T14:32:40.980-0300",
-      "days_old": 25,
+      "days_old": 26,
       "days_since_update": 18,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
@@ -5901,7 +5908,7 @@
       "priority": "Médio",
       "created": "2026-07-23T09:26:29.178-0300",
       "updated": "2026-07-23T09:26:46.943-0300",
-      "days_old": 66,
+      "days_old": 67,
       "days_since_update": 66,
       "assignee": "",
       "reporter": "Sandro Pereira Dos Santos",
@@ -6261,7 +6268,7 @@
       "priority": "Médio",
       "created": "2026-04-09T09:15:05.087-0300",
       "updated": "2026-06-29T09:05:44.224-0300",
-      "days_old": 171,
+      "days_old": 172,
       "days_since_update": 91,
       "assignee": "",
       "reporter": "Gilson Dos Santos",
@@ -6293,7 +6300,7 @@
       "priority": "Médio",
       "created": "2026-04-06T09:21:10.266-0300",
       "updated": "2026-06-11T16:58:23.843-0300",
-      "days_old": 174,
+      "days_old": 175,
       "days_since_update": 108,
       "assignee": "Rodrigo Santini Guarinon",
       "reporter": "Karla Ynonye Zucchini",
@@ -6309,7 +6316,7 @@
       "priority": "Médio",
       "created": "2026-04-06T09:21:00.792-0300",
       "updated": "2026-06-11T16:58:08.227-0300",
-      "days_old": 174,
+      "days_old": 175,
       "days_since_update": 108,
       "assignee": "Rodrigo Santini Guarinon",
       "reporter": "Karla Ynonye Zucchini",

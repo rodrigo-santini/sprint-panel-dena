@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T17:45:38.405151+00:00",
+  "generated_at": "2026-10-05T17:36:57.487170+00:00",
   "project": "DENA",
   "board_id": 1094,
   "active": {
@@ -13,40 +13,46 @@
       "goal": ""
     },
     "summary": {
-      "issues_committed": 98,
-      "issues_accepted": 9,
+      "issues_committed": 100,
+      "issues_accepted": 14,
       "issues_devdone": 65,
-      "issues_not_completed": 89,
+      "issues_not_completed": 86,
       "issues_punted": 0,
       "issues_completed_elsewhere": 0,
-      "issues_added_during": 11,
-      "accepted_pct": 9.2,
-      "devdone_pct": 66.3,
+      "issues_added_during": 13,
+      "accepted_pct": 14.0,
+      "devdone_pct": 65.0,
       "points_committed": 166.0,
-      "points_accepted": 9.0,
-      "points_not_completed": 157.0,
-      "points_accepted_pct": 5.4,
+      "points_accepted": 33.0,
+      "points_not_completed": 133.0,
+      "points_accepted_pct": 19.9,
       "by_type": {
-        "História": 78,
+        "História": 79,
         "Incidente": 10,
         "Suporte": 1,
-        "Bug": 6,
+        "Bug": 7,
         "Mudança": 2,
         "Sustentação": 1
       },
       "status_dist": {
-        "Aceito": 9,
+        "Aceito": 14,
         "Em Andamento": 17,
-        "Concluído": 55,
-        "Bloqueado": 6,
-        "Backlog": 10,
-        "Cancelado": 1
+        "Concluído": 50,
+        "Bloqueado": 8,
+        "Backlog": 9,
+        "Cancelado": 1,
+        "Refinamento": 1
       },
       "accepted_keys": [
         "DENA-1103",
         "DENA-1104",
         "DENA-1105",
+        "DENA-1265",
+        "DENA-1267",
+        "DENA-1360",
+        "DENA-1362",
         "DENA-1388",
+        "DENA-1454",
         "DENA-1482",
         "DENA-1495",
         "DENA-1500",
@@ -71,8 +77,16 @@
           "summary": "TMA - Tempo médio de atendimento"
         },
         {
+          "key": "DENA-1273",
+          "summary": "[MIG-08] CAPCOM - Migrar para Redshift (19 objetos)"
+        },
+        {
           "key": "DENA-1417",
           "summary": "[INC0813848]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS"
+        },
+        {
+          "key": "DENA-1446",
+          "summary": "Ajustes para remover dependencia do AESABI \"dp_aesabi\".\"stage_sas_tgt_bi_captacao_analitico\" na Captação AWS"
         },
         {
           "key": "DENA-1499",
@@ -81,24 +95,24 @@
       ]
     },
     "new_only": {
-      "issues_committed": 16,
+      "issues_committed": 18,
       "issues_accepted": 3,
       "issues_devdone": 6,
-      "issues_not_completed": 10,
-      "accepted_pct": 18.8,
-      "devdone_pct": 37.5,
+      "issues_not_completed": 12,
+      "accepted_pct": 16.7,
+      "devdone_pct": 33.3,
       "points_committed": 0.0,
       "points_accepted": 0.0,
       "points_accepted_pct": 0.0
     },
     "health": {
       "status": "verde",
-      "elapsed_pct": 34.9,
-      "done_pct": 66.3
+      "elapsed_pct": 61.4,
+      "done_pct": 65.0
     },
     "scope": {
       "carryover": 82,
-      "new_in_sprint": 16
+      "new_in_sprint": 18
     },
     "issues": [
       {
@@ -302,7 +316,7 @@
         "assignee": "TALITHA DA SILVA FELIX",
         "last_comment_at": "2026-10-02T12:07:52.480-0300",
         "last_comment_by": "Erika Andressa De Souza Silva",
-        "recent_comment_24h": true,
+        "recent_comment_24h": false,
         "time_spent_seconds": 32400,
         "parent": {
           "key": "DENA-1339",
@@ -321,7 +335,7 @@
         "assignee": "TALITHA DA SILVA FELIX",
         "last_comment_at": "2026-10-02T11:41:13.895-0300",
         "last_comment_by": "Erika Andressa De Souza Silva",
-        "recent_comment_24h": true,
+        "recent_comment_24h": false,
         "time_spent_seconds": 32400,
         "parent": {
           "key": "DENA-1339",
@@ -824,6 +838,44 @@
         "category": "SCG"
       },
       {
+        "key": "DENA-1267",
+        "summary": "[MIG-02] Ofertas - Migrar para Redshift (11 objetos)",
+        "type": "História",
+        "status": "Aceito",
+        "sprint_count": 5,
+        "is_new": false,
+        "story_points": 8.0,
+        "assignee": "Flavio Anderson Dos Santos Pires",
+        "last_comment_at": null,
+        "last_comment_by": null,
+        "recent_comment_24h": false,
+        "time_spent_seconds": 165600,
+        "parent": {
+          "key": "DENA-82",
+          "summary": "ESTRUTURANTE"
+        },
+        "category": "ENG"
+      },
+      {
+        "key": "DENA-1265",
+        "summary": "[MIG-00] Setup Infraestrutura & Padrões - Migração Captação v2",
+        "type": "História",
+        "status": "Aceito",
+        "sprint_count": 5,
+        "is_new": false,
+        "story_points": 8.0,
+        "assignee": "Anderson Morais E Castro Fort",
+        "last_comment_at": null,
+        "last_comment_by": null,
+        "recent_comment_24h": false,
+        "time_spent_seconds": 25200,
+        "parent": {
+          "key": "DENA-82",
+          "summary": "ESTRUTURANTE"
+        },
+        "category": "ENG"
+      },
+      {
         "key": "DENA-1271",
         "summary": "[MIG-07] RVV - Migrar para Redshift (6 objetos)",
         "type": "História",
@@ -836,6 +888,25 @@
         "last_comment_by": null,
         "recent_comment_24h": false,
         "time_spent_seconds": null,
+        "parent": {
+          "key": "DENA-82",
+          "summary": "ESTRUTURANTE"
+        },
+        "category": "ENG"
+      },
+      {
+        "key": "DENA-1273",
+        "summary": "[MIG-08] CAPCOM - Migrar para Redshift (19 objetos)",
+        "type": "História",
+        "status": "Bloqueado",
+        "sprint_count": 5,
+        "is_new": false,
+        "story_points": 8.0,
+        "assignee": "Ananda Ellen Morais Di Rado",
+        "last_comment_at": "2026-10-05T09:08:19.039-0300",
+        "last_comment_by": "Ananda Ellen Morais Di Rado",
+        "recent_comment_24h": true,
+        "time_spent_seconds": 75600,
         "parent": {
           "key": "DENA-82",
           "summary": "ESTRUTURANTE"
@@ -938,25 +1009,6 @@
         "category": "ENG"
       },
       {
-        "key": "DENA-1267",
-        "summary": "[MIG-02] Ofertas - Migrar para Redshift (11 objetos)",
-        "type": "História",
-        "status": "Concluído",
-        "sprint_count": 5,
-        "is_new": false,
-        "story_points": 8.0,
-        "assignee": "Flavio Anderson Dos Santos Pires",
-        "last_comment_at": null,
-        "last_comment_by": null,
-        "recent_comment_24h": false,
-        "time_spent_seconds": 165600,
-        "parent": {
-          "key": "DENA-82",
-          "summary": "ESTRUTURANTE"
-        },
-        "category": "ENG"
-      },
-      {
         "key": "DENA-1266",
         "summary": "[MIG-01] Inscrição - Migrar para Redshift (7 objetos)",
         "type": "História",
@@ -969,25 +1021,6 @@
         "last_comment_by": "Ananda Ellen Morais Di Rado",
         "recent_comment_24h": false,
         "time_spent_seconds": 90000,
-        "parent": {
-          "key": "DENA-82",
-          "summary": "ESTRUTURANTE"
-        },
-        "category": "ENG"
-      },
-      {
-        "key": "DENA-1265",
-        "summary": "[MIG-00] Setup Infraestrutura & Padrões - Migração Captação v2",
-        "type": "História",
-        "status": "Concluído",
-        "sprint_count": 5,
-        "is_new": false,
-        "story_points": 8.0,
-        "assignee": "Anderson Morais E Castro Fort",
-        "last_comment_at": null,
-        "last_comment_by": null,
-        "recent_comment_24h": false,
-        "time_spent_seconds": 25200,
         "parent": {
           "key": "DENA-82",
           "summary": "ESTRUTURANTE"
@@ -1033,25 +1066,6 @@
         "category": "SPN"
       },
       {
-        "key": "DENA-1273",
-        "summary": "[MIG-08] CAPCOM - Migrar para Redshift (19 objetos)",
-        "type": "História",
-        "status": "Em Andamento",
-        "sprint_count": 5,
-        "is_new": false,
-        "story_points": 8.0,
-        "assignee": "Ananda Ellen Morais Di Rado",
-        "last_comment_at": "2026-09-28T12:14:13.982-0300",
-        "last_comment_by": "Ananda Ellen Morais Di Rado",
-        "recent_comment_24h": false,
-        "time_spent_seconds": 75600,
-        "parent": {
-          "key": "DENA-82",
-          "summary": "ESTRUTURANTE"
-        },
-        "category": "ENG"
-      },
-      {
         "key": "DENA-1272",
         "summary": "[MIG-06] Captação (Motor Supercanal) - Migrar para Redshift (26 objetos)",
         "type": "História",
@@ -1063,7 +1077,7 @@
         "last_comment_at": null,
         "last_comment_by": null,
         "recent_comment_24h": false,
-        "time_spent_seconds": 619200,
+        "time_spent_seconds": 644400,
         "parent": {
           "key": "DENA-82",
           "summary": "ESTRUTURANTE"
@@ -1109,6 +1123,25 @@
         "category": "SPN"
       },
       {
+        "key": "DENA-1362",
+        "summary": "[Captação] Base Analítica dos Cursos de Extensão — Clone do Pipeline de Pós",
+        "type": "História",
+        "status": "Aceito",
+        "sprint_count": 4,
+        "is_new": false,
+        "story_points": 8.0,
+        "assignee": "Tiago Gomes Ferreira",
+        "last_comment_at": null,
+        "last_comment_by": null,
+        "recent_comment_24h": false,
+        "time_spent_seconds": 79200,
+        "parent": {
+          "key": "DENA-4",
+          "summary": "CAPTAÇÃO ANALITICA"
+        },
+        "category": "SCG"
+      },
+      {
         "key": "DENA-1401",
         "summary": "Inclusão de chaves de conexão (curso, disciplina, seller/escola) nas gold tables de satisfação",
         "type": "História",
@@ -1126,25 +1159,6 @@
           "summary": "VOOMP"
         },
         "category": "SPN"
-      },
-      {
-        "key": "DENA-1362",
-        "summary": "[Captação] Base Analítica dos Cursos de Extensão — Clone do Pipeline de Pós",
-        "type": "História",
-        "status": "Concluído",
-        "sprint_count": 4,
-        "is_new": false,
-        "story_points": 8.0,
-        "assignee": "Tiago Gomes Ferreira",
-        "last_comment_at": null,
-        "last_comment_by": null,
-        "recent_comment_24h": false,
-        "time_spent_seconds": 79200,
-        "parent": {
-          "key": "DENA-4",
-          "summary": "CAPTAÇÃO ANALITICA"
-        },
-        "category": "SCG"
       },
       {
         "key": "DENA-1356",
@@ -1202,6 +1216,25 @@
           "summary": "VOOMP"
         },
         "category": "SPN"
+      },
+      {
+        "key": "DENA-1360",
+        "summary": "Marcação análise curricular para tipos de ingresso \"Enem\" e \"Vestibular\" - Captar | Graduação",
+        "type": "História",
+        "status": "Aceito",
+        "sprint_count": 3,
+        "is_new": false,
+        "story_points": null,
+        "assignee": "Flavio Anderson Dos Santos Pires",
+        "last_comment_at": "2026-09-17T13:02:49.473-0300",
+        "last_comment_by": "Flavio Anderson Dos Santos Pires",
+        "recent_comment_24h": false,
+        "time_spent_seconds": 126000,
+        "parent": {
+          "key": "DENA-4",
+          "summary": "CAPTAÇÃO ANALITICA"
+        },
+        "category": "SCG"
       },
       {
         "key": "DENA-1417",
@@ -1299,25 +1332,6 @@
         "category": "SCG"
       },
       {
-        "key": "DENA-1360",
-        "summary": "Marcação análise curricular para tipos de ingresso \"Enem\" e \"Vestibular\" - Captar | Graduação",
-        "type": "História",
-        "status": "Concluído",
-        "sprint_count": 3,
-        "is_new": false,
-        "story_points": null,
-        "assignee": "Flavio Anderson Dos Santos Pires",
-        "last_comment_at": "2026-09-17T13:02:49.473-0300",
-        "last_comment_by": "Flavio Anderson Dos Santos Pires",
-        "recent_comment_24h": false,
-        "time_spent_seconds": 126000,
-        "parent": {
-          "key": "DENA-4",
-          "summary": "CAPTAÇÃO ANALITICA"
-        },
-        "category": "SCG"
-      },
-      {
         "key": "DENA-1495",
         "summary": "Preparar o produto em micro batch e listagem de turma e convenio",
         "type": "História",
@@ -1356,6 +1370,44 @@
         "category": "ENG"
       },
       {
+        "key": "DENA-1454",
+        "summary": "AWS - INCLUSÃO DOS PARÂMETROS DEFINIDORES DE CICLO CAPTACAO",
+        "type": "História",
+        "status": "Aceito",
+        "sprint_count": 2,
+        "is_new": false,
+        "story_points": null,
+        "assignee": "Anderson Morais E Castro Fort",
+        "last_comment_at": "2026-10-05T11:26:46.432-0300",
+        "last_comment_by": "Anderson Morais E Castro Fort",
+        "recent_comment_24h": true,
+        "time_spent_seconds": 21600,
+        "parent": {
+          "key": "DENA-4",
+          "summary": "CAPTAÇÃO ANALITICA"
+        },
+        "category": "SCG"
+      },
+      {
+        "key": "DENA-1446",
+        "summary": "Ajustes para remover dependencia do AESABI \"dp_aesabi\".\"stage_sas_tgt_bi_captacao_analitico\" na Captação AWS",
+        "type": "História",
+        "status": "Bloqueado",
+        "sprint_count": 2,
+        "is_new": false,
+        "story_points": 3.0,
+        "assignee": "Ananda Ellen Morais Di Rado",
+        "last_comment_at": "2026-10-05T09:07:56.541-0300",
+        "last_comment_by": "Ananda Ellen Morais Di Rado",
+        "recent_comment_24h": true,
+        "time_spent_seconds": null,
+        "parent": {
+          "key": "DENA-82",
+          "summary": "ESTRUTURANTE"
+        },
+        "category": "ENG"
+      },
+      {
         "key": "DENA-1497",
         "summary": "Inconsistência No. Matriculados",
         "type": "Bug",
@@ -1385,7 +1437,7 @@
         "assignee": "Antonio Carlos Souza",
         "last_comment_at": "2026-10-01T16:43:23.807-0300",
         "last_comment_by": "Antonio Carlos Souza",
-        "recent_comment_24h": true,
+        "recent_comment_24h": false,
         "time_spent_seconds": 86400,
         "parent": {
           "key": "DENA-2",
@@ -1411,25 +1463,6 @@
           "summary": "VOOMP"
         },
         "category": "SPN"
-      },
-      {
-        "key": "DENA-1453",
-        "summary": "Atendimento - Aliança 1 (Novo produto de Dados)",
-        "type": "História",
-        "status": "Concluído",
-        "sprint_count": 2,
-        "is_new": false,
-        "story_points": null,
-        "assignee": "Priscila Gomes dos Santos Sanguino",
-        "last_comment_at": "2026-09-28T16:41:19.553-0300",
-        "last_comment_by": "Priscila Gomes dos Santos Sanguino",
-        "recent_comment_24h": false,
-        "time_spent_seconds": null,
-        "parent": {
-          "key": "DENA-1339",
-          "summary": "MACROPROCESSO"
-        },
-        "category": "ENG"
       },
       {
         "key": "DENA-1452",
@@ -1527,23 +1560,23 @@
         "category": "SJA"
       },
       {
-        "key": "DENA-1454",
-        "summary": "AWS - INCLUSÃO DOS PARÂMETROS DEFINIDORES DE CICLO CAPTACAO",
+        "key": "DENA-1453",
+        "summary": "Atendimento - Aliança 1 (Novo produto de Dados)",
         "type": "História",
         "status": "Em Andamento",
         "sprint_count": 2,
         "is_new": false,
         "story_points": null,
-        "assignee": "Anderson Morais E Castro Fort",
-        "last_comment_at": null,
-        "last_comment_by": null,
+        "assignee": "Priscila Gomes dos Santos Sanguino",
+        "last_comment_at": "2026-10-02T14:54:51.497-0300",
+        "last_comment_by": "Priscila Gomes dos Santos Sanguino",
         "recent_comment_24h": false,
         "time_spent_seconds": null,
         "parent": {
-          "key": "DENA-4",
-          "summary": "CAPTAÇÃO ANALITICA"
+          "key": "DENA-1339",
+          "summary": "MACROPROCESSO"
         },
-        "category": "SCG"
+        "category": "ENG"
       },
       {
         "key": "DENA-1451",
@@ -1577,25 +1610,6 @@
         "last_comment_by": null,
         "recent_comment_24h": false,
         "time_spent_seconds": 306000,
-        "parent": {
-          "key": "DENA-82",
-          "summary": "ESTRUTURANTE"
-        },
-        "category": "ENG"
-      },
-      {
-        "key": "DENA-1446",
-        "summary": "Ajustes para remover dependencia do AESABI \"dp_aesabi\".\"stage_sas_tgt_bi_captacao_analitico\" na Captação AWS",
-        "type": "História",
-        "status": "Em Andamento",
-        "sprint_count": 2,
-        "is_new": false,
-        "story_points": 3.0,
-        "assignee": "Ananda Ellen Morais Di Rado",
-        "last_comment_at": null,
-        "last_comment_by": null,
-        "recent_comment_24h": false,
-        "time_spent_seconds": null,
         "parent": {
           "key": "DENA-82",
           "summary": "ESTRUTURANTE"
@@ -1717,25 +1731,9 @@
         "category": "SCG"
       },
       {
-        "key": "DENA-1541",
-        "summary": "[INC0825281]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
-        "type": "Incidente",
-        "status": "Backlog",
-        "sprint_count": 1,
-        "is_new": true,
-        "story_points": null,
-        "assignee": "",
-        "last_comment_at": null,
-        "last_comment_by": null,
-        "recent_comment_24h": false,
-        "time_spent_seconds": null,
-        "parent": null,
-        "category": ""
-      },
-      {
-        "key": "DENA-1539",
-        "summary": "Ajuste view - Compromisso Cogna por um mundo melhor",
-        "type": "Bug",
+        "key": "DENA-1543",
+        "summary": "Alertas no Teams das dags de gec / G&C na v2",
+        "type": "História",
         "status": "Backlog",
         "sprint_count": 1,
         "is_new": true,
@@ -1746,10 +1744,10 @@
         "recent_comment_24h": false,
         "time_spent_seconds": null,
         "parent": {
-          "key": "DENA-747",
-          "summary": "GENTE & CULTURA"
+          "key": "DENA-82",
+          "summary": "ESTRUTURANTE"
         },
-        "category": ""
+        "category": "SCG"
       },
       {
         "key": "DENA-1507",
@@ -1835,7 +1833,7 @@
         "assignee": "Ruy Moraes Leite",
         "last_comment_at": "2026-10-02T09:39:20.700-0300",
         "last_comment_by": "Rodrigo Santini Guarinon",
-        "recent_comment_24h": true,
+        "recent_comment_24h": false,
         "time_spent_seconds": null,
         "parent": {
           "key": "DENA-5",
@@ -1854,7 +1852,7 @@
         "assignee": "Larissa Oliveira De Melo",
         "last_comment_at": "2026-10-01T17:17:19.639-0300",
         "last_comment_by": "Larissa Oliveira De Melo",
-        "recent_comment_24h": true,
+        "recent_comment_24h": false,
         "time_spent_seconds": 32400,
         "parent": {
           "key": "DENA-1336",
@@ -1899,6 +1897,41 @@
           "summary": "SOMOS"
         },
         "category": ""
+      },
+      {
+        "key": "DENA-1541",
+        "summary": "[INC0825281]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
+        "type": "Incidente",
+        "status": "Em Andamento",
+        "sprint_count": 1,
+        "is_new": true,
+        "story_points": null,
+        "assignee": "Vanessa Macedo Cavalcanti De Souza",
+        "last_comment_at": null,
+        "last_comment_by": null,
+        "recent_comment_24h": false,
+        "time_spent_seconds": 7200,
+        "parent": null,
+        "category": ""
+      },
+      {
+        "key": "DENA-1539",
+        "summary": "Ajuste view - Compromisso Cogna por um mundo melhor",
+        "type": "Bug",
+        "status": "Em Andamento",
+        "sprint_count": 1,
+        "is_new": true,
+        "story_points": null,
+        "assignee": "Ananda Ellen Morais Di Rado",
+        "last_comment_at": null,
+        "last_comment_by": null,
+        "recent_comment_24h": false,
+        "time_spent_seconds": null,
+        "parent": {
+          "key": "DENA-747",
+          "summary": "GENTE & CULTURA"
+        },
+        "category": "SCG"
       },
       {
         "key": "DENA-1538",
@@ -1956,6 +1989,22 @@
           "summary": "MACROPROCESSO"
         },
         "category": ""
+      },
+      {
+        "key": "DENA-1542",
+        "summary": "Macroprocessos - % de documentação entregue",
+        "type": "Bug",
+        "status": "Refinamento",
+        "sprint_count": 1,
+        "is_new": true,
+        "story_points": null,
+        "assignee": "Diogenes Coelho de Freitas",
+        "last_comment_at": null,
+        "last_comment_by": null,
+        "recent_comment_24h": false,
+        "time_spent_seconds": null,
+        "parent": null,
+        "category": "ENG"
       }
     ],
     "all_issues": [
@@ -1972,6 +2021,18 @@
         "cycle_seconds": null
       },
       {
+        "key": "DENA-1446",
+        "category": "ENG",
+        "is_new_in_sprint": false,
+        "is_accepted": false,
+        "is_devdone": false,
+        "status_name": "Bloqueado",
+        "sprint_count": 2,
+        "story_points": 3.0,
+        "lead_seconds": null,
+        "cycle_seconds": null
+      },
+      {
         "key": "DENA-1417",
         "category": "SCG",
         "is_new_in_sprint": false,
@@ -1980,6 +2041,18 @@
         "status_name": "Bloqueado",
         "sprint_count": 3,
         "story_points": null,
+        "lead_seconds": null,
+        "cycle_seconds": null
+      },
+      {
+        "key": "DENA-1273",
+        "category": "ENG",
+        "is_new_in_sprint": false,
+        "is_accepted": false,
+        "is_devdone": false,
+        "status_name": "Bloqueado",
+        "sprint_count": 5,
+        "story_points": 8.0,
         "lead_seconds": null,
         "cycle_seconds": null
       },
@@ -2092,6 +2165,18 @@
         "cycle_seconds": 603905.451
       },
       {
+        "key": "DENA-1454",
+        "category": "SCG",
+        "is_new_in_sprint": false,
+        "is_accepted": true,
+        "is_devdone": true,
+        "status_name": "Aceito",
+        "sprint_count": 2,
+        "story_points": null,
+        "lead_seconds": 1827069.254,
+        "cycle_seconds": 1047006.591
+      },
+      {
         "key": "DENA-1388",
         "category": "SPN",
         "is_new_in_sprint": false,
@@ -2102,6 +2187,54 @@
         "story_points": null,
         "lead_seconds": 7738.054,
         "cycle_seconds": 292.026
+      },
+      {
+        "key": "DENA-1362",
+        "category": "SCG",
+        "is_new_in_sprint": false,
+        "is_accepted": true,
+        "is_devdone": true,
+        "status_name": "Aceito",
+        "sprint_count": 4,
+        "story_points": 8.0,
+        "lead_seconds": 349975.886,
+        "cycle_seconds": 72195.048
+      },
+      {
+        "key": "DENA-1360",
+        "category": "SCG",
+        "is_new_in_sprint": false,
+        "is_accepted": true,
+        "is_devdone": true,
+        "status_name": "Aceito",
+        "sprint_count": 3,
+        "story_points": null,
+        "lead_seconds": 2409003.016,
+        "cycle_seconds": 800752.071
+      },
+      {
+        "key": "DENA-1267",
+        "category": "ENG",
+        "is_new_in_sprint": false,
+        "is_accepted": true,
+        "is_devdone": true,
+        "status_name": "Aceito",
+        "sprint_count": 5,
+        "story_points": 8.0,
+        "lead_seconds": 2479104.051,
+        "cycle_seconds": 2330990.302
+      },
+      {
+        "key": "DENA-1265",
+        "category": "ENG",
+        "is_new_in_sprint": false,
+        "is_accepted": true,
+        "is_devdone": true,
+        "status_name": "Aceito",
+        "sprint_count": 5,
+        "story_points": 8.0,
+        "lead_seconds": 3081458.373,
+        "cycle_seconds": 3.879
       },
       {
         "key": "DENA-1105",
@@ -2140,20 +2273,8 @@
         "cycle_seconds": 2064003.643
       },
       {
-        "key": "DENA-1541",
-        "category": "",
-        "is_new_in_sprint": true,
-        "is_accepted": false,
-        "is_devdone": false,
-        "status_name": "Backlog",
-        "sprint_count": 1,
-        "story_points": null,
-        "lead_seconds": null,
-        "cycle_seconds": null
-      },
-      {
-        "key": "DENA-1539",
-        "category": "",
+        "key": "DENA-1543",
+        "category": "SCG",
         "is_new_in_sprint": true,
         "is_accepted": false,
         "is_devdone": false,
@@ -2260,6 +2381,18 @@
         "cycle_seconds": null
       },
       {
+        "key": "DENA-1542",
+        "category": "ENG",
+        "is_new_in_sprint": true,
+        "is_accepted": false,
+        "is_devdone": false,
+        "status_name": "Refinamento",
+        "sprint_count": 1,
+        "story_points": null,
+        "lead_seconds": null,
+        "cycle_seconds": null
+      },
+      {
         "key": "DENA-1503",
         "category": "",
         "is_new_in_sprint": true,
@@ -2330,18 +2463,6 @@
         "story_points": 1.0,
         "lead_seconds": 261253.818,
         "cycle_seconds": 1169.806
-      },
-      {
-        "key": "DENA-1453",
-        "category": "ENG",
-        "is_new_in_sprint": false,
-        "is_accepted": false,
-        "is_devdone": true,
-        "status_name": "Concluído",
-        "sprint_count": 2,
-        "story_points": null,
-        "lead_seconds": 1287923.204,
-        "cycle_seconds": 607990.061
       },
       {
         "key": "DENA-1452",
@@ -2452,30 +2573,6 @@
         "cycle_seconds": 699415.751
       },
       {
-        "key": "DENA-1362",
-        "category": "SCG",
-        "is_new_in_sprint": false,
-        "is_accepted": false,
-        "is_devdone": true,
-        "status_name": "Concluído",
-        "sprint_count": 4,
-        "story_points": 8.0,
-        "lead_seconds": 349975.886,
-        "cycle_seconds": 72195.048
-      },
-      {
-        "key": "DENA-1360",
-        "category": "SCG",
-        "is_new_in_sprint": false,
-        "is_accepted": false,
-        "is_devdone": true,
-        "status_name": "Concluído",
-        "sprint_count": 3,
-        "story_points": null,
-        "lead_seconds": 2409003.016,
-        "cycle_seconds": 800752.071
-      },
-      {
         "key": "DENA-1356",
         "category": "SPN",
         "is_new_in_sprint": false,
@@ -2560,18 +2657,6 @@
         "cycle_seconds": 3.255
       },
       {
-        "key": "DENA-1267",
-        "category": "ENG",
-        "is_new_in_sprint": false,
-        "is_accepted": false,
-        "is_devdone": true,
-        "status_name": "Concluído",
-        "sprint_count": 5,
-        "story_points": 8.0,
-        "lead_seconds": 2479104.051,
-        "cycle_seconds": 2330990.302
-      },
-      {
         "key": "DENA-1266",
         "category": "ENG",
         "is_new_in_sprint": false,
@@ -2582,18 +2667,6 @@
         "story_points": 8.0,
         "lead_seconds": 2418131.707,
         "cycle_seconds": 2089724.976
-      },
-      {
-        "key": "DENA-1265",
-        "category": "ENG",
-        "is_new_in_sprint": false,
-        "is_accepted": false,
-        "is_devdone": true,
-        "status_name": "Concluído",
-        "sprint_count": 5,
-        "story_points": 8.0,
-        "lead_seconds": 3081458.373,
-        "cycle_seconds": 3.879
       },
       {
         "key": "DENA-1260",
@@ -2920,6 +2993,30 @@
         "cycle_seconds": 3258047.626
       },
       {
+        "key": "DENA-1541",
+        "category": "",
+        "is_new_in_sprint": true,
+        "is_accepted": false,
+        "is_devdone": false,
+        "status_name": "Em Andamento",
+        "sprint_count": 1,
+        "story_points": null,
+        "lead_seconds": null,
+        "cycle_seconds": null
+      },
+      {
+        "key": "DENA-1539",
+        "category": "SCG",
+        "is_new_in_sprint": true,
+        "is_accepted": false,
+        "is_devdone": false,
+        "status_name": "Em Andamento",
+        "sprint_count": 1,
+        "story_points": null,
+        "lead_seconds": null,
+        "cycle_seconds": null
+      },
+      {
         "key": "DENA-1538",
         "category": "",
         "is_new_in_sprint": true,
@@ -2968,8 +3065,8 @@
         "cycle_seconds": null
       },
       {
-        "key": "DENA-1454",
-        "category": "SCG",
+        "key": "DENA-1453",
+        "category": "ENG",
         "is_new_in_sprint": false,
         "is_accepted": false,
         "is_devdone": false,
@@ -3000,18 +3097,6 @@
         "status_name": "Em Andamento",
         "sprint_count": 2,
         "story_points": null,
-        "lead_seconds": null,
-        "cycle_seconds": null
-      },
-      {
-        "key": "DENA-1446",
-        "category": "ENG",
-        "is_new_in_sprint": false,
-        "is_accepted": false,
-        "is_devdone": false,
-        "status_name": "Em Andamento",
-        "sprint_count": 2,
-        "story_points": 3.0,
         "lead_seconds": null,
         "cycle_seconds": null
       },
@@ -3048,18 +3133,6 @@
         "status_name": "Em Andamento",
         "sprint_count": 4,
         "story_points": null,
-        "lead_seconds": null,
-        "cycle_seconds": null
-      },
-      {
-        "key": "DENA-1273",
-        "category": "ENG",
-        "is_new_in_sprint": false,
-        "is_accepted": false,
-        "is_devdone": false,
-        "status_name": "Em Andamento",
-        "sprint_count": 5,
-        "story_points": 8.0,
         "lead_seconds": null,
         "cycle_seconds": null
       },
@@ -3240,10 +3313,10 @@
     },
     "new_only": {
       "issues_committed": 33,
-      "issues_accepted": 17,
+      "issues_accepted": 18,
       "issues_devdone": 25,
       "issues_not_completed": 8,
-      "accepted_pct": 51.5,
+      "accepted_pct": 54.5,
       "devdone_pct": 75.8,
       "points_committed": 13.0,
       "points_accepted": 3.0,
@@ -3259,6 +3332,18 @@
     },
     "all_issues": [
       {
+        "key": "DENA-1446",
+        "category": "ENG",
+        "is_new_in_sprint": true,
+        "is_accepted": false,
+        "is_devdone": false,
+        "status_name": "Bloqueado",
+        "sprint_count": 2,
+        "story_points": 3.0,
+        "lead_seconds": null,
+        "cycle_seconds": null
+      },
+      {
         "key": "DENA-1417",
         "category": "SCG",
         "is_new_in_sprint": false,
@@ -3267,6 +3352,18 @@
         "status_name": "Bloqueado",
         "sprint_count": 3,
         "story_points": null,
+        "lead_seconds": null,
+        "cycle_seconds": null
+      },
+      {
+        "key": "DENA-1273",
+        "category": "ENG",
+        "is_new_in_sprint": false,
+        "is_accepted": false,
+        "is_devdone": false,
+        "status_name": "Bloqueado",
+        "sprint_count": 5,
+        "story_points": 8.0,
         "lead_seconds": null,
         "cycle_seconds": null
       },
@@ -3523,6 +3620,18 @@
         "cycle_seconds": 225177.28
       },
       {
+        "key": "DENA-1454",
+        "category": "SCG",
+        "is_new_in_sprint": true,
+        "is_accepted": true,
+        "is_devdone": true,
+        "status_name": "Aceito",
+        "sprint_count": 2,
+        "story_points": null,
+        "lead_seconds": 1827069.254,
+        "cycle_seconds": 1047006.591
+      },
+      {
         "key": "DENA-1426",
         "category": "SJA",
         "is_new_in_sprint": false,
@@ -3607,6 +3716,30 @@
         "cycle_seconds": 292.026
       },
       {
+        "key": "DENA-1362",
+        "category": "SCG",
+        "is_new_in_sprint": false,
+        "is_accepted": true,
+        "is_devdone": true,
+        "status_name": "Aceito",
+        "sprint_count": 4,
+        "story_points": 8.0,
+        "lead_seconds": 349975.886,
+        "cycle_seconds": 72195.048
+      },
+      {
+        "key": "DENA-1360",
+        "category": "SCG",
+        "is_new_in_sprint": false,
+        "is_accepted": true,
+        "is_devdone": true,
+        "status_name": "Aceito",
+        "sprint_count": 3,
+        "story_points": null,
+        "lead_seconds": 2409003.016,
+        "cycle_seconds": 800752.071
+      },
+      {
         "key": "DENA-1342",
         "category": "ENG",
         "is_new_in_sprint": false,
@@ -3653,6 +3786,30 @@
         "story_points": null,
         "lead_seconds": 172723.695,
         "cycle_seconds": 158062.618
+      },
+      {
+        "key": "DENA-1267",
+        "category": "ENG",
+        "is_new_in_sprint": false,
+        "is_accepted": true,
+        "is_devdone": true,
+        "status_name": "Aceito",
+        "sprint_count": 5,
+        "story_points": 8.0,
+        "lead_seconds": 2479104.051,
+        "cycle_seconds": 2330990.302
+      },
+      {
+        "key": "DENA-1265",
+        "category": "ENG",
+        "is_new_in_sprint": false,
+        "is_accepted": true,
+        "is_devdone": true,
+        "status_name": "Aceito",
+        "sprint_count": 5,
+        "story_points": 8.0,
+        "lead_seconds": 3081458.373,
+        "cycle_seconds": 3.879
       },
       {
         "key": "DENA-1195",
@@ -3847,18 +4004,6 @@
         "cycle_seconds": 1169.806
       },
       {
-        "key": "DENA-1453",
-        "category": "ENG",
-        "is_new_in_sprint": true,
-        "is_accepted": false,
-        "is_devdone": true,
-        "status_name": "Concluído",
-        "sprint_count": 2,
-        "story_points": null,
-        "lead_seconds": 1287923.204,
-        "cycle_seconds": 607990.061
-      },
-      {
         "key": "DENA-1452",
         "category": "SPN",
         "is_new_in_sprint": true,
@@ -3967,30 +4112,6 @@
         "cycle_seconds": 699415.751
       },
       {
-        "key": "DENA-1362",
-        "category": "SCG",
-        "is_new_in_sprint": false,
-        "is_accepted": false,
-        "is_devdone": true,
-        "status_name": "Concluído",
-        "sprint_count": 4,
-        "story_points": 8.0,
-        "lead_seconds": 349975.886,
-        "cycle_seconds": 72195.048
-      },
-      {
-        "key": "DENA-1360",
-        "category": "SCG",
-        "is_new_in_sprint": false,
-        "is_accepted": false,
-        "is_devdone": true,
-        "status_name": "Concluído",
-        "sprint_count": 3,
-        "story_points": null,
-        "lead_seconds": 2409003.016,
-        "cycle_seconds": 800752.071
-      },
-      {
         "key": "DENA-1356",
         "category": "SPN",
         "is_new_in_sprint": false,
@@ -4075,18 +4196,6 @@
         "cycle_seconds": 3.255
       },
       {
-        "key": "DENA-1267",
-        "category": "ENG",
-        "is_new_in_sprint": false,
-        "is_accepted": false,
-        "is_devdone": true,
-        "status_name": "Concluído",
-        "sprint_count": 5,
-        "story_points": 8.0,
-        "lead_seconds": 2479104.051,
-        "cycle_seconds": 2330990.302
-      },
-      {
         "key": "DENA-1266",
         "category": "ENG",
         "is_new_in_sprint": false,
@@ -4097,18 +4206,6 @@
         "story_points": 8.0,
         "lead_seconds": 2418131.707,
         "cycle_seconds": 2089724.976
-      },
-      {
-        "key": "DENA-1265",
-        "category": "ENG",
-        "is_new_in_sprint": false,
-        "is_accepted": false,
-        "is_devdone": true,
-        "status_name": "Concluído",
-        "sprint_count": 5,
-        "story_points": 8.0,
-        "lead_seconds": 3081458.373,
-        "cycle_seconds": 3.879
       },
       {
         "key": "DENA-1260",
@@ -4447,8 +4544,8 @@
         "cycle_seconds": null
       },
       {
-        "key": "DENA-1454",
-        "category": "SCG",
+        "key": "DENA-1453",
+        "category": "ENG",
         "is_new_in_sprint": true,
         "is_accepted": false,
         "is_devdone": false,
@@ -4479,18 +4576,6 @@
         "status_name": "Em Andamento",
         "sprint_count": 2,
         "story_points": null,
-        "lead_seconds": null,
-        "cycle_seconds": null
-      },
-      {
-        "key": "DENA-1446",
-        "category": "ENG",
-        "is_new_in_sprint": true,
-        "is_accepted": false,
-        "is_devdone": false,
-        "status_name": "Em Andamento",
-        "sprint_count": 2,
-        "story_points": 3.0,
         "lead_seconds": null,
         "cycle_seconds": null
       },
@@ -4527,18 +4612,6 @@
         "status_name": "Em Andamento",
         "sprint_count": 4,
         "story_points": null,
-        "lead_seconds": null,
-        "cycle_seconds": null
-      },
-      {
-        "key": "DENA-1273",
-        "category": "ENG",
-        "is_new_in_sprint": false,
-        "is_accepted": false,
-        "is_devdone": false,
-        "status_name": "Em Andamento",
-        "sprint_count": 5,
-        "story_points": 8.0,
         "lead_seconds": null,
         "cycle_seconds": null
       },
@@ -4669,7 +4742,7 @@
           "summary": "[INC0813848]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Bloqueado",
           "is_resolved": false,
-          "duration_hours": 744.4,
+          "duration_hours": 816.3,
           "assignee": "Anderson Morais E Castro Fort",
           "created": "2026-09-01T14:20:00.244-0300",
           "sprint_count": 3,
@@ -4745,18 +4818,6 @@
           "category": "SCG"
         },
         {
-          "key": "DENA-1541",
-          "summary": "[INC0825281]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
-          "status": "Backlog",
-          "is_resolved": false,
-          "duration_hours": 3.0,
-          "assignee": "",
-          "created": "2026-10-02T11:42:53.951-0300",
-          "sprint_count": 1,
-          "parent": null,
-          "category": ""
-        },
-        {
           "key": "DENA-1493",
           "summary": "[INC0822359]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Concluído",
@@ -4793,7 +4854,7 @@
           "summary": "[INC0820392]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 294.0,
+          "duration_hours": 365.8,
           "assignee": "Antonio Carlos Souza",
           "created": "2026-09-20T08:46:31.963-0300",
           "sprint_count": 2,
@@ -4809,7 +4870,7 @@
           "summary": "[INC0825017]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 21.2,
+          "duration_hours": 93.1,
           "assignee": "Diogenes Coelho de Freitas",
           "created": "2026-10-01T17:31:29.135-0300",
           "sprint_count": 1,
@@ -4818,6 +4879,18 @@
             "summary": "RECEITA",
             "type": "Epic"
           },
+          "category": ""
+        },
+        {
+          "key": "DENA-1541",
+          "summary": "[INC0825281]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
+          "status": "Em Andamento",
+          "is_resolved": false,
+          "duration_hours": 74.9,
+          "assignee": "Vanessa Macedo Cavalcanti De Souza",
+          "created": "2026-10-02T11:42:53.951-0300",
+          "sprint_count": 1,
+          "parent": null,
           "category": ""
         }
       ]
@@ -4836,7 +4909,7 @@
           "summary": "[INC0813848]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Bloqueado",
           "is_resolved": false,
-          "duration_hours": 744.4,
+          "duration_hours": 816.3,
           "assignee": "Anderson Morais E Castro Fort",
           "created": "2026-09-01T14:20:00.244-0300",
           "sprint_count": 3,
@@ -5108,7 +5181,7 @@
           "summary": "[INC0820392]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 294.0,
+          "duration_hours": 365.8,
           "assignee": "Antonio Carlos Souza",
           "created": "2026-09-20T08:46:31.963-0300",
           "sprint_count": 2,
@@ -5126,24 +5199,24 @@
   "lead_time": {
     "active": {
       "lead": {
-        "avg_seconds": 2229973,
+        "avg_seconds": 2238268,
         "median_seconds": 1098166,
         "count": 65
       },
       "cycle": {
-        "avg_seconds": 854233,
+        "avg_seconds": 860987,
         "median_seconds": 267792,
         "count": 65
       }
     },
     "last_closed": {
       "lead": {
-        "avg_seconds": 1949714,
+        "avg_seconds": 1955704,
         "median_seconds": 1059317,
         "count": 90
       },
       "cycle": {
-        "avg_seconds": 777466,
+        "avg_seconds": 782344,
         "median_seconds": 257939,
         "count": 90
       }
@@ -5151,17 +5224,17 @@
   },
   "backlog": [
     {
-      "key": "DENA-1542",
-      "summary": "Macroprocessos - % de documentação entregue",
-      "type": "Bug",
+      "key": "DENA-1544",
+      "summary": "Unificacao das bases da tb_campanha",
+      "type": "História",
       "status": "Backlog",
       "priority": "Médio",
-      "created": "2026-10-02T12:24:20.323-0300",
-      "updated": "2026-10-02T12:24:48.065-0300",
+      "created": "2026-10-05T11:10:31.491-0300",
+      "updated": "2026-10-05T11:16:34.648-0300",
       "days_old": 0,
       "days_since_update": 0,
       "assignee": "",
-      "reporter": "Erika Andressa De Souza Silva",
+      "reporter": "Rosilaine Papa da Silva",
       "parent": null,
       "category": "",
       "story_points": null
@@ -5174,8 +5247,8 @@
       "priority": "Médio",
       "created": "2026-10-01T16:09:43.122-0300",
       "updated": "2026-10-02T14:42:50.548-0300",
-      "days_old": 0,
-      "days_since_update": 0,
+      "days_old": 3,
+      "days_since_update": 2,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": null,
@@ -5190,8 +5263,8 @@
       "priority": "Médio",
       "created": "2026-10-01T16:09:03.878-0300",
       "updated": "2026-10-02T14:41:25.227-0300",
-      "days_old": 0,
-      "days_since_update": 0,
+      "days_old": 3,
+      "days_since_update": 2,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": null,
@@ -5206,8 +5279,8 @@
       "priority": "Médio",
       "created": "2026-10-01T16:08:16.391-0300",
       "updated": "2026-10-02T14:40:58.357-0300",
-      "days_old": 0,
-      "days_since_update": 0,
+      "days_old": 3,
+      "days_since_update": 2,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": null,
@@ -5222,8 +5295,8 @@
       "priority": "Médio",
       "created": "2026-10-01T16:06:21.010-0300",
       "updated": "2026-10-02T14:40:05.101-0300",
-      "days_old": 0,
-      "days_since_update": 0,
+      "days_old": 3,
+      "days_since_update": 2,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": null,
@@ -5238,8 +5311,8 @@
       "priority": "Médio",
       "created": "2026-10-01T16:05:29.672-0300",
       "updated": "2026-10-02T14:13:11.230-0300",
-      "days_old": 0,
-      "days_since_update": 0,
+      "days_old": 3,
+      "days_since_update": 3,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": null,
@@ -5254,8 +5327,8 @@
       "priority": "Médio",
       "created": "2026-10-01T16:04:45.326-0300",
       "updated": "2026-10-02T14:12:29.519-0300",
-      "days_old": 0,
-      "days_since_update": 0,
+      "days_old": 3,
+      "days_since_update": 3,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": null,
@@ -5270,8 +5343,8 @@
       "priority": "Médio",
       "created": "2026-10-01T16:04:05.773-0300",
       "updated": "2026-10-02T14:11:48.745-0300",
-      "days_old": 0,
-      "days_since_update": 0,
+      "days_old": 3,
+      "days_since_update": 3,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": null,
@@ -5286,8 +5359,8 @@
       "priority": "Médio",
       "created": "2026-10-01T16:03:18.092-0300",
       "updated": "2026-10-01T16:03:21.194-0300",
-      "days_old": 0,
-      "days_since_update": 0,
+      "days_old": 3,
+      "days_since_update": 3,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": null,
@@ -5302,8 +5375,8 @@
       "priority": "Médio",
       "created": "2026-10-01T16:01:56.903-0300",
       "updated": "2026-10-01T16:02:00.273-0300",
-      "days_old": 0,
-      "days_since_update": 0,
+      "days_old": 3,
+      "days_since_update": 3,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": null,
@@ -5318,8 +5391,8 @@
       "priority": "Médio",
       "created": "2026-10-01T16:01:09.706-0300",
       "updated": "2026-10-02T12:12:57.699-0300",
-      "days_old": 0,
-      "days_since_update": 0,
+      "days_old": 3,
+      "days_since_update": 3,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": null,
@@ -5334,8 +5407,8 @@
       "priority": "Médio",
       "created": "2026-10-01T16:00:10.175-0300",
       "updated": "2026-10-02T12:09:45.710-0300",
-      "days_old": 0,
-      "days_since_update": 0,
+      "days_old": 3,
+      "days_since_update": 3,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": null,
@@ -5350,8 +5423,8 @@
       "priority": "Médio",
       "created": "2026-10-01T15:59:27.183-0300",
       "updated": "2026-10-02T12:09:13.624-0300",
-      "days_old": 0,
-      "days_since_update": 0,
+      "days_old": 3,
+      "days_since_update": 3,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": null,
@@ -5366,8 +5439,8 @@
       "priority": "Médio",
       "created": "2026-10-01T15:58:43.892-0300",
       "updated": "2026-10-02T12:02:05.689-0300",
-      "days_old": 0,
-      "days_since_update": 0,
+      "days_old": 3,
+      "days_since_update": 3,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": null,
@@ -5382,8 +5455,8 @@
       "priority": "Médio",
       "created": "2026-10-01T15:57:55.297-0300",
       "updated": "2026-10-02T11:53:10.361-0300",
-      "days_old": 0,
-      "days_since_update": 0,
+      "days_old": 3,
+      "days_since_update": 3,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": null,
@@ -5398,8 +5471,8 @@
       "priority": "Médio",
       "created": "2026-10-01T15:57:09.790-0300",
       "updated": "2026-10-02T11:52:29.517-0300",
-      "days_old": 0,
-      "days_since_update": 0,
+      "days_old": 3,
+      "days_since_update": 3,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": null,
@@ -5414,8 +5487,8 @@
       "priority": "Médio",
       "created": "2026-10-01T15:56:06.972-0300",
       "updated": "2026-10-02T11:51:47.630-0300",
-      "days_old": 0,
-      "days_since_update": 0,
+      "days_old": 3,
+      "days_since_update": 3,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": null,
@@ -5430,8 +5503,8 @@
       "priority": "Médio",
       "created": "2026-10-01T15:55:22.422-0300",
       "updated": "2026-10-02T11:49:49.202-0300",
-      "days_old": 0,
-      "days_since_update": 0,
+      "days_old": 3,
+      "days_since_update": 3,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": null,
@@ -5446,8 +5519,8 @@
       "priority": "Médio",
       "created": "2026-10-01T15:54:42.059-0300",
       "updated": "2026-10-02T11:26:41.230-0300",
-      "days_old": 0,
-      "days_since_update": 0,
+      "days_old": 3,
+      "days_since_update": 3,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": null,
@@ -5462,8 +5535,8 @@
       "priority": "Médio",
       "created": "2026-10-01T15:53:51.693-0300",
       "updated": "2026-10-02T11:26:00.812-0300",
-      "days_old": 0,
-      "days_since_update": 0,
+      "days_old": 3,
+      "days_since_update": 3,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": null,
@@ -5478,8 +5551,8 @@
       "priority": "Médio",
       "created": "2026-10-01T15:52:37.944-0300",
       "updated": "2026-10-02T11:24:34.730-0300",
-      "days_old": 0,
-      "days_since_update": 0,
+      "days_old": 3,
+      "days_since_update": 3,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": null,
@@ -5494,8 +5567,8 @@
       "priority": "Médio",
       "created": "2026-10-01T15:51:41.595-0300",
       "updated": "2026-10-02T11:22:05.117-0300",
-      "days_old": 0,
-      "days_since_update": 0,
+      "days_old": 3,
+      "days_since_update": 3,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": null,
@@ -5510,8 +5583,8 @@
       "priority": "Médio",
       "created": "2026-10-01T07:29:37.342-0300",
       "updated": "2026-10-01T07:29:40.877-0300",
-      "days_old": 1,
-      "days_since_update": 1,
+      "days_old": 4,
+      "days_since_update": 4,
       "assignee": "",
       "reporter": "Alan Fabricio Morato",
       "parent": null,
@@ -5526,8 +5599,8 @@
       "priority": "Médio",
       "created": "2026-09-30T11:20:08.355-0300",
       "updated": "2026-09-30T11:20:11.439-0300",
-      "days_old": 2,
-      "days_since_update": 2,
+      "days_old": 5,
+      "days_since_update": 5,
       "assignee": "",
       "reporter": "André Mendonça Pauletti",
       "parent": null,
@@ -5542,8 +5615,8 @@
       "priority": "Médio",
       "created": "2026-09-30T11:18:36.132-0300",
       "updated": "2026-09-30T11:18:40.085-0300",
-      "days_old": 2,
-      "days_since_update": 2,
+      "days_old": 5,
+      "days_since_update": 5,
       "assignee": "Vanessa Macedo Cavalcanti De Souza",
       "reporter": "André Mendonça Pauletti",
       "parent": null,
@@ -5558,8 +5631,8 @@
       "priority": "Médio",
       "created": "2026-09-29T18:23:09.080-0300",
       "updated": "2026-09-29T18:30:45.446-0300",
-      "days_old": 2,
-      "days_since_update": 2,
+      "days_old": 5,
+      "days_since_update": 5,
       "assignee": "",
       "reporter": "Carolina Teixeira Dias",
       "parent": null,
@@ -5574,8 +5647,8 @@
       "priority": "Médio",
       "created": "2026-09-29T15:50:30.411-0300",
       "updated": "2026-09-29T18:37:34.716-0300",
-      "days_old": 2,
-      "days_since_update": 2,
+      "days_old": 5,
+      "days_since_update": 5,
       "assignee": "Vanessa Macedo Cavalcanti De Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": null,
@@ -5590,8 +5663,8 @@
       "priority": "Médio",
       "created": "2026-09-29T11:25:42.394-0300",
       "updated": "2026-09-29T12:21:05.960-0300",
-      "days_old": 3,
-      "days_since_update": 3,
+      "days_old": 6,
+      "days_since_update": 6,
       "assignee": "",
       "reporter": "Daniele Santana De Brito",
       "parent": {
@@ -5609,8 +5682,8 @@
       "priority": "Médio",
       "created": "2026-09-29T10:14:22.967-0300",
       "updated": "2026-09-29T10:20:07.671-0300",
-      "days_old": 3,
-      "days_since_update": 3,
+      "days_old": 6,
+      "days_since_update": 6,
       "assignee": "",
       "reporter": "Carolina Teixeira Dias",
       "parent": {
@@ -5628,8 +5701,8 @@
       "priority": "Médio",
       "created": "2026-09-22T12:40:49.388-0300",
       "updated": "2026-09-30T10:03:30.522-0300",
-      "days_old": 10,
-      "days_since_update": 2,
+      "days_old": 13,
+      "days_since_update": 5,
       "assignee": "",
       "reporter": "Erika Andressa De Souza Silva",
       "parent": null,
@@ -5644,8 +5717,8 @@
       "priority": "Médio",
       "created": "2026-09-22T09:57:45.425-0300",
       "updated": "2026-09-28T18:00:21.776-0300",
-      "days_old": 10,
-      "days_since_update": 3,
+      "days_old": 13,
+      "days_since_update": 6,
       "assignee": "",
       "reporter": "Jira Integração",
       "parent": null,
@@ -5660,8 +5733,8 @@
       "priority": "Médio",
       "created": "2026-09-14T17:16:29.819-0300",
       "updated": "2026-09-14T17:16:32.674-0300",
-      "days_old": 17,
-      "days_since_update": 17,
+      "days_old": 20,
+      "days_since_update": 20,
       "assignee": "",
       "reporter": "André Mendonça Pauletti",
       "parent": null,
@@ -5676,8 +5749,8 @@
       "priority": "Médio",
       "created": "2026-09-10T15:33:44.228-0300",
       "updated": "2026-09-10T15:50:11.174-0300",
-      "days_old": 21,
-      "days_since_update": 21,
+      "days_old": 24,
+      "days_since_update": 24,
       "assignee": "",
       "reporter": "Carolina Teixeira Dias",
       "parent": null,
@@ -5692,8 +5765,8 @@
       "priority": "Médio",
       "created": "2026-09-03T10:35:30.110-0300",
       "updated": "2026-09-11T16:20:21.458-0300",
-      "days_old": 29,
-      "days_since_update": 20,
+      "days_old": 32,
+      "days_since_update": 23,
       "assignee": "Taisa Pereira Martins",
       "reporter": "Anderson Morais E Castro Fort",
       "parent": {
@@ -5711,8 +5784,8 @@
       "priority": "Médio",
       "created": "2026-09-02T09:26:03.719-0300",
       "updated": "2026-09-09T14:32:40.980-0300",
-      "days_old": 30,
-      "days_since_update": 23,
+      "days_old": 33,
+      "days_since_update": 26,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -5730,8 +5803,8 @@
       "priority": "Médio",
       "created": "2026-08-11T16:55:20.522-0300",
       "updated": "2026-08-11T17:02:20.274-0300",
-      "days_old": 51,
-      "days_since_update": 51,
+      "days_old": 54,
+      "days_since_update": 54,
       "assignee": "",
       "reporter": "Daniele Santana De Brito",
       "parent": null,
@@ -5746,8 +5819,8 @@
       "priority": "Médio",
       "created": "2026-08-11T16:27:44.365-0300",
       "updated": "2026-08-11T16:30:55.625-0300",
-      "days_old": 51,
-      "days_since_update": 51,
+      "days_old": 54,
+      "days_since_update": 54,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "Anderson Morais E Castro Fort",
       "parent": null,
@@ -5762,8 +5835,8 @@
       "priority": "Altíssima",
       "created": "2026-07-31T17:00:01.222-0300",
       "updated": "2026-09-18T18:12:09.006-0300",
-      "days_old": 62,
-      "days_since_update": 13,
+      "days_old": 65,
+      "days_since_update": 16,
       "assignee": "",
       "reporter": "Daniele Santana De Brito",
       "parent": null,
@@ -5778,8 +5851,8 @@
       "priority": "Médio",
       "created": "2026-07-30T11:57:38.545-0300",
       "updated": "2026-08-19T13:20:14.483-0300",
-      "days_old": 64,
-      "days_since_update": 44,
+      "days_old": 67,
+      "days_since_update": 47,
       "assignee": "Larissa Oliveira De Melo",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -5797,8 +5870,8 @@
       "priority": "Médio",
       "created": "2026-07-30T11:53:07.583-0300",
       "updated": "2026-08-19T13:20:15.213-0300",
-      "days_old": 64,
-      "days_since_update": 44,
+      "days_old": 67,
+      "days_since_update": 47,
       "assignee": "Larissa Oliveira De Melo",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -5816,8 +5889,8 @@
       "priority": "Médio",
       "created": "2026-07-27T15:25:53.340-0300",
       "updated": "2026-07-28T15:58:08.967-0300",
-      "days_old": 66,
-      "days_since_update": 65,
+      "days_old": 69,
+      "days_since_update": 68,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "André Mendonça Pauletti",
       "parent": null,
@@ -5832,8 +5905,8 @@
       "priority": "Médio",
       "created": "2026-07-23T09:26:29.178-0300",
       "updated": "2026-07-23T09:26:46.943-0300",
-      "days_old": 71,
-      "days_since_update": 71,
+      "days_old": 74,
+      "days_since_update": 74,
       "assignee": "",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": null,
@@ -5848,8 +5921,8 @@
       "priority": "Médio",
       "created": "2026-07-17T13:47:42.435-0300",
       "updated": "2026-07-17T15:20:31.933-0300",
-      "days_old": 77,
-      "days_since_update": 76,
+      "days_old": 80,
+      "days_since_update": 79,
       "assignee": "Tiago Gomes Ferreira",
       "reporter": "André Mendonça Pauletti",
       "parent": {
@@ -5867,8 +5940,8 @@
       "priority": "Médio",
       "created": "2026-07-14T10:18:29.867-0300",
       "updated": "2026-07-30T13:44:43.669-0300",
-      "days_old": 80,
-      "days_since_update": 64,
+      "days_old": 83,
+      "days_since_update": 67,
       "assignee": "Diogenes Coelho de Freitas",
       "reporter": "André Mendonça Pauletti",
       "parent": null,
@@ -5883,8 +5956,8 @@
       "priority": "Médio",
       "created": "2026-07-13T18:20:05.773-0300",
       "updated": "2026-07-21T10:10:40.032-0300",
-      "days_old": 80,
-      "days_since_update": 73,
+      "days_old": 83,
+      "days_since_update": 76,
       "assignee": "Gledson Gustavo Fagundes",
       "reporter": "Daniele Santana De Brito",
       "parent": null,
@@ -5899,8 +5972,8 @@
       "priority": "Médio",
       "created": "2026-07-07T11:10:03.067-0300",
       "updated": "2026-07-14T09:30:32.889-0300",
-      "days_old": 87,
-      "days_since_update": 80,
+      "days_old": 90,
+      "days_since_update": 83,
       "assignee": "",
       "reporter": "André Mendonça Pauletti",
       "parent": null,
@@ -5915,8 +5988,8 @@
       "priority": "Médio",
       "created": "2026-07-03T09:59:04.072-0300",
       "updated": "2026-09-15T12:06:06.730-0300",
-      "days_old": 91,
-      "days_since_update": 17,
+      "days_old": 94,
+      "days_since_update": 20,
       "assignee": "Gabriel de Jesus Fonseca Romero",
       "reporter": "Rosilaine Papa da Silva",
       "parent": {
@@ -5934,8 +6007,8 @@
       "priority": "Médio",
       "created": "2026-07-02T14:21:42.327-0300",
       "updated": "2026-07-03T18:39:55.175-0300",
-      "days_old": 92,
-      "days_since_update": 90,
+      "days_old": 95,
+      "days_since_update": 93,
       "assignee": "Ananda Ellen Morais Di Rado",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -5950,8 +6023,8 @@
       "priority": "Médio",
       "created": "2026-07-01T18:20:20.105-0300",
       "updated": "2026-07-01T18:23:46.715-0300",
-      "days_old": 92,
-      "days_since_update": 92,
+      "days_old": 95,
+      "days_since_update": 95,
       "assignee": "",
       "reporter": "André Mendonça Pauletti",
       "parent": null,
@@ -5966,8 +6039,8 @@
       "priority": "Médio",
       "created": "2026-07-01T09:38:51.273-0300",
       "updated": "2026-08-06T18:44:36.451-0300",
-      "days_old": 93,
-      "days_since_update": 56,
+      "days_old": 96,
+      "days_since_update": 59,
       "assignee": "Ananda Ellen Morais Di Rado",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -5982,8 +6055,8 @@
       "priority": "Médio",
       "created": "2026-06-05T16:09:10.432-0300",
       "updated": "2026-06-05T16:16:38.220-0300",
-      "days_old": 118,
-      "days_since_update": 118,
+      "days_old": 121,
+      "days_since_update": 121,
       "assignee": "",
       "reporter": "André Mendonça Pauletti",
       "parent": null,
@@ -5998,8 +6071,8 @@
       "priority": "Médio",
       "created": "2026-06-02T22:01:02.514-0300",
       "updated": "2026-07-13T12:06:09.725-0300",
-      "days_old": 121,
-      "days_since_update": 81,
+      "days_old": 124,
+      "days_since_update": 84,
       "assignee": "",
       "reporter": "Gilson Dos Santos",
       "parent": null,
@@ -6014,8 +6087,8 @@
       "priority": "Médio",
       "created": "2026-06-02T21:59:59.602-0300",
       "updated": "2026-07-13T12:06:04.094-0300",
-      "days_old": 121,
-      "days_since_update": 81,
+      "days_old": 124,
+      "days_since_update": 84,
       "assignee": "",
       "reporter": "Gilson Dos Santos",
       "parent": null,
@@ -6030,8 +6103,8 @@
       "priority": "Médio",
       "created": "2026-05-20T19:37:46.510-0300",
       "updated": "2026-06-12T15:26:39.525-0300",
-      "days_old": 134,
-      "days_since_update": 111,
+      "days_old": 137,
+      "days_since_update": 114,
       "assignee": "",
       "reporter": "Gilson Dos Santos",
       "parent": null,
@@ -6046,8 +6119,8 @@
       "priority": "Médio",
       "created": "2026-05-19T21:15:30.685-0300",
       "updated": "2026-08-13T17:00:59.041-0300",
-      "days_old": 135,
-      "days_since_update": 49,
+      "days_old": 138,
+      "days_since_update": 52,
       "assignee": "Giovanna Souza Bancala",
       "reporter": "Gilson Dos Santos",
       "parent": {
@@ -6065,8 +6138,8 @@
       "priority": "Médio",
       "created": "2026-05-19T21:09:59.633-0300",
       "updated": "2026-08-13T17:01:10.601-0300",
-      "days_old": 135,
-      "days_since_update": 49,
+      "days_old": 138,
+      "days_since_update": 52,
       "assignee": "Giovanna Souza Bancala",
       "reporter": "Gilson Dos Santos",
       "parent": {
@@ -6084,8 +6157,8 @@
       "priority": "Médio",
       "created": "2026-05-18T17:57:22.684-0300",
       "updated": "2026-08-13T17:03:43.888-0300",
-      "days_old": 136,
-      "days_since_update": 49,
+      "days_old": 139,
+      "days_since_update": 52,
       "assignee": "Gabriel de Jesus Fonseca Romero",
       "reporter": "Rosilaine Papa da Silva",
       "parent": {
@@ -6103,8 +6176,8 @@
       "priority": "Médio",
       "created": "2026-05-18T17:52:32.855-0300",
       "updated": "2026-08-13T17:03:53.577-0300",
-      "days_old": 136,
-      "days_since_update": 49,
+      "days_old": 139,
+      "days_since_update": 52,
       "assignee": "Gabriel de Jesus Fonseca Romero",
       "reporter": "Rosilaine Papa da Silva",
       "parent": {
@@ -6122,8 +6195,8 @@
       "priority": "Médio",
       "created": "2026-05-18T17:49:13.160-0300",
       "updated": "2026-08-13T17:04:09.290-0300",
-      "days_old": 136,
-      "days_since_update": 49,
+      "days_old": 139,
+      "days_since_update": 52,
       "assignee": "Gabriel de Jesus Fonseca Romero",
       "reporter": "Rosilaine Papa da Silva",
       "parent": {
@@ -6141,8 +6214,8 @@
       "priority": "Médio",
       "created": "2026-05-18T17:44:02.925-0300",
       "updated": "2026-08-13T17:04:20.342-0300",
-      "days_old": 136,
-      "days_since_update": 49,
+      "days_old": 139,
+      "days_since_update": 52,
       "assignee": "Gabriel de Jesus Fonseca Romero",
       "reporter": "Rosilaine Papa da Silva",
       "parent": {
@@ -6160,8 +6233,8 @@
       "priority": "Médio",
       "created": "2026-05-15T09:59:54.317-0300",
       "updated": "2026-05-15T09:59:58.397-0300",
-      "days_old": 140,
-      "days_since_update": 140,
+      "days_old": 143,
+      "days_since_update": 143,
       "assignee": "",
       "reporter": "Jira Integração",
       "parent": null,
@@ -6176,8 +6249,8 @@
       "priority": "Médio",
       "created": "2026-05-08T08:58:43.462-0300",
       "updated": "2026-08-06T18:44:37.286-0300",
-      "days_old": 147,
-      "days_since_update": 56,
+      "days_old": 150,
+      "days_since_update": 59,
       "assignee": "Flavio Anderson Dos Santos Pires",
       "reporter": "Luciano De Oliveira Santos",
       "parent": null,
@@ -6192,8 +6265,8 @@
       "priority": "Médio",
       "created": "2026-04-09T09:15:05.087-0300",
       "updated": "2026-06-29T09:05:44.224-0300",
-      "days_old": 176,
-      "days_since_update": 95,
+      "days_old": 179,
+      "days_since_update": 98,
       "assignee": "",
       "reporter": "Gilson Dos Santos",
       "parent": null,
@@ -6208,8 +6281,8 @@
       "priority": "Médio",
       "created": "2026-04-06T09:33:50.055-0300",
       "updated": "2026-06-11T16:58:37.672-0300",
-      "days_old": 179,
-      "days_since_update": 112,
+      "days_old": 182,
+      "days_since_update": 115,
       "assignee": "Rodrigo Santini Guarinon",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -6224,8 +6297,8 @@
       "priority": "Médio",
       "created": "2026-04-06T09:21:10.266-0300",
       "updated": "2026-06-11T16:58:23.843-0300",
-      "days_old": 179,
-      "days_since_update": 112,
+      "days_old": 182,
+      "days_since_update": 115,
       "assignee": "Rodrigo Santini Guarinon",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -6240,8 +6313,8 @@
       "priority": "Médio",
       "created": "2026-04-06T09:21:00.792-0300",
       "updated": "2026-06-11T16:58:08.227-0300",
-      "days_old": 179,
-      "days_since_update": 112,
+      "days_old": 182,
+      "days_since_update": 115,
       "assignee": "Rodrigo Santini Guarinon",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -6256,8 +6329,8 @@
       "priority": "Médio",
       "created": "2026-04-02T10:51:19.111-0300",
       "updated": "2026-05-28T18:20:52.770-0300",
-      "days_old": 183,
-      "days_since_update": 126,
+      "days_old": 186,
+      "days_since_update": 129,
       "assignee": "",
       "reporter": "Gilson Dos Santos",
       "parent": {
@@ -6275,8 +6348,8 @@
       "priority": "Médio",
       "created": "2026-03-31T15:47:38.234-0300",
       "updated": "2026-06-15T15:14:00.886-0300",
-      "days_old": 184,
-      "days_since_update": 108,
+      "days_old": 187,
+      "days_since_update": 111,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "Luciano De Oliveira Santos",
       "parent": null,
@@ -6291,8 +6364,8 @@
       "priority": "Médio",
       "created": "2026-03-16T14:58:55.488-0300",
       "updated": "2026-05-28T18:21:01.656-0300",
-      "days_old": 199,
-      "days_since_update": 126,
+      "days_old": 202,
+      "days_since_update": 129,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -6307,8 +6380,8 @@
       "priority": "Médio",
       "created": "2026-03-13T17:55:42.927-0300",
       "updated": "2026-03-13T17:56:58.135-0300",
-      "days_old": 202,
-      "days_since_update": 202,
+      "days_old": 205,
+      "days_since_update": 205,
       "assignee": "",
       "reporter": "André Mendonça Pauletti",
       "parent": null,
@@ -6323,8 +6396,8 @@
       "priority": "Médio",
       "created": "2026-03-05T14:20:22.767-0300",
       "updated": "2026-08-13T16:56:36.265-0300",
-      "days_old": 211,
-      "days_since_update": 49,
+      "days_old": 214,
+      "days_since_update": 52,
       "assignee": "Karla Ynonye Zucchini",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -6339,8 +6412,8 @@
       "priority": "Médio",
       "created": "2026-02-25T12:49:15.825-0300",
       "updated": "2026-08-13T16:56:31.337-0300",
-      "days_old": 219,
-      "days_since_update": 49,
+      "days_old": 222,
+      "days_since_update": 52,
       "assignee": "Karla Ynonye Zucchini",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -6355,8 +6428,8 @@
       "priority": "Médio",
       "created": "2026-02-19T18:09:23.604-0300",
       "updated": "2026-06-15T15:22:58.949-0300",
-      "days_old": 224,
-      "days_since_update": 108,
+      "days_old": 227,
+      "days_since_update": 111,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -6371,8 +6444,8 @@
       "priority": "Médio",
       "created": "2026-02-19T18:07:26.096-0300",
       "updated": "2026-06-15T15:24:36.491-0300",
-      "days_old": 224,
-      "days_since_update": 108,
+      "days_old": 227,
+      "days_since_update": 111,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -6387,8 +6460,8 @@
       "priority": "Médio",
       "created": "2026-02-19T18:01:18.052-0300",
       "updated": "2026-05-28T18:21:14.652-0300",
-      "days_old": 224,
-      "days_since_update": 126,
+      "days_old": 227,
+      "days_since_update": 129,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "Karla Ynonye Zucchini",
       "parent": {
@@ -6406,8 +6479,8 @@
       "priority": "Médio",
       "created": "2026-02-19T17:57:42.645-0300",
       "updated": "2026-06-15T15:19:55.731-0300",
-      "days_old": 224,
-      "days_since_update": 108,
+      "days_old": 227,
+      "days_since_update": 111,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -6422,8 +6495,8 @@
       "priority": "Médio",
       "created": "2026-02-19T16:37:00.437-0300",
       "updated": "2026-06-15T15:09:39.874-0300",
-      "days_old": 224,
-      "days_since_update": 108,
+      "days_old": 227,
+      "days_since_update": 111,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -6438,8 +6511,8 @@
       "priority": "Médio",
       "created": "2026-02-19T12:00:22.427-0300",
       "updated": "2026-07-30T11:25:59.617-0300",
-      "days_old": 225,
-      "days_since_update": 64,
+      "days_old": 228,
+      "days_since_update": 67,
       "assignee": "Rodrigo Santini Guarinon",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -6454,8 +6527,8 @@
       "priority": "Médio",
       "created": "2026-02-19T08:05:03.192-0300",
       "updated": "2026-03-19T10:25:00.087-0300",
-      "days_old": 225,
-      "days_since_update": 197,
+      "days_old": 228,
+      "days_since_update": 200,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -6470,8 +6543,8 @@
       "priority": "Altíssima",
       "created": "2026-01-16T14:00:08.726-0300",
       "updated": "2026-02-19T10:12:54.729-0300",
-      "days_old": 259,
-      "days_since_update": 225,
+      "days_old": 262,
+      "days_since_update": 228,
       "assignee": "",
       "reporter": "JOSE VALDOBERTO LEAO",
       "parent": null,
@@ -6486,8 +6559,8 @@
       "priority": "Médio",
       "created": "2025-12-08T07:34:23.298-0300",
       "updated": "2026-05-28T18:21:24.890-0300",
-      "days_old": 298,
-      "days_since_update": 126,
+      "days_old": 301,
+      "days_since_update": 129,
       "assignee": "",
       "reporter": "JOSE VALDOBERTO LEAO",
       "parent": {
@@ -6505,8 +6578,8 @@
       "priority": "Médio",
       "created": "2025-11-03T18:21:42.179-0300",
       "updated": "2026-05-28T18:21:26.651-0300",
-      "days_old": 332,
-      "days_since_update": 126,
+      "days_old": 335,
+      "days_since_update": 129,
       "assignee": "",
       "reporter": "Rodrigo Santini Guarinon",
       "parent": {
@@ -6524,8 +6597,8 @@
       "priority": "Médio",
       "created": "2025-10-24T14:30:29.832-0300",
       "updated": "2025-10-24T14:30:32.972-0300",
-      "days_old": 343,
-      "days_since_update": 343,
+      "days_old": 346,
+      "days_since_update": 346,
       "assignee": "",
       "reporter": "Carolina Teixeira Dias",
       "parent": null,
@@ -6540,8 +6613,8 @@
       "priority": "Médio",
       "created": "2025-10-02T10:53:28.926-0300",
       "updated": "2025-10-02T10:55:10.878-0300",
-      "days_old": 365,
-      "days_since_update": 365,
+      "days_old": 368,
+      "days_since_update": 368,
       "assignee": "",
       "reporter": "André Mendonça Pauletti",
       "parent": null,
@@ -6556,8 +6629,8 @@
       "priority": "Médio",
       "created": "2025-07-11T11:37:19.698-0300",
       "updated": "2026-05-28T18:21:36.617-0300",
-      "days_old": 448,
-      "days_since_update": 126,
+      "days_old": 451,
+      "days_since_update": 129,
       "assignee": "",
       "reporter": "Rodrigo Santini Guarinon",
       "parent": {
@@ -6575,8 +6648,8 @@
       "priority": "Médio",
       "created": "2025-05-21T10:05:14.696-0300",
       "updated": "2025-05-21T10:20:34.275-0300",
-      "days_old": 499,
-      "days_since_update": 499,
+      "days_old": 502,
+      "days_since_update": 502,
       "assignee": "Diogenes Coelho de Freitas",
       "reporter": "Diogenes Coelho de Freitas",
       "parent": {
@@ -6594,8 +6667,8 @@
       "priority": "Médio",
       "created": "2025-04-28T09:34:31.442-0300",
       "updated": "2025-05-13T11:39:01.715-0300",
-      "days_old": 522,
-      "days_since_update": 507,
+      "days_old": 525,
+      "days_since_update": 510,
       "assignee": "",
       "reporter": "Anderson Morais E Castro Fort",
       "parent": {
@@ -6624,9 +6697,9 @@
           "2026-07": 166.1,
           "2026-08": 265.6,
           "2026-09": 116.0,
-          "2026-10": 7.0
+          "2026-10": 14.0
         },
-        "total": 568.7
+        "total": 575.7
       },
       {
         "name": "Tiago Gomes Ferreira",
@@ -6737,6 +6810,18 @@
         "total": 170.0
       },
       {
+        "name": "Vanessa Macedo Cavalcanti De Souza",
+        "monthly": {
+          "2026-05": 10.5,
+          "2026-06": 15.2,
+          "2026-07": 34.5,
+          "2026-08": 53.0,
+          "2026-09": 10.0,
+          "2026-10": 2.0
+        },
+        "total": 125.2
+      },
+      {
         "name": "Ruy Moraes Leite",
         "monthly": {
           "2026-05": 0.0,
@@ -6747,18 +6832,6 @@
           "2026-10": 0.0
         },
         "total": 124.1
-      },
-      {
-        "name": "Vanessa Macedo Cavalcanti De Souza",
-        "monthly": {
-          "2026-05": 10.5,
-          "2026-06": 15.2,
-          "2026-07": 34.5,
-          "2026-08": 53.0,
-          "2026-09": 10.0,
-          "2026-10": 0.0
-        },
-        "total": 123.2
       },
       {
         "name": "Jean Carlos da Silva Ferreira",
@@ -6780,9 +6853,9 @@
           "2026-07": 51.0,
           "2026-08": 31.0,
           "2026-09": 23.0,
-          "2026-10": 2.0
+          "2026-10": 8.0
         },
-        "total": 109.0
+        "total": 115.0
       },
       {
         "name": "Larissa Oliveira De Melo",
@@ -6851,9 +6924,9 @@
       "2026-07": 1174.6,
       "2026-08": 1107.4,
       "2026-09": 1138.1,
-      "2026-10": 19.0
+      "2026-10": 34.0
     },
-    "total_general": 4188.9
+    "total_general": 4203.9
   },
   "kpi_monthly": [
     {
@@ -7140,9 +7213,9 @@
       "cycle_median_seconds": 342103,
       "new_committed": 116,
       "new_devdone": 109,
-      "new_accepted": 84,
+      "new_accepted": 87,
       "new_devdone_pct": 94.0,
-      "new_accepted_pct": 72.4
+      "new_accepted_pct": 75.0
     },
     {
       "month": "2026-09",
@@ -7184,9 +7257,9 @@
       "cycle_median_seconds": 250270,
       "new_committed": 58,
       "new_devdone": 49,
-      "new_accepted": 36,
+      "new_accepted": 38,
       "new_devdone_pct": 84.5,
-      "new_accepted_pct": 62.1
+      "new_accepted_pct": 65.5
     }
   ],
   "kpi_history": [
@@ -7210,9 +7283,9 @@
       "new_only": {
         "issues_committed": 33,
         "issues_devdone": 25,
-        "issues_accepted": 17,
+        "issues_accepted": 18,
         "devdone_pct": 75.8,
-        "accepted_pct": 51.5
+        "accepted_pct": 54.5
       },
       "lead_time": {
         "lead": {
@@ -7247,9 +7320,9 @@
       "new_only": {
         "issues_committed": 25,
         "issues_devdone": 24,
-        "issues_accepted": 19,
+        "issues_accepted": 20,
         "devdone_pct": 96.0,
-        "accepted_pct": 76.0
+        "accepted_pct": 80.0
       },
       "lead_time": {
         "lead": {
@@ -7284,9 +7357,9 @@
       "new_only": {
         "issues_committed": 27,
         "issues_devdone": 26,
-        "issues_accepted": 22,
+        "issues_accepted": 23,
         "devdone_pct": 96.3,
-        "accepted_pct": 81.5
+        "accepted_pct": 85.2
       },
       "lead_time": {
         "lead": {
@@ -7321,9 +7394,9 @@
       "new_only": {
         "issues_committed": 38,
         "issues_devdone": 34,
-        "issues_accepted": 24,
+        "issues_accepted": 26,
         "devdone_pct": 89.5,
-        "accepted_pct": 63.2
+        "accepted_pct": 68.4
       },
       "lead_time": {
         "lead": {

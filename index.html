@@ -3414,7 +3414,9 @@
                     flags.committed = !!c.committed;
                     flags.accepted = !!c.accepted;
                     flags.devdone = !!c.devdone;
-                    flags.not_completed = !!c.not_completed;
+                    // NAO CONCLUIDO = antagonista de DEV-DONE: todo card que
+                    // nao esta dev-done (Concluido/Em producao/Aceito).
+                    flags.not_completed = !c.devdone;
                     flags.blocked = !!c.blocked;
                     flags.new = !!c.is_new;
                     flags.carryover = !c.is_new;
@@ -3422,7 +3424,7 @@
                     flags.committed = true;
                     flags.accepted = !!c.is_accepted;
                     flags.devdone = !!c.is_devdone;
-                    flags.not_completed = !c.is_devdone; // = total - devdone
+                    flags.not_completed = !c.is_devdone; // antagonista de devdone
                     flags.blocked = c.status_name === "Bloqueado";
                     flags.new = !!c.is_new_in_sprint;
                     flags.carryover = !c.is_new_in_sprint;
@@ -3496,7 +3498,15 @@
                 addChk("cards", rows.length, sc.issues_committed);
                 addChk("dev-done", cnt.devdone, sc.issues_devdone);
                 addChk("aceitos", cnt.accepted, sc.issues_accepted);
-                addChk("não concl.", cnt.not_completed, sc.issues_not_completed);
+                // 'não concluído' e' ANTAGONISTA de dev-done (conceito proprio
+                // desta aba): referencia = comprometidos - dev-done, NAO o
+                // issues_not_completed do Sprint Report (que significa 'nao aceito').
+                const refNaoConcl =
+                    sc.issues_committed !== undefined &&
+                    sc.issues_devdone !== undefined
+                        ? sc.issues_committed - sc.issues_devdone
+                        : undefined;
+                addChk("não concl.", cnt.not_completed, refNaoConcl);
 
                 const chkHtml = checks
                     .map((c) => {

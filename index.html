@@ -3400,6 +3400,7 @@
                 { k: "accepted", lbl: "ACEITO", color: "#34d399" },
                 { k: "devdone", lbl: "DEV-DONE", color: "#22d3ee" },
                 { k: "not_completed", lbl: "NÃO CONCLUÍDO", color: "#f87171" },
+                { k: "cancelled", lbl: "CANCELADO", color: "#7d8a9c" },
                 { k: "carryover", lbl: "TRANSBORDADO", color: "#fb923c" },
                 { k: "new", lbl: "NOVOS NA SPRINT", color: "#c084fc" },
                 { k: "blocked", lbl: "BLOQUEADO", color: "#f472b6" },
@@ -3411,20 +3412,26 @@
             function evidNormalize(c, frozen) {
                 const flags = {};
                 if (frozen) {
+                    // 'cancelled' vem congelado do coletor; fallback pro status
+                    // atual caso o JSON ainda nao tenha o campo.
+                    flags.cancelled =
+                        c.cancelled !== undefined
+                            ? !!c.cancelled
+                            : c.status_name === "Cancelado";
                     flags.committed = !!c.committed;
-                    flags.accepted = !!c.accepted;
-                    flags.devdone = !!c.devdone;
-                    // NAO CONCLUIDO = antagonista de DEV-DONE: todo card que
-                    // nao esta dev-done (Concluido/Em producao/Aceito).
-                    flags.not_completed = !c.devdone;
+                    flags.accepted = !!c.accepted && !flags.cancelled;
+                    // CANCELADO sai de DEV-DONE e de NAO CONCLUIDO.
+                    flags.devdone = !!c.devdone && !flags.cancelled;
+                    flags.not_completed = !c.devdone && !flags.cancelled;
                     flags.blocked = !!c.blocked;
                     flags.new = !!c.is_new;
                     flags.carryover = !c.is_new;
                 } else {
+                    flags.cancelled = c.status_name === "Cancelado";
                     flags.committed = true;
-                    flags.accepted = !!c.is_accepted;
-                    flags.devdone = !!c.is_devdone;
-                    flags.not_completed = !c.is_devdone; // antagonista de devdone
+                    flags.accepted = !!c.is_accepted && !flags.cancelled;
+                    flags.devdone = !!c.is_devdone && !flags.cancelled;
+                    flags.not_completed = !c.is_devdone && !flags.cancelled;
                     flags.blocked = c.status_name === "Bloqueado";
                     flags.new = !!c.is_new_in_sprint;
                     flags.carryover = !c.is_new_in_sprint;
@@ -3476,6 +3483,7 @@
                     accepted: 0,
                     devdone: 0,
                     not_completed: 0,
+                    cancelled: 0,
                     carryover: 0,
                     new: 0,
                     blocked: 0,
@@ -3496,15 +3504,22 @@
                     checks.push({ lbl, derived, ref, ok: derived === ref });
                 };
                 addChk("cards", rows.length, sc.issues_committed);
-                addChk("dev-done", cnt.devdone, sc.issues_devdone);
-                addChk("aceitos", cnt.accepted, sc.issues_accepted);
-                // 'não concluído' e' ANTAGONISTA de dev-done (conceito proprio
-                // desta aba): referencia = comprometidos - dev-done, NAO o
-                // issues_not_completed do Sprint Report (que significa 'nao aceito').
-                const refNaoConcl =
-                    sc.issues_committed !== undefined &&
+                // A Visão geral conta CANCELADO dentro de dev-done (categoria
+                // 'done' do board). Nesta aba cancelados tem classe propria e
+                // saem de dev-done, entao a referencia e' issues_devdone menos
+                // os cancelados deste bloco.
+                const refDevdone =
                     sc.issues_devdone !== undefined
-                        ? sc.issues_committed - sc.issues_devdone
+                        ? sc.issues_devdone - cnt.cancelled
+                        : undefined;
+                addChk("dev-done", cnt.devdone, refDevdone);
+                addChk("aceitos", cnt.accepted, sc.issues_accepted);
+                // 'não concluído' = antagonista de dev-done, EXCETO cancelados.
+                // Particao: committed = devdone + not_completed + cancelled.
+                // Logo ref(not_completed) = committed - devdone(aba) - cancelled.
+                const refNaoConcl =
+                    sc.issues_committed !== undefined
+                        ? sc.issues_committed - cnt.devdone - cnt.cancelled
                         : undefined;
                 addChk("não concl.", cnt.not_completed, refNaoConcl);
 
@@ -3519,6 +3534,7 @@
                     .join("");
 
                 const extra =
+                    `<span class="evid-chk">${cnt.cancelled} cancelados</span>` +
                     `<span class="evid-chk">${cnt.new} novos</span>` +
                     `<span class="evid-chk">${cnt.carryover} transbordados</span>` +
                     `<span class="evid-chk">${cnt.blocked} bloqueados</span>`;

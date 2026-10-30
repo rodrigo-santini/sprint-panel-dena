@@ -1701,6 +1701,7 @@
       <div class="kpi"><div class="v green">${scope.issues_accepted}</div><div class="l">Aceito</div></div>
       <div class="kpi"><div class="v blue">${scope.issues_devdone}</div><div class="l">Dev-done</div></div>
       <div class="kpi"><div class="v red">${scope.issues_not_completed}</div><div class="l">Não concl.</div></div>
+      <div class="kpi"><div class="v" style="color:#94a3b8">${scope.issues_cancelled || 0}</div><div class="l">Cancelado</div></div>
     </div>`;
             }
 
@@ -2464,13 +2465,24 @@
             function aggSummary(filtered) {
                 let total = 0,
                     accepted = 0,
-                    devdone = 0;
+                    devdone = 0,
+                    cancelled = 0;
                 let pts_total = 0,
                     pts_accepted = 0;
                 const byType = {},
                     status_dist = {};
                 for (const i of filtered) {
                     total++;
+                    // 'Cancelado' e' categoria 'done' no board (entra em
+                    // is_devdone/is_accepted), mas NAO e' entrega: ganha
+                    // classificacao propria e sai de devdone E de aceito.
+                    const isCancelled = i.status_name === "Cancelado";
+                    if (isCancelled) {
+                        cancelled++;
+                        status_dist[i.status_name] =
+                            (status_dist[i.status_name] || 0) + 1;
+                        continue;
+                    }
                     if (i.is_accepted) accepted++;
                     if (i.is_devdone) devdone++;
                     const sp =
@@ -2484,7 +2496,11 @@
                     issues_committed: total,
                     issues_accepted: accepted,
                     issues_devdone: devdone,
-                    issues_not_completed: total - devdone,
+                    // antagonista de devdone; cancelados saem das duas
+                    // categorias. Fecha: committed = devdone + not_completed
+                    // + cancelados.
+                    issues_not_completed: total - devdone - cancelled,
+                    issues_cancelled: cancelled,
                     accepted_pct: pctRound(accepted, total),
                     devdone_pct: pctRound(devdone, total),
                     points_committed: Math.round(pts_total * 10) / 10,
@@ -3382,8 +3398,9 @@
       </tbody>
     </table></div>
     <div style="margin-top:12px;font-size:.74rem;color:var(--muted)">
-      💡 <b>Dev-Done</b> inclui cards nos status <em>Concluído</em> e <em>Aceito</em> (categoria "done").
+      💡 <b>Dev-Done</b> inclui cards nos status <em>Concluído</em>, <em>Em produção</em> e <em>Aceito</em> (categoria "done"), <b>exceto Cancelado</b>.
       <b>Aceito</b> são apenas os que chegaram à última coluna do board (entregue ao PO).
+      <b>Cancelado</b> é classificação própria: não conta como Dev-Done nem como Não concluído.
     </div>
   </div>
   ${kpiLeadCycleMonthly(monthly)}
@@ -3504,24 +3521,15 @@
                     checks.push({ lbl, derived, ref, ok: derived === ref });
                 };
                 addChk("cards", rows.length, sc.issues_committed);
-                // A Visão geral conta CANCELADO dentro de dev-done (categoria
-                // 'done' do board). Nesta aba cancelados tem classe propria e
-                // saem de dev-done, entao a referencia e' issues_devdone menos
-                // os cancelados deste bloco.
-                const refDevdone =
-                    sc.issues_devdone !== undefined
-                        ? sc.issues_devdone - cnt.cancelled
-                        : undefined;
-                addChk("dev-done", cnt.devdone, refDevdone);
+                // Agora a Visão geral (coletor/aggSummary) usa EXATAMENTE as
+                // mesmas regras desta aba: CANCELADO fora de dev-done, e
+                // NÃO CONCLUÍDO antagonista de dev-done (fora cancelados).
+                // Logo a conferência compara DIRETO com os campos do scope,
+                // sem recalcular committed - devdone - cancelled por fora.
+                addChk("dev-done", cnt.devdone, sc.issues_devdone);
                 addChk("aceitos", cnt.accepted, sc.issues_accepted);
-                // 'não concluído' = antagonista de dev-done, EXCETO cancelados.
-                // Particao: committed = devdone + not_completed + cancelled.
-                // Logo ref(not_completed) = committed - devdone(aba) - cancelled.
-                const refNaoConcl =
-                    sc.issues_committed !== undefined
-                        ? sc.issues_committed - cnt.devdone - cnt.cancelled
-                        : undefined;
-                addChk("não concl.", cnt.not_completed, refNaoConcl);
+                addChk("não concl.", cnt.not_completed, sc.issues_not_completed);
+                addChk("cancelados", cnt.cancelled, sc.issues_cancelled);
 
                 const chkHtml = checks
                     .map((c) => {
@@ -3585,13 +3593,22 @@
                         return { cards: node.frozen_cards, frozen: true };
                     return { cards: byCat(node.all_issues || []), frozen: false };
                 };
-                // 'novos': all_issues ao vivo (mesma fonte de new_only), is_new.
-                const novosOf = (node) => ({
-                    cards: byCat(node.all_issues || []).filter(
-                        (c) => c.is_new_in_sprint,
-                    ),
-                    frozen: false,
-                });
+                // 'novos': sem filtro usa frozen_cards (is_new) — MESMA fonte
+                // e classificacao congelada do new_only; com filtro de squad usa
+                // all_issues ao vivo (is_new_in_sprint), como em 'todos'.
+                const novosOf = (node) => {
+                    if (!SQUAD && node.frozen_cards)
+                        return {
+                            cards: node.frozen_cards.filter((c) => c.is_new),
+                            frozen: true,
+                        };
+                    return {
+                        cards: byCat(node.all_issues || []).filter(
+                            (c) => c.is_new_in_sprint,
+                        ),
+                        frozen: false,
+                    };
+                };
                 const ativaTag = `<span class="tag ativa">Sprint Ativa</span>`;
                 const encTag = `<span class="tag fechada">Última Encerrada</span>`;
 

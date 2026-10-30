@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T17:00:52.349774+00:00",
+  "generated_at": "2026-10-30T20:29:42.291906+00:00",
   "project": "DENA",
   "board_id": 1094,
   "active": {
@@ -15,13 +15,14 @@
     "summary": {
       "issues_committed": 93,
       "issues_accepted": 3,
-      "issues_devdone": 48,
-      "issues_not_completed": 90,
+      "issues_devdone": 47,
+      "issues_not_completed": 45,
+      "issues_cancelled": 1,
       "issues_punted": 0,
       "issues_completed_elsewhere": 0,
       "issues_added_during": 92,
       "accepted_pct": 3.2,
-      "devdone_pct": 51.6,
+      "devdone_pct": 50.5,
       "points_committed": 321.0,
       "points_accepted": 0.0,
       "points_not_completed": 163.0,
@@ -35,10 +36,10 @@
       },
       "status_dist": {
         "Aceito": 3,
-        "Em Andamento": 27,
+        "Em Andamento": 28,
         "Concluído": 44,
         "Bloqueado": 5,
-        "Backlog": 12,
+        "Backlog": 11,
         "Cancelado": 1,
         "Refinamento": 1
       },
@@ -75,6 +76,7 @@
       "issues_accepted": 1,
       "issues_devdone": 4,
       "issues_not_completed": 19,
+      "issues_cancelled": 0,
       "accepted_pct": 4.3,
       "devdone_pct": 17.4,
       "points_committed": 28.0,
@@ -83,8 +85,8 @@
     },
     "health": {
       "status": "verde",
-      "elapsed_pct": 32.7,
-      "done_pct": 51.6
+      "elapsed_pct": 33.8,
+      "done_pct": 50.5
     },
     "scope": {
       "carryover": 70,
@@ -898,8 +900,8 @@
         "is_new": false,
         "story_points": null,
         "assignee": "Ruy Moraes Leite",
-        "last_comment_at": "2026-10-30T09:38:55.162-0300",
-        "last_comment_by": "Rodrigo Santini Guarinon",
+        "last_comment_at": "2026-10-30T14:30:07.865-0300",
+        "last_comment_by": "Daniele Santana De Brito",
         "recent_comment_24h": true,
         "time_spent_seconds": null,
         "parent": {
@@ -1033,7 +1035,7 @@
         "assignee": "DENNIS VINICIUS DA SILVA ROCHA",
         "last_comment_at": "2026-10-29T15:55:30.821-0300",
         "last_comment_by": "DENNIS VINICIUS DA SILVA ROCHA",
-        "recent_comment_24h": true,
+        "recent_comment_24h": false,
         "time_spent_seconds": null,
         "parent": {
           "key": "DENA-1339",
@@ -1448,7 +1450,7 @@
         "sprint_count": 1,
         "is_new": true,
         "story_points": null,
-        "assignee": "",
+        "assignee": "Giovanna Souza Bancala",
         "last_comment_at": null,
         "last_comment_by": null,
         "recent_comment_24h": false,
@@ -1487,25 +1489,6 @@
         "time_spent_seconds": null,
         "parent": null,
         "category": ""
-      },
-      {
-        "key": "DENA-1635",
-        "summary": "[Aliança 01] [Plurall] Projeto RD Station",
-        "type": "História",
-        "status": "Backlog",
-        "sprint_count": 1,
-        "is_new": true,
-        "story_points": null,
-        "assignee": "Rafael Fabri Chimidt",
-        "last_comment_at": null,
-        "last_comment_by": null,
-        "recent_comment_24h": false,
-        "time_spent_seconds": null,
-        "parent": {
-          "key": "DENA-768",
-          "summary": "SOMOS"
-        },
-        "category": "SPN"
       },
       {
         "key": "DENA-1633",
@@ -1709,7 +1692,7 @@
         "last_comment_at": "2026-10-29T09:29:24.037-0300",
         "last_comment_by": "Carolina Teixeira Dias",
         "recent_comment_24h": false,
-        "time_spent_seconds": 54000,
+        "time_spent_seconds": 108000,
         "parent": {
           "key": "DENA-1334",
           "summary": "VOOMP"
@@ -1791,6 +1774,25 @@
           "summary": "CAPTAÇÃO ANALITICA"
         },
         "category": "SCG"
+      },
+      {
+        "key": "DENA-1635",
+        "summary": "[Aliança 01] [Plurall] Projeto RD Station",
+        "type": "História",
+        "status": "Em Andamento",
+        "sprint_count": 1,
+        "is_new": true,
+        "story_points": null,
+        "assignee": "Rafael Fabri Chimidt",
+        "last_comment_at": null,
+        "last_comment_by": null,
+        "recent_comment_24h": false,
+        "time_spent_seconds": null,
+        "parent": {
+          "key": "DENA-768",
+          "summary": "SOMOS"
+        },
+        "category": "SPN"
       },
       {
         "key": "DENA-1622",
@@ -1975,7 +1977,7 @@
         "key": "DENA-1672",
         "summary": "[ALTÍSSIMA] [INC0835559]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
         "type": "Incidente",
-        "assignee": "",
+        "assignee": "Giovanna Souza Bancala",
         "category": "",
         "is_new_in_sprint": true,
         "is_accepted": false,
@@ -2007,21 +2009,6 @@
         "type": "Incidente",
         "assignee": "Gabriel de Jesus Fonseca Romero",
         "category": "",
-        "is_new_in_sprint": true,
-        "is_accepted": false,
-        "is_devdone": false,
-        "status_name": "Backlog",
-        "sprint_count": 1,
-        "story_points": null,
-        "lead_seconds": null,
-        "cycle_seconds": null
-      },
-      {
-        "key": "DENA-1635",
-        "summary": "[Aliança 01] [Plurall] Projeto RD Station",
-        "type": "História",
-        "assignee": "Rafael Fabri Chimidt",
-        "category": "SPN",
         "is_new_in_sprint": true,
         "is_accepted": false,
         "is_devdone": false,
@@ -2943,6 +2930,21 @@
         "status_name": "Em Andamento",
         "sprint_count": 1,
         "story_points": 5.0,
+        "lead_seconds": null,
+        "cycle_seconds": null
+      },
+      {
+        "key": "DENA-1635",
+        "summary": "[Aliança 01] [Plurall] Projeto RD Station",
+        "type": "História",
+        "assignee": "Rafael Fabri Chimidt",
+        "category": "SPN",
+        "is_new_in_sprint": true,
+        "is_accepted": false,
+        "is_devdone": false,
+        "status_name": "Em Andamento",
+        "sprint_count": 1,
+        "story_points": null,
         "lead_seconds": null,
         "cycle_seconds": null
       },
@@ -4484,7 +4486,7 @@
         "key": "DENA-1635",
         "summary": "[Aliança 01] [Plurall] Projeto RD Station",
         "type": "História",
-        "status_name": "Backlog",
+        "status_name": "Em Andamento",
         "assignee": "Rafael Fabri Chimidt",
         "story_points": null,
         "category": "SPN",
@@ -4725,7 +4727,7 @@
         "summary": "[ALTÍSSIMA] [INC0835559]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
         "type": "Incidente",
         "status_name": "Backlog",
-        "assignee": "",
+        "assignee": "Giovanna Souza Bancala",
         "story_points": null,
         "category": "",
         "is_new": true,
@@ -4751,13 +4753,14 @@
     "summary": {
       "issues_committed": 102,
       "issues_accepted": 32,
-      "issues_devdone": 72,
-      "issues_not_completed": 70,
+      "issues_devdone": 70,
+      "issues_not_completed": 30,
+      "issues_cancelled": 2,
       "issues_punted": 0,
       "issues_completed_elsewhere": 0,
       "issues_added_during": 102,
       "accepted_pct": 31.4,
-      "devdone_pct": 70.6,
+      "devdone_pct": 68.6,
       "points_committed": 310.0,
       "points_accepted": 28.0,
       "points_not_completed": 127.0,
@@ -4851,18 +4854,19 @@
     },
     "new_only": {
       "issues_committed": 30,
-      "issues_accepted": 19,
-      "issues_devdone": 28,
-      "issues_not_completed": 2,
-      "accepted_pct": 63.3,
-      "devdone_pct": 93.3,
+      "issues_accepted": 17,
+      "issues_devdone": 25,
+      "issues_not_completed": 4,
+      "issues_cancelled": 1,
+      "accepted_pct": 56.7,
+      "devdone_pct": 83.3,
       "points_committed": 49.0,
       "points_accepted": 16.0,
       "points_accepted_pct": 32.7
     },
     "health": {
       "status": "amarelo",
-      "done_pct": 70.6
+      "done_pct": 68.6
     },
     "scope": {
       "carryover": 72,
@@ -8120,7 +8124,7 @@
           "summary": "[MÉDIO] [INC0835129]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 28.0,
+          "duration_hours": 31.5,
           "assignee": "Gabriel de Jesus Fonseca Romero",
           "created": "2026-10-29T10:01:46.414-0300",
           "sprint_count": 1,
@@ -8132,8 +8136,8 @@
           "summary": "[ALTÍSSIMA] [INC0835559]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 2.2,
-          "assignee": "",
+          "duration_hours": 5.7,
+          "assignee": "Giovanna Souza Bancala",
           "created": "2026-10-30T11:47:34.706-0300",
           "sprint_count": 1,
           "parent": null,
@@ -8144,7 +8148,7 @@
           "summary": "[INC0825017]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 692.5,
+          "duration_hours": 696.0,
           "assignee": "Diogenes Coelho de Freitas",
           "created": "2026-10-01T17:31:29.135-0300",
           "sprint_count": 3,
@@ -8160,7 +8164,7 @@
           "summary": "[INC0825281]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 674.3,
+          "duration_hours": 677.8,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-10-02T11:42:53.951-0300",
           "sprint_count": 3,
@@ -8176,7 +8180,7 @@
           "summary": "[ALTA] [INC0835210]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 24.5,
+          "duration_hours": 28.0,
           "assignee": "Tiago Gomes Ferreira",
           "created": "2026-10-29T13:28:29.703-0300",
           "sprint_count": 1,
@@ -8363,7 +8367,7 @@
           "summary": "[INC0825017]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 692.5,
+          "duration_hours": 696.0,
           "assignee": "Diogenes Coelho de Freitas",
           "created": "2026-10-01T17:31:29.135-0300",
           "sprint_count": 3,
@@ -8379,7 +8383,7 @@
           "summary": "[INC0825281]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 674.3,
+          "duration_hours": 677.8,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-10-02T11:42:53.951-0300",
           "sprint_count": 3,
@@ -8429,8 +8433,8 @@
       "priority": "Médio",
       "created": "2026-10-29T16:04:33.383-0300",
       "updated": "2026-10-29T16:04:59.362-0300",
-      "days_old": 0,
-      "days_since_update": 0,
+      "days_old": 1,
+      "days_since_update": 1,
       "assignee": "Vanessa Macedo Cavalcanti De Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": null,
@@ -8445,8 +8449,8 @@
       "priority": "Médio",
       "created": "2026-10-29T15:09:14.399-0300",
       "updated": "2026-10-29T16:14:47.653-0300",
-      "days_old": 0,
-      "days_since_update": 0,
+      "days_old": 1,
+      "days_since_update": 1,
       "assignee": "",
       "reporter": "Rosilaine Papa da Silva",
       "parent": null,
@@ -8461,7 +8465,7 @@
       "priority": "Médio",
       "created": "2026-10-28T15:44:03.327-0300",
       "updated": "2026-10-28T17:45:13.738-0300",
-      "days_old": 1,
+      "days_old": 2,
       "days_since_update": 1,
       "assignee": "Gabriel de Jesus Fonseca Romero",
       "reporter": "Rosilaine Papa da Silva",
@@ -8477,7 +8481,7 @@
       "priority": "Médio",
       "created": "2026-10-27T15:23:51.914-0300",
       "updated": "2026-10-28T12:19:55.327-0300",
-      "days_old": 2,
+      "days_old": 3,
       "days_since_update": 2,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
@@ -8528,8 +8532,8 @@
       "priority": "Médio",
       "created": "2026-10-22T16:22:52.850-0300",
       "updated": "2026-10-22T16:30:37.359-0300",
-      "days_old": 7,
-      "days_since_update": 7,
+      "days_old": 8,
+      "days_since_update": 8,
       "assignee": "",
       "reporter": "Daniele Santana De Brito",
       "parent": null,
@@ -8577,7 +8581,7 @@
       "created": "2026-10-20T13:58:29.697-0300",
       "updated": "2026-10-20T14:23:54.530-0300",
       "days_old": 10,
-      "days_since_update": 9,
+      "days_since_update": 10,
       "assignee": "Vanessa Macedo Cavalcanti De Souza",
       "reporter": "Rosilaine Papa da Silva",
       "parent": null,
@@ -8608,7 +8612,7 @@
       "priority": "Médio",
       "created": "2026-10-08T14:02:44.271-0300",
       "updated": "2026-10-26T12:03:57.598-0300",
-      "days_old": 21,
+      "days_old": 22,
       "days_since_update": 4,
       "assignee": "Vanessa Macedo Cavalcanti De Souza",
       "reporter": "Rosilaine Papa da Silva",
@@ -8624,8 +8628,8 @@
       "priority": "Médio",
       "created": "2026-10-01T16:09:43.122-0300",
       "updated": "2026-10-13T14:19:54.526-0300",
-      "days_old": 28,
-      "days_since_update": 16,
+      "days_old": 29,
+      "days_since_update": 17,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -8643,8 +8647,8 @@
       "priority": "Médio",
       "created": "2026-10-01T16:09:03.878-0300",
       "updated": "2026-10-13T14:20:01.048-0300",
-      "days_old": 28,
-      "days_since_update": 16,
+      "days_old": 29,
+      "days_since_update": 17,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -8662,8 +8666,8 @@
       "priority": "Médio",
       "created": "2026-10-01T16:08:16.391-0300",
       "updated": "2026-10-13T14:20:01.893-0300",
-      "days_old": 28,
-      "days_since_update": 16,
+      "days_old": 29,
+      "days_since_update": 17,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -8681,8 +8685,8 @@
       "priority": "Médio",
       "created": "2026-10-01T16:06:21.010-0300",
       "updated": "2026-10-13T14:19:54.395-0300",
-      "days_old": 28,
-      "days_since_update": 16,
+      "days_old": 29,
+      "days_since_update": 17,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -8700,8 +8704,8 @@
       "priority": "Médio",
       "created": "2026-10-01T16:05:29.672-0300",
       "updated": "2026-10-13T14:20:07.591-0300",
-      "days_old": 28,
-      "days_since_update": 16,
+      "days_old": 29,
+      "days_since_update": 17,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -8719,8 +8723,8 @@
       "priority": "Médio",
       "created": "2026-10-01T16:04:45.326-0300",
       "updated": "2026-10-13T14:20:08.980-0300",
-      "days_old": 28,
-      "days_since_update": 16,
+      "days_old": 29,
+      "days_since_update": 17,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -8738,8 +8742,8 @@
       "priority": "Médio",
       "created": "2026-10-01T16:04:05.773-0300",
       "updated": "2026-10-13T14:19:57.679-0300",
-      "days_old": 28,
-      "days_since_update": 16,
+      "days_old": 29,
+      "days_since_update": 17,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -8757,8 +8761,8 @@
       "priority": "Médio",
       "created": "2026-10-01T16:03:18.092-0300",
       "updated": "2026-10-13T14:19:58.123-0300",
-      "days_old": 28,
-      "days_since_update": 16,
+      "days_old": 29,
+      "days_since_update": 17,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -8776,8 +8780,8 @@
       "priority": "Médio",
       "created": "2026-10-01T16:01:56.903-0300",
       "updated": "2026-10-13T14:19:57.502-0300",
-      "days_old": 28,
-      "days_since_update": 16,
+      "days_old": 29,
+      "days_since_update": 17,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -8795,8 +8799,8 @@
       "priority": "Médio",
       "created": "2026-10-01T16:01:09.706-0300",
       "updated": "2026-10-13T14:19:57.722-0300",
-      "days_old": 28,
-      "days_since_update": 16,
+      "days_old": 29,
+      "days_since_update": 17,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -8814,8 +8818,8 @@
       "priority": "Médio",
       "created": "2026-10-01T16:00:10.175-0300",
       "updated": "2026-10-13T14:19:56.875-0300",
-      "days_old": 28,
-      "days_since_update": 16,
+      "days_old": 29,
+      "days_since_update": 17,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -8833,8 +8837,8 @@
       "priority": "Médio",
       "created": "2026-10-01T15:59:27.183-0300",
       "updated": "2026-10-13T14:19:58.014-0300",
-      "days_old": 28,
-      "days_since_update": 16,
+      "days_old": 29,
+      "days_since_update": 17,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -8852,8 +8856,8 @@
       "priority": "Médio",
       "created": "2026-10-01T15:58:43.892-0300",
       "updated": "2026-10-13T14:19:56.743-0300",
-      "days_old": 28,
-      "days_since_update": 16,
+      "days_old": 29,
+      "days_since_update": 17,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -8871,8 +8875,8 @@
       "priority": "Médio",
       "created": "2026-10-01T15:57:55.297-0300",
       "updated": "2026-10-13T14:19:58.937-0300",
-      "days_old": 28,
-      "days_since_update": 16,
+      "days_old": 29,
+      "days_since_update": 17,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -8890,8 +8894,8 @@
       "priority": "Médio",
       "created": "2026-10-01T15:57:09.790-0300",
       "updated": "2026-10-13T14:20:02.822-0300",
-      "days_old": 28,
-      "days_since_update": 16,
+      "days_old": 29,
+      "days_since_update": 17,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -8909,8 +8913,8 @@
       "priority": "Médio",
       "created": "2026-10-01T15:56:06.972-0300",
       "updated": "2026-10-13T14:20:04.100-0300",
-      "days_old": 28,
-      "days_since_update": 16,
+      "days_old": 29,
+      "days_since_update": 17,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -8928,8 +8932,8 @@
       "priority": "Médio",
       "created": "2026-10-01T15:55:22.422-0300",
       "updated": "2026-10-13T14:20:01.156-0300",
-      "days_old": 28,
-      "days_since_update": 16,
+      "days_old": 29,
+      "days_since_update": 17,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -8947,8 +8951,8 @@
       "priority": "Médio",
       "created": "2026-10-01T15:54:42.059-0300",
       "updated": "2026-10-13T14:20:01.944-0300",
-      "days_old": 28,
-      "days_since_update": 16,
+      "days_old": 29,
+      "days_since_update": 17,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -8966,8 +8970,8 @@
       "priority": "Médio",
       "created": "2026-10-01T15:53:51.693-0300",
       "updated": "2026-10-13T14:20:11.962-0300",
-      "days_old": 28,
-      "days_since_update": 16,
+      "days_old": 29,
+      "days_since_update": 17,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -8985,8 +8989,8 @@
       "priority": "Médio",
       "created": "2026-10-01T15:52:37.944-0300",
       "updated": "2026-10-13T14:20:04.755-0300",
-      "days_old": 28,
-      "days_since_update": 16,
+      "days_old": 29,
+      "days_since_update": 17,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -9004,8 +9008,8 @@
       "priority": "Médio",
       "created": "2026-10-01T15:51:41.595-0300",
       "updated": "2026-10-13T14:20:06.250-0300",
-      "days_old": 28,
-      "days_since_update": 16,
+      "days_old": 29,
+      "days_since_update": 17,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -9039,8 +9043,8 @@
       "priority": "Médio",
       "created": "2026-09-29T15:50:30.411-0300",
       "updated": "2026-10-13T14:20:16.826-0300",
-      "days_old": 30,
-      "days_since_update": 16,
+      "days_old": 31,
+      "days_since_update": 17,
       "assignee": "Vanessa Macedo Cavalcanti De Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -9090,8 +9094,8 @@
       "priority": "Médio",
       "created": "2026-09-14T17:16:29.819-0300",
       "updated": "2026-09-14T17:16:32.674-0300",
-      "days_old": 45,
-      "days_since_update": 45,
+      "days_old": 46,
+      "days_since_update": 46,
       "assignee": "",
       "reporter": "André Mendonça Pauletti",
       "parent": null,
@@ -9106,8 +9110,8 @@
       "priority": "Médio",
       "created": "2026-09-10T15:33:44.228-0300",
       "updated": "2026-09-10T15:50:11.174-0300",
-      "days_old": 49,
-      "days_since_update": 49,
+      "days_old": 50,
+      "days_since_update": 50,
       "assignee": "",
       "reporter": "Carolina Teixeira Dias",
       "parent": null,
@@ -9123,7 +9127,7 @@
       "created": "2026-09-03T10:35:30.110-0300",
       "updated": "2026-09-11T16:20:21.458-0300",
       "days_old": 57,
-      "days_since_update": 48,
+      "days_since_update": 49,
       "assignee": "Taisa Pereira Martins",
       "reporter": "Anderson Morais E Castro Fort",
       "parent": {
@@ -9142,7 +9146,7 @@
       "created": "2026-09-02T09:26:03.719-0300",
       "updated": "2026-09-09T14:32:40.980-0300",
       "days_old": 58,
-      "days_since_update": 50,
+      "days_since_update": 51,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -9160,8 +9164,8 @@
       "priority": "Médio",
       "created": "2026-08-11T16:55:20.522-0300",
       "updated": "2026-08-11T17:02:20.274-0300",
-      "days_old": 79,
-      "days_since_update": 79,
+      "days_old": 80,
+      "days_since_update": 80,
       "assignee": "",
       "reporter": "Daniele Santana De Brito",
       "parent": null,
@@ -9176,8 +9180,8 @@
       "priority": "Médio",
       "created": "2026-08-11T16:27:44.365-0300",
       "updated": "2026-08-11T16:30:55.625-0300",
-      "days_old": 79,
-      "days_since_update": 79,
+      "days_old": 80,
+      "days_since_update": 80,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "Anderson Morais E Castro Fort",
       "parent": null,
@@ -9192,7 +9196,7 @@
       "priority": "Altíssima",
       "created": "2026-07-31T17:00:01.222-0300",
       "updated": "2026-09-18T18:12:09.006-0300",
-      "days_old": 90,
+      "days_old": 91,
       "days_since_update": 41,
       "assignee": "",
       "reporter": "Daniele Santana De Brito",
@@ -9227,8 +9231,8 @@
       "priority": "Médio",
       "created": "2026-07-27T15:25:53.340-0300",
       "updated": "2026-07-28T15:58:08.967-0300",
-      "days_old": 94,
-      "days_since_update": 93,
+      "days_old": 95,
+      "days_since_update": 94,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "André Mendonça Pauletti",
       "parent": null,
@@ -9260,7 +9264,7 @@
       "created": "2026-07-17T13:47:42.435-0300",
       "updated": "2026-07-17T15:20:31.933-0300",
       "days_old": 105,
-      "days_since_update": 104,
+      "days_since_update": 105,
       "assignee": "Tiago Gomes Ferreira",
       "reporter": "André Mendonça Pauletti",
       "parent": {
@@ -9345,7 +9349,7 @@
       "priority": "Médio",
       "created": "2026-07-02T14:21:42.327-0300",
       "updated": "2026-07-03T18:39:55.175-0300",
-      "days_old": 119,
+      "days_old": 120,
       "days_since_update": 118,
       "assignee": "Ananda Ellen Morais Di Rado",
       "reporter": "Karla Ynonye Zucchini",
@@ -9393,8 +9397,8 @@
       "priority": "Médio",
       "created": "2026-06-05T16:09:10.432-0300",
       "updated": "2026-06-05T16:16:38.220-0300",
-      "days_old": 146,
-      "days_since_update": 146,
+      "days_old": 147,
+      "days_since_update": 147,
       "assignee": "",
       "reporter": "André Mendonça Pauletti",
       "parent": null,
@@ -9442,7 +9446,7 @@
       "created": "2026-05-20T19:37:46.510-0300",
       "updated": "2026-06-12T15:26:39.525-0300",
       "days_old": 162,
-      "days_since_update": 139,
+      "days_since_update": 140,
       "assignee": "",
       "reporter": "Gilson Dos Santos",
       "parent": null,
@@ -9458,7 +9462,7 @@
       "created": "2026-05-18T17:57:22.684-0300",
       "updated": "2026-08-13T17:03:43.888-0300",
       "days_old": 164,
-      "days_since_update": 77,
+      "days_since_update": 78,
       "assignee": "Gabriel de Jesus Fonseca Romero",
       "reporter": "Rosilaine Papa da Silva",
       "parent": {
@@ -9477,7 +9481,7 @@
       "created": "2026-05-18T17:52:32.855-0300",
       "updated": "2026-08-13T17:03:53.577-0300",
       "days_old": 164,
-      "days_since_update": 77,
+      "days_since_update": 78,
       "assignee": "Gabriel de Jesus Fonseca Romero",
       "reporter": "Rosilaine Papa da Silva",
       "parent": {
@@ -9496,7 +9500,7 @@
       "created": "2026-05-18T17:49:13.160-0300",
       "updated": "2026-08-13T17:04:09.290-0300",
       "days_old": 164,
-      "days_since_update": 77,
+      "days_since_update": 78,
       "assignee": "Gabriel de Jesus Fonseca Romero",
       "reporter": "Rosilaine Papa da Silva",
       "parent": {
@@ -9515,7 +9519,7 @@
       "created": "2026-05-18T17:44:02.925-0300",
       "updated": "2026-08-13T17:04:20.342-0300",
       "days_old": 164,
-      "days_since_update": 77,
+      "days_since_update": 78,
       "assignee": "Gabriel de Jesus Fonseca Romero",
       "reporter": "Rosilaine Papa da Silva",
       "parent": {
@@ -9582,7 +9586,7 @@
       "created": "2026-04-06T09:33:50.055-0300",
       "updated": "2026-06-11T16:58:37.672-0300",
       "days_old": 207,
-      "days_since_update": 140,
+      "days_since_update": 141,
       "assignee": "Rodrigo Santini Guarinon",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -9598,7 +9602,7 @@
       "created": "2026-04-06T09:21:10.266-0300",
       "updated": "2026-06-11T16:58:23.843-0300",
       "days_old": 207,
-      "days_since_update": 140,
+      "days_since_update": 141,
       "assignee": "Rodrigo Santini Guarinon",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -9614,7 +9618,7 @@
       "created": "2026-04-06T09:21:00.792-0300",
       "updated": "2026-06-11T16:58:08.227-0300",
       "days_old": 207,
-      "days_since_update": 140,
+      "days_since_update": 141,
       "assignee": "Rodrigo Santini Guarinon",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -9648,8 +9652,8 @@
       "priority": "Médio",
       "created": "2026-03-31T15:47:38.234-0300",
       "updated": "2026-06-15T15:14:00.886-0300",
-      "days_old": 212,
-      "days_since_update": 136,
+      "days_old": 213,
+      "days_since_update": 137,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "Luciano De Oliveira Santos",
       "parent": null,
@@ -9664,7 +9668,7 @@
       "priority": "Médio",
       "created": "2026-03-16T14:58:55.488-0300",
       "updated": "2026-05-28T18:21:01.656-0300",
-      "days_old": 227,
+      "days_old": 228,
       "days_since_update": 154,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "Karla Ynonye Zucchini",
@@ -9696,8 +9700,8 @@
       "priority": "Médio",
       "created": "2026-03-05T14:20:22.767-0300",
       "updated": "2026-08-13T16:56:36.265-0300",
-      "days_old": 238,
-      "days_since_update": 77,
+      "days_old": 239,
+      "days_since_update": 78,
       "assignee": "Karla Ynonye Zucchini",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -9713,7 +9717,7 @@
       "created": "2026-02-25T12:49:15.825-0300",
       "updated": "2026-08-13T16:56:31.337-0300",
       "days_old": 247,
-      "days_since_update": 77,
+      "days_since_update": 78,
       "assignee": "Karla Ynonye Zucchini",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -9729,7 +9733,7 @@
       "created": "2026-02-19T18:09:23.604-0300",
       "updated": "2026-06-15T15:22:58.949-0300",
       "days_old": 252,
-      "days_since_update": 136,
+      "days_since_update": 137,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -9745,7 +9749,7 @@
       "created": "2026-02-19T18:07:26.096-0300",
       "updated": "2026-06-15T15:24:36.491-0300",
       "days_old": 252,
-      "days_since_update": 136,
+      "days_since_update": 137,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -9780,7 +9784,7 @@
       "created": "2026-02-19T17:57:42.645-0300",
       "updated": "2026-06-15T15:19:55.731-0300",
       "days_old": 252,
-      "days_since_update": 136,
+      "days_since_update": 137,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -9795,8 +9799,8 @@
       "priority": "Médio",
       "created": "2026-02-19T16:37:00.437-0300",
       "updated": "2026-06-15T15:09:39.874-0300",
-      "days_old": 252,
-      "days_since_update": 136,
+      "days_old": 253,
+      "days_since_update": 137,
       "assignee": "Anderson Morais E Castro Fort",
       "reporter": "Karla Ynonye Zucchini",
       "parent": null,
@@ -9843,7 +9847,7 @@
       "priority": "Altíssima",
       "created": "2026-01-16T14:00:08.726-0300",
       "updated": "2026-02-19T10:12:54.729-0300",
-      "days_old": 286,
+      "days_old": 287,
       "days_since_update": 253,
       "assignee": "",
       "reporter": "JOSE VALDOBERTO LEAO",
@@ -9897,8 +9901,8 @@
       "priority": "Médio",
       "created": "2025-10-24T14:30:29.832-0300",
       "updated": "2025-10-24T14:30:32.972-0300",
-      "days_old": 370,
-      "days_since_update": 370,
+      "days_old": 371,
+      "days_since_update": 371,
       "assignee": "",
       "reporter": "Carolina Teixeira Dias",
       "parent": null,
@@ -10098,6 +10102,18 @@
         "total": 247.2
       },
       {
+        "name": "Jean Carlos da Silva Ferreira",
+        "monthly": {
+          "2026-05": 0.0,
+          "2026-06": 0.0,
+          "2026-07": 0.0,
+          "2026-08": 40.0,
+          "2026-09": 77.0,
+          "2026-10": 72.0
+        },
+        "total": 189.0
+      },
+      {
         "name": "Ruy Moraes Leite",
         "monthly": {
           "2026-05": 0.0,
@@ -10108,18 +10124,6 @@
           "2026-10": 56.0
         },
         "total": 180.1
-      },
-      {
-        "name": "Jean Carlos da Silva Ferreira",
-        "monthly": {
-          "2026-05": 0.0,
-          "2026-06": 0.0,
-          "2026-07": 0.0,
-          "2026-08": 40.0,
-          "2026-09": 77.0,
-          "2026-10": 57.0
-        },
-        "total": 174.0
       },
       {
         "name": "Glauber Do Carmo Brito",
@@ -10272,9 +10276,9 @@
       "2026-07": 1174.6,
       "2026-08": 1107.4,
       "2026-09": 1593.1,
-      "2026-10": 808.2
+      "2026-10": 823.2
     },
-    "total_general": 5433.1
+    "total_general": 5448.1
   },
   "kpi_monthly": [
     {
@@ -10289,49 +10293,57 @@
         {
           "name": "SP 26.1.5",
           "committed": 45,
-          "devdone": 33,
+          "devdone": 32,
           "accepted": 4,
-          "devdone_pct": 73.3,
+          "cancelled": 1,
+          "devdone_pct": 71.1,
           "accepted_pct": 8.9,
           "new_committed": 12,
-          "new_devdone": 12,
-          "new_devdone_pct": 100.0
+          "new_devdone": 8,
+          "new_cancelled": 0,
+          "new_devdone_pct": 66.7
         },
         {
           "name": "SP 26.1.4",
           "committed": 48,
           "devdone": 35,
           "accepted": 15,
+          "cancelled": 0,
           "devdone_pct": 72.9,
           "accepted_pct": 31.2,
           "new_committed": 23,
-          "new_devdone": 22,
-          "new_devdone_pct": 95.7
+          "new_devdone": 17,
+          "new_cancelled": 0,
+          "new_devdone_pct": 73.9
         },
         {
           "name": "SP 26.1.3",
           "committed": 44,
           "devdone": 34,
           "accepted": 21,
+          "cancelled": 0,
           "devdone_pct": 77.3,
           "accepted_pct": 47.7,
           "new_committed": 4,
           "new_devdone": 4,
+          "new_cancelled": 0,
           "new_devdone_pct": 100.0
         }
       ],
       "committed": 137,
-      "devdone": 102,
+      "devdone": 101,
       "accepted": 40,
-      "devdone_pct": 74.5,
+      "cancelled": 1,
+      "devdone_pct": 73.7,
       "accepted_pct": 29.2,
       "lead_median_seconds": 2229805,
       "cycle_median_seconds": 1429099,
       "new_committed": 39,
-      "new_devdone": 38,
-      "new_accepted": 38,
-      "new_devdone_pct": 97.4,
-      "new_accepted_pct": 97.4
+      "new_devdone": 29,
+      "new_accepted": 13,
+      "new_cancelled": 0,
+      "new_devdone_pct": 74.4,
+      "new_accepted_pct": 33.3
     },
     {
       "month": "2026-04",
@@ -10344,38 +10356,44 @@
         {
           "name": "SP 26.2.1",
           "committed": 57,
-          "devdone": 40,
+          "devdone": 39,
           "accepted": 23,
-          "devdone_pct": 70.2,
+          "cancelled": 1,
+          "devdone_pct": 68.4,
           "accepted_pct": 40.4,
           "new_committed": 22,
-          "new_devdone": 22,
-          "new_devdone_pct": 100.0
+          "new_devdone": 12,
+          "new_cancelled": 0,
+          "new_devdone_pct": 54.5
         },
         {
           "name": "SP 26.1.6",
           "committed": 67,
-          "devdone": 55,
+          "devdone": 54,
           "accepted": 32,
-          "devdone_pct": 82.1,
+          "cancelled": 1,
+          "devdone_pct": 80.6,
           "accepted_pct": 47.8,
           "new_committed": 27,
-          "new_devdone": 27,
-          "new_devdone_pct": 100.0
+          "new_devdone": 21,
+          "new_cancelled": 0,
+          "new_devdone_pct": 77.8
         }
       ],
       "committed": 124,
-      "devdone": 95,
+      "devdone": 93,
       "accepted": 55,
-      "devdone_pct": 76.6,
+      "cancelled": 2,
+      "devdone_pct": 75.0,
       "accepted_pct": 44.4,
       "lead_median_seconds": 1384114,
       "cycle_median_seconds": 595210,
       "new_committed": 49,
-      "new_devdone": 49,
-      "new_accepted": 46,
-      "new_devdone_pct": 100.0,
-      "new_accepted_pct": 93.9
+      "new_devdone": 33,
+      "new_accepted": 24,
+      "new_cancelled": 0,
+      "new_devdone_pct": 67.3,
+      "new_accepted_pct": 49.0
     },
     {
       "month": "2026-05",
@@ -10390,36 +10408,42 @@
           "committed": 67,
           "devdone": 51,
           "accepted": 41,
+          "cancelled": 0,
           "devdone_pct": 76.1,
           "accepted_pct": 61.2,
           "new_committed": 38,
-          "new_devdone": 36,
-          "new_devdone_pct": 94.7
+          "new_devdone": 29,
+          "new_cancelled": 0,
+          "new_devdone_pct": 76.3
         },
         {
           "name": "SP 26.2.2",
           "committed": 50,
-          "devdone": 32,
+          "devdone": 31,
           "accepted": 16,
-          "devdone_pct": 64.0,
+          "cancelled": 1,
+          "devdone_pct": 62.0,
           "accepted_pct": 32.0,
           "new_committed": 17,
-          "new_devdone": 17,
-          "new_devdone_pct": 100.0
+          "new_devdone": 12,
+          "new_cancelled": 0,
+          "new_devdone_pct": 70.6
         }
       ],
       "committed": 117,
-      "devdone": 83,
+      "devdone": 82,
       "accepted": 57,
-      "devdone_pct": 70.9,
+      "cancelled": 1,
+      "devdone_pct": 70.1,
       "accepted_pct": 48.7,
       "lead_median_seconds": 1419508,
       "cycle_median_seconds": 629066,
       "new_committed": 55,
-      "new_devdone": 53,
-      "new_accepted": 53,
-      "new_devdone_pct": 96.4,
-      "new_accepted_pct": 96.4
+      "new_devdone": 41,
+      "new_accepted": 34,
+      "new_cancelled": 0,
+      "new_devdone_pct": 74.5,
+      "new_accepted_pct": 61.8
     },
     {
       "month": "2026-06",
@@ -10432,38 +10456,44 @@
         {
           "name": "SP 26.2.5",
           "committed": 74,
-          "devdone": 53,
+          "devdone": 44,
           "accepted": 23,
-          "devdone_pct": 71.6,
+          "cancelled": 9,
+          "devdone_pct": 59.5,
           "accepted_pct": 31.1,
           "new_committed": 43,
-          "new_devdone": 42,
-          "new_devdone_pct": 97.7
+          "new_devdone": 24,
+          "new_cancelled": 9,
+          "new_devdone_pct": 55.8
         },
         {
           "name": "SP 26.2.4",
           "committed": 52,
           "devdone": 36,
           "accepted": 21,
+          "cancelled": 0,
           "devdone_pct": 69.2,
           "accepted_pct": 40.4,
           "new_committed": 22,
-          "new_devdone": 21,
-          "new_devdone_pct": 95.5
+          "new_devdone": 15,
+          "new_cancelled": 0,
+          "new_devdone_pct": 68.2
         }
       ],
       "committed": 126,
-      "devdone": 89,
+      "devdone": 80,
       "accepted": 44,
-      "devdone_pct": 70.6,
+      "cancelled": 9,
+      "devdone_pct": 63.5,
       "accepted_pct": 34.9,
       "lead_median_seconds": 2173821,
       "cycle_median_seconds": 1283239,
       "new_committed": 65,
-      "new_devdone": 63,
-      "new_accepted": 59,
-      "new_devdone_pct": 96.9,
-      "new_accepted_pct": 90.8
+      "new_devdone": 39,
+      "new_accepted": 22,
+      "new_cancelled": 9,
+      "new_devdone_pct": 60.0,
+      "new_accepted_pct": 33.8
     },
     {
       "month": "2026-07",
@@ -10478,36 +10508,42 @@
           "committed": 99,
           "devdone": 63,
           "accepted": 32,
+          "cancelled": 0,
           "devdone_pct": 63.6,
           "accepted_pct": 32.3,
           "new_committed": 29,
-          "new_devdone": 29,
-          "new_devdone_pct": 100.0
+          "new_devdone": 15,
+          "new_cancelled": 0,
+          "new_devdone_pct": 51.7
         },
         {
           "name": "SP 26.2.6",
           "committed": 83,
           "devdone": 55,
           "accepted": 15,
+          "cancelled": 0,
           "devdone_pct": 66.3,
           "accepted_pct": 18.1,
           "new_committed": 32,
-          "new_devdone": 32,
-          "new_devdone_pct": 100.0
+          "new_devdone": 16,
+          "new_cancelled": 0,
+          "new_devdone_pct": 50.0
         }
       ],
       "committed": 182,
       "devdone": 118,
       "accepted": 47,
+      "cancelled": 0,
       "devdone_pct": 64.8,
       "accepted_pct": 25.8,
       "lead_median_seconds": 1425698,
       "cycle_median_seconds": 848382,
       "new_committed": 61,
-      "new_devdone": 61,
-      "new_accepted": 58,
-      "new_devdone_pct": 100.0,
-      "new_accepted_pct": 95.1
+      "new_devdone": 31,
+      "new_accepted": 10,
+      "new_cancelled": 0,
+      "new_devdone_pct": 50.8,
+      "new_accepted_pct": 16.4
     },
     {
       "month": "2026-08",
@@ -10523,47 +10559,55 @@
           "committed": 106,
           "devdone": 77,
           "accepted": 29,
+          "cancelled": 0,
           "devdone_pct": 72.6,
           "accepted_pct": 27.4,
           "new_committed": 27,
-          "new_devdone": 26,
-          "new_devdone_pct": 96.3
+          "new_devdone": 17,
+          "new_cancelled": 0,
+          "new_devdone_pct": 63.0
         },
         {
           "name": "SP 26.3.3",
           "committed": 122,
           "devdone": 90,
           "accepted": 43,
+          "cancelled": 0,
           "devdone_pct": 73.8,
           "accepted_pct": 35.2,
           "new_committed": 38,
-          "new_devdone": 36,
-          "new_devdone_pct": 94.7
+          "new_devdone": 23,
+          "new_cancelled": 0,
+          "new_devdone_pct": 60.5
         },
         {
           "name": "SP 26.3.2",
           "committed": 118,
-          "devdone": 87,
+          "devdone": 86,
           "accepted": 34,
-          "devdone_pct": 73.7,
+          "cancelled": 1,
+          "devdone_pct": 72.9,
           "accepted_pct": 28.8,
           "new_committed": 51,
-          "new_devdone": 50,
-          "new_devdone_pct": 98.0
+          "new_devdone": 37,
+          "new_cancelled": 0,
+          "new_devdone_pct": 72.5
         }
       ],
       "committed": 346,
-      "devdone": 254,
+      "devdone": 253,
       "accepted": 106,
-      "devdone_pct": 73.4,
+      "cancelled": 1,
+      "devdone_pct": 73.1,
       "accepted_pct": 30.6,
       "lead_median_seconds": 1017736,
       "cycle_median_seconds": 342103,
       "new_committed": 116,
-      "new_devdone": 112,
-      "new_accepted": 101,
-      "new_devdone_pct": 96.6,
-      "new_accepted_pct": 87.1
+      "new_devdone": 77,
+      "new_accepted": 47,
+      "new_cancelled": 0,
+      "new_devdone_pct": 66.4,
+      "new_accepted_pct": 40.5
     },
     {
       "month": "2026-09",
@@ -10576,38 +10620,44 @@
         {
           "name": "SP 26.3.6",
           "committed": 113,
-          "devdone": 84,
+          "devdone": 83,
           "accepted": 31,
-          "devdone_pct": 74.3,
+          "cancelled": 1,
+          "devdone_pct": 73.5,
           "accepted_pct": 27.4,
           "new_committed": 33,
-          "new_devdone": 29,
-          "new_devdone_pct": 87.9
+          "new_devdone": 21,
+          "new_cancelled": 0,
+          "new_devdone_pct": 63.6
         },
         {
           "name": "SP 26.3.5",
           "committed": 102,
           "devdone": 77,
           "accepted": 22,
+          "cancelled": 0,
           "devdone_pct": 75.5,
           "accepted_pct": 21.6,
           "new_committed": 25,
-          "new_devdone": 25,
-          "new_devdone_pct": 100.0
+          "new_devdone": 21,
+          "new_cancelled": 0,
+          "new_devdone_pct": 84.0
         }
       ],
       "committed": 215,
-      "devdone": 161,
+      "devdone": 160,
       "accepted": 53,
-      "devdone_pct": 74.9,
+      "cancelled": 1,
+      "devdone_pct": 74.4,
       "accepted_pct": 24.7,
       "lead_median_seconds": 1069826,
       "cycle_median_seconds": 250270,
       "new_committed": 58,
-      "new_devdone": 54,
-      "new_accepted": 49,
-      "new_devdone_pct": 93.1,
-      "new_accepted_pct": 84.5
+      "new_devdone": 42,
+      "new_accepted": 29,
+      "new_cancelled": 0,
+      "new_devdone_pct": 72.4,
+      "new_accepted_pct": 50.0
     },
     {
       "month": "2026-10",
@@ -10620,38 +10670,44 @@
         {
           "name": "SP 26.4.2",
           "committed": 102,
-          "devdone": 72,
+          "devdone": 70,
           "accepted": 32,
-          "devdone_pct": 70.6,
+          "cancelled": 2,
+          "devdone_pct": 68.6,
           "accepted_pct": 31.4,
           "new_committed": 30,
-          "new_devdone": 28,
-          "new_devdone_pct": 93.3
+          "new_devdone": 25,
+          "new_cancelled": 1,
+          "new_devdone_pct": 83.3
         },
         {
           "name": "SP 26.4.1",
           "committed": 110,
-          "devdone": 80,
+          "devdone": 79,
           "accepted": 38,
-          "devdone_pct": 72.7,
+          "cancelled": 1,
+          "devdone_pct": 71.8,
           "accepted_pct": 34.5,
           "new_committed": 28,
-          "new_devdone": 18,
-          "new_devdone_pct": 64.3
+          "new_devdone": 14,
+          "new_cancelled": 0,
+          "new_devdone_pct": 50.0
         }
       ],
       "committed": 212,
-      "devdone": 152,
+      "devdone": 149,
       "accepted": 70,
-      "devdone_pct": 71.7,
+      "cancelled": 3,
+      "devdone_pct": 70.3,
       "accepted_pct": 33.0,
       "lead_median_seconds": 972669,
       "cycle_median_seconds": 341573,
       "new_committed": 58,
-      "new_devdone": 46,
-      "new_accepted": 30,
-      "new_devdone_pct": 79.3,
-      "new_accepted_pct": 51.7
+      "new_devdone": 39,
+      "new_accepted": 26,
+      "new_cancelled": 1,
+      "new_devdone_pct": 67.2,
+      "new_accepted_pct": 44.8
     }
   ],
   "kpi_history": [
@@ -10667,17 +10723,19 @@
       },
       "summary": {
         "issues_committed": 102,
-        "issues_devdone": 72,
+        "issues_devdone": 70,
         "issues_accepted": 32,
-        "devdone_pct": 70.6,
+        "issues_cancelled": 2,
+        "devdone_pct": 68.6,
         "accepted_pct": 31.4
       },
       "new_only": {
         "issues_committed": 30,
-        "issues_devdone": 28,
-        "issues_accepted": 19,
-        "devdone_pct": 93.3,
-        "accepted_pct": 63.3
+        "issues_devdone": 25,
+        "issues_accepted": 17,
+        "issues_cancelled": 1,
+        "devdone_pct": 83.3,
+        "accepted_pct": 56.7
       },
       "lead_time": {
         "lead": {
@@ -10704,17 +10762,19 @@
       },
       "summary": {
         "issues_committed": 110,
-        "issues_devdone": 80,
+        "issues_devdone": 79,
         "issues_accepted": 38,
-        "devdone_pct": 72.7,
+        "issues_cancelled": 1,
+        "devdone_pct": 71.8,
         "accepted_pct": 34.5
       },
       "new_only": {
         "issues_committed": 28,
-        "issues_devdone": 18,
-        "issues_accepted": 11,
-        "devdone_pct": 64.3,
-        "accepted_pct": 39.3
+        "issues_devdone": 14,
+        "issues_accepted": 9,
+        "issues_cancelled": 0,
+        "devdone_pct": 50.0,
+        "accepted_pct": 32.1
       },
       "lead_time": {
         "lead": {
@@ -10741,17 +10801,19 @@
       },
       "summary": {
         "issues_committed": 113,
-        "issues_devdone": 84,
+        "issues_devdone": 83,
         "issues_accepted": 31,
-        "devdone_pct": 74.3,
+        "issues_cancelled": 1,
+        "devdone_pct": 73.5,
         "accepted_pct": 27.4
       },
       "new_only": {
         "issues_committed": 33,
-        "issues_devdone": 29,
-        "issues_accepted": 27,
-        "devdone_pct": 87.9,
-        "accepted_pct": 81.8
+        "issues_devdone": 21,
+        "issues_accepted": 15,
+        "issues_cancelled": 0,
+        "devdone_pct": 63.6,
+        "accepted_pct": 45.5
       },
       "lead_time": {
         "lead": {
@@ -10780,15 +10842,17 @@
         "issues_committed": 102,
         "issues_devdone": 77,
         "issues_accepted": 22,
+        "issues_cancelled": 0,
         "devdone_pct": 75.5,
         "accepted_pct": 21.6
       },
       "new_only": {
         "issues_committed": 25,
-        "issues_devdone": 25,
-        "issues_accepted": 22,
-        "devdone_pct": 100.0,
-        "accepted_pct": 88.0
+        "issues_devdone": 21,
+        "issues_accepted": 14,
+        "issues_cancelled": 0,
+        "devdone_pct": 84.0,
+        "accepted_pct": 56.0
       },
       "lead_time": {
         "lead": {
@@ -10817,15 +10881,17 @@
         "issues_committed": 106,
         "issues_devdone": 77,
         "issues_accepted": 29,
+        "issues_cancelled": 0,
         "devdone_pct": 72.6,
         "accepted_pct": 27.4
       },
       "new_only": {
         "issues_committed": 27,
-        "issues_devdone": 26,
-        "issues_accepted": 26,
-        "devdone_pct": 96.3,
-        "accepted_pct": 96.3
+        "issues_devdone": 17,
+        "issues_accepted": 15,
+        "issues_cancelled": 0,
+        "devdone_pct": 63.0,
+        "accepted_pct": 55.6
       },
       "lead_time": {
         "lead": {
@@ -10854,15 +10920,17 @@
         "issues_committed": 122,
         "issues_devdone": 90,
         "issues_accepted": 43,
+        "issues_cancelled": 0,
         "devdone_pct": 73.8,
         "accepted_pct": 35.2
       },
       "new_only": {
         "issues_committed": 38,
-        "issues_devdone": 36,
-        "issues_accepted": 33,
-        "devdone_pct": 94.7,
-        "accepted_pct": 86.8
+        "issues_devdone": 23,
+        "issues_accepted": 16,
+        "issues_cancelled": 0,
+        "devdone_pct": 60.5,
+        "accepted_pct": 42.1
       },
       "lead_time": {
         "lead": {
@@ -10889,17 +10957,19 @@
       },
       "summary": {
         "issues_committed": 118,
-        "issues_devdone": 87,
+        "issues_devdone": 86,
         "issues_accepted": 34,
-        "devdone_pct": 73.7,
+        "issues_cancelled": 1,
+        "devdone_pct": 72.9,
         "accepted_pct": 28.8
       },
       "new_only": {
         "issues_committed": 51,
-        "issues_devdone": 50,
-        "issues_accepted": 42,
-        "devdone_pct": 98.0,
-        "accepted_pct": 82.4
+        "issues_devdone": 37,
+        "issues_accepted": 16,
+        "issues_cancelled": 0,
+        "devdone_pct": 72.5,
+        "accepted_pct": 31.4
       },
       "lead_time": {
         "lead": {
@@ -10928,15 +10998,17 @@
         "issues_committed": 99,
         "issues_devdone": 63,
         "issues_accepted": 32,
+        "issues_cancelled": 0,
         "devdone_pct": 63.6,
         "accepted_pct": 32.3
       },
       "new_only": {
         "issues_committed": 29,
-        "issues_devdone": 29,
-        "issues_accepted": 26,
-        "devdone_pct": 100.0,
-        "accepted_pct": 89.7
+        "issues_devdone": 15,
+        "issues_accepted": 6,
+        "issues_cancelled": 0,
+        "devdone_pct": 51.7,
+        "accepted_pct": 20.7
       },
       "lead_time": {
         "lead": {
@@ -10965,15 +11037,17 @@
         "issues_committed": 83,
         "issues_devdone": 55,
         "issues_accepted": 15,
+        "issues_cancelled": 0,
         "devdone_pct": 66.3,
         "accepted_pct": 18.1
       },
       "new_only": {
         "issues_committed": 32,
-        "issues_devdone": 32,
-        "issues_accepted": 32,
-        "devdone_pct": 100.0,
-        "accepted_pct": 100.0
+        "issues_devdone": 16,
+        "issues_accepted": 4,
+        "issues_cancelled": 0,
+        "devdone_pct": 50.0,
+        "accepted_pct": 12.5
       },
       "lead_time": {
         "lead": {
@@ -11000,17 +11074,19 @@
       },
       "summary": {
         "issues_committed": 74,
-        "issues_devdone": 53,
+        "issues_devdone": 44,
         "issues_accepted": 23,
-        "devdone_pct": 71.6,
+        "issues_cancelled": 9,
+        "devdone_pct": 59.5,
         "accepted_pct": 31.1
       },
       "new_only": {
         "issues_committed": 43,
-        "issues_devdone": 42,
-        "issues_accepted": 40,
-        "devdone_pct": 97.7,
-        "accepted_pct": 93.0
+        "issues_devdone": 24,
+        "issues_accepted": 13,
+        "issues_cancelled": 9,
+        "devdone_pct": 55.8,
+        "accepted_pct": 30.2
       },
       "lead_time": {
         "lead": {
@@ -11039,15 +11115,17 @@
         "issues_committed": 52,
         "issues_devdone": 36,
         "issues_accepted": 21,
+        "issues_cancelled": 0,
         "devdone_pct": 69.2,
         "accepted_pct": 40.4
       },
       "new_only": {
         "issues_committed": 22,
-        "issues_devdone": 21,
-        "issues_accepted": 19,
-        "devdone_pct": 95.5,
-        "accepted_pct": 86.4
+        "issues_devdone": 15,
+        "issues_accepted": 9,
+        "issues_cancelled": 0,
+        "devdone_pct": 68.2,
+        "accepted_pct": 40.9
       },
       "lead_time": {
         "lead": {
@@ -11076,15 +11154,17 @@
         "issues_committed": 67,
         "issues_devdone": 51,
         "issues_accepted": 41,
+        "issues_cancelled": 0,
         "devdone_pct": 76.1,
         "accepted_pct": 61.2
       },
       "new_only": {
         "issues_committed": 38,
-        "issues_devdone": 36,
-        "issues_accepted": 36,
-        "devdone_pct": 94.7,
-        "accepted_pct": 94.7
+        "issues_devdone": 29,
+        "issues_accepted": 24,
+        "issues_cancelled": 0,
+        "devdone_pct": 76.3,
+        "accepted_pct": 63.2
       },
       "lead_time": {
         "lead": {
@@ -11111,17 +11191,19 @@
       },
       "summary": {
         "issues_committed": 50,
-        "issues_devdone": 32,
+        "issues_devdone": 31,
         "issues_accepted": 16,
-        "devdone_pct": 64.0,
+        "issues_cancelled": 1,
+        "devdone_pct": 62.0,
         "accepted_pct": 32.0
       },
       "new_only": {
         "issues_committed": 17,
-        "issues_devdone": 17,
-        "issues_accepted": 17,
-        "devdone_pct": 100.0,
-        "accepted_pct": 100.0
+        "issues_devdone": 12,
+        "issues_accepted": 10,
+        "issues_cancelled": 0,
+        "devdone_pct": 70.6,
+        "accepted_pct": 58.8
       },
       "lead_time": {
         "lead": {
@@ -11148,17 +11230,19 @@
       },
       "summary": {
         "issues_committed": 57,
-        "issues_devdone": 40,
+        "issues_devdone": 39,
         "issues_accepted": 23,
-        "devdone_pct": 70.2,
+        "issues_cancelled": 1,
+        "devdone_pct": 68.4,
         "accepted_pct": 40.4
       },
       "new_only": {
         "issues_committed": 22,
-        "issues_devdone": 22,
-        "issues_accepted": 20,
-        "devdone_pct": 100.0,
-        "accepted_pct": 90.9
+        "issues_devdone": 12,
+        "issues_accepted": 9,
+        "issues_cancelled": 0,
+        "devdone_pct": 54.5,
+        "accepted_pct": 40.9
       },
       "lead_time": {
         "lead": {
@@ -11185,17 +11269,19 @@
       },
       "summary": {
         "issues_committed": 67,
-        "issues_devdone": 55,
+        "issues_devdone": 54,
         "issues_accepted": 32,
-        "devdone_pct": 82.1,
+        "issues_cancelled": 1,
+        "devdone_pct": 80.6,
         "accepted_pct": 47.8
       },
       "new_only": {
         "issues_committed": 27,
-        "issues_devdone": 27,
-        "issues_accepted": 26,
-        "devdone_pct": 100.0,
-        "accepted_pct": 96.3
+        "issues_devdone": 21,
+        "issues_accepted": 15,
+        "issues_cancelled": 0,
+        "devdone_pct": 77.8,
+        "accepted_pct": 55.6
       },
       "lead_time": {
         "lead": {
@@ -11222,17 +11308,19 @@
       },
       "summary": {
         "issues_committed": 45,
-        "issues_devdone": 33,
+        "issues_devdone": 32,
         "issues_accepted": 4,
-        "devdone_pct": 73.3,
+        "issues_cancelled": 1,
+        "devdone_pct": 71.1,
         "accepted_pct": 8.9
       },
       "new_only": {
         "issues_committed": 12,
-        "issues_devdone": 12,
-        "issues_accepted": 12,
-        "devdone_pct": 100.0,
-        "accepted_pct": 100.0
+        "issues_devdone": 8,
+        "issues_accepted": 1,
+        "issues_cancelled": 0,
+        "devdone_pct": 66.7,
+        "accepted_pct": 8.3
       },
       "lead_time": {
         "lead": {
@@ -11261,15 +11349,17 @@
         "issues_committed": 48,
         "issues_devdone": 35,
         "issues_accepted": 15,
+        "issues_cancelled": 0,
         "devdone_pct": 72.9,
         "accepted_pct": 31.2
       },
       "new_only": {
         "issues_committed": 23,
-        "issues_devdone": 22,
-        "issues_accepted": 22,
-        "devdone_pct": 95.7,
-        "accepted_pct": 95.7
+        "issues_devdone": 17,
+        "issues_accepted": 9,
+        "issues_cancelled": 0,
+        "devdone_pct": 73.9,
+        "accepted_pct": 39.1
       },
       "lead_time": {
         "lead": {
@@ -11298,15 +11388,17 @@
         "issues_committed": 44,
         "issues_devdone": 34,
         "issues_accepted": 21,
+        "issues_cancelled": 0,
         "devdone_pct": 77.3,
         "accepted_pct": 47.7
       },
       "new_only": {
         "issues_committed": 4,
         "issues_devdone": 4,
-        "issues_accepted": 4,
+        "issues_accepted": 3,
+        "issues_cancelled": 0,
         "devdone_pct": 100.0,
-        "accepted_pct": 100.0
+        "accepted_pct": 75.0
       },
       "lead_time": {
         "lead": {

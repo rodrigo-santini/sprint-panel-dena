@@ -2501,8 +2501,9 @@
                     // + cancelados.
                     issues_not_completed: total - devdone - cancelled,
                     issues_cancelled: cancelled,
-                    accepted_pct: pctRound(accepted, total),
-                    devdone_pct: pctRound(devdone, total),
+                    // base de entrega: comprometidos EXCLUINDO cancelados.
+                    accepted_pct: pctRound(accepted, total - cancelled),
+                    devdone_pct: pctRound(devdone, total - cancelled),
                     points_committed: Math.round(pts_total * 10) / 10,
                     points_accepted: Math.round(pts_accepted * 10) / 10,
                     points_accepted_pct: pctRound(pts_accepted, pts_total),

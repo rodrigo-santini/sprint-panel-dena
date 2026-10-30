@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T15:00:53.820853+00:00",
+  "generated_at": "2026-10-30T17:00:52.349774+00:00",
   "project": "DENA",
   "board_id": 1094,
   "active": {
@@ -83,7 +83,7 @@
     },
     "health": {
       "status": "verde",
-      "elapsed_pct": 32.1,
+      "elapsed_pct": 32.7,
       "done_pct": 51.6
     },
     "scope": {
@@ -654,7 +654,7 @@
         "last_comment_at": "2026-10-05T09:08:19.039-0300",
         "last_comment_by": "Ananda Ellen Morais Di Rado",
         "recent_comment_24h": false,
-        "time_spent_seconds": 97200,
+        "time_spent_seconds": 118800,
         "parent": {
           "key": "DENA-82",
           "summary": "ESTRUTURANTE"
@@ -3261,6 +3261,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3276,6 +3277,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3291,6 +3293,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3306,6 +3309,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3320,7 +3324,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3336,6 +3341,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": true
       },
       {
@@ -3351,6 +3357,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3365,7 +3372,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3381,6 +3389,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3395,7 +3404,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3411,6 +3421,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": true
       },
       {
@@ -3426,6 +3437,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3440,7 +3452,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3456,6 +3469,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3470,7 +3484,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3485,7 +3500,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3500,7 +3516,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3515,7 +3532,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3530,7 +3548,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3545,7 +3564,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3559,8 +3579,9 @@
         "is_new": false,
         "committed": true,
         "accepted": false,
-        "devdone": true,
-        "not_completed": true,
+        "devdone": false,
+        "not_completed": false,
+        "cancelled": true,
         "blocked": false
       },
       {
@@ -3575,7 +3596,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3590,7 +3612,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3605,7 +3628,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3621,6 +3645,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": true
       },
       {
@@ -3635,7 +3660,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3650,7 +3676,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3665,7 +3692,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3680,7 +3708,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3696,6 +3725,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3710,7 +3740,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3726,6 +3757,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3740,7 +3772,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3756,6 +3789,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3770,7 +3804,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3786,6 +3821,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3800,7 +3836,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3815,7 +3852,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3830,7 +3868,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3846,6 +3885,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3861,6 +3901,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3876,6 +3917,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3890,7 +3932,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3906,6 +3949,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3920,7 +3964,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3936,6 +3981,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3951,6 +3997,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3965,7 +4012,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3980,7 +4028,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -3995,7 +4044,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4010,7 +4060,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4026,6 +4077,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": true
       },
       {
@@ -4040,7 +4092,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4055,7 +4108,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4070,7 +4124,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4086,6 +4141,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4101,6 +4157,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4116,6 +4173,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4131,6 +4189,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4146,6 +4205,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4160,7 +4220,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4176,6 +4237,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4191,6 +4253,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4205,7 +4268,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4220,7 +4284,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4236,6 +4301,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4251,6 +4317,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": true
       },
       {
@@ -4265,7 +4332,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4280,7 +4348,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4295,7 +4364,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4311,6 +4381,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4326,6 +4397,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4341,6 +4413,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4356,6 +4429,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4370,7 +4444,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4385,7 +4460,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4401,6 +4477,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4416,6 +4493,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4430,7 +4508,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4446,6 +4525,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4460,7 +4540,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4475,7 +4556,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4491,6 +4573,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4506,6 +4589,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4521,6 +4605,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4536,6 +4621,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4550,7 +4636,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4566,6 +4653,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4581,6 +4669,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4596,6 +4685,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4611,6 +4701,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4626,6 +4717,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -4641,6 +4733,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       }
     ]
@@ -6321,6 +6414,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6336,6 +6430,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6351,6 +6446,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6366,6 +6462,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6381,6 +6478,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6396,6 +6494,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6411,6 +6510,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6426,6 +6526,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6441,6 +6542,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6456,6 +6558,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6471,6 +6574,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6486,6 +6590,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6501,6 +6606,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6516,6 +6622,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6531,6 +6638,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6546,6 +6654,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6561,6 +6670,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6576,6 +6686,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6591,6 +6702,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6606,6 +6718,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6621,6 +6734,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6636,6 +6750,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6651,6 +6766,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6666,6 +6782,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6681,6 +6798,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6696,6 +6814,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6711,6 +6830,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6726,6 +6846,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6741,6 +6862,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6756,6 +6878,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6771,6 +6894,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6786,6 +6910,7 @@
         "accepted": true,
         "devdone": true,
         "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6801,6 +6926,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6815,7 +6941,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6831,6 +6958,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": true
       },
       {
@@ -6846,6 +6974,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6860,7 +6989,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6876,6 +7006,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6890,7 +7021,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6906,6 +7038,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": true
       },
       {
@@ -6921,6 +7054,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6935,7 +7069,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6951,6 +7086,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6965,7 +7101,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6980,7 +7117,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -6995,7 +7133,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7010,7 +7149,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7025,7 +7165,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7040,7 +7181,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7054,8 +7196,9 @@
         "is_new": false,
         "committed": true,
         "accepted": false,
-        "devdone": true,
-        "not_completed": true,
+        "devdone": false,
+        "not_completed": false,
+        "cancelled": true,
         "blocked": false
       },
       {
@@ -7070,7 +7213,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7085,7 +7229,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7100,7 +7245,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7116,6 +7262,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": true
       },
       {
@@ -7130,7 +7277,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7145,7 +7293,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7160,7 +7309,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7175,7 +7325,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7190,7 +7341,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7206,6 +7358,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7221,6 +7374,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7236,6 +7390,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": true
       },
       {
@@ -7250,7 +7405,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7266,6 +7422,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7280,7 +7437,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7295,7 +7453,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7310,7 +7469,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7326,6 +7486,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7341,6 +7502,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7356,6 +7518,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": true
       },
       {
@@ -7370,7 +7533,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7386,6 +7550,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": true
       },
       {
@@ -7401,6 +7566,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7415,7 +7581,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7430,7 +7597,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7445,7 +7613,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7460,7 +7629,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7475,7 +7645,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7491,6 +7662,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": true
       },
       {
@@ -7505,7 +7677,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7520,7 +7693,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7535,7 +7709,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7551,6 +7726,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7566,6 +7742,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7581,6 +7758,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7596,6 +7774,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7610,7 +7789,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7626,6 +7806,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7641,6 +7822,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7656,6 +7838,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7670,7 +7853,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7685,7 +7869,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7701,6 +7886,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": true
       },
       {
@@ -7715,7 +7901,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7730,7 +7917,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7745,7 +7933,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7761,6 +7950,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7776,6 +7966,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7789,8 +7980,9 @@
         "is_new": true,
         "committed": true,
         "accepted": false,
-        "devdone": true,
-        "not_completed": true,
+        "devdone": false,
+        "not_completed": false,
+        "cancelled": true,
         "blocked": false
       },
       {
@@ -7805,7 +7997,8 @@
         "committed": true,
         "accepted": false,
         "devdone": true,
-        "not_completed": true,
+        "not_completed": false,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7821,6 +8014,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       },
       {
@@ -7836,6 +8030,7 @@
         "accepted": false,
         "devdone": false,
         "not_completed": true,
+        "cancelled": false,
         "blocked": false
       }
     ]
@@ -7925,7 +8120,7 @@
           "summary": "[MÉDIO] [INC0835129]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 26.0,
+          "duration_hours": 28.0,
           "assignee": "Gabriel de Jesus Fonseca Romero",
           "created": "2026-10-29T10:01:46.414-0300",
           "sprint_count": 1,
@@ -7937,7 +8132,7 @@
           "summary": "[ALTÍSSIMA] [INC0835559]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Backlog",
           "is_resolved": false,
-          "duration_hours": 0.2,
+          "duration_hours": 2.2,
           "assignee": "",
           "created": "2026-10-30T11:47:34.706-0300",
           "sprint_count": 1,
@@ -7949,7 +8144,7 @@
           "summary": "[INC0825017]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 690.5,
+          "duration_hours": 692.5,
           "assignee": "Diogenes Coelho de Freitas",
           "created": "2026-10-01T17:31:29.135-0300",
           "sprint_count": 3,
@@ -7965,7 +8160,7 @@
           "summary": "[INC0825281]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 672.3,
+          "duration_hours": 674.3,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-10-02T11:42:53.951-0300",
           "sprint_count": 3,
@@ -7981,7 +8176,7 @@
           "summary": "[ALTA] [INC0835210]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 22.5,
+          "duration_hours": 24.5,
           "assignee": "Tiago Gomes Ferreira",
           "created": "2026-10-29T13:28:29.703-0300",
           "sprint_count": 1,
@@ -8168,7 +8363,7 @@
           "summary": "[INC0825017]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 690.5,
+          "duration_hours": 692.5,
           "assignee": "Diogenes Coelho de Freitas",
           "created": "2026-10-01T17:31:29.135-0300",
           "sprint_count": 3,
@@ -8184,7 +8379,7 @@
           "summary": "[INC0825281]Tenho um Erro/Problema com o Sistema - Incidente de Engenharia de Dados - AWS",
           "status": "Em Andamento",
           "is_resolved": false,
-          "duration_hours": 672.3,
+          "duration_hours": 674.3,
           "assignee": "Vanessa Macedo Cavalcanti De Souza",
           "created": "2026-10-02T11:42:53.951-0300",
           "sprint_count": 3,
@@ -8283,7 +8478,7 @@
       "created": "2026-10-27T15:23:51.914-0300",
       "updated": "2026-10-28T12:19:55.327-0300",
       "days_old": 2,
-      "days_since_update": 1,
+      "days_since_update": 2,
       "assignee": "Antonio Carlos Souza",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -8381,7 +8576,7 @@
       "priority": "Médio",
       "created": "2026-10-20T13:58:29.697-0300",
       "updated": "2026-10-20T14:23:54.530-0300",
-      "days_old": 9,
+      "days_old": 10,
       "days_since_update": 9,
       "assignee": "Vanessa Macedo Cavalcanti De Souza",
       "reporter": "Rosilaine Papa da Silva",
@@ -8414,7 +8609,7 @@
       "created": "2026-10-08T14:02:44.271-0300",
       "updated": "2026-10-26T12:03:57.598-0300",
       "days_old": 21,
-      "days_since_update": 3,
+      "days_since_update": 4,
       "assignee": "Vanessa Macedo Cavalcanti De Souza",
       "reporter": "Rosilaine Papa da Silva",
       "parent": null,
@@ -9014,7 +9209,7 @@
       "created": "2026-07-30T11:57:38.545-0300",
       "updated": "2026-08-19T13:20:14.483-0300",
       "days_old": 92,
-      "days_since_update": 71,
+      "days_since_update": 72,
       "assignee": "Larissa Oliveira De Melo",
       "reporter": "Sandro Pereira Dos Santos",
       "parent": {
@@ -9064,7 +9259,7 @@
       "priority": "Médio",
       "created": "2026-07-17T13:47:42.435-0300",
       "updated": "2026-07-17T15:20:31.933-0300",
-      "days_old": 104,
+      "days_old": 105,
       "days_since_update": 104,
       "assignee": "Tiago Gomes Ferreira",
       "reporter": "André Mendonça Pauletti",
@@ -9084,7 +9279,7 @@
       "created": "2026-07-14T10:18:29.867-0300",
       "updated": "2026-07-30T13:44:43.669-0300",
       "days_old": 108,
-      "days_since_update": 91,
+      "days_since_update": 92,
       "assignee": "Diogenes Coelho de Freitas",
       "reporter": "André Mendonça Pauletti",
       "parent": null,
@@ -9132,7 +9327,7 @@
       "created": "2026-07-03T09:59:04.072-0300",
       "updated": "2026-09-15T12:06:06.730-0300",
       "days_old": 119,
-      "days_since_update": 44,
+      "days_since_update": 45,
       "assignee": "Gabriel de Jesus Fonseca Romero",
       "reporter": "Rosilaine Papa da Silva",
       "parent": {
@@ -9215,7 +9410,7 @@
       "created": "2026-06-02T22:01:02.514-0300",
       "updated": "2026-07-13T12:06:09.725-0300",
       "days_old": 149,
-      "days_since_update": 108,
+      "days_since_update": 109,
       "assignee": "",
       "reporter": "Gilson Dos Santos",
       "parent": null,
@@ -9231,7 +9426,7 @@
       "created": "2026-06-02T21:59:59.602-0300",
       "updated": "2026-07-13T12:06:04.094-0300",
       "days_old": 149,
-      "days_since_update": 108,
+      "days_since_update": 109,
       "assignee": "",
       "reporter": "Gilson Dos Santos",
       "parent": null,
@@ -9517,7 +9712,7 @@
       "priority": "Médio",
       "created": "2026-02-25T12:49:15.825-0300",
       "updated": "2026-08-13T16:56:31.337-0300",
-      "days_old": 246,
+      "days_old": 247,
       "days_since_update": 77,
       "assignee": "Karla Ynonye Zucchini",
       "reporter": "Karla Ynonye Zucchini",
@@ -9616,7 +9811,7 @@
       "priority": "Médio",
       "created": "2026-02-19T12:00:22.427-0300",
       "updated": "2026-07-30T11:25:59.617-0300",
-      "days_old": 252,
+      "days_old": 253,
       "days_since_update": 92,
       "assignee": "Rodrigo Santini Guarinon",
       "reporter": "Karla Ynonye Zucchini",
@@ -10023,6 +10218,18 @@
         "total": 21.1
       },
       {
+        "name": "Sérgio Júnior da Costa Alves",
+        "monthly": {
+          "2026-05": 0.0,
+          "2026-06": 0.0,
+          "2026-07": 0.0,
+          "2026-08": 0.0,
+          "2026-09": 0.0,
+          "2026-10": 12.0
+        },
+        "total": 12.0
+      },
+      {
         "name": "Diogenes Coelho de Freitas",
         "monthly": {
           "2026-05": 0.0,
@@ -10033,18 +10240,6 @@
           "2026-10": 1.0
         },
         "total": 8.5
-      },
-      {
-        "name": "Sérgio Júnior da Costa Alves",
-        "monthly": {
-          "2026-05": 0.0,
-          "2026-06": 0.0,
-          "2026-07": 0.0,
-          "2026-08": 0.0,
-          "2026-09": 0.0,
-          "2026-10": 6.0
-        },
-        "total": 6.0
       },
       {
         "name": "Bruno Silva Lourenco",
@@ -10077,9 +10272,9 @@
       "2026-07": 1174.6,
       "2026-08": 1107.4,
       "2026-09": 1593.1,
-      "2026-10": 802.2
+      "2026-10": 808.2
     },
-    "total_general": 5427.1
+    "total_general": 5433.1
   },
   "kpi_monthly": [
     {

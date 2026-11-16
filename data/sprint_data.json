@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T19:31:05.422937+00:00",
+  "generated_at": "2026-11-16T19:31:19.730213+00:00",
   "project": "DENA",
   "board_id": 1094,
   "active": {
@@ -13,23 +13,23 @@
       "goal": ""
     },
     "summary": {
-      "issues_committed": 111,
+      "issues_committed": 112,
       "issues_accepted": 18,
       "issues_devdone": 63,
-      "issues_not_completed": 47,
+      "issues_not_completed": 48,
       "issues_cancelled": 1,
       "issues_punted": 0,
       "issues_completed_elsewhere": 0,
-      "issues_added_during": 31,
-      "accepted_pct": 16.4,
-      "devdone_pct": 57.3,
+      "issues_added_during": 32,
+      "accepted_pct": 16.2,
+      "devdone_pct": 56.8,
       "points_committed": 187.0,
       "points_accepted": 34.0,
       "points_not_completed": 136.0,
       "points_accepted_pct": 18.2,
       "by_type": {
         "História": 75,
-        "Bug": 24,
+        "Bug": 25,
         "Incidente": 9,
         "Suporte": 1,
         "Mudança": 2
@@ -39,7 +39,7 @@
         "Em Andamento": 17,
         "Concluído": 45,
         "Bloqueado": 14,
-        "Backlog": 15,
+        "Backlog": 16,
         "Cancelado": 1,
         "Refinamento": 1
       },
@@ -123,13 +123,13 @@
       ]
     },
     "new_only": {
-      "issues_committed": 32,
+      "issues_committed": 33,
       "issues_accepted": 4,
       "issues_devdone": 15,
-      "issues_not_completed": 17,
+      "issues_not_completed": 18,
       "issues_cancelled": 0,
-      "accepted_pct": 12.5,
-      "devdone_pct": 46.9,
+      "accepted_pct": 12.1,
+      "devdone_pct": 45.5,
       "points_committed": 17.0,
       "points_accepted": 0.0,
       "points_accepted_pct": 0.0
@@ -137,7 +137,7 @@
     "health": {
       "status": "amarelo",
       "elapsed_pct": 68.0,
-      "done_pct": 57.3
+      "done_pct": 56.8
     },
     "scope": {
       "carryover": 79,
@@ -4983,6 +4983,22 @@
       {
         "key": "DENA-1518",
         "summary": "Quedas de volume: confirmar a causa e, se for carga incompleta, replicar a foto do dia anterior",
+        "type": "Bug",
+        "status_name": "Backlog",
+        "assignee": "Antonio Carlos Souza",
+        "story_points": null,
+        "category": "",
+        "is_new": true,
+        "committed": true,
+        "accepted": false,
+        "devdone": false,
+        "not_completed": true,
+        "cancelled": false,
+        "blocked": false
+      },
+      {
+        "key": "DENA-1519",
+        "summary": "Fotos inválidas: replicar a foto do dia anterior",
         "type": "Bug",
         "status_name": "Backlog",
         "assignee": "Antonio Carlos Souza",
@@ -9845,25 +9861,6 @@
       "priority": "Médio",
       "created": "2026-10-01T15:57:09.790-0300",
       "updated": "2026-10-13T14:20:02.822-0300",
-      "days_old": 46,
-      "days_since_update": 34,
-      "assignee": "Antonio Carlos Souza",
-      "reporter": "Sandro Pereira Dos Santos",
-      "parent": {
-        "key": "DENA-2",
-        "summary": "ALUNADO"
-      },
-      "category": "",
-      "story_points": null
-    },
-    {
-      "key": "DENA-1520",
-      "summary": "Datas faltantes (14): replicar a foto do dia anterior",
-      "type": "Bug",
-      "status": "Backlog",
-      "priority": "Médio",
-      "created": "2026-10-01T15:56:06.972-0300",
-      "updated": "2026-10-13T14:20:04.100-0300",
       "days_old": 46,
       "days_since_update": 34,
       "assignee": "Antonio Carlos Souza",
